@@ -545,3 +545,121 @@ body {
 .close-policy:hover {
     color: #000000;
 }
+/* Ajustes para la tarjeta del producto en el catálogo */
+.card-modal-trigger {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.short-desc {
+    font-size: 0.85rem;
+    color: #777777;
+    margin: 8px 0;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Modal Emergente */
+.modal-product-container {
+    background-color: #1e1b26; /* Fondo oscuro interno del modal */
+    color: #ffffff;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Botón de cierre X */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaaaaa;
+    font-size: 28px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.close-modal:hover {
+    color: #ffffff;
+}
+
+/* Imagen en el Modal */
+.modal-product-media {
+    flex: 1;
+    background-color: #14121a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-product-media img {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Detalles en el Modal */
+.modal-product-details {
+    flex: 1;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.modal-product-details h2 {
+    font-size: 1.6rem;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+}
+
+.modal-price {
+    font-size: 1.3rem;
+    color: #c084fc;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.modal-description h4 {
+    font-size: 0.8rem;
+    color: #a1a1aa;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.modal-description p {
+    font-size: 0.9rem;
+    color: #d4d4d8;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Mantiene el botón morado idéntico a tu sitio */
+.modal-btn-buy {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Adaptación a dispositivos móviles */
+@media (max-width: 768px) {
+    .modal-product-container {
+        flex-direction: column;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+}
