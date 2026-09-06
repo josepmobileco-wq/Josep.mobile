@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!grid || !modals) return;
 
             // URL general de cobro de Mercado Pago
-            const linkPagoGeneral = "https://link.mercadopago.com.co/josepmobile";
+            const linkPagoGeneral = "https://mpago.li/2aBTmmg";
 
             productos.forEach(prod => {
                 // 1. Tarjeta del catálogo
