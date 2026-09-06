@@ -1,26 +1,74 @@
-[
-  {
-    "id": "airmax",
-    "nombre": "Audífonos Air Max",
-    "precio": "120.000 COP",
-    "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
-    "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
-    "fotos": ["airmax.jpg", "airmax2.jpg", "airmax3.jpg"]
-  },
-  {
-    "id": "airpodspro2",
-    "nombre": "Airpods Pro 2",
-    "precio": "70.000 COP",
-    "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
-    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
-    "fotos": ["airpodspro2.jpg", "airpodspro22.jpeg", "airpodspro23.jpg"]
-  },
-  {
-    "id": "cargador-rapido",
-    "nombre": "Cargadores Carga Rápida",
-    "precio": "45.000 COP",
-    "corta": "Adaptadores y cables de alto rendimiento para una carga segura y veloz.",
-    "detalles": "Adaptadores y cables de alto rendimiento diseñados para proteger la batería de tu dispositivo mientras carga a máxima velocidad.",
-    "fotos": ["cargador-rapido.jpg"]
-  }
-]
+document.addEventListener('DOMContentLoaded', () => {
+    // Usamos './productos.json' para evitar problemas de rutas en GitHub Pages
+    fetch('./productos.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error HTTP! estado: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(productos => {
+            const grid = document.getElementById('product-grid');
+            const modals = document.getElementById('modals-container');
+
+            if (!grid || !modals) return;
+
+            productos.forEach(prod => {
+                // 1. Tarjeta del catálogo
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <a href="#producto-${prod.id}" class="card-modal-trigger">
+                        <div class="product-image">
+                            <img src="${prod.fotos[0]}" alt="${prod.nombre}">
+                        </div>
+                        <div class="product-info">
+                            <h3>${prod.nombre}</h3>
+                            <p class="short-desc">${prod.corta}</p>
+                            <span class="price">${prod.precio}</span>
+                            <span class="btn-card">Comprar por WhatsApp</span>
+                        </div>
+                    </a>
+                `;
+                grid.appendChild(card);
+
+                // 2. Modal de producto
+                const radioInputs = prod.fotos.map((img, i) => 
+                    `<input type="radio" name="gallery-${prod.id}" id="img${i+1}-${prod.id}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
+                ).join('');
+
+                const displayImages = prod.fotos.map((img, i) => 
+                    `<img src="${img}" class="img-display img-${i+1}" alt="Foto ${i+1}">`
+                ).join('');
+
+                const thumbnails = prod.fotos.map((img, i) => 
+                    `<label for="img${i+1}-${prod.id}" class="thumb-item"><img src="${img}" alt="Vista ${i+1}"></label>`
+                ).join('');
+
+                const modal = document.createElement('div');
+                modal.id = `producto-${prod.id}`;
+                modal.className = 'modal-policy';
+                modal.innerHTML = `
+                    <div class="modal-product-container">
+                        <a href="#" class="close-modal">&times;</a>
+                        <div class="modal-product-media">
+                            ${radioInputs}
+                            <div class="main-image-view">${displayImages}</div>
+                            <div class="gallery-thumbnails">${thumbnails}</div>
+                        </div>
+                        <div class="modal-product-details">
+                            <h2>${prod.nombre}</h2>
+                            <p class="modal-price">${prod.precio}</p>
+                            <div class="modal-description">
+                                <h4>DETALLES DEL PRODUCTO</h4>
+                                <p>${prod.detalles}</p>
+                            </div>
+                            <a href="https://wa.me/573173482040?text=Hola,%20me%20interesa%20el%20producto%20${encodeURIComponent(prod.nombre)}" target="_blank" class="btn-card modal-btn-buy">Comprar por WhatsApp</a>
+                        </div>
+                    </div>
+                `;
+                modals.appendChild(modal);
+            });
+        })
+        .catch(error => console.error('Error cargando los productos:', error));
+});
