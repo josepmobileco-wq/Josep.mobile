@@ -5,7 +5,11 @@
     "precio": "120.000 COP",
     "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
     "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
-    "fotos": ["airmax.jpg", "airmax2.jpg", "airmax3.jpg"]
+    "fotos": [
+      "airmax.jpg",
+      "airmax2.jpg",
+      "airmax3.jpg"
+    ]
   },
   {
     "id": "airpodspro2",
@@ -13,14 +17,18 @@
     "precio": "70.000 COP",
     "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
     "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
-    "fotos": ["airpodspro2.jpg", "airpodspro22.jpeg", "airpodspro23.jpg"]
+    "fotos": [
+      "airpodspro2.jpg",
+      "airpodspro22.jpeg",
+      "airpodspro23.jpg"
+    ]
   },
   {
     "id": "airpods-pro-3",
-    "nombre": "Audifonos Airpods Pro 3",
+    "nombre": "Audífonos Airpods Pro 3",
     "precio": "75.000 COP",
-    "corta": "Cancelación de ruido potente, traducción en vivo y máxima comodidad.",
-    "detalles": "Escucha el mundo como nunca antes. La cancelación activa de ruido más potente del mercado (2x mejor que la generación anterior), sensor de frecuencia cardíaca integrado para tus entrenamientos, y Traducción en Vivo con Apple Intelligence. Diseño rediseñado con 5 tallas de almohadillas para un ajuste perfecto, resistencia al agua y sudor IP57, y hasta 8 horas de música con ANC activo. Salud, sonido y tecnología en un solo dispositivo.",
+    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
     "fotos": [
       "airpods-pro-3.jpg",
       "airpods-pro-31.jpg",
@@ -29,10 +37,10 @@
   },
   {
     "id": "airpods-pro-3-Traductores",
-    "nombre": "Audifonos Airpods Pro 3 Con Traduccion",
+    "nombre": "Audífonos Airpods Pro 3 Con Traducción",
     "precio": "85.000 COP",
-    "corta": "Cancelación de ruido potente, traducción en vivo y máxima comodidad.",
-    "detalles": "Escucha el mundo como nunca antes. La cancelación activa de ruido más potente del mercado (2x mejor que la generación anterior), sensor de frecuencia cardíaca integrado para tus entrenamientos, y Traducción en Vivo con Apple Intelligence. Diseño rediseñado con 5 tallas de almohadillas para un ajuste perfecto, resistencia al agua y sudor IP57, y hasta 8 horas de música con ANC activo. Salud, sonido y tecnología en un solo dispositivo.",
+    "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
+    "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
     "fotos": [
       "airpodspro3t.jpg",
       "airpodspro31t.jpg",
