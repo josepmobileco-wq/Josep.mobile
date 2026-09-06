@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Usamos './productos.json' para evitar problemas de rutas en GitHub Pages
     fetch('./productos.json')
         .then(response => {
             if (!response.ok) {
@@ -12,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const modals = document.getElementById('modals-container');
 
             if (!grid || !modals) return;
+
+            // URL general de cobro de Mercado Pago
+            const linkPagoGeneral = "https://link.mercadopago.com.co/josepmobile";
 
             productos.forEach(prod => {
                 // 1. Tarjeta del catálogo
@@ -26,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3>${prod.nombre}</h3>
                             <p class="short-desc">${prod.corta}</p>
                             <span class="price">${prod.precio}</span>
-                            <span class="btn-card">Comprar por WhatsApp</span>
+                            <span class="btn-card">Ver opciones de compra</span>
                         </div>
                     </a>
                 `;
                 grid.appendChild(card);
 
-                // 2. Modal de producto
+                // 2. Modal de producto con doble botón de pago
                 const radioInputs = prod.fotos.map((img, i) => 
                     `<input type="radio" name="gallery-${prod.id}" id="img${i+1}-${prod.id}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
                 ).join('');
@@ -63,7 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <h4>DETALLES DEL PRODUCTO</h4>
                                 <p>${prod.detalles}</p>
                             </div>
-                            <a href="https://wa.me/573173482040?text=Hola,%20me%20interesa%20el%20producto%20${encodeURIComponent(prod.nombre)}" target="_blank" class="btn-card modal-btn-buy">Comprar por WhatsApp</a>
+                            
+                            <div class="modal-actions" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+                                <a href="${linkPagoGeneral}" target="_blank" class="btn-card" style="background-color: #009ee3; text-align: center; text-decoration: none; color: white;">
+                                    💳 Pagar con PSE / Tarjeta (${prod.precio})
+                                </a>
+                                <a href="https://wa.me/573173482040?text=Hola,%20quiero%20comprar%20el%20producto%20${encodeURIComponent(prod.nombre)}" target="_blank" class="btn-card" style="background-color: #25d366; text-align: center; text-decoration: none; color: white;">
+                                    💬 Pedir por WhatsApp
+                                </a>
+                            </div>
                         </div>
                     </div>
                 `;
