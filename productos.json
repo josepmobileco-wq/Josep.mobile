@@ -1,0 +1,42 @@
+[
+  {
+    "id": "airmax",
+    "nombre": "Audífonos Air Max",
+    "precio": "120.000 COP",
+    "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
+    "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
+    "fotos": ["airmax.jpg", "airmax2.jpg", "airmax3.jpg"]
+  },
+  {
+    "id": "airpodspro2",
+    "nombre": "Airpods Pro 2",
+    "precio": "70.000 COP",
+    "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
+    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
+    "fotos": ["airpodspro2.jpg", "airpodspro22.jpeg", "airpodspro23.jpg"]
+  },
+  {
+    "id": "airpods-pro-3",
+    "nombre": "Audifonos Airpods Pro 3",
+    "precio": "75.000 COP",
+    "corta": "Cancelación de ruido potente, traducción en vivo y máxima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. La cancelación activa de ruido más potente del mercado (2x mejor que la generación anterior), sensor de frecuencia cardíaca integrado para tus entrenamientos, y Traducción en Vivo con Apple Intelligence. Diseño rediseñado con 5 tallas de almohadillas para un ajuste perfecto, resistencia al agua y sudor IP57, y hasta 8 horas de música con ANC activo. Salud, sonido y tecnología en un solo dispositivo.",
+    "fotos": [
+      "airpods-pro-3.jpg",
+      "airpods-pro-31.jpg",
+      "airpods-pro-32.jpg"
+    ]
+  },
+  {
+    "id": "airpods-pro-3-Traductores",
+    "nombre": "Audifonos Airpods Pro 3 Con Traduccion",
+    "precio": "85.000 COP",
+    "corta": "Cancelación de ruido potente, traducción en vivo y máxima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. La cancelación activa de ruido más potente del mercado (2x mejor que la generación anterior), sensor de frecuencia cardíaca integrado para tus entrenamientos, y Traducción en Vivo con Apple Intelligence. Diseño rediseñado con 5 tallas de almohadillas para un ajuste perfecto, resistencia al agua y sudor IP57, y hasta 8 horas de música con ANC activo. Salud, sonido y tecnología en un solo dispositivo.",
+    "fotos": [
+      "airpodspro3t.jpg",
+      "airpodspro31t.jpg",
+      "airpodspro32t.jpg"
+    ]
+  }
+]
