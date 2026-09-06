@@ -46,5 +46,51 @@
       "airpodspro31t.jpg",
       "airpodspro32t.jpg"
     ]
+  },
+  {
+    "id": "Audifonos-smarwach-mtf",
+    "nombre": "Audífonos Smartwatch MTF M-65",
+    "precio": "130.000 COP",
+    "corta": "MTF M-65 – Auriculares Inalámbricos Open Ear con Pantalla LCD.",
+    "detalles": "Diseño Open Ear: se ajustan por fuera del oído con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control táctil para reproducir/pausar música y gestionar llamadas. Batería con hasta 6 horas de uso continuo y 100 horas en modo standby. Conexión Bluetooth 6.0 con alcance de 10 metros. Batería de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentación en caja individual.",
+    "fotos": [
+      "audifonosmtf1.jpeg",
+      "audifonosmtf2.jpeg",
+      "audifonosmtf3.jpeg"
+    ]
+  },
+  {
+    "id": "Power-Bank-30000mAh",
+    "nombre": "Power Bank MTF 30.000 mAh",
+    "precio": "130.000 COP",
+    "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
+    "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
+    "fotos": [
+      "powerband301.jpeg"
+    ]
+  },
+  {
+    "id": "Power-Bank-Magsafe-10000mAh",
+    "nombre": "Power Bank MagSafe MTF 10.000 mAh",
+    "precio": "120.000 COP",
+    "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
+    "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
+    "fotos": [
+      "powerbandmagsafe1.jpeg",
+      "powerbandmagsafe2.jpeg",
+      "powerbandmagsafe3.jpeg"
+    ]
+  },
+  {
+    "id": "Power-Bank-20000mAh",
+    "nombre": "Power Bank Harvic 20.000 mAh",
+    "precio": "90.000 COP",
+    "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalámbrica de 15W.",
+    "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalámbrica por inducción magnética de 15W y carga rápida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de batería y correa de mano para transporte fácil. Construido con batería de polímero de litio de alta seguridad.",
+    "fotos": [
+      "powerband201.jpeg",
+      "powerband202.jpeg",
+      "powerband203.jpeg"
+    ]
   }
 ]

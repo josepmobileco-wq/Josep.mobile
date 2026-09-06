@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!grid || !modals) return;
 
-            // URL general de cobro de Mercado Pago
-            const linkPagoGeneral = "https://mpago.li/2aBTmmg";
+            // Link de respaldo general de Mercado Pago
+            const linkRespaldo = "https://mpago.li/2aBTmmg";
 
             productos.forEach(prod => {
+                const enlacePago = prod.link_pago ? prod.link_pago : linkRespaldo;
+
                 // 1. Tarjeta del catálogo
                 const card = document.createElement('div');
                 card.className = 'product-card';
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 grid.appendChild(card);
 
-                // 2. Modal de producto con doble botón de pago
+                // 2. Modal de producto
                 const radioInputs = prod.fotos.map((img, i) => 
                     `<input type="radio" name="gallery-${prod.id}" id="img${i+1}-${prod.id}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
                 ).join('');
@@ -67,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             
                             <div class="modal-actions" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-                                <a href="${linkPagoGeneral}" target="_blank" class="btn-card" style="background-color: #009ee3; text-align: center; text-decoration: none; color: white;">
+                                <a href="${enlacePago}" target="_blank" class="btn-card" style="background-color: #009ee3; text-align: center; text-decoration: none; color: white;">
                                     💳 Pagar con PSE / Tarjeta (${prod.precio})
                                 </a>
                                 <a href="https://wa.me/573173482040?text=Hola,%20quiero%20comprar%20el%20producto%20${encodeURIComponent(prod.nombre)}" target="_blank" class="btn-card" style="background-color: #25d366; text-align: center; text-decoration: none; color: white;">
@@ -81,4 +83,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         })
         .catch(error => console.error('Error cargando los productos:', error));
+});
+
+// Control directo para cerrar el modal de inmediato sin saltar la pantalla
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('close-modal')) {
+        e.preventDefault();
+        
+        // 1. Busca el modal abierto y lo oculta manualmente
+        const activeModal = e.target.closest('.modal-policy');
+        if (activeModal) {
+            activeModal.style.display = 'none';
+        }
+        
+        // 2. Limpia el id de la URL sin mover el scroll
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+    
+    // Si vuelve a hacer clic en cualquier tarjeta del catálogo, restablece la visibilidad del modal
+    if (e.target.closest('.card-modal-trigger')) {
+        const modalId = e.target.closest('.card-modal-trigger').getAttribute('href');
+        const targetModal = document.querySelector(modalId);
+        if (targetModal) {
+            targetModal.style.display = '';
+        }
+    }
 });
