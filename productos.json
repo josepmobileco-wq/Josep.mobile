@@ -102,9 +102,33 @@
     "corta": "Intercomunicador Q58-Max para casco de moto.",
     "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
     "fotos": [
-      "intercomunicador1.jpeg",
-      "intercomunicador2.jpeg",
-      "intercomunicador3.jpeg"
+      "intercomunicador1.jpg",
+      "intercomunicador2.jpg",
+      "intercomunicador3.jpg"
+    ]
+  },
+      {
+    "id": "Case Space",
+    "nombre": "Case Space Iphone",
+    "precio": "25.000 COP",
+    "corta": "Funda Space Collection Transparente Anti-Caídas Premium — iPhone & Samsung.",
+    "detalles": "Protege tu dispositivo con la elegancia y resistencia de la Space Collection, diseñada con tecnología de amortiguación en bordes, acrílico transparente anti-amarilleo y botones independientes de excelente respuesta táctil. Disponible para iPhone 11, 11 | 11 Pro | 11 Pro Max, iPhone 12, 12 mini | 12 | 12 Pro Max, iPhone 13, 13 | 13 Pro | 13 Pro Max, iPhone 14, 14 | 14 Pro Max, iPhone 15, 15 | 15 Pro | 15 Pro Max, iPhone 16 | 16 Pro | 16 Pro Max, iPhone 17 | 17 Pro | 17 Pro Max,Samsung Galaxy A35 | Galaxy S26 Ultra",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ]
+  },
+        {
+    "id": "Case con anillo",
+    "nombre": "Case con anillo Iphone",
+    "precio": "25.000 COP",
+    "corta": "Funda Glitter Mágica con Anillo Soporte y Espejo Integrado.",
+    "detalles": "Luce un estilo brillante y funcional con esta funda Glitter Mágica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protección total con máximo brillo. Disponible: IPHONE 17",
+    "fotos": [
+      "estucheconanillo1.jpeg",
+      "estucheconanillo2.jpeg",
+      "estucheconanillo3.jpeg"
     ]
   }
 ]
