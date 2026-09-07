@@ -12,180 +12,233 @@
     <!-- Encabezado y Navegación -->
     <header class="header">
         <nav class="navbar">
-            <a href="#inicio" class="logo">Josep<span>.mobile</span></a>
+<a href="#inicio" class="logo">
+    <img src="logojosepmobile.jpeg" alt="Josep.mobile" class="logo-img">
+    <span class="logo-text">Josep<span class="highlight">.mobile</span></span>
+</a>
             
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+<ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li class="nav-search">
+        <input type="text" id="buscador-productos" placeholder="Buscar..." onkeyup="filtrarProductos()">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </li>
+</ul>
 
-            <div class="header-social-buttons">
-                <a href="https://www.instagram.com/josep.mobile/" target="_blank" class="btn-header-social btn-instagram">
+            <div class="header-actions">
+                <a href="https://www.instagram.com/josep.mobile/" target="_blank" class="btn-header-social btn-instagram" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
                 </a>
-                <a href="https://wa.me/573173482040" target="_blank" class="btn-header-social btn-whatsapp-header">
+                <a href="https://wa.me/573173482040" target="_blank" class="btn-header-social btn-whatsapp-header" aria-label="WhatsApp">
                     <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
                 </a>
+                
+                <!-- Icono del Carrito Integrado -->
+                <button class="cart-icon-container" id="cart-icon" aria-label="Ver carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!-- Sección Hero -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <span class="badge">Tienda Oficial</span>
-            <h1>Josep.mobile</h1>
-            <p>ACCESORIOS PARA CELULAR • TECNOLOGÍA. ✨🦾<br>
-            “El toque final para lucir con mucho estilo”🛍️🫟<br>
-            * Pagos contra entrega en Bogotá. 🛵🤝<br>
-            * Envíos nacionales. 🇨🇴🚚</p>
-            <a href="#productos" class="btn-primary">Ver Catálogo</a>
-        </div>
-    </section>
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="badge">Tienda Oficial</span>
+                <h1>Josep.mobile</h1>
+                <p>
+                    ACCESORIOS PARA CELULAR • TECNOLOGÍA ✨🦾<br>
+                    “El toque final para lucir con mucho estilo” 🛍️🫟<br>
+                    * Pagos contra entrega en Bogotá 🛵🤝<br>
+                    * Envíos nacionales 🚚
+                </p>
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+            </div>
+        </section>
 
-    <!-- Sección de Productos -->
-    <section id="productos" class="products">
-        <h2 class="section-title">Nuestros Productos</h2>
-        <!-- JavaScript insertará aquí las tarjetas de productos -->
-        <div id="product-grid" class="product-grid"></div>
-        <!-- JavaScript insertará aquí los modales de la galería de cada producto -->
-        <div id="modals-container"></div>
-    </section>
+        <!-- Sección de Productos -->
+        <section id="productos" class="products">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div id="product-grid" class="product-grid"></div>
+            <div id="modals-container"></div>
+        </section>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="about">
-        <div class="about-container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <p>En <strong>josep.mobile</strong> nos apasiona ofrecer la mejor calidad en accesorios y tecnología para tu celular. Nos especializamos en brindarte la máxima protección y funcionalidad sin perder el estilo de tu dispositivo.</p>
-            
-            <div class="about-features">
-                <div class="feature-card">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Ubicación</h3>
-                    <p>Estamos ubicados en la ciudad de <strong>Bogotá</strong>.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <h3>Envíos Flexibles</h3>
-                    <p>Contamos con servicio de <strong>envío contra entrega</strong> dentro de todo Bogotá para mayor comodidad y seguridad en tu compra.</p>
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="about">
+            <div class="about-container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p>En <strong>josep.mobile</strong> nos apasiona ofrecer la mejor calidad en accesorios y tecnología para tu celular. Nos especializamos en brindarte la máxima protección y funcionalidad sin perder el estilo de tu dispositivo.</p>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Ubicación</h3>
+                        <p>Estamos ubicados en la ciudad de <strong>Bogotá</strong>.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Envíos Flexibles</h3>
+                        <p>Contamos con servicio de <strong>envío contra entrega</strong> dentro de todo Bogotá para mayor comodidad y seguridad en tu compra.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Contacto</h2>
-            <p>¿Tienes dudas o quieres realizar un pedido especial? Escríbenos directamente o contáctanos por nuestras redes.</p>
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Contacto</h2>
+                <p>¿Tienes dudas o quieres realizar un pedido especial? Escríbenos directamente o contáctanos por nuestras redes.</p>
 
-            <div class="contact-cards">
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>Correo Electrónico</h3>
-                    <a href="mailto:josep.mobile.co@gmail.com">josep.mobile.co@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <h3>WhatsApp Directo</h3>
-                    <a href="https://wa.me/573173482040" target="_blank">+57 317 348 2040</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-instagram"></i>
-                    <h3>Instagram</h3>
-                    <a href="https://www.instagram.com/josep.mobile/" target="_blank">@josep.mobile</a>
+                <div class="contact-cards">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Correo Electrónico</h3>
+                        <a href="mailto:josep.mobile.co@gmail.com">josep.mobile.co@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h3>WhatsApp Directo</h3>
+                        <a href="https://wa.me/573173482040" target="_blank" rel="noopener">+57 317 348 2040</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <a href="https://www.instagram.com/josep.mobile/" target="_blank" rel="noopener">@josep.mobile</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/573173482040" class="whatsapp-btn" target="_blank" aria-label="Contacto por WhatsApp">
+    <a href="https://wa.me/573173482040" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Pie de Página Principal -->
     <footer class="footer">
         <p class="slogan">El toque final para ti</p>
-        <div class="quick-links" style="margin: 15px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-            <a href="#modal-envio" style="color: #cb80ff; text-decoration: none; font-size: 0.9rem;">Política de envío</a> |
-            <a href="#modal-reembolso" style="color: #cb80ff; text-decoration: none; font-size: 0.9rem;">Política de reembolso</a> |
-            <a href="#modal-privacidad" style="color: #cb80ff; text-decoration: none; font-size: 0.9rem;">Política de privacidad</a> |
-            <a href="#modal-terminos" style="color: #cb80ff; text-decoration: none; font-size: 0.9rem;">Términos de servicio</a>
+        <div class="quick-links">
+            <a href="#modal-envio">Política de envío</a> |
+            <a href="#modal-reembolso">Política de reembolso</a> |
+            <a href="#modal-privacidad">Política de privacidad</a> |
+            <a href="#modal-terminos">Términos de servicio</a>
         </div>
         <p class="copyright">&copy; 2026 JOSEP.MOBILE - Todos los derechos reservados.</p>
     </footer>
 
-    <!-- MODALES DE POLÍTICAS Y TÉRMINOS -->
-    
-    <!-- MODAL 1: POLÍTICA DE ENVÍO -->
+    <!-- MODALES DE POLÍTICAS -->
     <div id="modal-envio" class="modal-policy">
-        <div class="modal-policy-content" style="background: #1e1b26; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto; position: relative;">
-            <a href="#" class="close-modal">&times;</a>
+        <div class="modal-policy-content">
+            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
             <h2>POLÍTICA DE ENVÍO</h2>
             <h3>Tiempo de entregas</h3>
             <h4>Bogotá</h4>
-            <p>Por compras realizadas de Lunes a Viernes antes de las 2 pm y los sábados antes de la 1 pm, su pedido será entregado de 3 pm a 8 pm del mismo día, si las compras se realizan después de este horario serán entregadas al día siguiente de 3 pm a 8 pm.</p>
+            <p>Por compras realizadas de Lunes a Viernes antes de las 2 pm y los sábados antes de la 1 pm, su pedido será entregado de 3 pm a 8 pm del mismo día.</p>
             <h4>Otras Ciudades</h4>
-            <p>Por compras realizadas de Lunes a Viernes antes de las 5 pm y los sábados antes de la 12 pm, su pedido será enviado el mismo día, si las compras se realizan después de este horario será enviada al día siguiente. Las entregas pueden tardar de 2 a 6 días hábiles.</p>
-            <h4>Nota</h4>
-            <p><strong>No se realizan envíos ni entregas los domingos o días festivos.</strong></p>
+            <p>Por compras realizadas de Lunes a Viernes antes de las 5 pm y los sábados antes de la 12 pm, su pedido será enviado el mismo día. Las entregas pueden tardar de 2 a 6 días hábiles.</p>
+            <p><strong>Nota: No se realizan envíos ni entregas los domingos o días festivos.</strong></p>
         </div>
     </div>
 
-    <!-- MODAL 2: POLÍTICA DE REEMBOLSO -->
     <div id="modal-reembolso" class="modal-policy">
-        <div class="modal-policy-content" style="background: #1e1b26; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto; position: relative;">
-            <a href="#" class="close-modal">&times;</a>
+        <div class="modal-policy-content">
+            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
             <h2>POLÍTICA DE REEMBOLSO</h2>
             <h3>Devoluciones</h3>
             <p>Nuestra política tiene una duración de 30 días. Si 30 días han pasado desde Tu compra, por desgracia no podemos ofrecer un cambio.</p>
             <p>Para ser apto para un cambio, el artículo debe estar sin usar y en las mismas condiciones en que lo recibiste. También debe estar en su embalaje original.</p>
-            <p>Para completar tu devolución, requerimos un recibo, número del pedido o prueba de compra.</p>
-            <p>Hay algunas situaciones donde no se puede garantizar cambio:</p>
-            <ul>
-                <li>Que el producto no se encuentre en su condición original, que esté dañado o le falten partes por razones ajenas a nosotros.</li>
-                <li>Que el producto sea devuelto más de 30 días después de la compra.</li>
-            </ul>
-            <h3>Artículos en oferta</h3>
-            <p>Desafortunadamente los productos en oferta no pueden ser reembolsados, excepto por defectos de fábrica.</p>
             <h3>Intercambios</h3>
-            <p>Solo reemplazamos artículos que estén defectuosos o dañados de fábrica. Si necesitas cambiarlo, comunícate al número de WhatsApp <strong>3173482040</strong>.</p>
-            <h3>Envío</h3>
-            <p>Para devolver tu producto, debes enviarlo al conjunto Molinos del Milenio Etapa 1, Bloque 7 Apartamento 101.</p>
-            <p>Serás responsable por el pago de los costos de envío para el retorno del artículo. Los costos de envío no son reembolsables.</p>
+            <p>Solo reemplazamos artículos que estén defectuosos o dañados de fábrica. Comunicarse al WhatsApp <strong>3173482040</strong>.</p>
         </div>
     </div>
 
-    <!-- MODAL 3: POLÍTICA DE PRIVACIDAD -->
     <div id="modal-privacidad" class="modal-policy">
-        <div class="modal-policy-content" style="background: #1e1b26; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto; position: relative;">
-            <a href="#" class="close-modal">&times;</a>
+        <div class="modal-policy-content">
+            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
             <h2>DECLARACIÓN DE PRIVACIDAD</h2>
             <h3>SECCIÓN 1 - ¿QUÉ HACEMOS CON TU INFORMACIÓN?</h3>
             <p>Cuando compras algo de nuestra tienda, recolectamos la información personal que nos das tales como nombre, dirección y correo electrónico.</p>
-            <h3>SECCIÓN 2 - CONSENTIMIENTO</h3>
-            <p>Cuando nos provees tu información personal para completar una transacción, implicamos que aceptas la recolección y uso por esa razón específica solamente.</p>
-            <h3>PREGUNTAS E INFORMACIÓN DE CONTACTO</h3>
-            <p>Si quieres acceder, corregir o borrar cualquier información personal, contacta a <strong>josep.mobile.co@gmail.com</strong>.</p>
         </div>
     </div>
 
-    <!-- MODAL 4: TÉRMINOS DE SERVICIO -->
     <div id="modal-terminos" class="modal-policy">
-        <div class="modal-policy-content" style="background: #1e1b26; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto; position: relative;">
-            <a href="#" class="close-modal">&times;</a>
+        <div class="modal-policy-content">
+            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
             <h2>TÉRMINOS DE SERVICIO</h2>
             <h3>INFORMACIÓN GENERAL</h3>
             <p>Este sitio web es operado por JOSEP.MOBILE. En todo el sitio, los términos “nosotros”, “nos” y “nuestro” se refieren a JOSEP.MOBILE.</p>
-            <h3>LEY APLICABLE</h3>
-            <p>Estas Condiciones del servicio y cualquier acuerdo aparte se regirán e interpretarán en conformidad con las leyes de Colombia.</p>
         </div>
     </div>
 
-    <!-- Carga dinámica desde el archivo externo de JavaScript -->
+    <!-- Panel Lateral del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Tu Carrito de Compras</h2>
+                <button id="close-cart" class="close-cart" aria-label="Cerrar Carrito">&times;</button>
+            </div>
+            
+            <div id="cart-items" class="cart-items-list"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cart-total-price">$0 COP</strong>
+                </div>
+                <div class="cart-actions">
+                    <a id="btn-pay-mp" href="#" target="_blank" class="btn-card btn-mp">
+                        💳 Pagar Todo con PSE / Tarjeta
+                    </a>
+                    <a id="btn-pay-wa" href="#" target="_blank" class="btn-card btn-wa">
+                        💬 Pedir Carrito por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <!-- Dentro de tu header / nav -->
+<div class="header-actions">
+    <!-- ... otros botones ... -->
+    
+    <button class="cart-icon-container" id="cart-icon" type="button" aria-label="Ver carrito">
+        🛒 <span id="cart-count">0</span>
+    </button>
+</div>
+<!-- Modal del Carrito Simplificado -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <div class="cart-header">
+      <h2>Tu Carrito</h2>
+      <span id="close-cart" class="close-cart">&times;</span>
+    </div>
+    
+    <!-- Lista simplificada: Solo Nombre y Precio al lado -->
+    <div id="cart-items" class="cart-items-list"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cart-total-price">$0 COP</strong>
+      </div>
+      <div class="cart-actions">
+        <a id="btn-pay-mp" href="#" target="_blank" class="btn-card btn-mp">
+            💳 Pagar por Link (PSE / Tarjeta)
+        </a>
+        <a id="btn-pay-wa" href="#" target="_blank" class="btn-card btn-wa">
+            💬 Pedir Carrito por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
