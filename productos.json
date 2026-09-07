@@ -59,16 +59,18 @@
       "audifonosmtf3.jpeg"
     ]
   },
-  {
+ {
     "id": "Power-Bank-30000mAh",
     "nombre": "Power Bank MTF 30.000 mAh",
     "precio": "130.000 COP",
     "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
     "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
     "fotos": [
-      "powerband301.jpeg"
+      "powerband301.jpeg",
+      "powerband302.jpeg",
+      "powerband303.jpeg"
     ]
-  },
+},
   {
     "id": "Power-Bank-Magsafe-10000mAh",
     "nombre": "Power Bank MagSafe MTF 10.000 mAh",
@@ -91,6 +93,18 @@
       "powerband201.jpeg",
       "powerband202.jpeg",
       "powerband203.jpeg"
+    ]
+  },
+    {
+    "id": "Intercomunicadores Q58MAX",
+    "nombre": "Intercomunicador Q58MAX",
+    "precio": "90.000 COP",
+    "corta": "Intercomunicador Q58-Max para casco de moto.",
+    "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
+    "fotos": [
+      "intercomunicador1.jpeg",
+      "intercomunicador2.jpeg",
+      "intercomunicador3.jpeg"
     ]
   }
 ]
