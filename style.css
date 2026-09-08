@@ -7,6 +7,8 @@
     --text-muted: #555555;
     --whatsapp-color: #25d366;
     --instagram-color: #e1306c;
+    --accent-light: #cb80ff;
+    --gold: #ffd166;
     --transition: all 0.3s ease;
 }
 
@@ -28,6 +30,19 @@ body {
     overflow-x: hidden;
 }
 
+/* Utilitario: oculto visualmente pero accesible para lectores de pantalla */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* Encabezado */
 .header {
     background-color: rgba(15, 5, 29, 0.95);
@@ -46,6 +61,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 1.5rem;
+    gap: 1rem;
 }
 
 .logo {
@@ -66,7 +82,7 @@ body {
 }
 
 .logo span.highlight {
-    color: #cb80ff;
+    color: var(--accent-light);
 }
 
 /* Enlaces de Navegación */
@@ -74,6 +90,7 @@ body {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -85,29 +102,10 @@ body {
 }
 
 .nav-links a:hover {
-    color: #cb80ff;
+    color: var(--accent-light);
 }
 
-/* Esto ya lo tienes, NO lo toques */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.nav-links a:hover {
-    color: #cb80ff;
-}
-
-/* Esto lo agregas nuevo, justo debajo */
+/* Buscador */
 .nav-search {
     position: relative;
     display: flex;
@@ -156,10 +154,11 @@ body {
     display: none !important;
 }
 
-/* Botones de Redes en el Encabezado */
-.header-social-buttons {
+/* Acciones del encabezado: redes + carrito en una sola fila */
+.header-actions {
     display: flex;
-    gap: 0.8rem;
+    align-items: center;
+    gap: 0.7rem;
 }
 
 .btn-header-social {
@@ -173,6 +172,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .btn-instagram {
@@ -191,6 +191,52 @@ body {
 .btn-whatsapp-header:hover {
     background-color: #1eb956;
     transform: translateY(-2px);
+}
+
+/* Botón del Carrito */
+.cart-icon-container {
+    background-color: #ff9900;
+    color: #111111;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    user-select: none;
+}
+
+.cart-icon-container:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+#cart-count {
+    background: #d32f2f;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    min-width: 22px;
+    text-align: center;
+}
+
+/* Botón Hamburguesa (móvil) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.3rem;
 }
 
 /* Sección Hero */
@@ -282,6 +328,11 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
 .card-modal-trigger {
     text-decoration: none;
     color: inherit;
@@ -323,7 +374,7 @@ body {
     color: var(--text-muted);
     font-size: 0.85rem;
     margin-bottom: 1rem;
-    min-height: 40px; 
+    min-height: 40px;
 }
 
 .price {
@@ -351,54 +402,123 @@ body {
     background-color: var(--bg-purple-dark);
 }
 
-/* Modales / Ventanas Emergentes */
-.modal-policy {
+/* Backdrop común para modales */
+.modal-backdrop {
     display: none;
     position: fixed;
-    z-index: 10000;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
-    overflow-y: auto;
+    z-index: 9990;
 }
 
-.modal-policy:target {
-    display: flex;
+.modal-backdrop.active {
+    display: block;
+}
+
+/* Contenedor de modales de política y producto */
+.modal-policy {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
+    padding: 20px;
 }
 
+.modal-policy.active {
+    display: flex;
+}
+
+/* Modales de Políticas */
+.modal-policy-content {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    width: 100%;
+    max-width: 700px;
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    max-height: 85vh;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.modal-policy-content h2 {
+    font-size: 1.4rem;
+    color: var(--bg-purple-dark);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.modal-policy-content h3 {
+    font-size: 1.05rem;
+    color: var(--bg-purple-dark);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.modal-policy-content h4 {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-top: 0.8rem;
+}
+
+.modal-policy-content p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+}
+
+.modal-policy-content strong {
+    color: var(--bg-purple-dark);
+}
+
+/* Botón de cerrar (reset de estilos de <button>) */
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #999999;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+.close-modal:hover {
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Modal de Producto */
 .modal-product-container {
     background-color: #1e1b26;
     color: #ffffff;
-    width: 95%;
+    width: 100%;
     max-width: 950px;
     border-radius: 16px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     position: relative;
-    margin: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.close-modal {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #aaaaaa;
-    font-size: 28px;
-    text-decoration: none;
-    z-index: 10;
-    transition: var(--transition);
-}
-
-.close-modal:hover {
-    color: #ffffff;
+    max-height: 90vh;
 }
 
 /* Galería del Modal */
@@ -438,7 +558,6 @@ body {
     display: none;
 }
 
-/* Selección de imágenes en Modal */
 .modal-product-media input.gallery-selector:nth-of-type(1):checked ~ .main-image-view .img-1,
 .modal-product-media input.gallery-selector:nth-of-type(2):checked ~ .main-image-view .img-2,
 .modal-product-media input.gallery-selector:nth-of-type(3):checked ~ .main-image-view .img-3 {
@@ -477,7 +596,7 @@ body {
 .modal-product-media input.gallery-selector:nth-of-type(1):checked ~ .gallery-thumbnails label[for*="1"],
 .modal-product-media input.gallery-selector:nth-of-type(2):checked ~ .gallery-thumbnails label[for*="2"],
 .modal-product-media input.gallery-selector:nth-of-type(3):checked ~ .gallery-thumbnails label[for*="3"] {
-    border-color: #cb80ff;
+    border-color: var(--accent-light);
     opacity: 1;
 }
 
@@ -499,7 +618,7 @@ body {
 
 .modal-price {
     font-size: 1.3rem;
-    color: #cb80ff;
+    color: var(--accent-light);
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -655,111 +774,39 @@ body {
 .slogan {
     font-size: 1.4rem;
     font-style: italic;
-    color: #cb80ff;
+    color: var(--accent-light);
     margin-bottom: 0.5rem;
     font-weight: 700;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.8rem 0;
+}
+
+.quick-links a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.quick-links a:hover {
+    color: var(--accent-light);
+    text-decoration: underline;
+}
+
+.separator {
+    color: #666666;
 }
 
 .copyright {
     color: #aaaaaa;
     font-size: 0.85rem;
-}
-
-/* Adaptación Móvil */
-@media (max-width: 850px) {
-    .nav-links {
-        display: none;
-    }
-    .header-social-buttons span {
-        display: none;
-    }
-    .hero-content h1 {
-        font-size: 2.3rem;
-    }
-    .modal-product-container {
-        flex-direction: column;
-        max-height: 85vh;
-        overflow-y: auto;
-    }
-    .modal-product-details {
-        padding: 20px;
-    }
-}
-/* Contenedor Flotante Superior Derecho para alinear los botones */
-.top-actions-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px; /* Espaciado uniforme entre botones */
-  z-index: 1000;
-}
-
-/* Botón del Carrito con Alto Contraste (Amarillo/Naranja sobre texto oscuro) */
-.cart-icon-container {
-  background-color: #ff9900; /* Color brillante que destaca en fondoss claros y oscuros */
-  color: #111111;
-  padding: 10px 18px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  user-select: none;
-}
-
-.cart-icon-container:hover {
-  background-color: #e68a00;
-  transform: translateY(-2px);
-}
-
-/* Contador dentro del botón */
-#cart-count {
-  background: #d32f2f;
-  color: #ffffff;
-  border-radius: 50%;
-  padding: 2px 7px;
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-/* Estilo unificado para botones flotantes de Redes / WhatsApp */
-.btn-social-top {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease;
-}
-
-.btn-social-top:hover {
-  transform: translateY(-2px);
-}
-
-.btn-social-top.instagram {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.btn-social-top.whatsapp {
-  background-color: #25d366;
-}
-/* Alineación perfecta en una sola fila */
-.header-social-buttons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 /* Modal del Carrito Lateral */
@@ -799,7 +846,7 @@ body {
     align-items: center;
     background-color: var(--bg-purple-dark);
     padding: 18px 20px;
-    border-bottom: 2px solid #ffd166;
+    border-bottom: 2px solid var(--gold);
 }
 
 .cart-header h2 {
@@ -811,17 +858,17 @@ body {
 .close-cart {
     font-size: 28px;
     cursor: pointer;
-    color: #1a1a1a;
-    background-color: var(--bg-purple-dark);
+    color: #ffffff;
+    background: none;
     border: none;
-    transition: color 0.2s ease, background-color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
     line-height: 1;
-    padding: 0;
+    padding: 0 4px;
 }
 
 .close-cart:hover {
-    color: #000000;
-    background-color: var(--bg-purple-dark);
+    color: var(--gold);
+    transform: scale(1.15);
 }
 
 .cart-items-list {
@@ -832,7 +879,7 @@ body {
     background-color: rgba(255, 255, 255, 0.03);
 }
 
-/* Filas simplificadas: Nombre a la izquierda, Precio e ítem a la derecha */
+/* Filas simplificadas del carrito */
 .cart-item-simple {
     display: flex;
     justify-content: space-between;
@@ -849,6 +896,8 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     color: #ffffff;
+    flex: 1;
+    margin-right: 10px;
 }
 
 .cart-item-price-controls {
@@ -859,11 +908,37 @@ body {
 
 .cart-item-price {
     font-weight: bold;
-    color: #ffd166;
+    color: var(--gold);
+}
+
+.qty-btn {
+    background: rgba(255, 209, 102, 0.15);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.qty-btn:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+.cart-empty {
+    color: #aaaaaa;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
 }
 
 .cart-footer {
-    border-top: 2px solid #ffd166;
+    border-top: 2px solid var(--gold);
     background-color: var(--bg-purple-dark);
     padding: 18px 20px;
 }
@@ -877,5 +952,111 @@ body {
 }
 
 .cart-total strong {
-    color: #ffd166;
+    color: var(--gold);
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-actions .btn-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+.btn-mp {
+    background-color: #3483fa;
+}
+
+.btn-mp:hover {
+    background-color: #2a6fd1;
+}
+
+.btn-wa {
+    background-color: var(--whatsapp-color);
+}
+
+.btn-wa:hover {
+    background-color: #1eb956;
+}
+
+/* Adaptación Móvil */
+@media (max-width: 850px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(15, 5, 29, 0.98);
+        padding: 1.5rem;
+        gap: 1rem;
+        border-bottom: 2px solid var(--bg-purple-neon);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .btn-header-social span.btn-text-desktop {
+        display: none;
+    }
+
+    .btn-header-social {
+        padding: 0.45rem 0.6rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .modal-product-container {
+        flex-direction: column;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+
+    .modal-product-details {
+        padding: 20px;
+    }
+
+    .main-image-view {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .cart-icon-container {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .modal-policy-content {
+        padding: 1.5rem;
+    }
 }

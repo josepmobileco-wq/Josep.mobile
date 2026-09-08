@@ -1,7 +1,58 @@
-let carrito = JSON.parse(localStorage.getItem('carrito_josep')) || [];
+// ====== Carrito persistente ======
+function cargarCarrito() {
+    try {
+        const data = JSON.parse(localStorage.getItem('carrito_josep'));
+        if (Array.isArray(data)) {
+            return data
+                .filter(i => i && typeof i.id === 'string')
+                .map(i => ({
+                    id: String(i.id),
+                    nombre: String(i.nombre || 'Producto'),
+                    precioTexto: String(i.precioTexto || ''),
+                    precioNum: Number(i.precioNum) || 0,
+                    cantidad: Math.max(1, Number(i.cantidad) || 1)
+                }));
+        }
+    } catch (e) {
+        /* datos corruptos: ignorar */
+    }
+    return [];
+}
 
+let carrito = cargarCarrito();
+
+const LINK_PAGO_RESPALDO = 'https://mpago.li/2aBTmmg';
+
+// ====== Utilidades ======
+function esc(texto) {
+    return String(texto)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
+// ====== Control de modales (clases .active + backdrop) ======
+function abrirModal(modal) {
+    if (!modal) return;
+    modal.classList.add('active');
+    const backdrop = document.getElementById('modal-backdrop');
+    if (backdrop) backdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function cerrarModales() {
+    document.querySelectorAll('.modal-policy.active').forEach(m => {
+        m.classList.remove('active');
+    });
+    const backdrop = document.getElementById('modal-backdrop');
+    if (backdrop) backdrop.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// ====== Carga de productos ======
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Cargar productos desde JSON
     fetch('./productos.json')
         .then(response => {
             if (!response.ok) throw new Error(`Error HTTP! estado: ${response.status}`);
@@ -13,70 +64,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!grid || !modals) return;
 
-            const linkRespaldo = "https://mpago.li/2aBTmmg";
-
             productos.forEach(prod => {
-                const enlacePago = prod.link_pago ? prod.link_pago : linkRespaldo;
+                const enlacePago = prod.link_pago ? prod.link_pago : LINK_PAGO_RESPALDO;
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
                 card.className = 'product-card';
                 card.innerHTML = `
-                    <a href="#producto-${prod.id}" class="card-modal-trigger">
+                    <a href="#producto-${esc(prod.id)}" class="card-modal-trigger">
                         <div class="product-image">
-                            <img src="${prod.fotos[0]}" alt="${prod.nombre}">
+                            <img src="${esc(prod.fotos[0])}" alt="${esc(prod.nombre)}" loading="lazy">
                         </div>
                         <div class="product-info">
-                            <h3>${prod.nombre}</h3>
-                            <p class="short-desc">${prod.corta}</p>
-                            <span class="price">${prod.precio}</span>
+                            <h3>${esc(prod.nombre)}</h3>
+                            <p class="short-desc">${esc(prod.corta)}</p>
+                            <span class="price">${esc(prod.precio)}</span>
                             <span class="btn-card">Ver opciones de compra</span>
                         </div>
                     </a>
                 `;
                 grid.appendChild(card);
 
-                // Modal del detalle de producto
-                const radioInputs = prod.fotos.map((img, i) => 
-                    `<input type="radio" name="gallery-${prod.id}" id="img${i+1}-${prod.id}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
+                // Modal de detalle de producto
+                const radioInputs = prod.fotos.map((img, i) =>
+                    `<input type="radio" name="gallery-${esc(prod.id)}" id="img${i + 1}-${esc(prod.id)}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
                 ).join('');
 
-                const displayImages = prod.fotos.map((img, i) => 
-                    `<img src="${img}" class="img-display img-${i+1}" alt="Foto ${i+1}">`
+                const displayImages = prod.fotos.map((img, i) =>
+                    `<img src="${esc(img)}" class="img-display img-${i + 1}" alt="${esc(prod.nombre)} - Foto ${i + 1}">`
                 ).join('');
 
-                const thumbnails = prod.fotos.map((img, i) => 
-                    `<label for="img${i+1}-${prod.id}" class="thumb-item"><img src="${img}" alt="Vista ${i+1}"></label>`
+                const thumbnails = prod.fotos.map((img, i) =>
+                    `<label for="img${i + 1}-${esc(prod.id)}" class="thumb-item"><img src="${esc(img)}" alt="Vista ${i + 1}"></label>`
                 ).join('');
 
                 const modal = document.createElement('div');
-                modal.id = `producto-${prod.id}`;
+                modal.id = `producto-${esc(prod.id)}`;
                 modal.className = 'modal-policy';
+                modal.setAttribute('role', 'dialog');
+                modal.setAttribute('aria-modal', 'true');
+                modal.setAttribute('aria-label', prod.nombre);
                 modal.innerHTML = `
                     <div class="modal-product-container">
-                        <a href="#" class="close-modal">&times;</a>
+                        <button type="button" class="close-modal" aria-label="Cerrar">&times;</button>
                         <div class="modal-product-media">
                             ${radioInputs}
                             <div class="main-image-view">${displayImages}</div>
                             <div class="gallery-thumbnails">${thumbnails}</div>
                         </div>
                         <div class="modal-product-details">
-                            <h2>${prod.nombre}</h2>
-                            <p class="modal-price">${prod.precio}</p>
+                            <h2>${esc(prod.nombre)}</h2>
+                            <p class="modal-price">${esc(prod.precio)}</p>
                             <div class="modal-description">
                                 <h4>DETALLES DEL PRODUCTO</h4>
-                                <p>${prod.detalles}</p>
+                                <p>${esc(prod.detalles)}</p>
                             </div>
-                            
-                            <div class="modal-actions" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-                                <button class="btn-card btn-add-cart" data-id="${prod.id}" data-nombre="${prod.nombre}" data-precio="${prod.precio}" style="background-color: #ff9900; color: white; border: none; cursor: pointer;">
-                                    🛒 Agregar al Carrito
+
+                            <div class="modal-actions">
+                                <button type="button" class="btn-card btn-add-cart" data-id="${esc(prod.id)}" data-nombre="${esc(prod.nombre)}" data-precio="${esc(prod.precio)}">
+                                    <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
                                 </button>
-                                <a href="${enlacePago}" target="_blank" class="btn-card" style="background-color: #009ee3; text-align: center; text-decoration: none; color: white;">
-                                    💳 Pagar con PSE / Tarjeta (${prod.precio})
+                                <a href="${esc(enlacePago)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-mp-link">
+                                    <i class="fa-solid fa-credit-card"></i> Pagar con PSE / Tarjeta (${esc(prod.precio)})
                                 </a>
-                                <a href="https://wa.me/573173482040?text=Hola,%20quiero%20comprar%20el%20producto%20${encodeURIComponent(prod.nombre)}" target="_blank" class="btn-card" style="background-color: #25d366; text-align: center; text-decoration: none; color: white;">
-                                    💬 Comprar directo por WhatsApp
+                                <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + prod.nombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
+                                    <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
                             </div>
                         </div>
@@ -88,31 +140,71 @@ document.addEventListener('DOMContentLoaded', () => {
             actualizarCarritoUI();
         })
         .catch(error => console.error('Error cargando los productos:', error));
+
+    // Menú hamburguesa en móvil
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            const abierto = navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', abierto);
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 });
 
-// Eventos delegados globales
+// ====== Eventos delegados globales ======
 document.addEventListener('click', (e) => {
-    // 1. Cierre de modal de producto
-    if (e.target.classList.contains('close-modal')) {
+    // 1. Cierre de cualquier modal (botón ×)
+    const closeBtn = e.target.closest('.close-modal');
+    if (closeBtn) {
         e.preventDefault();
-        const activeModal = e.target.closest('.modal-policy');
-        if (activeModal) activeModal.style.display = 'none';
-        history.pushState("", document.title, window.location.pathname + window.location.search);
+        cerrarModales();
+        history.pushState('', document.title, window.location.pathname + window.location.search);
+        return;
     }
 
-    // 2. Apertura de modal de producto
-    if (e.target.closest('.card-modal-trigger')) {
-        const modalId = e.target.closest('.card-modal-trigger').getAttribute('href');
+    // 2. Apertura de modal de producto (tarjeta del catálogo)
+    const trigger = e.target.closest('.card-modal-trigger');
+    if (trigger) {
+        e.preventDefault();
+        const modalId = trigger.getAttribute('href');
+        const targetModal = document.getElementById(modalId.replace('#', ''));
+        abrirModal(targetModal);
+        return;
+    }
+
+    // 3. Apertura de modales de políticas (links del footer)
+    const policyLink = e.target.closest('.quick-links a');
+    if (policyLink) {
+        const modalId = policyLink.getAttribute('href');
         const targetModal = document.querySelector(modalId);
-        if (targetModal) targetModal.style.display = 'flex';
+        if (targetModal && targetModal.classList.contains('modal-policy')) {
+            e.preventDefault();
+            abrirModal(targetModal);
+            history.pushState('', document.title, window.location.pathname + window.location.search);
+        }
+        return;
     }
 
-    // 3. Botón Agregar al Carrito
-    if (e.target.classList.contains('btn-add-cart')) {
-        const id = e.target.getAttribute('data-id');
-        const nombre = e.target.getAttribute('data-nombre');
-        const precioTexto = e.target.getAttribute('data-precio');
-        const precioNum = parseInt(precioTexto.replace(/[^0-9]/g, ''), 10);
+    // 4. Cierre al hacer clic en el backdrop
+    if (e.target.classList.contains('modal-backdrop')) {
+        cerrarModales();
+        return;
+    }
+
+    // 5. Agregar al carrito
+    const addBtn = e.target.closest('.btn-add-cart');
+    if (addBtn) {
+        const id = addBtn.getAttribute('data-id');
+        const nombre = addBtn.getAttribute('data-nombre');
+        const precioTexto = addBtn.getAttribute('data-precio');
+        const precioNum = parseInt(precioTexto.replace(/[^0-9]/g, ''), 10) || 0;
 
         const existe = carrito.find(item => item.id === id);
         if (existe) {
@@ -122,46 +214,79 @@ document.addEventListener('click', (e) => {
         }
 
         guardarYActualizar();
-        
+
         // Cerrar modal del producto y abrir carrito
-        const activeModal = e.target.closest('.modal-policy');
-        if (activeModal) activeModal.style.display = 'none';
-        history.pushState("", document.title, window.location.pathname + window.location.search);
-        
+        cerrarModales();
+        history.pushState('', document.title, window.location.pathname + window.location.search);
+
         const cartModal = document.getElementById('cart-modal');
         if (cartModal) cartModal.classList.add('active');
+        return;
     }
 
-    // 4. Abrir panel de carrito
-    if (e.target.id === 'cart-icon' || e.target.closest('#cart-icon')) {
-        e.preventDefault();
+    // 6. Abrir panel de carrito
+    if (e.target.closest('#cart-icon')) {
         const cartModal = document.getElementById('cart-modal');
         if (cartModal) cartModal.classList.add('active');
+        return;
     }
 
-    // 5. Cerrar panel de carrito
-    if (e.target.id === 'close-cart' || e.target === document.getElementById('cart-modal')) {
+    // 7. Cerrar panel de carrito
+    if (e.target.closest('#close-cart') || e.target === document.getElementById('cart-modal')) {
         const cartModal = document.getElementById('cart-modal');
         if (cartModal) cartModal.classList.remove('active');
+        return;
     }
 
-    // 6. Eliminar o Restar unidad del ítem del carrito
-    const btnRemove = e.target.closest('.btn-remove-item');
-    if (btnRemove) {
-        const id = btnRemove.getAttribute('data-id');
+    // 8. Aumentar cantidad
+    const btnPlus = e.target.closest('.btn-qty-plus');
+    if (btnPlus) {
+        const id = btnPlus.getAttribute('data-id');
         const producto = carrito.find(item => item.id === id);
+        if (producto) {
+            producto.cantidad += 1;
+            guardarYActualizar();
+        }
+        return;
+    }
 
+    // 9. Restar cantidad
+    const btnMinus = e.target.closest('.btn-qty-minus');
+    if (btnMinus) {
+        const id = btnMinus.getAttribute('data-id');
+        const producto = carrito.find(item => item.id === id);
         if (producto) {
             if (producto.cantidad > 1) {
-                producto.cantidad -= 1; // Resta 1 unidad si tiene varias
+                producto.cantidad -= 1;
             } else {
-                carrito = carrito.filter(item => item.id !== id); // Elimina si solo queda 1
+                carrito = carrito.filter(item => item.id !== id);
             }
             guardarYActualizar();
         }
+        return;
+    }
+
+    // 10. Eliminar ítem del carrito
+    const btnRemove = e.target.closest('.btn-remove-item');
+    if (btnRemove) {
+        const id = btnRemove.getAttribute('data-id');
+        carrito = carrito.filter(item => item.id !== id);
+        guardarYActualizar();
     }
 });
 
+// ====== Cerrar con tecla Escape ======
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const cartModal = document.getElementById('cart-modal');
+        if (cartModal && cartModal.classList.contains('active')) {
+            cartModal.classList.remove('active');
+        }
+        cerrarModales();
+    }
+});
+
+// ====== Persistencia y UI del carrito ======
 function guardarYActualizar() {
     localStorage.setItem('carrito_josep', JSON.stringify(carrito));
     actualizarCarritoUI();
@@ -183,16 +308,15 @@ function actualizarCarritoUI() {
     let totalAcumulado = 0;
 
     if (carrito.length === 0) {
-        cartItemsContainer.innerHTML = '<p style="text-align:center; color:#888;">Tu carrito está vacío.</p>';
+        cartItemsContainer.innerHTML = '<p class="cart-empty">Tu carrito está vacío.</p>';
         cartTotalPrice.innerText = '$0 COP';
         if (btnPayWA) btnPayWA.href = '#';
         if (btnPayMP) btnPayMP.href = '#';
         return;
     }
 
-    let msjWhatsApp = "Hola! Quiero realizar el pedido de los siguientes productos:\n\n";
+    let msjWhatsApp = 'Hola! Quiero realizar el pedido de los siguientes productos:\n\n';
 
-    // Muestra Nombre - Precio a la derecha y botón Eliminar
     carrito.forEach(item => {
         const subtotal = item.precioNum * item.cantidad;
         totalAcumulado += subtotal;
@@ -203,10 +327,18 @@ function actualizarCarritoUI() {
         const div = document.createElement('div');
         div.className = 'cart-item-simple';
         div.innerHTML = `
-            <span class="cart-item-name">${item.nombre} ${item.cantidad > 1 ? `<small style="color:#ff9900; font-weight:bold;">(x${item.cantidad})</small>` : ''}</span>
+            <span class="cart-item-name">
+                ${esc(item.nombre)}
+                ${item.cantidad > 1 ? `<small style="color:#ff9900; font-weight:bold;">(x${item.cantidad})</small>` : ''}
+            </span>
             <div class="cart-item-price-controls">
                 <span class="cart-item-price">${subtotalTexto}</span>
-                <button type="button" class="btn-remove-item" data-id="${item.id}" title="Eliminar del carrito" style="background:none; border:none; color:#ff4d4d; font-size:1.2rem; cursor:pointer; font-weight:bold; padding: 0 5px;">&times;</button>
+                <div class="qty-controls" style="display:flex; align-items:center; gap:6px;">
+                    <button type="button" class="qty-btn btn-qty-minus" data-id="${esc(item.id)}" aria-label="Restar unidad">&minus;</button>
+                    <span class="cart-item-qty" style="color:#fff;">${item.cantidad}</span>
+                    <button type="button" class="qty-btn btn-qty-plus" data-id="${esc(item.id)}" aria-label="Sumar unidad">+</button>
+                </div>
+                <button type="button" class="btn-remove-item" data-id="${esc(item.id)}" title="Eliminar del carrito" aria-label="Eliminar ${esc(item.nombre)}">&times;</button>
             </div>
         `;
         cartItemsContainer.appendChild(div);
@@ -216,21 +348,20 @@ function actualizarCarritoUI() {
     cartTotalPrice.innerText = totalFormateado;
 
     msjWhatsApp += `\n*Total a pagar:* ${totalFormateado}`;
-    
-    if (btnPayWA) btnPayWA.href = `https://wa.me/573173482040?text=${encodeURIComponent(msjWhatsApp)}`;
-    if (btnPayMP) btnPayMP.href = "https://mpago.li/2aBTmmg";
+
+    if (btnPayWA) {
+        btnPayWA.href = `https://wa.me/573173482040?text=${encodeURIComponent(msjWhatsApp)}`;
+    }
+    if (btnPayMP) btnPayMP.href = LINK_PAGO_RESPALDO;
 }
 
+// ====== Búsqueda de productos ======
 function filtrarProductos() {
     const texto = document.getElementById('buscador-productos').value.toLowerCase();
     const tarjetas = document.querySelectorAll('.product-card');
 
     tarjetas.forEach(tarjeta => {
         const nombre = tarjeta.querySelector('.product-info h3').textContent.toLowerCase();
-        if (nombre.includes(texto)) {
-            tarjeta.classList.remove('producto-oculto');
-        } else {
-            tarjeta.classList.add('producto-oculto');
-        }
+        tarjeta.classList.toggle('producto-oculto', !nombre.includes(texto));
     });
 }

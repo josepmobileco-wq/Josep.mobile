@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Josep.mobile - Cases y fundas para celular con tecnología. Envíos a toda Colombia, pago contra entrega en Bogotá.">
+    <meta name="keywords" content="cases, fundas, celular, accesorios, tecnología, Bogotá, Colombia">
+    <meta name="author" content="Josep.mobile">
     <title>Josep.mobile | Cases y Fundas para celular mas Tecnología</title>
+    <link rel="icon" type="image/jpeg" href="logojosepmobile.jpeg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,36 +16,40 @@
     <!-- Encabezado y Navegación -->
     <header class="header">
         <nav class="navbar">
-<a href="#inicio" class="logo">
-    <img src="logojosepmobile.jpeg" alt="Josep.mobile" class="logo-img">
-    <span class="logo-text">Josep<span class="highlight">.mobile</span></span>
-</a>
-            
-<ul class="nav-links">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li class="nav-search">
-        <input type="text" id="buscador-productos" placeholder="Buscar..." onkeyup="filtrarProductos()">
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    </li>
-</ul>
+            <a href="#inicio" class="logo" aria-label="Josep.mobile - Inicio">
+                <img src="logojosepmobile.jpeg" alt="Logo Josep.mobile" class="logo-img">
+                <span class="logo-text">Josep<span class="highlight">.mobile</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="nav-search">
+                    <label for="buscador-productos" class="visually-hidden">Buscar productos</label>
+                    <input type="text" id="buscador-productos" placeholder="Buscar..." onkeyup="filtrarProductos()">
+                    <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                </li>
+            </ul>
 
             <div class="header-actions">
-                <a href="https://www.instagram.com/josep.mobile/" target="_blank" class="btn-header-social btn-instagram" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+                <a href="https://www.instagram.com/josep.mobile/" target="_blank" rel="noopener noreferrer" class="btn-header-social btn-instagram" aria-label="Síguenos en Instagram">
+                    <i class="fa-brands fa-instagram"></i> <span class="btn-text-desktop">Instagram</span>
                 </a>
-                <a href="https://wa.me/573173482040" target="_blank" class="btn-header-social btn-whatsapp-header" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+                <a href="https://wa.me/573173482040" target="_blank" rel="noopener noreferrer" class="btn-header-social btn-whatsapp-header" aria-label="Contactar por WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i> <span class="btn-text-desktop">WhatsApp</span>
                 </a>
-                
-                <!-- Icono del Carrito Integrado -->
-                <button class="cart-icon-container" id="cart-icon" aria-label="Ver carrito de compras">
+                <button class="cart-icon-container" id="cart-icon" type="button" aria-label="Ver carrito de compras">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cart-count">0</span>
+                    <span id="cart-count" class="cart-count" aria-live="polite">0</span>
                 </button>
             </div>
+
+            <!-- Botón hamburguesa para móvil -->
+            <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -52,10 +60,10 @@
                 <span class="badge">Tienda Oficial</span>
                 <h1>Josep.mobile</h1>
                 <p>
-                    ACCESORIOS PARA CELULAR • TECNOLOGÍA ✨🦾<br>
-                    “El toque final para lucir con mucho estilo” 🛍️🫟<br>
-                    * Pagos contra entrega en Bogotá 🛵🤝<br>
-                    * Envíos nacionales 🚚
+                    Cases y Fundas para celular mas Tecnología<br>
+                    "El toque final para lucir con mucho estilo"<br>
+                    * Pagos contra entrega en Bogotá<br>
+                    * Envíos nacionales
                 </p>
                 <a href="#productos" class="btn-primary">Ver Catálogo</a>
             </div>
@@ -76,12 +84,12 @@
                 
                 <div class="about-features">
                     <div class="feature-card">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         <h3>Ubicación</h3>
                         <p>Estamos ubicados en la ciudad de <strong>Bogotá</strong>.</p>
                     </div>
                     <div class="feature-card">
-                        <i class="fa-solid fa-truck-fast"></i>
+                        <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
                         <h3>Envíos Flexibles</h3>
                         <p>Contamos con servicio de <strong>envío contra entrega</strong> dentro de todo Bogotá para mayor comodidad y seguridad en tu compra.</p>
                     </div>
@@ -97,19 +105,19 @@
 
                 <div class="contact-cards">
                     <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         <h3>Correo Electrónico</h3>
                         <a href="mailto:josep.mobile.co@gmail.com">josep.mobile.co@gmail.com</a>
                     </div>
                     <div class="contact-item">
-                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                         <h3>WhatsApp Directo</h3>
-                        <a href="https://wa.me/573173482040" target="_blank" rel="noopener">+57 317 348 2040</a>
+                        <a href="https://wa.me/573173482040" target="_blank" rel="noopener noreferrer">+57 317 348 2040</a>
                     </div>
                     <div class="contact-item">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                         <h3>Instagram</h3>
-                        <a href="https://www.instagram.com/josep.mobile/" target="_blank" rel="noopener">@josep.mobile</a>
+                        <a href="https://www.instagram.com/josep.mobile/" target="_blank" rel="noopener noreferrer">@josep.mobile</a>
                     </div>
                 </div>
             </div>
@@ -117,40 +125,45 @@
     </main>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/573173482040" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+    <a href="https://wa.me/573173482040" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- Pie de Página Principal -->
+    <!-- Pie de Página -->
     <footer class="footer">
         <p class="slogan">El toque final para ti</p>
-        <div class="quick-links">
-            <a href="#modal-envio">Política de envío</a> |
-            <a href="#modal-reembolso">Política de reembolso</a> |
-            <a href="#modal-privacidad">Política de privacidad</a> |
+        <nav class="quick-links" aria-label="Políticas legales">
+            <a href="#modal-envio">Política de envío</a>
+            <span class="separator" aria-hidden="true">|</span>
+            <a href="#modal-reembolso">Política de reembolso</a>
+            <span class="separator" aria-hidden="true">|</span>
+            <a href="#modal-privacidad">Política de privacidad</a>
+            <span class="separator" aria-hidden="true">|</span>
             <a href="#modal-terminos">Términos de servicio</a>
-        </div>
+        </nav>
         <p class="copyright">&copy; 2026 JOSEP.MOBILE - Todos los derechos reservados.</p>
     </footer>
 
-    <!-- MODALES DE POLÍTICAS -->
-    <div id="modal-envio" class="modal-policy">
+    <!-- Modales de Políticas con backdrop -->
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <div id="modal-envio" class="modal-policy" role="dialog" aria-labelledby="modal-envio-title" aria-modal="true">
         <div class="modal-policy-content">
-            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
-            <h2>POLÍTICA DE ENVÍO</h2>
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="modal-envio-title">POLÍTICA DE ENVÍO</h2>
             <h3>Tiempo de entregas</h3>
             <h4>Bogotá</h4>
             <p>Por compras realizadas de Lunes a Viernes antes de las 2 pm y los sábados antes de la 1 pm, su pedido será entregado de 3 pm a 8 pm del mismo día.</p>
             <h4>Otras Ciudades</h4>
-            <p>Por compras realizadas de Lunes a Viernes antes de las 5 pm y los sábados antes de la 12 pm, su pedido será enviado el mismo día. Las entregas pueden tardar de 2 a 6 días hábiles.</p>
+            <p>Por compras realizadas de Lunes a Viernes antes de las 5 pm y los sábados antes de las 12 pm, su pedido será enviado el mismo día. Las entregas pueden tardar de 2 a 6 días hábiles.</p>
             <p><strong>Nota: No se realizan envíos ni entregas los domingos o días festivos.</strong></p>
         </div>
     </div>
 
-    <div id="modal-reembolso" class="modal-policy">
+    <div id="modal-reembolso" class="modal-policy" role="dialog" aria-labelledby="modal-reembolso-title" aria-modal="true">
         <div class="modal-policy-content">
-            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
-            <h2>POLÍTICA DE REEMBOLSO</h2>
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="modal-reembolso-title">POLÍTICA DE REEMBOLSO</h2>
             <h3>Devoluciones</h3>
             <p>Nuestra política tiene una duración de 30 días. Si 30 días han pasado desde Tu compra, por desgracia no podemos ofrecer un cambio.</p>
             <p>Para ser apto para un cambio, el artículo debe estar sin usar y en las mismas condiciones en que lo recibiste. También debe estar en su embalaje original.</p>
@@ -159,30 +172,30 @@
         </div>
     </div>
 
-    <div id="modal-privacidad" class="modal-policy">
+    <div id="modal-privacidad" class="modal-policy" role="dialog" aria-labelledby="modal-privacidad-title" aria-modal="true">
         <div class="modal-policy-content">
-            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
-            <h2>DECLARACIÓN DE PRIVACIDAD</h2>
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="modal-privacidad-title">DECLARACIÓN DE PRIVACIDAD</h2>
             <h3>SECCIÓN 1 - ¿QUÉ HACEMOS CON TU INFORMACIÓN?</h3>
             <p>Cuando compras algo de nuestra tienda, recolectamos la información personal que nos das tales como nombre, dirección y correo electrónico.</p>
         </div>
     </div>
 
-    <div id="modal-terminos" class="modal-policy">
+    <div id="modal-terminos" class="modal-policy" role="dialog" aria-labelledby="modal-terminos-title" aria-modal="true">
         <div class="modal-policy-content">
-            <a href="#footer" class="close-modal" aria-label="Cerrar">&times;</a>
-            <h2>TÉRMINOS DE SERVICIO</h2>
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="modal-terminos-title">TÉRMINOS DE SERVICIO</h2>
             <h3>INFORMACIÓN GENERAL</h3>
-            <p>Este sitio web es operado por JOSEP.MOBILE. En todo el sitio, los términos “nosotros”, “nos” y “nuestro” se refieren a JOSEP.MOBILE.</p>
+            <p>Este sitio web es operado por JOSEP.MOBILE. En todo el sitio, los términos "nosotros", "nos" y "nuestro" se refieren a JOSEP.MOBILE.</p>
         </div>
     </div>
 
-    <!-- Panel Lateral del Carrito -->
-    <div id="cart-modal" class="cart-modal">
+    <!-- Panel Lateral del Carrito (único) -->
+    <div id="cart-modal" class="cart-modal" aria-hidden="true">
         <div class="cart-content">
             <div class="cart-header">
                 <h2>Tu Carrito de Compras</h2>
-                <button id="close-cart" class="close-cart" aria-label="Cerrar Carrito">&times;</button>
+                <button id="close-cart" class="close-cart" aria-label="Cerrar carrito">&times;</button>
             </div>
             
             <div id="cart-items" class="cart-items-list"></div>
@@ -193,11 +206,11 @@
                     <strong id="cart-total-price">$0 COP</strong>
                 </div>
                 <div class="cart-actions">
-                    <a id="btn-pay-mp" href="#" target="_blank" class="btn-card btn-mp">
-                        💳 Pagar Todo con PSE / Tarjeta
+                    <a id="btn-pay-mp" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-mp">
+                        <i class="fa-solid fa-credit-card"></i> Pagar con PSE / Tarjeta
                     </a>
-                    <a id="btn-pay-wa" href="#" target="_blank" class="btn-card btn-wa">
-                        💬 Pedir Carrito por WhatsApp
+                    <a id="btn-pay-wa" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir Carrito por WhatsApp
                     </a>
                 </div>
             </div>
@@ -205,40 +218,5 @@
     </div>
 
     <script src="script.js"></script>
-    <!-- Dentro de tu header / nav -->
-<div class="header-actions">
-    <!-- ... otros botones ... -->
-    
-    <button class="cart-icon-container" id="cart-icon" type="button" aria-label="Ver carrito">
-        🛒 <span id="cart-count">0</span>
-    </button>
-</div>
-<!-- Modal del Carrito Simplificado -->
-<div id="cart-modal" class="cart-modal">
-  <div class="cart-content">
-    <div class="cart-header">
-      <h2>Tu Carrito</h2>
-      <span id="close-cart" class="close-cart">&times;</span>
-    </div>
-    
-    <!-- Lista simplificada: Solo Nombre y Precio al lado -->
-    <div id="cart-items" class="cart-items-list"></div>
-
-    <div class="cart-footer">
-      <div class="cart-total">
-        <span>Total:</span>
-        <strong id="cart-total-price">$0 COP</strong>
-      </div>
-      <div class="cart-actions">
-        <a id="btn-pay-mp" href="#" target="_blank" class="btn-card btn-mp">
-            💳 Pagar por Link (PSE / Tarjeta)
-        </a>
-        <a id="btn-pay-wa" href="#" target="_blank" class="btn-card btn-wa">
-            💬 Pedir Carrito por WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 </html>
