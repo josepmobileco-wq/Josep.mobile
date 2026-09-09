@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josepmobileco-wq.github.io/Josep.mobile/sitemap.xml
