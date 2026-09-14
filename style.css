@@ -638,6 +638,51 @@ body {
     margin-bottom: 25px;
 }
 
+.modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.modal-actions .btn-card {
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-add-cart {
+    background-color: #ff9900;
+    color: #111111;
+    font-weight: 800;
+}
+
+.btn-add-cart:hover {
+    background-color: #e68a00;
+    color: #111111;
+}
+
+.btn-mp-link {
+    background-color: #009ee3;
+}
+
+.btn-mp-link:hover {
+    background-color: #0089c4;
+}
+
+.btn-wa-link {
+    background-color: var(--whatsapp-color);
+}
+
+.btn-wa-link:hover {
+    background-color: #1eb956;
+}
+
 .modal-btn-buy {
     width: 100%;
     text-align: center;
@@ -930,6 +975,30 @@ body {
     color: #111;
 }
 
+.cart-item-qty {
+    color: #ffffff;
+    font-weight: 700;
+    min-width: 20px;
+    text-align: center;
+}
+
+.btn-remove-item {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.btn-remove-item:hover {
+    color: #ff0000;
+    transform: scale(1.15);
+}
+
 .cart-empty {
     color: #aaaaaa;
     text-align: center;
@@ -970,6 +1039,177 @@ body {
     font-size: 0.9rem;
     padding: 0.8rem;
     border-radius: 10px;
+}
+
+button.cart-actions .btn-card,
+.cart-actions button.btn-card {
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    color: #ffffff;
+}
+
+button.btn-card:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* ====== Checkout (finalizar compra) ====== */
+.checkout-content {
+    max-width: 560px;
+}
+
+.checkout-steps {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.checkout-steps li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: #f1eef7;
+    border-radius: 20px;
+    padding: 6px 4px;
+}
+
+.checkout-steps li.active {
+    color: #fff;
+    background: var(--bg-purple-neon);
+}
+
+.checkout-resumen {
+    background: #f7f4fc;
+    border: 1px solid #e3d9f5;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.checkout-linea {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    padding: 4px 0;
+    border-bottom: 1px dashed #ddd3f0;
+}
+
+.checkout-linea:last-child {
+    border-bottom: none;
+}
+
+.checkout-linea .co-cant {
+    color: var(--bg-purple-dark);
+    font-weight: 800;
+}
+
+.checkout-linea .co-sub {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-total strong {
+    color: var(--bg-purple-dark);
+    font-size: 1.3rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-field.form-full {
+    grid-column: 1 / -1;
+}
+
+.form-field label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.form-field input {
+    padding: 10px 12px;
+    border: 1.5px solid #d9cdf0;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-field input:focus {
+    border-color: var(--bg-purple-neon);
+}
+
+.form-field input.input-error {
+    border-color: #d32f2f;
+    background: #fff5f5;
+}
+
+.btn-checkout-pay {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.checkout-seguro {
+    text-align: center;
+    font-size: 0.8rem !important;
+    margin-top: 10px;
+}
+
+.confirm-check {
+    text-align: center;
+    font-size: 3rem;
+    color: #25d366;
+    margin-bottom: 0.5rem;
+}
+
+.confirm-check + h2 {
+    text-align: center;
+}
+
+.confirm-ayuda {
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .btn-mp {

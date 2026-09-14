@@ -21,7 +21,19 @@ function cargarCarrito() {
 
 let carrito = cargarCarrito();
 
-const LINK_PAGO_RESPALDO = 'https://mpago.li/2aBTmmg';
+// ====== Configuración Bold (pasarela de pagos) ======
+// 1. Pega aquí tu LLAVE DE IDENTIDAD de Bold (la pública).
+//    Se obtiene en bold.co → Integraciones → Llaves de integración.
+//    Para pruebas usa la de "pruebas"; para cobrar de verdad, la de "producción".
+// 2. NUNCA pongas aquí tu llave secreta: esa vive solo en el Worker.
+const BOLD_API_KEY = 'DgZEEr-yQJ2PZWHB2D3wbplWjoBWmbRiMwyqLeqZAIs';
+
+// 3. URL de tu Cloudflare Worker (ver archivo bold-firma-worker.js).
+//    Ejemplo: 'https://josep-firma-bold.tu-usuario.workers.dev' → pon la tuya real.
+const BOLD_WORKER_URL = 'https://wispy-shadow-8bccjosep-firma-bold.josep-mobile-co.workers.dev';
+
+// URL de tu tienda (debe ser https y coincidir con tu dominio en Bold).
+const TIENDA_URL = 'https://josepmobileco-wq.github.io/Josep.mobile/';
 
 // ====== Utilidades ======
 function esc(texto) {
@@ -32,6 +44,269 @@ function esc(texto) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
 }
+
+// ====== Pagos con Bold (checkout embebido) ======
+function generarOrderId() {
+    const rand = Math.random().toString(36).slice(2, 6);
+    return `JM-${Date.now()}-${rand}`;
+}
+
+function toastBold(mensaje, esError = false) {
+    let el = document.getElementById('toast-bold');
+    if (!el) {
+        el = document.createElement('div');
+        el.id = 'toast-bold';
+        el.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:99999;max-width:92vw;padding:12px 18px;border-radius:12px;font-weight:700;font-size:0.95rem;box-shadow:0 8px 24px rgba(0,0,0,.4);transition:opacity .3s;';
+        document.body.appendChild(el);
+    }
+    el.style.background = esError ? '#d32f2f' : '#5c00a3';
+    el.style.color = '#fff';
+    el.textContent = mensaje;
+    el.style.opacity = '1';
+    clearTimeout(el._t);
+    el._t = setTimeout(() => { el.style.opacity = '0'; }, 4500);
+}
+
+async function pedirFirmaBold(orderId, amount) {
+    if (!BOLD_WORKER_URL || BOLD_WORKER_URL.includes('TU-WORKER')) {
+        throw new Error('Falta configurar la URL del Worker de firmas (BOLD_WORKER_URL en script.js).');
+    }
+    const res = await fetch(BOLD_WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ orderId, amount, currency: 'COP' })
+    });
+    if (!res.ok) throw new Error('El servidor de firmas respondió con error.');
+    const data = await res.json();
+    if (!data.integritySignature) throw new Error(data.error || 'Firma inválida.');
+    return data.integritySignature;
+}
+
+async function abrirCheckoutBold(amount, description, boton, customerData, orderIdPrevio) {
+    if (!BOLD_API_KEY || BOLD_API_KEY.includes('TU_LLAVE')) {
+        toastBold('Falta configurar tu llave de identidad Bold en script.js.', true);
+        return;
+    }
+    if (typeof BoldCheckout === 'undefined') {
+        toastBold('No se pudo cargar la pasarela Bold. Revisa tu conexión.', true);
+        return;
+    }
+    const monto = Number(amount) || 0;
+    if (!Number.isInteger(monto) || monto < 1000) {
+        toastBold('El monto mínimo para pagar con Bold es $1.000 COP.', true);
+        return;
+    }
+
+    const textoOriginal = boton ? boton.innerHTML : '';
+    if (boton) {
+        boton.disabled = true;
+        boton.innerHTML = '<i class="fa-solid fa-lock"></i> Abriendo pago seguro…';
+    }
+
+    try {
+        const orderId = orderIdPrevio || generarOrderId();
+        const integritySignature = await pedirFirmaBold(orderId, monto);
+        const config = {
+            orderId,
+            currency: 'COP',
+            amount: String(monto),
+            apiKey: BOLD_API_KEY,
+            integritySignature,
+            description: String(description || 'Compra Josep.mobile').slice(0, 100),
+            redirectionUrl: TIENDA_URL,
+            renderMode: 'embedded'
+        };
+        if (customerData) config.customerData = JSON.stringify(customerData);
+        const checkout = new BoldCheckout(config);
+        checkout.open();
+        return orderId;
+    } catch (e) {
+        console.error('Bold:', e);
+        toastBold('No se pudo iniciar el pago: ' + e.message, true);
+    } finally {
+        if (boton) {
+            boton.disabled = false;
+            boton.innerHTML = textoOriginal;
+        }
+    }
+}
+
+// ====== Checkout con datos del cliente + alerta de pedido ======
+const WHATSAPP_TIENDA = '573173482040';
+let pedidoPendiente = null; // { items, total, origen }
+
+function formatoCOP(n) {
+    return `$${Number(n || 0).toLocaleString('es-CO')} COP`;
+}
+
+function abrirCheckout(items, total, origen) {
+    pedidoPendiente = { items, total, origen };
+
+    const resumen = document.getElementById('checkout-resumen');
+    resumen.innerHTML = items.map(i => `
+        <div class="checkout-linea">
+            <span><span class="co-cant">x${i.cantidad}</span> ${esc(i.nombre)}</span>
+            <span class="co-sub">${formatoCOP(i.precioNum * i.cantidad)}</span>
+        </div>`).join('');
+    document.getElementById('checkout-total').textContent = formatoCOP(total);
+
+    const modal = document.getElementById('checkout-modal');
+    if (modal) abrirModal(modal);
+}
+
+function leerFormularioCheckout() {
+    const val = (id) => document.getElementById(id).value.trim();
+    const datos = {
+        nombre: val('co-nombre'),
+        correo: val('co-correo'),
+        telefono: val('co-telefono').replace(/[^0-9]/g, ''),
+        direccion: val('co-direccion'),
+        ciudad: val('co-ciudad'),
+        depto: val('co-depto'),
+        notas: val('co-notas')
+    };
+    const errores = [];
+    const marcar = (id, mal) => document.getElementById(id).classList.toggle('input-error', mal);
+
+    const malNombre = datos.nombre.length < 3;
+    marcar('co-nombre', malNombre);
+    if (malNombre) errores.push('nombre');
+
+    const malCorreo = !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(datos.correo);
+    marcar('co-correo', malCorreo);
+    if (malCorreo) errores.push('correo');
+
+    const malTel = !(datos.telefono.length === 10 && datos.telefono.startsWith('3'));
+    marcar('co-telefono', malTel);
+    if (malTel) errores.push('celular (10 dígitos, ej: 3173482040)');
+
+    const malDir = datos.direccion.length < 6;
+    marcar('co-direccion', malDir);
+    if (malDir) errores.push('dirección');
+
+    const malCiudad = datos.ciudad.length < 2;
+    marcar('co-ciudad', malCiudad);
+    if (malCiudad) errores.push('ciudad');
+
+    return { datos, errores };
+}
+
+async function iniciarPagoBold(boton) {
+    if (!pedidoPendiente || !pedidoPendiente.items.length) {
+        toastBold('No hay productos en el pedido.', true);
+        return;
+    }
+    const { datos, errores } = leerFormularioCheckout();
+    if (errores.length) {
+        toastBold('Revisa estos campos: ' + errores.join(', ') + '.', true);
+        return;
+    }
+
+    const orderId = generarOrderId();
+    const draft = {
+        orderId,
+        items: pedidoPendiente.items,
+        total: pedidoPendiente.total,
+        origen: pedidoPendiente.origen,
+        cliente: datos,
+        fecha: new Date().toISOString()
+    };
+    try {
+        localStorage.setItem('pedido_bold_' + orderId, JSON.stringify(draft));
+    } catch (e) { /* almacenamiento lleno: se sigue sin borrador */ }
+
+    const descripcion = pedidoPendiente.origen === 'carrito'
+        ? `Compra Josep.mobile (${pedidoPendiente.items.reduce((a, i) => a + i.cantidad, 0)} art.)`
+        : pedidoPendiente.items[0].nombre;
+    const customerData = {
+        email: datos.correo,
+        fullName: datos.nombre,
+        phone: datos.telefono,
+        dialCode: '+57'
+    };
+    await abrirCheckoutBold(pedidoPendiente.total, descripcion, boton, customerData, orderId);
+}
+
+function mensajePedidoWhatsApp(draft, estadoTx) {
+    const c = draft.cliente;
+    const lineas = draft.items.map(i =>
+        `- ${i.nombre} (x${i.cantidad}): $${(i.precioNum * i.cantidad).toLocaleString('es-CO')} COP`
+    ).join('\n');
+    const estadoTxt = estadoTx === 'approved' ? 'APROBADO (Bold)' : estadoTx.toUpperCase();
+    return `🛍️ *NUEVO PEDIDO - JOSEP.MOBILE*\n` +
+        `🧾 Pedido: ${draft.orderId}\n` +
+        `💳 Estado: ${estadoTxt}\n` +
+        `--------------------------\n` +
+        `👤 *Cliente:* ${c.nombre}\n` +
+        `📧 ${c.correo}\n` +
+        `📱 ${c.telefono}\n` +
+        `📍 ${c.direccion}, ${c.ciudad}${c.depto ? ' (' + c.depto + ')' : ''}\n` +
+        (c.notas ? `📝 Notas: ${c.notas}\n` : '') +
+        `--------------------------\n` +
+        `*PRODUCTOS:*\n${lineas}\n` +
+        `--------------------------\n` +
+        `*TOTAL: $${draft.total.toLocaleString('es-CO')} COP*`;
+}
+
+function mostrarConfirmacion(draft, estadoTx) {
+    const resumen = document.getElementById('confirm-resumen');
+    const lineas = draft.items.map(i => `
+        <div class="checkout-linea">
+            <span><span class="co-cant">x${i.cantidad}</span> ${esc(i.nombre)}</span>
+            <span class="co-sub">${formatoCOP(i.precioNum * i.cantidad)}</span>
+        </div>`).join('');
+    resumen.innerHTML = `
+        <div class="checkout-linea"><span>🧾 Pedido</span><span class="co-sub">${esc(draft.orderId)}</span></div>
+        ${lineas}
+        <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(draft.cliente.direccion)}, ${esc(draft.cliente.ciudad)}</span></div>
+        <div class="checkout-linea"><span><strong>TOTAL PAGADO</strong></span><span class="co-sub">${formatoCOP(draft.total)}</span></div>`;
+
+    const urlWA = `https://wa.me/${WHATSAPP_TIENDA}?text=${encodeURIComponent(mensajePedidoWhatsApp(draft, estadoTx))}`;
+    document.getElementById('btn-enviar-pedido').href = urlWA;
+
+    const modal = document.getElementById('confirm-modal');
+    if (modal) abrirModal(modal);
+}
+
+// Aviso tras volver de Bold (?bold-order-id=...&bold-tx-status=...)
+function manejarRetornoBold() {
+    const params = new URLSearchParams(window.location.search);
+    const orderId = params.get('bold-order-id');
+    const estadoTx = params.get('bold-tx-status');
+    if (!orderId || !estadoTx) return;
+
+    // Limpiar la URL para no reprocesar al recargar
+    history.replaceState('', document.title, window.location.pathname);
+
+    let draft = null;
+    try {
+        draft = JSON.parse(localStorage.getItem('pedido_bold_' + orderId) || 'null');
+    } catch (e) { draft = null; }
+
+    if (estadoTx === 'approved' && draft) {
+        if (draft.origen === 'carrito') {
+            carrito = [];
+            guardarYActualizar();
+        }
+        try { localStorage.removeItem('pedido_bold_' + orderId); } catch (e) {}
+        mostrarConfirmacion(draft, estadoTx);
+    } else if (estadoTx === 'approved') {
+        toastBold(`¡Pago aprobado! Pedido ${orderId}. Te contactaremos por WhatsApp para el envío.`);
+    } else if (estadoTx === 'pending') {
+        toastBold(`Tu pago (${orderId}) quedó pendiente. Te avisaremos cuando se confirme.`);
+    } else {
+        toastBold(`El pago (${orderId}) no fue aprobado. Puedes intentarlo de nuevo.`, true);
+    }
+}
+
+// Envío del formulario checkout → pagar con Bold
+document.addEventListener('submit', (e) => {
+    if (e.target && e.target.id === 'checkout-form') {
+        e.preventDefault();
+        const boton = document.getElementById('btn-confirmar-pago');
+        iniciarPagoBold(boton);
+    }
+});
 
 // ====== Control de modales (clases .active + backdrop) ======
 function abrirModal(modal) {
@@ -53,6 +328,7 @@ function cerrarModales() {
 
 // ====== Carga de productos ======
 document.addEventListener('DOMContentLoaded', () => {
+    manejarRetornoBold();
     fetch('./productos.json')
         .then(response => {
             if (!response.ok) throw new Error(`Error HTTP! estado: ${response.status}`);
@@ -65,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!grid || !modals) return;
 
             productos.forEach(prod => {
-                const enlacePago = prod.link_pago ? prod.link_pago : LINK_PAGO_RESPALDO;
+                const precioNumProd = parseInt(String(prod.precio).replace(/[^0-9]/g, ''), 10) || 0;
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
@@ -124,9 +400,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <button type="button" class="btn-card btn-add-cart" data-id="${esc(prod.id)}" data-nombre="${esc(prod.nombre)}" data-precio="${esc(prod.precio)}">
                                     <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
                                 </button>
-                                <a href="${esc(enlacePago)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-mp-link">
-                                    <i class="fa-solid fa-credit-card"></i> Pagar con PSE / Tarjeta (${esc(prod.precio)})
-                                </a>
+                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-precio-num="${precioNumProd}" data-nombre="${esc(prod.nombre)}">
+                                    <i class="fa-solid fa-credit-card"></i> Comprar ahora (${esc(prod.precio)})
+                                </button>
                                 <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + prod.nombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
                                     <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
@@ -238,6 +514,37 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 7b. Comprar UN producto (abre formulario y luego Bold)
+    const btnBoldProd = e.target.closest('.btn-bold-producto');
+    if (btnBoldProd) {
+        const monto = parseInt(btnBoldProd.getAttribute('data-precio-num'), 10) || 0;
+        const nombre = btnBoldProd.getAttribute('data-nombre') || 'Producto Josep.mobile';
+        if (monto <= 0) {
+            toastBold('Precio no disponible para este producto.', true);
+            return;
+        }
+        cerrarModales();
+        abrirCheckout([{ nombre, cantidad: 1, precioNum: monto }], monto, 'producto');
+        return;
+    }
+
+    // 7c. Finalizar compra del CARRITO (formulario y luego Bold)
+    if (e.target.closest('#btn-pay-mp')) {
+        e.preventDefault();
+        const btn = e.target.closest('#btn-pay-mp');
+        const total = parseInt(btn.getAttribute('data-total-num'), 10) || 0;
+        if (carrito.length === 0 || total <= 0) {
+            toastBold('Tu carrito está vacío.', true);
+            return;
+        }
+        const items = carrito.map(i => ({ nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum }));
+        cerrarModales();
+        const cartModal = document.getElementById('cart-modal');
+        if (cartModal) cartModal.classList.remove('active');
+        abrirCheckout(items, total, 'carrito');
+        return;
+    }
+
     // 8. Aumentar cantidad
     const btnPlus = e.target.closest('.btn-qty-plus');
     if (btnPlus) {
@@ -311,7 +618,7 @@ function actualizarCarritoUI() {
         cartItemsContainer.innerHTML = '<p class="cart-empty">Tu carrito está vacío.</p>';
         cartTotalPrice.innerText = '$0 COP';
         if (btnPayWA) btnPayWA.href = '#';
-        if (btnPayMP) btnPayMP.href = '#';
+        if (btnPayMP) btnPayMP.setAttribute('data-total-num', '0');
         return;
     }
 
@@ -352,7 +659,8 @@ function actualizarCarritoUI() {
     if (btnPayWA) {
         btnPayWA.href = `https://wa.me/573173482040?text=${encodeURIComponent(msjWhatsApp)}`;
     }
-    if (btnPayMP) btnPayMP.href = LINK_PAGO_RESPALDO;
+    // Total dinámico para el checkout Bold (firma generada por el Worker)
+    if (btnPayMP) btnPayMP.setAttribute('data-total-num', String(totalAcumulado));
 }
 
 // ====== Búsqueda de productos ======

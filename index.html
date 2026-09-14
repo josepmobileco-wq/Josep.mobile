@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS9JQP5RY7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GS9JQP5RY7');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Josep.mobile - Cases y fundas para celular con tecnología. Envíos a toda Colombia, pago contra entrega en Bogotá.">
-    <meta name="keywords" content="cases, fundas, celular, accesorios, tecnología, Bogotá, Colombia">
+    <meta name="description" content="Cases, fundas, audífonos, power banks y tecnología para celular. Pagos contra entrega en Bogotá y envíos a toda Colombia. Josep.mobile, el toque final para lucir con estilo.">
+    <meta name="keywords" content="cases para celular, fundas para celular, power bank, power bank 30000 mAh, audifonos bluetooth, airpods, cargador portatil, accesorios celular, tecnologia, Bogotá, Colombia, envio contra entrega">
     <meta name="author" content="Josep.mobile">
-    <title>Josep.mobile | Cases y Fundas para celular mas Tecnología</title>
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CO-DC">
+    <meta name="geo.placename" content="Bogotá">
+    <meta name="google-site-verification" content="google87a9a3e20d009a02">
+    <title>Josep.mobile | Cases, Fundas, Audífonos y Power Banks para Celular - Bogotá</title>
     <link rel="icon" type="image/jpeg" href="logojosepmobile.jpeg">
+    <link rel="canonical" href="https://josepmobileco-wq.github.io/Josep.mobile/">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Open Graph (redes sociales) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Josep.mobile">
+    <meta property="og:title" content="Josep.mobile | Cases, Fundas, Audífonos y Power Banks para Celular">
+    <meta property="og:description" content="Cases, fundas, audífonos, power banks y tecnología para celular. Pago contra entrega en Bogotá y envíos a toda Colombia.">
+    <meta property="og:url" content="https://josepmobileco-wq.github.io/Josep.mobile/">
+    <meta property="og:image" content="https://josepmobileco-wq.github.io/Josep.mobile/logojosepmobile.jpeg">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Josep.mobile | Cases, Fundas, Audífonos y Power Banks">
+    <meta name="twitter:description" content="Accesorios y tecnología para celular. Envíos a toda Colombia.">
+    <meta name="twitter:image" content="https://josepmobileco-wq.github.io/Josep.mobile/logojosepmobile.jpeg">
+
+    <!-- Datos estructurados: tienda online / negocio local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "OnlineStore",
+        "name": "Josep.mobile",
+        "description": "Cases, fundas, audífonos, power banks y accesorios tecnológicos para celular. Pagos contra entrega en Bogotá y envíos a toda Colombia.",
+        "url": "https://josepmobileco-wq.github.io/Josep.mobile/",
+        "logo": "https://josepmobileco-wq.github.io/Josep.mobile/logojosepmobile.jpeg",
+        "image": "https://josepmobileco-wq.github.io/Josep.mobile/logojosepmobile.jpeg",
+        "currenciesAccepted": "COP",
+        "paymentAccepted": "Efectivo contra entrega, Tarjeta, PSE",
+        "priceRange": "$25.000 - $130.000",
+        "areaServed": "CO",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+57-317-348-2040",
+            "contactType": "customer service",
+            "availableLanguage": "es"
+        },
+        "sameAs": [
+            "https://www.instagram.com/josep.mobile/"
+        ]
+    }
+    </script>
+
+    <!-- Bold Checkout: pasarela de pagos (tarjeta, PSE, Nequi, etc.) -->
+    <script src="https://checkout.bold.co/library/boldPaymentButton.js"></script>
 </head>
 <body>
 
@@ -206,14 +263,91 @@
                     <strong id="cart-total-price">$0 COP</strong>
                 </div>
                 <div class="cart-actions">
-                    <a id="btn-pay-mp" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-mp">
-                        <i class="fa-solid fa-credit-card"></i> Pagar con PSE / Tarjeta
-                    </a>
+                    <button type="button" id="btn-pay-mp" class="btn-card btn-mp" data-total-num="0">
+                        <i class="fa-solid fa-credit-card"></i> Finalizar compra
+                    </button>
                     <a id="btn-pay-wa" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa">
                         <i class="fa-brands fa-whatsapp"></i> Pedir Carrito por WhatsApp
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal Finalizar compra (datos + resumen) -->
+    <div id="checkout-modal" class="modal-policy" role="dialog" aria-labelledby="checkout-title" aria-modal="true">
+        <div class="modal-policy-content checkout-content">
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="checkout-title">Finalizar compra</h2>
+            <ol class="checkout-steps">
+                <li class="active">1. Tus datos</li>
+                <li>2. Pago seguro</li>
+                <li>3. Confirmación</li>
+            </ol>
+
+            <h3>Tu pedido</h3>
+            <div id="checkout-resumen" class="checkout-resumen"></div>
+            <div class="checkout-total">
+                <span>Total a pagar:</span>
+                <strong id="checkout-total">$0 COP</strong>
+            </div>
+
+            <h3>Datos de contacto y envío</h3>
+            <form id="checkout-form" novalidate>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="co-nombre">Nombre completo *</label>
+                        <input type="text" id="co-nombre" placeholder="Ej: María Pérez" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="co-correo">Correo electrónico *</label>
+                        <input type="email" id="co-correo" placeholder="Ej: maria@correo.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="co-telefono">Celular / WhatsApp *</label>
+                        <input type="tel" id="co-telefono" placeholder="Ej: 3173482040" autocomplete="tel" inputmode="numeric" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="co-ciudad">Ciudad *</label>
+                        <input type="text" id="co-ciudad" placeholder="Ej: Bogotá" autocomplete="address-level2" required>
+                    </div>
+                    <div class="form-field form-full">
+                        <label for="co-direccion">Dirección de entrega *</label>
+                        <input type="text" id="co-direccion" placeholder="Ej: Calle 45 #12-30, Apto 201, Barrio..." autocomplete="street-address" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="co-depto">Departamento</label>
+                        <input type="text" id="co-depto" placeholder="Ej: Cundinamarca" autocomplete="address-level1">
+                    </div>
+                    <div class="form-field">
+                        <label for="co-notas">Notas del pedido</label>
+                        <input type="text" id="co-notas" placeholder="Ej: Llamar antes de llegar (opcional)">
+                    </div>
+                </div>
+                <button type="submit" id="btn-confirmar-pago" class="btn-card btn-mp btn-checkout-pay">
+                    <i class="fa-solid fa-lock"></i> Confirmar y pagar con Bold
+                </button>
+                <p class="checkout-seguro"><i class="fa-solid fa-shield-halved"></i> Pago 100% seguro procesado por Bold. No guardamos los datos de tu tarjeta.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Confirmación de pedido -->
+    <div id="confirm-modal" class="modal-policy" role="dialog" aria-labelledby="confirm-title" aria-modal="true">
+        <div class="modal-policy-content checkout-content">
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <div class="confirm-check"><i class="fa-solid fa-circle-check"></i></div>
+            <h2 id="confirm-title">¡Gracias por tu compra!</h2>
+            <ol class="checkout-steps">
+                <li>1. Tus datos</li>
+                <li>2. Pago seguro</li>
+                <li class="active">3. Confirmación</li>
+            </ol>
+            <div id="confirm-resumen" class="checkout-resumen"></div>
+            <p class="confirm-ayuda">Toca el botón para enviarnos tu pedido por WhatsApp y lo alistamos de inmediato. Guarda tu número de pedido.</p>
+            <a id="btn-enviar-pedido" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa btn-checkout-pay">
+                <i class="fa-brands fa-whatsapp"></i> Enviar pedido por WhatsApp
+            </a>
         </div>
     </div>
 
