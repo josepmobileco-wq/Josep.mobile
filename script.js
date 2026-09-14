@@ -67,6 +67,19 @@ function toastBold(mensaje, esError = false) {
     el._t = setTimeout(() => { el.style.opacity = '0'; }, 4500);
 }
 
+// Bold rechaza descripciones que parezcan URL (ej: "Josep.mobile").
+// Esta función las deja seguras: sin puntos de dominio ni enlaces.
+function sanitizarDescripcion(texto) {
+    return String(texto || 'Compra Josep mobile')
+        .replace(/https?:\/\/\S+/gi, '')
+        .replace(/www\.\S+/gi, '')
+        .replace(/josep\.mobile/gi, 'Josep mobile')
+        .replace(/([A-Za-z])\.([A-Za-z])/g, '$1 $2')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 100) || 'Compra Josep mobile';
+}
+
 async function pedirFirmaBold(orderId, amount) {
     if (!BOLD_WORKER_URL || BOLD_WORKER_URL.includes('TU-WORKER')) {
         throw new Error('Falta configurar la URL del Worker de firmas (BOLD_WORKER_URL en script.js).');
@@ -112,7 +125,7 @@ async function abrirCheckoutBold(amount, description, boton, customerData, order
             amount: String(monto),
             apiKey: BOLD_API_KEY,
             integritySignature,
-            description: String(description || 'Compra Josep.mobile').slice(0, 100),
+            description: sanitizarDescripcion(description),
             redirectionUrl: TIENDA_URL,
             renderMode: 'embedded'
         };
