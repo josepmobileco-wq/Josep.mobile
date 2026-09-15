@@ -21,6 +21,19 @@ function cargarCarrito() {
 
 let carrito = cargarCarrito();
 
+// Catálogo cargado (para validar stock). Sin campo stock = disponible.
+let CATALOGO = [];
+function stockDe(id) {
+    const p = CATALOGO.find(x => x.id === id);
+    if (!p || p.stock === undefined || p.stock === null) return Infinity;
+    return Number(p.stock) || 0;
+}
+const IMG_FALLBACK = 'logojosepmobile.jpeg';
+function fotoSegura(prod, i) {
+    const f = (prod.fotos && prod.fotos[i]) || IMG_FALLBACK;
+    return esc(f);
+}
+
 // ====== Configuración Bold (pasarela de pagos) ======
 // 1. Pega aquí tu LLAVE DE IDENTIDAD de Bold (la pública).
 //    Se obtiene en bold.co → Integraciones → Llaves de integración.
@@ -237,6 +250,20 @@ async function iniciarPagoBold(boton) {
         phone: datos.telefono,
         dialCode: '+57'
     };
+    // Registra el pedido en el Worker para que el POS descuente stock al aprobarse.
+    // No bloquea el pago si falla (el POS lo sincroniza después).
+    try {
+        fetch(BOLD_WORKER_URL.replace(/\/$/, '') + '/registrar-pedido', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                orderId,
+                items: pedidoPendiente.items.map(i => ({ id: i.id || '', nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum })),
+                total: pedidoPendiente.total,
+                cliente: { nombre: datos.nombre, telefono: datos.telefono, correo: datos.correo }
+            })
+        }).catch(() => {});
+    } catch (e) { /* silencioso */ }
     await abrirCheckoutBold(pedidoPendiente.total, descripcion, boton, customerData, orderId);
 }
 
@@ -353,38 +380,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!grid || !modals) return;
 
+            CATALOGO = productos;
+
             productos.forEach(prod => {
                 const precioNumProd = parseInt(String(prod.precio).replace(/[^0-9]/g, ''), 10) || 0;
+                const hayStock = stockDe(prod.id) > 0;
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
-                card.className = 'product-card';
+                card.className = 'product-card' + (hayStock ? '' : ' sin-stock');
                 card.innerHTML = `
                     <a href="#producto-${esc(prod.id)}" class="card-modal-trigger">
                         <div class="product-image">
-                            <img src="${esc(prod.fotos[0])}" alt="${esc(prod.nombre)}" loading="lazy">
+                            <img src="${fotoSegura(prod, 0)}" alt="${esc(prod.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">
+                            ${hayStock ? '' : '<span class="agotado-badge">Agotado</span>'}
                         </div>
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
                             <p class="short-desc">${esc(prod.corta)}</p>
                             <span class="price">${esc(prod.precio)}</span>
-                            <span class="btn-card">Ver opciones de compra</span>
+                            <span class="btn-card">${hayStock ? 'Ver opciones de compra' : 'Agotado'}</span>
                         </div>
                     </a>
                 `;
                 grid.appendChild(card);
 
                 // Modal de detalle de producto
-                const radioInputs = prod.fotos.map((img, i) =>
+                const fotos = (prod.fotos && prod.fotos.length) ? prod.fotos : [IMG_FALLBACK];
+                const radioInputs = fotos.map((img, i) =>
                     `<input type="radio" name="gallery-${esc(prod.id)}" id="img${i + 1}-${esc(prod.id)}" ${i === 0 ? 'checked' : ''} class="gallery-selector">`
                 ).join('');
-
-                const displayImages = prod.fotos.map((img, i) =>
-                    `<img src="${esc(img)}" class="img-display img-${i + 1}" alt="${esc(prod.nombre)} - Foto ${i + 1}">`
+                const displayImages = fotos.map((img, i) =>
+                    `<img src="${esc(img)}" class="img-display img-${i + 1}" alt="${esc(prod.nombre)} - Foto ${i + 1}" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">`
                 ).join('');
 
-                const thumbnails = prod.fotos.map((img, i) =>
-                    `<label for="img${i + 1}-${esc(prod.id)}" class="thumb-item"><img src="${esc(img)}" alt="Vista ${i + 1}"></label>`
+                const thumbnails = fotos.map((img, i) =>
+                    `<label for="img${i + 1}-${esc(prod.id)}" class="thumb-item"><img src="${esc(img)}" alt="Vista ${i + 1}" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'"></label>`
                 ).join('');
 
                 const modal = document.createElement('div');
@@ -410,12 +441,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
 
                             <div class="modal-actions">
+                                ${stockDe(prod.id) > 0 ? `
                                 <button type="button" class="btn-card btn-add-cart" data-id="${esc(prod.id)}" data-nombre="${esc(prod.nombre)}" data-precio="${esc(prod.precio)}">
                                     <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
                                 </button>
-                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-precio-num="${precioNumProd}" data-nombre="${esc(prod.nombre)}">
+                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-id="${esc(prod.id)}" data-precio-num="${precioNumProd}" data-nombre="${esc(prod.nombre)}">
                                     <i class="fa-solid fa-credit-card"></i> Comprar ahora (${esc(prod.precio)})
-                                </button>
+                                </button>` : `
+                                <button type="button" class="btn-card" disabled>
+                                    <i class="fa-solid fa-ban"></i> Agotado
+                                </button>`}
                                 <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + prod.nombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
                                     <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
@@ -487,13 +522,20 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 5. Agregar al carrito
+    // 5. Agregar al carrito (con tope de stock)
     const addBtn = e.target.closest('.btn-add-cart');
     if (addBtn) {
         const id = addBtn.getAttribute('data-id');
         const nombre = addBtn.getAttribute('data-nombre');
         const precioTexto = addBtn.getAttribute('data-precio');
         const precioNum = parseInt(precioTexto.replace(/[^0-9]/g, ''), 10) || 0;
+
+        const stock = stockDe(id);
+        const enCarrito = carrito.filter(i => i.id === id).reduce((a, i) => a + i.cantidad, 0);
+        if (enCarrito + 1 > stock) {
+            toastBold(stock <= 0 ? 'Producto agotado.' : `Solo quedan ${stock} unidades.`, true);
+            return;
+        }
 
         const existe = carrito.find(item => item.id === id);
         if (existe) {
@@ -530,14 +572,19 @@ document.addEventListener('click', (e) => {
     // 7b. Comprar UN producto (abre formulario y luego Bold)
     const btnBoldProd = e.target.closest('.btn-bold-producto');
     if (btnBoldProd) {
+        const idProd = btnBoldProd.getAttribute('data-id');
         const monto = parseInt(btnBoldProd.getAttribute('data-precio-num'), 10) || 0;
         const nombre = btnBoldProd.getAttribute('data-nombre') || 'Producto Josep.mobile';
         if (monto <= 0) {
             toastBold('Precio no disponible para este producto.', true);
             return;
         }
+        if (stockDe(idProd) < 1) {
+            toastBold('Producto agotado.', true);
+            return;
+        }
         cerrarModales();
-        abrirCheckout([{ nombre, cantidad: 1, precioNum: monto }], monto, 'producto');
+        abrirCheckout([{ id: idProd, nombre, cantidad: 1, precioNum: monto }], monto, 'producto');
         return;
     }
 
@@ -550,7 +597,15 @@ document.addEventListener('click', (e) => {
             toastBold('Tu carrito está vacío.', true);
             return;
         }
-        const items = carrito.map(i => ({ nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum }));
+        const sinStock = carrito.find(i => {
+            const enCarrito = carrito.filter(x => x.id === i.id).reduce((a, x) => a + x.cantidad, 0);
+            return enCarrito > stockDe(i.id);
+        });
+        if (sinStock) {
+            toastBold(`"${sinStock.nombre}" ya no tiene stock suficiente.`, true);
+            return;
+        }
+        const items = carrito.map(i => ({ id: i.id, nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum }));
         cerrarModales();
         const cartModal = document.getElementById('cart-modal');
         if (cartModal) cartModal.classList.remove('active');
@@ -558,12 +613,17 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 8. Aumentar cantidad
+    // 8. Aumentar cantidad (con tope de stock)
     const btnPlus = e.target.closest('.btn-qty-plus');
     if (btnPlus) {
         const id = btnPlus.getAttribute('data-id');
         const producto = carrito.find(item => item.id === id);
         if (producto) {
+            const stock = stockDe(id);
+            if (producto.cantidad + 1 > stock) {
+                toastBold(stock <= 0 ? 'Producto agotado.' : `Solo quedan ${stock} unidades.`, true);
+                return;
+            }
             producto.cantidad += 1;
             guardarYActualizar();
         }

@@ -349,6 +349,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+/* Producto sin stock (sincronizado con el POS) */
+.product-card.sin-stock {
+    opacity: 0.75;
+}
+
+.product-card.sin-stock:hover {
+    transform: none;
+}
+
+.agotado-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #d32f2f;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .product-image img {
