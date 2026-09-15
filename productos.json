@@ -1,146 +1,145 @@
 [
   {
     "id": "airmax",
-    "nombre": "Audífonos Air Max",
-    "precio": "120.000 COP",
-    "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
-    "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
+    "nombre": "AudÃ­fonos Air Max",
+    "precio": "$120.000 COP",
+    "corta": "AudÃ­fonos inalÃ¡mbricos Bluetooth premium con cancelaciÃ³n de ruido...",
+    "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelaciÃ³n activa de ruido y Audio Espacial con seguimiento dinÃ¡mico de la cabeza.",
     "fotos": [
       "airmax.jpg",
       "airmax2.jpg",
       "airmax3.jpg"
-    ]
+    ],
+    "stock": 2
   },
   {
     "id": "airpodspro2",
     "nombre": "Airpods Pro 2",
-    "precio": "70.000 COP",
-    "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
-    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
+    "precio": "$70.000 COP",
+    "corta": "Vive el sonido sin lÃ­mites. CancelaciÃ³n activa de ruido hasta 2x mÃ¡s potente...",
+    "detalles": "CancelaciÃ³n activa de ruido hasta 2x mÃ¡s potente, modo ambiente adaptable y audio espacial personalizado.",
     "fotos": [
       "airpodspro2.jpg",
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
-    ]
+    ],
+    "stock": 2
   },
   {
     "id": "airpods-pro-3",
-    "nombre": "Audífonos Airpods Pro 3",
-    "precio": "75.000 COP",
-    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
-    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
+    "nombre": "AudÃ­fonos Airpods Pro 3",
+    "precio": "$75.000 COP",
+    "corta": "CancelaciÃ³n de ruido potente, excelente autonomÃ­a y mÃ¡xima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. CancelaciÃ³n activa de ruido mejorada, ajuste ergonÃ³mico con mÃºltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de baterÃ­a continua. El equilibrio perfecto entre calidad de audio y comodidad para el dÃ­a a dÃ­a.",
     "fotos": [
       "airpods-pro-3.jpg",
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
-    ]
+    ],
+    "stock": 5
   },
   {
     "id": "airpods-pro-3-Traductores",
-    "nombre": "Audífonos Airpods Pro 3 Con Traducción",
-    "precio": "85.000 COP",
-    "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
-    "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
+    "nombre": "AudÃ­fonos Airpods Pro 3 Con TraducciÃ³n",
+    "precio": "$85.000 COP",
+    "corta": "TraducciÃ³n en vivo en tiempo real, cancelaciÃ³n de ruido y sonido de alta fidelidad.",
+    "detalles": "Lleva la tecnologÃ­a al siguiente nivel con funciÃ³n de TraducciÃ³n en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la mÃ¡xima cancelaciÃ³n activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomÃ­a.",
     "fotos": [
       "airpodspro3t.jpg",
       "airpodspro31t.jpg",
       "airpodspro32t.jpg"
-    ]
+    ],
+    "stock": 2
   },
   {
     "id": "Audifonos-smarwach-mtf",
-    "nombre": "Audífonos Smartwatch MTF M-65",
-    "precio": "130.000 COP",
-    "corta": "MTF M-65 – Auriculares Inalámbricos Open Ear con Pantalla LCD.",
-    "detalles": "Diseño Open Ear: se ajustan por fuera del oído con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control táctil para reproducir/pausar música y gestionar llamadas. Batería con hasta 6 horas de uso continuo y 100 horas en modo standby. Conexión Bluetooth 6.0 con alcance de 10 metros. Batería de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentación en caja individual.",
+    "nombre": "AudÃ­fonos Smartwatch MTF M-65",
+    "precio": "$130.000 COP",
+    "corta": "MTF M-65 â€“ Auriculares InalÃ¡mbricos Open Ear con Pantalla LCD.",
+    "detalles": "DiseÃ±o Open Ear: se ajustan por fuera del oÃ­do con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control tÃ¡ctil para reproducir/pausar mÃºsica y gestionar llamadas. BaterÃ­a con hasta 6 horas de uso continuo y 100 horas en modo standby. ConexiÃ³n Bluetooth 6.0 con alcance de 10 metros. BaterÃ­a de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentaciÃ³n en caja individual.",
     "fotos": [
       "audifonosmtf1.jpeg",
       "audifonosmtf2.jpeg",
       "audifonosmtf3.jpeg"
-    ]
+    ],
+    "stock": 2
   },
- {
+  {
     "id": "Power-Bank-30000mAh",
     "nombre": "Power Bank MTF 30.000 mAh",
-    "precio": "130.000 COP",
-    "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
-    "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
+    "precio": "$130.000 COP",
+    "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rÃ¡pida de 22.5W.",
+    "detalles": "BaterÃ­a portÃ¡til de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rÃ¡pida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de baterÃ­a. Construida en materiales resistentes de PC y aleaciÃ³n de aluminio. Apta para llevar en viajes en aviÃ³n (Airplane-Friendly).",
     "fotos": [
       "powerband301.jpeg",
       "powerband302.jpeg",
       "powerband303.jpeg"
-    ]
-},
+    ],
+    "stock": 1
+  },
   {
     "id": "Power-Bank-Magsafe-10000mAh",
     "nombre": "Power Bank MagSafe MTF 10.000 mAh",
-    "precio": "120.000 COP",
-    "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
-    "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
+    "precio": "$120.000 COP",
+    "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalÃ¡mbrica.",
+    "detalles": "Power Bank inalÃ¡mbrico MTF MG-39 de 10.000 mAh con sujeciÃ³n magnÃ©tica tipo MagSafe y carga rÃ¡pida de 22.5W. Cuenta con sistemas de protecciÃ³n contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaÃ±o compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en aviÃ³n (Airplane-Friendly). Permite cargar tu celular de forma rÃ¡pida y cÃ³moda sin necesidad de cables.",
     "fotos": [
       "powerbandmagsafe1.jpeg",
       "powerbandmagsafe2.jpeg",
       "powerbandmagsafe3.jpeg"
-    ]
+    ],
+    "stock": 2
   },
   {
     "id": "Power-Bank-20000mAh",
     "nombre": "Power Bank Harvic 20.000 mAh",
-    "precio": "90.000 COP",
-    "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalámbrica de 15W.",
-    "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalámbrica por inducción magnética de 15W y carga rápida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de batería y correa de mano para transporte fácil. Construido con batería de polímero de litio de alta seguridad.",
+    "precio": "$90.000 COP",
+    "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalÃ¡mbrica de 15W.",
+    "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalÃ¡mbrica por inducciÃ³n magnÃ©tica de 15W y carga rÃ¡pida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de baterÃ­a y correa de mano para transporte fÃ¡cil. Construido con baterÃ­a de polÃ­mero de litio de alta seguridad.",
     "fotos": [
       "powerband201.jpeg",
       "powerband202.jpeg",
       "powerband203.jpeg"
-    ]
+    ],
+    "stock": 2
   },
-    {
-    "id": "Intercomunicadores Q58MAX",
+  {
+    "id": "intercomunicador-q58max",
     "nombre": "Intercomunicador Q58MAX",
-    "precio": "90.000 COP",
+    "precio": "$90.000 COP",
     "corta": "Intercomunicador Q58-Max para casco de moto.",
-    "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
+    "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicaciÃ³n de hasta 500m entre 2 pilotos, pantalla LCD que muestra baterÃ­a y modo de conexiÃ³n, radio FM, ranura para tarjeta Micro SD, control de un solo botÃ³n, reducciÃ³n de ruido, resistente al agua y polvo (IP65), baterÃ­a de 1000 mAh con hasta 25 horas de conversaciÃ³n y 300 horas en espera, carga por puerto Tipo-C, incluye micrÃ³fono, cables, base clip-on y adhesiva.",
     "fotos": [
       "intercomunicador1.jpg",
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
-    ]
+    ],
+    "stock": 8
   },
-      {
-    "id": "Case Space",
-    "nombre": "Case Space Iphone",
-    "precio": "25.000 COP",
-    "corta": "Funda Space Collection Transparente Anti-Caídas Premium — iPhone & Samsung.",
-    "detalles": "Protege tu dispositivo con la elegancia y resistencia de la Space Collection, diseñada con tecnología de amortiguación en bordes, acrílico transparente anti-amarilleo y botones independientes de excelente respuesta táctil. Disponible para iPhone 11, 11 | 11 Pro | 11 Pro Max, iPhone 12, 12 mini | 12 | 12 Pro Max, iPhone 13, 13 | 13 Pro | 13 Pro Max, iPhone 14, 14 | 14 Pro Max, iPhone 15, 15 | 15 Pro | 15 Pro Max, iPhone 16 | 16 Pro | 16 Pro Max, iPhone 17 | 17 Pro | 17 Pro Max,Samsung Galaxy A35 | Galaxy S26 Ultra",
-    "fotos": [
-      "space1.jpeg",
-      "space2.jpeg",
-      "space3.jpg"
-    ]
-  },
-        {
-    "id": "Case con anillo",
+  {
+    "id": "case-con-anillo",
     "nombre": "Case con anillo Iphone",
-    "precio": "25.000 COP",
-    "corta": "Funda Glitter Mágica con Anillo Soporte y Espejo Integrado.",
-    "detalles": "Luce un estilo brillante y funcional con esta funda Glitter Mágica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protección total con máximo brillo. Disponible: IPHONE 17",
+    "precio": "$25.000 COP",
+    "corta": "Funda Glitter MÃ¡gica con Anillo Soporte y Espejo Integrado.",
+    "detalles": "Luce un estilo brillante y funcional con esta funda Glitter MÃ¡gica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protecciÃ³n total con mÃ¡ximo brillo. Disponible: IPHONE 17",
     "fotos": [
       "estucheconanillo1.jpg",
       "estucheconanillo2.jpeg",
       "estucheconanillo3.jpeg"
-    ]
+    ],
+    "stock": 1
   },
-          {
-    "id": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
+  {
+    "id": "estuche-kawaii-cinnamoroll-melody",
     "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
-    "precio": "27.000 COP",
+    "precio": "$27.000 COP",
     "corta": "Funda 3D para Iphone.",
-    "detalles": "Estuche transparente reforzado con diseño kawaii en relieve de personajes tipo Cinnamoroll y My Melody, decorado con dijes 3D de silicona (lazo, cupcake, luna, corazones), cámara protegida con marco elevado, material suave y resistente a golpes, disponible en azul y lila, compatible con iPhone, el accesorio perfecto para darle un toque tierno y diferente a tu celular.",
+    "detalles": "Estuche transparente reforzado con diseÃ±o kawaii en relieve de personajes tipo Cinnamoroll y My Melody, decorado con dijes 3D de silicona (lazo, cupcake, luna, corazones), cÃ¡mara protegida con marco elevado, material suave y resistente a golpes, disponible en azul y lila, compatible con iPhone, el accesorio perfecto para darle un toque tierno y diferente a tu celular.",
     "fotos": [
       "forroscuteazulylila1.jpeg",
       "forroscuteazulylila2.jpeg",
       "forroscuteazulylila3.jpeg"
-    ]
+    ],
+    "stock": 0
   }
 ]
