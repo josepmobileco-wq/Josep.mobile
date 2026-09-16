@@ -143,6 +143,19 @@
     "stock": 2
   },
   {
+    "id": "borde-lujo-s25-ultra",
+    "nombre": "Estuche de Lujo Transparente con Borde Dorado — MagSafe para Samsung S25 Ultra",
+    "precio": "$25.000 COP",
+    "corta": "Estuche transparente con borde metálico dorado y anillo magnético integrado, compatible con carga MagSafe. Elegancia y funcionalidad en un solo accesorio para tu Samsung S25 Ultra. ¡Protección con estilo premium!",
+    "detalles": "Estuche de Lujo Transparente con borde dorado y anillo magnético MagSafe: protege las cámaras con precisión, resalta el diseño original de tu Samsung S25 Ultra y combina elegancia con funcionalidad. ✨🧲📱",
+    "fotos": [
+      "estuchebordedelujo1",
+      "estuchebordedelujo2",
+      "estuchebordedelujo3"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
