@@ -191,6 +191,17 @@
     "stock": 1
   },
   {
+    "id": "power-bank-10000",
+    "nombre": "Power bank 10000mAh",
+    "precio": "$70.000 COP",
+    "corta": "Power bank 10000mAh, carga tu celular.",
+    "detalles": "Power bank de 10000mAh para cargar tu celular.",
+    "fotos": [
+      "powerbank1001.jpeg"
+    ],
+    "stock": 0
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
