@@ -161,7 +161,10 @@
     "precio": "$20.000 COP",
     "corta": "Estuche de flores para iPhone 13.",
     "detalles": "Estuche con diseño de flores para iPhone 13.",
-    "fotos": [],
+    "fotos": [
+      "estucheflores1",
+      "estucheflores2"
+    ],
     "stock": 1
   },
   {
