@@ -169,6 +169,19 @@
     "stock": 1
   },
   {
+    "id": "estuche-gatitos-ip17",
+    "nombre": "Estuche de gatitos (iPhone 17)",
+    "precio": "$30.000 COP",
+    "corta": "Estuche de gatitos disponible para iPhone 17.",
+    "detalles": "Estuche con diseño de gatitos, disponible para iPhone 17.",
+    "fotos": [
+      "estuchegaticos1.jpeg",
+      "estuchegaticos2.jpeg",
+      "forrogaticos3.png"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
