@@ -202,6 +202,17 @@
     "stock": 0
   },
   {
+    "id": "silicon-spark-40pro",
+    "nombre": "Silicon Case SPARK 40PRO",
+    "precio": "$20.000 COP",
+    "corta": "Silicon Case para SPARK 40PRO.",
+    "detalles": "Estuche de silicona para SPARK 40PRO.",
+    "fotos": [
+      "siliconlilaypurpuratecnospark.jpeg"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
