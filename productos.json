@@ -156,6 +156,15 @@
     "stock": 1
   },
   {
+    "id": "estuche-flores-ip13",
+    "nombre": "Estuche de flores (IP 13)",
+    "precio": "$20.000 COP",
+    "corta": "Estuche de flores para iPhone 13.",
+    "detalles": "Estuche con diseño de flores para iPhone 13.",
+    "fotos": [],
+    "stock": 1
+  },
+  {
     "id": "estuche-flores-note13",
     "nombre": "Estuche de flores RM NOTE 13",
     "precio": "$25.000 COP",
