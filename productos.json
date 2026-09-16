@@ -154,5 +154,18 @@
       "estuchecorazones3.jpeg"
     ],
     "stock": 0
+  },
+  {
+    "id": "cargador-inalambrico-3-en-1-magsafe-mu3k5kpb",
+    "nombre": "Cargador Inalámbrico 3 en 1 MagSafe",
+    "precio": "$90.000 COP",
+    "corta": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa,",
+    "detalles": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
+    "fotos": [
+      "caragador3en11.jpeg",
+      "cargador3en12.jpeg",
+      "cargador3en13.jpeg"
+    ],
+    "stock": 2
   }
 ]
