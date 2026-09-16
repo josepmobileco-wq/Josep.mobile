@@ -156,6 +156,19 @@
     "stock": 1
   },
   {
+    "id": "estuche-flores-note13",
+    "nombre": "Estuche de flores RM NOTE 13",
+    "precio": "$25.000 COP",
+    "corta": "Estuche de flores para Redmi Note 13.",
+    "detalles": "Estuche con diseño de flores para Redmi Note 13.",
+    "fotos": [
+      "estuchedefloresrmnote13.1.jpeg",
+      "estuchedefloresrmnote13.2.jpeg",
+      "estuchedefloresrmnote13.3.jpeg"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
