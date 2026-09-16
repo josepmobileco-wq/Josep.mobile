@@ -167,5 +167,18 @@
       "cargador3en13.jpeg"
     ],
     "stock": 2
+  },
+  {
+    "id": "estuche-360-proteccion-total-para-iphone-mu3mx3l9",
+    "nombre": "Estuche 360° Protección Total para iPhone",
+    "precio": "$30.000 COP",
+    "corta": "Estuche 360° Protección Total: cubre cámara, bordes y pantalla con material resistente a golpes, ajuste perfecto a boton",
+    "detalles": "Protección completa para tu celular con estuche 360° que cuida cámara, bordes y pantalla. Disponible en varios colores, ajuste perfecto y máxima resistencia a caídas. ¡El accesorio que todo iPhone necesita!",
+    "fotos": [
+      "estuche360.1.jpeg",
+      "estuche360.2.jpeg",
+      "estuche360.3.jpeg"
+    ],
+    "stock": 4
   }
 ]
