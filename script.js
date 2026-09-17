@@ -23,8 +23,20 @@ let carrito = cargarCarrito();
 
 // Catálogo cargado (para validar stock). Sin campo stock = disponible.
 let CATALOGO = [];
+function buscarProdWeb(id) {
+    return CATALOGO.find(x => x.id === id);
+}
+function buscarVarianteWeb(parentId, varId) {
+    const p = buscarProdWeb(parentId);
+    return p && Array.isArray(p.variantes) ? p.variantes.find(v => v.id === varId) : null;
+}
 function stockDe(id) {
-    const p = CATALOGO.find(x => x.id === id);
+    const partes = String(id || '').split('::');
+    if (partes.length === 2) {
+        const v = buscarVarianteWeb(partes[0], partes[1]);
+        if (v) return Number(v.stock) || 0;
+    }
+    const p = buscarProdWeb(id);
     if (!p || p.stock === undefined || p.stock === null) return Infinity;
     return Number(p.stock) || 0;
 }
@@ -365,6 +377,41 @@ document.addEventListener('click', (e) => {
     if (wa) pixelTrack('Contact');
 });
 
+// Elegir color/referencia en el modal → actualiza precio, stock y botones
+document.addEventListener('click', (e) => {
+    const opt = e.target.closest('.var-opt');
+    if (!opt || opt.disabled) return;
+    const modal = opt.closest('.modal-policy');
+    if (!modal) return;
+    modal.querySelectorAll('.var-opt').forEach(b => b.classList.remove('seleccionado'));
+    opt.classList.add('seleccionado');
+    const parent = opt.getAttribute('data-parent');
+    const varId = opt.getAttribute('data-var-id');
+    const varNombre = opt.getAttribute('data-var-nombre');
+    const varPrecio = opt.getAttribute('data-var-precio');
+    const varStock = parseInt(opt.getAttribute('data-var-stock'), 10) || 0;
+    const pv = buscarProdWeb(parent);
+    const nombreBase = pv ? pv.nombre : parent;
+    const fullId = `${parent}::${varId}`;
+    const fullNombre = `${nombreBase} (${varNombre})`;
+    const precioNum = precioNumDe(varPrecio);
+    const priceEl = modal.querySelector('.modal-price');
+    if (priceEl) priceEl.textContent = varPrecio;
+    const stockEl = modal.querySelector('.var-stock');
+    if (stockEl) stockEl.innerHTML = `Disponibles: <strong>${varStock}</strong>`;
+    const addBtn = modal.querySelector('.btn-add-cart');
+    if (addBtn) { addBtn.setAttribute('data-id', fullId); addBtn.setAttribute('data-nombre', fullNombre); addBtn.setAttribute('data-precio', varPrecio); }
+    const boldBtn = modal.querySelector('.btn-bold-producto');
+    if (boldBtn) {
+        boldBtn.setAttribute('data-id', fullId);
+        boldBtn.setAttribute('data-nombre', fullNombre);
+        boldBtn.setAttribute('data-precio-num', String(precioNum));
+        boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${varPrecio})`;
+    }
+    const waBtn = modal.querySelector('.btn-wa-link');
+    if (waBtn) waBtn.href = `https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
+});
+
 // ====== Control de modales (clases .active + backdrop) ======
 function abrirModal(modal) {
     if (!modal) return;
@@ -402,6 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
             productos.forEach(prod => {
                 const precioNumProd = parseInt(String(prod.precio).replace(/[^0-9]/g, ''), 10) || 0;
                 const hayStock = stockDe(prod.id) > 0;
+                const tieneVars = Array.isArray(prod.variantes) && prod.variantes.length > 0;
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
@@ -414,9 +462,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
+                            ${tieneVars ? `<p class="var-hint">🎨 ${prod.variantes.length} colores para elegir</p>` : ''}
                             <p class="short-desc">${esc(prod.corta)}</p>
                             <span class="price">${esc(prod.precio)}</span>
-                            <span class="btn-card">${hayStock ? 'Ver opciones de compra' : 'Agotado'}</span>
+                            <span class="btn-card">${hayStock ? (tieneVars ? '🎨 Elige tu color' : 'Ver opciones de compra') : 'Agotado'}</span>
                         </div>
                     </a>
                 `;
@@ -441,6 +490,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 modal.setAttribute('role', 'dialog');
                 modal.setAttribute('aria-modal', 'true');
                 modal.setAttribute('aria-label', prod.nombre);
+                // Variante por defecto: primera con stock, si no la primera
+                const varDef = tieneVars ? (prod.variantes.find(v => (Number(v.stock) || 0) > 0) || prod.variantes[0]) : null;
+                const defId = varDef ? `${prod.id}::${varDef.id}` : prod.id;
+                const defNombre = varDef ? `${prod.nombre} (${varDef.nombre})` : prod.nombre;
+                const defPrecioTxt = varDef ? varDef.precio : prod.precio;
+                const defPrecioNum = varDef ? precioNumDe(varDef.precio) : precioNumProd;
+                const selectorVars = tieneVars ? `
+                            <div class="var-selector">
+                                <h4>ELIGE COLOR / REFERENCIA</h4>
+                                <div class="var-opts">
+                                    ${prod.variantes.map(v => {
+                                        const st = Number(v.stock) || 0;
+                                        const sel = varDef && v.id === varDef.id ? ' seleccionado' : '';
+                                        return `<button type="button" class="var-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-var-nombre="${esc(v.nombre)}" data-var-precio="${esc(v.precio)}" data-var-stock="${st}" ${st <= 0 ? 'disabled' : ''}>${esc(v.nombre)}${st <= 0 ? ' (agotado)' : ''}</button>`;
+                                    }).join('')}
+                                </div>
+                                <p class="var-stock">${varDef ? `Disponibles: <strong>${Number(varDef.stock) || 0}</strong>` : ''}</p>
+                            </div>` : '';
                 modal.innerHTML = `
                     <div class="modal-product-container">
                         <button type="button" class="close-modal" aria-label="Cerrar">&times;</button>
@@ -451,24 +518,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="modal-product-details">
                             <h2>${esc(prod.nombre)}</h2>
-                            <p class="modal-price">${esc(prod.precio)}</p>
+                            <p class="modal-price">${esc(defPrecioTxt)}</p>
+                            ${selectorVars}
                             <div class="modal-description">
                                 <h4>DETALLES DEL PRODUCTO</h4>
                                 <p>${esc(prod.detalles)}</p>
                             </div>
 
                             <div class="modal-actions">
-                                ${stockDe(prod.id) > 0 ? `
-                                <button type="button" class="btn-card btn-add-cart" data-id="${esc(prod.id)}" data-nombre="${esc(prod.nombre)}" data-precio="${esc(prod.precio)}">
+                                ${stockDe(defId) > 0 ? `
+                                <button type="button" class="btn-card btn-add-cart" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
                                     <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
                                 </button>
-                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-id="${esc(prod.id)}" data-precio-num="${precioNumProd}" data-nombre="${esc(prod.nombre)}">
-                                    <i class="fa-solid fa-credit-card"></i> Comprar ahora (${esc(prod.precio)})
+                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-id="${esc(defId)}" data-precio-num="${defPrecioNum}" data-nombre="${esc(defNombre)}">
+                                    <i class="fa-solid fa-credit-card"></i> Comprar ahora (${esc(defPrecioTxt)})
                                 </button>` : `
                                 <button type="button" class="btn-card" disabled>
                                     <i class="fa-solid fa-ban"></i> Agotado
                                 </button>`}
-                                <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + prod.nombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
+                                <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
                                     <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
                             </div>

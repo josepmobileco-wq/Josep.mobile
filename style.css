@@ -447,6 +447,74 @@ body {
     transition: var(--transition);
 }
 
+.var-hint {
+    color: var(--bg-purple-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+    min-height: 0;
+}
+
+.var-selector {
+    background: #f7f4fc;
+    border: 1px solid #e3d9f5;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+}
+
+.var-selector h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--bg-purple-dark);
+    margin: 0 0 8px 0;
+}
+
+.var-opts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.var-opt {
+    border: 2px solid #d9cdf0;
+    background: #ffffff;
+    color: var(--text-dark);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.var-opt:hover:not(:disabled) {
+    border-color: var(--bg-purple-neon);
+}
+
+.var-opt.seleccionado {
+    background: var(--bg-purple-neon);
+    border-color: var(--bg-purple-neon);
+    color: #ffffff;
+}
+
+.var-opt:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+.var-stock {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 8px 0 0 0;
+}
+
+.var-stock strong {
+    color: var(--bg-purple-dark);
+}
+
 .btn-card:hover {
     background-color: var(--bg-purple-dark);
 }
