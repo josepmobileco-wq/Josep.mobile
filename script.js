@@ -48,6 +48,12 @@ const BOLD_WORKER_URL = 'https://wispy-shadow-8bccjosep-firma-bold.josep-mobile-
 // URL de tu tienda (debe ser https y coincidir con tu dominio en Bold).
 const TIENDA_URL = 'https://josepmobileco-wq.github.io/Josep.mobile/';
 
+// ====== Meta Pixel: eventos de tienda (no rompe nada si el Píxel no cargó) ======
+function pixelTrack(nombre, datos) {
+    try { if (typeof fbq === 'function') fbq('track', nombre, datos || {}); } catch (e) {}
+}
+const precioNumDe = (txt) => parseInt(String(txt || '').replace(/[^0-9]/g, ''), 10) || 0;
+
 // ====== Utilidades ======
 function esc(texto) {
     return String(texto)
@@ -329,6 +335,7 @@ function manejarRetornoBold() {
             guardarYActualizar();
         }
         try { localStorage.removeItem('pedido_bold_' + orderId); } catch (e) {}
+        pixelTrack('Purchase', { value: Number(draft.total) || 0, currency: 'COP', order_id: orderId });
         mostrarConfirmacion(draft, estadoTx);
     } else if (estadoTx === 'approved') {
         toastBold(`¡Pago aprobado! Pedido ${orderId}. Te contactaremos por WhatsApp para el envío.`);
@@ -344,8 +351,18 @@ document.addEventListener('submit', (e) => {
     if (e.target && e.target.id === 'checkout-form') {
         e.preventDefault();
         const boton = document.getElementById('btn-confirmar-pago');
+        try {
+            const totalTxt = (document.getElementById('checkout-total') || {}).textContent || '';
+            pixelTrack('InitiateCheckout', { value: precioNumDe(totalTxt), currency: 'COP' });
+        } catch (err) {}
         iniciarPagoBold(boton);
     }
+});
+
+// Clic a WhatsApp (botones y flotante) → evento Contact para Meta Ads
+document.addEventListener('click', (e) => {
+    const wa = e.target.closest('a[href*="wa.me"]');
+    if (wa) pixelTrack('Contact');
 });
 
 // ====== Control de modales (clases .active + backdrop) ======
@@ -500,6 +517,11 @@ document.addEventListener('click', (e) => {
         const modalId = trigger.getAttribute('href');
         const targetModal = document.getElementById(modalId.replace('#', ''));
         abrirModal(targetModal);
+        try {
+            const pid = (modalId || '').replace('#producto-', '');
+            const pv = CATALOGO.find(x => x.id === pid);
+            if (pv) pixelTrack('ViewContent', { content_ids: [pv.id], content_name: pv.nombre, value: precioNumDe(pv.precio), currency: 'COP' });
+        } catch (err) {}
         return;
     }
 
@@ -545,6 +567,7 @@ document.addEventListener('click', (e) => {
         }
 
         guardarYActualizar();
+        pixelTrack('AddToCart', { content_ids: [id], content_name: nombre, value: precioNum, currency: 'COP' });
 
         // Cerrar modal del producto y abrir carrito
         cerrarModales();
