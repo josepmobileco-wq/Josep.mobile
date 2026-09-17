@@ -65,6 +65,40 @@
       "paymentId": null,
       "metodo": null,
       "fecha": "2026-09-17T02:11:12.742Z"
+    },
+    {
+      "orderId": "JM-1789618336333-q07m",
+      "items": [
+        {
+          "id": "airmax",
+          "nombre": "Audífonos Air Max",
+          "cantidad": 2,
+          "precioNum": 120000
+        },
+        {
+          "id": "airpodspro2",
+          "nombre": "Airpods Pro 2",
+          "cantidad": 1,
+          "precioNum": 70000
+        },
+        {
+          "id": "estuche-kawaii-cinnamoroll-melody",
+          "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
+          "cantidad": 1,
+          "precioNum": 27000
+        }
+      ],
+      "total": 337000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com"
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-17T04:12:17.357Z"
     }
   ]
 }
