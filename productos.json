@@ -216,6 +216,292 @@
     "stock": 1
   },
   {
+    "id": "space-collection::iphone-11-pro",
+    "nombre": "Space Collection (iPhone 11 Pro)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-17-pro",
+    "nombre": "Space Collection (iPhone 17 Pro)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-12-mini",
+    "nombre": "Space Collection (iPhone 12 mini)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-14-pro-max",
+    "nombre": "Space Collection (iPhone 14 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::ip-13-pro-max",
+    "nombre": "Space Collection (IP 13 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-15-pro-max",
+    "nombre": "Space Collection (iPhone 15 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-17-pro-max",
+    "nombre": "Space Collection (iPhone 17 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-16-pro",
+    "nombre": "Space Collection (iPhone 16 Pro)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-11-pro-max",
+    "nombre": "Space Collection (iPhone 11 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::ip-13-pro",
+    "nombre": "Space Collection (IP 13 Pro)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-12",
+    "nombre": "Space Collection (iPhone 12)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::ip-13",
+    "nombre": "Space Collection (IP 13)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-17",
+    "nombre": "Space Collection (iPhone 17)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-15",
+    "nombre": "Space Collection (iPhone 15)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-16-pro-max",
+    "nombre": "Space Collection (iPhone 16 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-16",
+    "nombre": "Space Collection (iPhone 16)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-11",
+    "nombre": "Space Collection (iPhone 11)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-15-pro",
+    "nombre": "Space Collection (iPhone 15 Pro)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::samsung-a35",
+    "nombre": "Space Collection (Samsung A35)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::samsung-s26-ultra",
+    "nombre": "Space Collection (Samsung S26 Ultra)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::ip-14",
+    "nombre": "Space Collection (IP 14)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
+    "id": "space-collection::iphone-12-pro-max",
+    "nombre": "Space Collection (iPhone 12 Pro Max)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-360::iphone-16",
     "nombre": "Estuche 360° (IPhone 16)",
     "precio": "$27.000 COP",
