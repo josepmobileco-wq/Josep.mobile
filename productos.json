@@ -251,6 +251,19 @@
     "stock": 3
   },
   {
+    "id": "selfie-screen-blanco",
+    "nombre": "Magnetic Selfie Screen blanco",
+    "precio": "$140.000 COP",
+    "corta": "Pantalla selfie con carga.",
+    "detalles": "Pantalla selfie con carga, color blanco.",
+    "fotos": [
+      "pantallaselfie1.jpeg",
+      "pantallaselfie2.jpeg",
+      "pantallaselfie3.jpeg"
+    ],
+    "stock": 3
+  },
+  {
     "id": "power-bank-10000",
     "nombre": "Power bank 10000mAh",
     "precio": "$70.000 COP",
