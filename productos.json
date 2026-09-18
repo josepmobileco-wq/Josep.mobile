@@ -239,6 +239,18 @@
     "stock": 1
   },
   {
+    "id": "luz-led-w80",
+    "nombre": "Luz LED W80 (aro de luz)",
+    "precio": "$50.000 COP",
+    "corta": "Luz rectangular blanca plástica.",
+    "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
+    "fotos": [
+      "luzled.jpeg",
+      "luzled2.jpeg"
+    ],
+    "stock": 3
+  },
+  {
     "id": "power-bank-10000",
     "nombre": "Power bank 10000mAh",
     "precio": "$70.000 COP",
