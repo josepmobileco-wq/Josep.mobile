@@ -24,7 +24,7 @@
         "nombre": "Airpods Max Dorada",
         "precio": "$120.000 COP",
         "stock": 1,
-        "foto": "airmax03.jpg"
+        "foto": "airmax3.jpg"
       }
     ]
   },
@@ -189,7 +189,7 @@
         "nombre": "Beach",
         "precio": "$27.000 COP",
         "stock": 2,
-        "foto": "estuchediseñobeach"
+        "foto": "estuchediseñobeach.jpeg"
       },
       {
         "id": "estuche-diseno-rosa-mu6bzqn5",
@@ -245,7 +245,7 @@
     "corta": "Luz rectangular blanca plástica.",
     "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
     "fotos": [
-      "luzled.jpeg",
+      "Luzled.jpeg",
       "luzled2.jpeg"
     ],
     "stock": 3
