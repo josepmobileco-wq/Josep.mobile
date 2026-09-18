@@ -172,6 +172,35 @@
     "stock": 1
   },
   {
+    "id": "estuche-diseno",
+    "nombre": "Estuche de diseño",
+    "precio": "$25.000 COP",
+    "corta": "Estuche fiesta, osos, gatos y más diseños.",
+    "detalles": "Estuche con diseños variados: fiesta, osos, gatos y más.",
+    "fotos": [
+      "estuchediseño.jpeg",
+      "estuchediseñorosa.jpeg",
+      "estuchediseñobeach.jpeg"
+    ],
+    "stock": 6,
+    "variantes": [
+      {
+        "id": "beach-mu6byefm",
+        "nombre": "Beach",
+        "precio": "$27.000 COP",
+        "stock": 2,
+        "foto": "estuchediseñobeach"
+      },
+      {
+        "id": "estuche-diseno-rosa-mu6bzqn5",
+        "nombre": "Estuche Diseño Rosa",
+        "precio": "$27.000 COP",
+        "stock": 4,
+        "foto": "estuchediseñorosa.jpeg"
+      }
+    ]
+  },
+  {
     "id": "estuche-flores-ip13",
     "nombre": "Estuche de flores (IP 13)",
     "precio": "$20.000 COP",
