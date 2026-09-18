@@ -13,25 +13,18 @@
     "stock": 2,
     "variantes": [
       {
-        "id": "dorada-mu52itrn",
-        "nombre": "Dorada",
-        "precio": "$120.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "dorado-mu52kae5",
-            "nombre": "Dorado",
-            "precio": "$120.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
         "id": "airpods-max-lila-mu52las5",
         "nombre": "Airpods Max Lila",
         "precio": "$120.000 COP",
         "stock": 1,
         "foto": "airmax2.jpg"
+      },
+      {
+        "id": "airpods-max-dorada-mu6addyk",
+        "nombre": "Airpods Max Dorada",
+        "precio": "$120.000 COP",
+        "stock": 1,
+        "foto": "airmax03.jpg"
       }
     ]
   },
@@ -137,7 +130,7 @@
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
     ],
-    "stock": 8
+    "stock": 7
   },
   {
     "id": "case-con-anillo",
