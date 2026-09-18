@@ -248,11 +248,13 @@
         "telefono": "3112950484",
         "correo": "hannarojasbz@gmail.com"
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-18T19:18:07.903Z"
+      "paymentId": "CNPEWKUHSW33U",
+      "metodo": "CARD_WEB",
+      "fecha": "2026-09-18T19:18:07.903Z",
+      "email": "hannarojasbz@gmail.com",
+      "fechaPago": "2026-09-18T19:21:54.337Z"
     }
   ]
 }
