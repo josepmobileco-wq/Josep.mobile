@@ -292,7 +292,7 @@ async function iniciarPagoBold(boton) {
                 orderId,
                 items: pedidoPendiente.items.map(i => ({ id: i.id || '', nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum })),
                 total: pedidoPendiente.total,
-                cliente: { nombre: datos.nombre, telefono: datos.telefono, correo: datos.correo }
+                cliente: { nombre: datos.nombre, telefono: datos.telefono, correo: datos.correo, direccion: datos.direccion, ciudad: datos.ciudad, depto: datos.depto, notas: datos.notas }
             })
         }).catch(() => {});
     } catch (e) { /* silencioso */ }
