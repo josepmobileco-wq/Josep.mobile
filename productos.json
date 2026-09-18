@@ -10,7 +10,7 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 2,
+    "stock": 4,
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
@@ -41,6 +41,13 @@
             "stock": 1
           }
         ]
+      },
+      {
+        "id": "airpods-max-negra-mu7a7pvh",
+        "nombre": "Airpods Max Negra",
+        "precio": "$120.000 COP",
+        "stock": 2,
+        "foto": "airmax.jpg"
       }
     ]
   },
