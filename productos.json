@@ -301,29 +301,7 @@
       "tarjeterocondiseño2.jpeg",
       "tarjeterocondiseño3.jpeg"
     ],
-    "stock": 2,
-    "variantes": [
-      {
-        "id": "tarjetero-con-magsafe-mu73w8y3",
-        "nombre": "Tarjetero con Magsafe",
-        "precio": "$15.000 COP",
-        "stock": 2,
-        "colores": [
-          {
-            "id": "rosa-mu741gvt",
-            "nombre": "Rosa",
-            "precio": "$25.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "cafe-mu742g8g",
-            "nombre": "Cafe",
-            "precio": "$25.000 COP",
-            "stock": 1
-          }
-        ]
-      }
-    ]
+    "stock": 0
   },
   {
     "id": "tv-stick-magis",
@@ -535,6 +513,18 @@
       "caragador3en11.jpeg",
       "cargador3en12.jpeg",
       "cargador3en13.jpeg"
+    ],
+    "stock": 2
+  },
+  {
+    "id": "tarjetero-magsafe",
+    "nombre": "Tarjetero con Magsafe",
+    "precio": "$25.000 COP",
+    "corta": "Tarjetero con Magsafe para tu celular.",
+    "detalles": "Tarjetero con sujeción magnética tipo Magsafe para llevar tus tarjetas con tu celular.",
+    "fotos": [
+      "tarjeteromagsafe1.jpeg",
+      "tarjeteromagsafe2.jpeg"
     ],
     "stock": 2
   }
