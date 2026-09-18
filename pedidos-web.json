@@ -165,6 +165,28 @@
       "paymentId": null,
       "metodo": null,
       "fecha": "2026-09-18T18:24:23.900Z"
+    },
+    {
+      "orderId": "JM-1789756631315-r9p8",
+      "items": [
+        {
+          "id": "airmax::airpods-max-negra-mu7a7pvh",
+          "nombre": "Audífonos Air Max (Airpods Max Negra)",
+          "cantidad": 2,
+          "precioNum": 120000
+        }
+      ],
+      "total": 240000,
+      "cliente": {
+        "nombre": "Hanna Rojas",
+        "telefono": "3112950484",
+        "correo": "hannarojasbz@gmail.com"
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-18T18:37:12.558Z"
     }
   ]
 }
