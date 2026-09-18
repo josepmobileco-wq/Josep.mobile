@@ -515,6 +515,56 @@ body {
     color: var(--bg-purple-dark);
 }
 
+.var-colors {
+    margin-top: 10px;
+}
+
+.color-opts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.color-opt {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid #d9cdf0;
+    background: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    padding: 0;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.color-opt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.color-opt:hover:not(:disabled) {
+    border-color: var(--bg-purple-neon);
+    transform: scale(1.08);
+}
+
+.color-opt.seleccionado {
+    border-color: var(--bg-purple-neon);
+    box-shadow: 0 0 0 2px var(--bg-purple-neon);
+}
+
+.color-opt:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 .btn-card:hover {
     background-color: var(--bg-purple-dark);
 }

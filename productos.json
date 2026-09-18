@@ -2,487 +2,193 @@
   {
     "id": "airmax",
     "nombre": "Audífonos Air Max",
-    "precio": "$120.000 COP",
-    "corta": "Audífonos Bluetooth premium con cancelación de ruido, sonido de alta fidelidad y Audio Espacial.",
+    "precio": "120.000 COP",
+    "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
     "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
     "fotos": [
       "airmax.jpg",
       "airmax2.jpg",
       "airmax3.jpg"
-    ],
-    "stock": 2,
-    "variantes": [
-      {
-        "id": "airpods-max-lila-mu52las5",
-        "nombre": "Airpods Max Lila",
-        "precio": "$120.000 COP",
-        "stock": 1,
-        "foto": "airmax2.jpg"
-      },
-      {
-        "id": "airpods-max-dorada-mu6addyk",
-        "nombre": "Airpods Max Dorada",
-        "precio": "$120.000 COP",
-        "stock": 1,
-        "foto": "airmax3.jpg"
-      }
     ]
   },
   {
     "id": "airpodspro2",
     "nombre": "Airpods Pro 2",
-    "precio": "$70.000 COP",
-    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
+    "precio": "70.000 COP",
+    "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
     "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
     "fotos": [
       "airpodspro2.jpg",
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
-    ],
-    "stock": 2
+    ]
   },
   {
     "id": "airpods-pro-3",
     "nombre": "Audífonos Airpods Pro 3",
-    "precio": "$75.000 COP",
+    "precio": "75.000 COP",
     "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
     "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
     "fotos": [
       "airpods-pro-3.jpg",
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
-    ],
-    "stock": 5
+    ]
   },
   {
     "id": "airpods-pro-3-Traductores",
     "nombre": "Audífonos Airpods Pro 3 Con Traducción",
-    "precio": "$85.000 COP",
+    "precio": "85.000 COP",
     "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
     "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
     "fotos": [
       "airpodspro3t.jpg",
       "airpodspro31t.jpg",
       "airpodspro32t.jpg"
-    ],
-    "stock": 2
+    ]
   },
   {
     "id": "Audifonos-smarwach-mtf",
     "nombre": "Audífonos Smartwatch MTF M-65",
-    "precio": "$130.000 COP",
+    "precio": "130.000 COP",
     "corta": "MTF M-65 – Auriculares Inalámbricos Open Ear con Pantalla LCD.",
     "detalles": "Diseño Open Ear: se ajustan por fuera del oído con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control táctil para reproducir/pausar música y gestionar llamadas. Batería con hasta 6 horas de uso continuo y 100 horas en modo standby. Conexión Bluetooth 6.0 con alcance de 10 metros. Batería de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentación en caja individual.",
     "fotos": [
       "audifonosmtf1.jpeg",
       "audifonosmtf2.jpeg",
       "audifonosmtf3.jpeg"
-    ],
-    "stock": 2
+    ]
   },
-  {
+ {
     "id": "Power-Bank-30000mAh",
     "nombre": "Power Bank MTF 30.000 mAh",
-    "precio": "$130.000 COP",
+    "precio": "130.000 COP",
     "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
     "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
     "fotos": [
       "powerband301.jpeg",
       "powerband302.jpeg",
       "powerband303.jpeg"
-    ],
-    "stock": 1
-  },
+    ]
+},
   {
     "id": "Power-Bank-Magsafe-10000mAh",
     "nombre": "Power Bank MagSafe MTF 10.000 mAh",
-    "precio": "$120.000 COP",
+    "precio": "120.000 COP",
     "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
     "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
     "fotos": [
       "powerbandmagsafe1.jpeg",
       "powerbandmagsafe2.jpeg",
       "powerbandmagsafe3.jpeg"
-    ],
-    "stock": 2
+    ]
   },
   {
     "id": "Power-Bank-20000mAh",
     "nombre": "Power Bank Harvic 20.000 mAh",
-    "precio": "$90.000 COP",
+    "precio": "90.000 COP",
     "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalámbrica de 15W.",
     "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalámbrica por inducción magnética de 15W y carga rápida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de batería y correa de mano para transporte fácil. Construido con batería de polímero de litio de alta seguridad.",
     "fotos": [
       "powerband201.jpeg",
       "powerband202.jpeg",
       "powerband203.jpeg"
-    ],
-    "stock": 2
+    ]
   },
-  {
-    "id": "intercomunicador-q58max",
+    {
+    "id": "Intercomunicadores Q58MAX",
     "nombre": "Intercomunicador Q58MAX",
-    "precio": "$90.000 COP",
+    "precio": "90.000 COP",
     "corta": "Intercomunicador Q58-Max para casco de moto.",
     "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
     "fotos": [
       "intercomunicador1.jpg",
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
-    ],
-    "stock": 7
+    ]
   },
-  {
-    "id": "case-con-anillo",
+      {
+    "id": "Case Space",
+    "nombre": "Case Space Iphone",
+    "precio": "25.000 COP",
+    "corta": "Funda Space Collection Transparente Anti-Caídas Premium — iPhone & Samsung.",
+    "detalles": "Protege tu dispositivo con la elegancia y resistencia de la Space Collection, diseñada con tecnología de amortiguación en bordes, acrílico transparente anti-amarilleo y botones independientes de excelente respuesta táctil. Disponible para iPhone 11, 11 | 11 Pro | 11 Pro Max, iPhone 12, 12 mini | 12 | 12 Pro Max, iPhone 13, 13 | 13 Pro | 13 Pro Max, iPhone 14, 14 | 14 Pro Max, iPhone 15, 15 | 15 Pro | 15 Pro Max, iPhone 16 | 16 Pro | 16 Pro Max, iPhone 17 | 17 Pro | 17 Pro Max,Samsung Galaxy A35 | Galaxy S26 Ultra",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ]
+  },
+        {
+    "id": "Case con anillo",
     "nombre": "Case con anillo Iphone",
-    "precio": "$25.000 COP",
+    "precio": "25.000 COP",
     "corta": "Funda Glitter Mágica con Anillo Soporte y Espejo Integrado.",
     "detalles": "Luce un estilo brillante y funcional con esta funda Glitter Mágica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protección total con máximo brillo. Disponible: IPHONE 17",
     "fotos": [
       "estucheconanillo1.jpg",
       "estucheconanillo2.jpeg",
       "estucheconanillo3.jpeg"
-    ],
-    "stock": 1
+    ]
   },
-  {
-    "id": "estuche-kawaii-cinnamoroll-melody",
+          {
+    "id": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
     "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
-    "precio": "$27.000 COP",
+    "precio": "27.000 COP",
     "corta": "Funda 3D para Iphone.",
     "detalles": "Estuche transparente reforzado con diseño kawaii en relieve de personajes tipo Cinnamoroll y My Melody, decorado con dijes 3D de silicona (lazo, cupcake, luna, corazones), cámara protegida con marco elevado, material suave y resistente a golpes, disponible en azul y lila, compatible con iPhone, el accesorio perfecto para darle un toque tierno y diferente a tu celular.",
     "fotos": [
       "forroscuteazulylila1.jpeg",
       "forroscuteazulylila2.jpeg",
       "forroscuteazulylila3.jpeg"
-    ],
-    "stock": 2
+    ]
   },
-  {
-    "id": "borde-lujo-s25-ultra",
+          {
+    "id": "Cargador Inalámbrico 3 en 1 MagSafe — Carga Rápida para Celular, Reloj y Audífonos",
+    "nombre": "Cargador Inalámbrico 3 en 1 MagSafe — Carga Rápida para Celular, Reloj y Audífonos",
+    "precio": "100.000 COP",
+    "corta": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
+    "detalles": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa, carga rápida de hasta 15W, diseño vertical ahorra-espacio y carga segura sin sobrecalentar — ideal para el hogar, la oficina o como regalo tecnológico. 📦⚡🧲",
+    "fotos": [
+      "caragador3en11.jpeg",
+      "cargador3en12.jpeg",
+      "cargador3en13.jpeg"
+    ]
+  },
+            {
+    "id": "Estuche 360",
+    "nombre": "Estuche 360° Protección Total para iPhone — Cubre Cámara y Pantalla",
+    "precio": "35.000 COP",
+    "corta": "Protección completa para tu celular con estuche 360° que cuida cámara, bordes y pantalla. Disponible en varios colores, ajuste perfecto y máxima resistencia a caídas. ¡El accesorio que todo iPhone necesita!",
+    "detalles": "Estuche 360° Protección Total: cubre cámara, bordes y pantalla con material resistente a golpes, ajuste perfecto a botones y puertos, y disponible en varios colores — la armadura perfecta para tu iPhone. 📸🛡️🌈",
+    "fotos": [
+      "estuche360.1.jpeg",
+      "estuche360.2.jpeg",
+      "estuche360.3.jpeg"
+    ]
+  },
+              {
+    "id": "Estuche Borde de lujo",
     "nombre": "Estuche de Lujo Transparente con Borde Dorado — MagSafe para Samsung S25 Ultra",
-    "precio": "$25.000 COP",
+    "precio": "25.000 COP",
     "corta": "Estuche transparente con borde metálico dorado y anillo magnético integrado, compatible con carga MagSafe. Elegancia y funcionalidad en un solo accesorio para tu Samsung S25 Ultra. ¡Protección con estilo premium!",
     "detalles": "Estuche de Lujo Transparente con borde dorado y anillo magnético MagSafe: protege las cámaras con precisión, resalta el diseño original de tu Samsung S25 Ultra y combina elegancia con funcionalidad. ✨🧲📱",
     "fotos": [
       "estuchebordedelujo1.jpeg",
       "estuchebordedelujo2.jpeg",
       "estuchebordedelujo3.jpeg"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "estuche-diseno",
-    "nombre": "Estuche de diseño",
-    "precio": "$25.000 COP",
-    "corta": "Estuche fiesta, osos, gatos y más diseños.",
-    "detalles": "Estuche con diseños variados: fiesta, osos, gatos y más.",
-    "fotos": [
-      "estuchediseño.jpeg",
-      "estuchediseñorosa.jpeg",
-      "estuchediseñobeach.jpeg"
-    ],
-    "stock": 6,
-    "variantes": [
-      {
-        "id": "beach-mu6byefm",
-        "nombre": "Beach",
-        "precio": "$27.000 COP",
-        "stock": 2,
-        "foto": "estuchediseñobeach.jpeg"
-      },
-      {
-        "id": "estuche-diseno-rosa-mu6bzqn5",
-        "nombre": "Estuche Diseño Rosa",
-        "precio": "$27.000 COP",
-        "stock": 4,
-        "foto": "estuchediseñorosa.jpeg"
-      }
     ]
   },
-  {
-    "id": "estuche-flores-ip13",
-    "nombre": "Estuche de flores (IP 13)",
-    "precio": "$20.000 COP",
-    "corta": "Estuche de flores para iPhone 13.",
-    "detalles": "Estuche con diseño de flores para iPhone 13.",
-    "fotos": [
-      "estucheflores1.jpeg",
-      "estucheflores2.jpeg"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "estuche-flores-note13",
-    "nombre": "Estuche de flores RM NOTE 13",
-    "precio": "$25.000 COP",
-    "corta": "Estuche de flores para Redmi Note 13.",
-    "detalles": "Estuche con diseño de flores para Redmi Note 13.",
-    "fotos": [
-      "estuchedefloresrmnote13.1.jpeg",
-      "estuchedefloresrmnote13.2.jpeg",
-      "estuchedefloresrmnote13.3.jpeg"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "estuche-gatitos-ip17",
-    "nombre": "Estuche de gatitos (iPhone 17)",
-    "precio": "$30.000 COP",
-    "corta": "Estuche de gatitos disponible para iPhone 17.",
-    "detalles": "Estuche con diseño de gatitos, disponible para iPhone 17.",
-    "fotos": [
-      "estuchegaticos1.jpeg",
-      "estuchegaticos2.jpeg",
-      "forrogaticos3.png"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "luz-led-w80",
-    "nombre": "Luz LED W80 (aro de luz)",
-    "precio": "$50.000 COP",
-    "corta": "Luz rectangular blanca plástica.",
-    "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
-    "fotos": [
-      "Luzled.jpeg",
-      "luzled2.jpeg"
-    ],
-    "stock": 3
-  },
-  {
-    "id": "selfie-screen-blanco",
-    "nombre": "Magnetic Selfie Screen blanco",
-    "precio": "$140.000 COP",
-    "corta": "Pantalla selfie con carga.",
-    "detalles": "Pantalla selfie con carga, color blanco.",
-    "fotos": [
-      "pantallaselfie1.jpeg",
-      "pantallaselfie2.jpeg",
-      "pantallaselfie3.jpeg"
-    ],
-    "stock": 3
-  },
-  {
-    "id": "power-bank-10000",
-    "nombre": "Power bank 10000mAh",
-    "precio": "$70.000 COP",
-    "corta": "Power bank 10000mAh, carga tu celular.",
-    "detalles": "Power bank de 10000mAh para cargar tu celular.",
-    "fotos": [
-      "powerbank1001.jpeg"
-    ],
-    "stock": 0
-  },
-  {
-    "id": "silicon-spark-40pro",
-    "nombre": "Silicon Case SPARK 40PRO",
-    "precio": "$20.000 COP",
-    "corta": "Silicon Case para SPARK 40PRO.",
-    "detalles": "Estuche de silicona para SPARK 40PRO.",
-    "fotos": [
-      "siliconlilaypurpuratecnospark.jpeg"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "space-collection",
-    "nombre": "Space Collection",
-    "precio": "$20.000 COP",
-    "corta": "",
-    "detalles": "",
-    "fotos": [
-      "space1.jpeg",
-      "space2.jpeg",
-      "space3.jpg"
-    ],
-    "stock": 22,
-    "variantes": [
-      {
-        "id": "iphone-11-pro",
-        "nombre": "iPhone 11 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17-pro",
-        "nombre": "iPhone 17 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12-mini",
-        "nombre": "iPhone 12 mini",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-14-pro-max",
-        "nombre": "iPhone 14 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13-pro-max",
-        "nombre": "IP 13 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15-pro-max",
-        "nombre": "iPhone 15 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17-pro-max",
-        "nombre": "iPhone 17 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16-pro",
-        "nombre": "iPhone 16 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-11-pro-max",
-        "nombre": "iPhone 11 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13-pro",
-        "nombre": "IP 13 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12",
-        "nombre": "iPhone 12",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13",
-        "nombre": "IP 13",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17",
-        "nombre": "iPhone 17",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15",
-        "nombre": "iPhone 15",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16-pro-max",
-        "nombre": "iPhone 16 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16",
-        "nombre": "iPhone 16",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-11",
-        "nombre": "iPhone 11",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15-pro",
-        "nombre": "iPhone 15 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "samsung-a35",
-        "nombre": "Samsung A35",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "samsung-s26-ultra",
-        "nombre": "Samsung S26 Ultra",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-14",
-        "nombre": "IP 14",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12-pro-max",
-        "nombre": "iPhone 12 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      }
-    ]
-  },
-  {
-    "id": "estuche-360",
-    "nombre": "Estuche 360°",
-    "precio": "$27.000 COP",
-    "corta": "",
-    "detalles": "",
-    "fotos": [
-      "estuche360.1.jpeg",
-      "estuche360.2.jpeg",
-      "estuche360.3.jpeg"
-    ],
-    "stock": 4,
-    "variantes": [
-      {
-        "id": "iphone-16",
-        "nombre": "IPhone 16",
-        "precio": "$27.000 COP",
-        "stock": 2
-      },
-      {
-        "id": "iphone-15-pro-max",
-        "nombre": "IPhone 15 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 2
-      }
-    ]
-  },
-  {
-    "id": "estuche-corazones",
+                {
+    "id": "Estuche corazones",
     "nombre": "Estuche Espejo con Corazones 3D — Diseño Tierno y Reflejante",
-    "precio": "$25.000 COP",
-    "corta": "Estuche Espejo con corazones 3D en relieve metálico: diseño tierno, brillante y protector, perfecto para destacar con estilo.",
+    "precio": "25.000 COP",
+    "corta": "Estuche Espejo con corazones 3D en relieve metálico: diseño tierno, brillante y protector, perfecto para destacar con estilo. 💖🪩✨",
     "detalles": "Estuche con acabado espejo y corazones 3D en relieve metálico. Un diseño tierno, brillante y diferente para destacar con estilo. ¡El accesorio ideal para las amantes de lo dulce y lo llamativo!",
     "fotos": [
       "estuchecorazones1.jpeg",
       "estuchecorazones2.jpeg",
       "estuchecorazones3.jpeg"
-    ],
-    "stock": 1
-  },
-  {
-    "id": "cargador-inalambrico-3-en-1-magsafe-mu3k5kpb",
-    "nombre": "Cargador Inalámbrico 3 en 1 MagSafe",
-    "precio": "$90.000 COP",
-    "corta": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa,",
-    "detalles": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
-    "fotos": [
-      "caragador3en11.jpeg",
-      "cargador3en12.jpeg",
-      "cargador3en13.jpeg"
-    ],
-    "stock": 2
+    ]
   }
 ]

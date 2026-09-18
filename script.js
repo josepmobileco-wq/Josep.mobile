@@ -30,11 +30,25 @@ function buscarVarianteWeb(parentId, varId) {
     const p = buscarProdWeb(parentId);
     return p && Array.isArray(p.variantes) ? p.variantes.find(v => v.id === varId) : null;
 }
+function buscarColorWeb(parentId, varId, colorId) {
+    const v = buscarVarianteWeb(parentId, varId);
+    return v && Array.isArray(v.colores) ? v.colores.find(c => c.id === colorId) : null;
+}
+function stockVarianteWeb(p, v) {
+    if (v && Array.isArray(v.colores) && v.colores.length) return v.colores.reduce((s, c) => s + (Number(c.stock) || 0), 0);
+    if (v) return Number(v.stock) || 0;
+    return 0;
+}
 function stockDe(id) {
     const partes = String(id || '').split('::');
+    if (partes.length === 3) {
+        const c = buscarColorWeb(partes[0], partes[1], partes[2]);
+        if (c) return Number(c.stock) || 0;
+    }
     if (partes.length === 2) {
-        const v = buscarVarianteWeb(partes[0], partes[1]);
-        if (v) return Number(v.stock) || 0;
+        const p2 = buscarProdWeb(partes[0]);
+        const v = p2 ? buscarVarianteWeb(partes[0], partes[1]) : null;
+        if (v) return stockVarianteWeb(p2, v);
     }
     const p = buscarProdWeb(id);
     if (!p || p.stock === undefined || p.stock === null) return Infinity;
@@ -377,7 +391,7 @@ document.addEventListener('click', (e) => {
     if (wa) pixelTrack('Contact');
 });
 
-// Elegir color/referencia en el modal → actualiza precio, stock y botones
+// Elegir referencia en el modal → actualiza colores, precio, stock y botones
 document.addEventListener('click', (e) => {
     const opt = e.target.closest('.var-opt');
     if (!opt || opt.disabled) return;
@@ -387,30 +401,88 @@ document.addEventListener('click', (e) => {
     opt.classList.add('seleccionado');
     const parent = opt.getAttribute('data-parent');
     const varId = opt.getAttribute('data-var-id');
-    const varNombre = opt.getAttribute('data-var-nombre');
-    const varPrecio = opt.getAttribute('data-var-precio');
-    const varStock = parseInt(opt.getAttribute('data-var-stock'), 10) || 0;
     const pv = buscarProdWeb(parent);
-    const nombreBase = pv ? pv.nombre : parent;
-    const fullId = `${parent}::${varId}`;
-    const fullNombre = `${nombreBase} (${varNombre})`;
-    const precioNum = precioNumDe(varPrecio);
+    const v = buscarVarianteWeb(parent, varId);
+    if (!pv || !v) return;
+    const varNombre = v.nombre;
+    const varPrecio = opt.getAttribute('data-var-precio') || v.precio;
+    // Nivel 2: colores de esta referencia
+    const wrapColores = modal.querySelector('.var-colors');
+    const tieneC = Array.isArray(v.colores) && v.colores.length > 0;
+    let col = null;
+    if (wrapColores) {
+        if (tieneC) {
+            col = v.colores.find(c => (Number(c.stock) || 0) > 0) || v.colores[0];
+            wrapColores.hidden = false;
+            wrapColores.querySelector('h4').textContent = '2. ELIGE COLOR';
+            wrapColores.querySelector('.color-opts').innerHTML = v.colores.map(c => {
+                const st = Number(c.stock) || 0;
+                const sel = col && c.id === col.id ? ' seleccionado' : '';
+                const cara = c.foto
+                    ? `<img src="${esc(c.foto)}" alt="${esc(c.nombre)}" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">`
+                    : esc(c.nombre);
+                return `<button type="button" class="color-opt${sel}" data-parent="${esc(parent)}" data-var-id="${esc(varId)}" data-color-id="${esc(c.id)}" data-color-nombre="${esc(c.nombre)}" data-color-precio="${esc(c.precio || v.precio)}" data-color-stock="${st}" data-color-foto="${esc(c.foto || v.foto || '')}" title="${esc(c.nombre)}${st <= 0 ? ' (agotado)' : ''}" ${st <= 0 ? 'disabled' : ''}>${cara}</button>`;
+            }).join('');
+        } else {
+            wrapColores.hidden = true;
+            wrapColores.querySelector('.color-opts').innerHTML = '';
+        }
+    }
+    aplicarSeleccionWeb(modal, parent, pv.nombre, varId, varNombre, col, varPrecio);
+});
+
+// Elegir color → actualiza foto, precio, stock y botones
+document.addEventListener('click', (e) => {
+    const opt = e.target.closest('.color-opt');
+    if (!opt || opt.disabled) return;
+    const modal = opt.closest('.modal-policy');
+    if (!modal) return;
+    modal.querySelectorAll('.color-opt').forEach(b => b.classList.remove('seleccionado'));
+    opt.classList.add('seleccionado');
+    const parent = opt.getAttribute('data-parent');
+    const varId = opt.getAttribute('data-var-id');
+    const pv = buscarProdWeb(parent);
+    const v = buscarVarianteWeb(parent, varId);
+    const col = buscarColorWeb(parent, varId, opt.getAttribute('data-color-id'));
+    if (!pv || !v || !col) return;
+    aplicarSeleccionWeb(modal, parent, pv.nombre, varId, v.nombre, col, opt.getAttribute('data-var-precio') || v.precio);
+});
+
+// Aplica una selección (referencia + color opcional) a todo el modal
+function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col, varPrecioBase) {
+    const esColor = !!col;
+    const fullId = esColor ? `${parentId}::${varId}::${col.id}` : `${parentId}::${varId}`;
+    const fullNombre = esColor ? `${nombreBase} (${varNombre}, ${col.nombre})` : `${nombreBase} (${varNombre})`;
+    const precioTxt = esColor ? (col.precio || varPrecioBase) : varPrecioBase;
+    const precioNum = precioNumDe(precioTxt);
+    const stockN = esColor ? (Number(col.stock) || 0) : stockDe(fullId);
+    const foto = (esColor && col.foto) || null;
     const priceEl = modal.querySelector('.modal-price');
-    if (priceEl) priceEl.textContent = varPrecio;
+    if (priceEl) priceEl.textContent = precioTxt;
     const stockEl = modal.querySelector('.var-stock');
-    if (stockEl) stockEl.innerHTML = `Disponibles: <strong>${varStock}</strong>`;
+    if (stockEl) stockEl.innerHTML = esColor
+        ? `Color: <strong>${esc(col.nombre)}</strong> — Disponibles: <strong>${stockN}</strong>`
+        : `Disponibles: <strong>${stockN}</strong>`;
+    if (foto) {
+        const firstImg = modal.querySelector('.main-image-view .img-display');
+        if (firstImg) { firstImg.src = foto; firstImg.onerror = function () { this.onerror = null; this.src = IMG_FALLBACK; }; }
+        const firstThumb = modal.querySelector('.gallery-thumbnails .thumb-item img');
+        if (firstThumb) { firstThumb.src = foto; }
+        const firstRadio = modal.querySelector('.gallery-selector');
+        if (firstRadio) firstRadio.checked = true;
+    }
     const addBtn = modal.querySelector('.btn-add-cart');
-    if (addBtn) { addBtn.setAttribute('data-id', fullId); addBtn.setAttribute('data-nombre', fullNombre); addBtn.setAttribute('data-precio', varPrecio); }
+    if (addBtn) { addBtn.setAttribute('data-id', fullId); addBtn.setAttribute('data-nombre', fullNombre); addBtn.setAttribute('data-precio', precioTxt); }
     const boldBtn = modal.querySelector('.btn-bold-producto');
     if (boldBtn) {
         boldBtn.setAttribute('data-id', fullId);
         boldBtn.setAttribute('data-nombre', fullNombre);
         boldBtn.setAttribute('data-precio-num', String(precioNum));
-        boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${varPrecio})`;
+        boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${precioTxt})`;
     }
     const waBtn = modal.querySelector('.btn-wa-link');
     if (waBtn) waBtn.href = `https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
-});
+}
 
 // ====== Control de modales (clases .active + backdrop) ======
 function abrirModal(modal) {
@@ -450,6 +522,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const precioNumProd = parseInt(String(prod.precio).replace(/[^0-9]/g, ''), 10) || 0;
                 const hayStock = stockDe(prod.id) > 0;
                 const tieneVars = Array.isArray(prod.variantes) && prod.variantes.length > 0;
+                const hayColores = tieneVars && prod.variantes.some(v => Array.isArray(v.colores) && v.colores.length > 0);
+                const totalOpciones = tieneVars ? prod.variantes.reduce((s, v) => s + ((Array.isArray(v.colores) && v.colores.length) ? v.colores.length : 1), 0) : 0;
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
@@ -462,10 +536,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
-                            ${tieneVars ? `<p class="var-hint">🎨 ${prod.variantes.length} colores para elegir</p>` : ''}
+                            ${tieneVars ? `<p class="var-hint">🎨 ${hayColores ? totalOpciones + ' colores' : prod.variantes.length + ' referencias'} para elegir</p>` : ''}
                             <p class="short-desc">${esc(prod.corta)}</p>
                             <span class="price">${esc(prod.precio)}</span>
-                            <span class="btn-card">${hayStock ? (tieneVars ? '🎨 Elige tu color' : 'Ver opciones de compra') : 'Agotado'}</span>
+                            <span class="btn-card">${hayStock ? (tieneVars ? (hayColores ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
                         </div>
                     </a>
                 `;
@@ -491,22 +565,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 modal.setAttribute('aria-modal', 'true');
                 modal.setAttribute('aria-label', prod.nombre);
                 // Variante por defecto: primera con stock, si no la primera
-                const varDef = tieneVars ? (prod.variantes.find(v => (Number(v.stock) || 0) > 0) || prod.variantes[0]) : null;
-                const defId = varDef ? `${prod.id}::${varDef.id}` : prod.id;
-                const defNombre = varDef ? `${prod.nombre} (${varDef.nombre})` : prod.nombre;
-                const defPrecioTxt = varDef ? varDef.precio : prod.precio;
-                const defPrecioNum = varDef ? precioNumDe(varDef.precio) : precioNumProd;
+                const stockVar = (v) => (Array.isArray(v.colores) && v.colores.length)
+                    ? v.colores.reduce((s, c) => s + (Number(c.stock) || 0), 0)
+                    : (Number(v.stock) || 0);
+                const varDef = tieneVars ? (prod.variantes.find(v => stockVar(v) > 0) || prod.variantes[0]) : null;
+                const colDef = (varDef && Array.isArray(varDef.colores) && varDef.colores.length)
+                    ? (varDef.colores.find(c => (Number(c.stock) || 0) > 0) || varDef.colores[0]) : null;
+                const fotoSel = (colDef && colDef.foto) || (varDef && varDef.foto) || null;
+                if (fotoSel && !fotos.includes(fotoSel)) fotos.unshift(fotoSel);
+                const nombreSel = varDef ? (colDef ? `${prod.nombre} (${varDef.nombre}, ${colDef.nombre})` : `${prod.nombre} (${varDef.nombre})`) : prod.nombre;
+                const defId = varDef ? (colDef ? `${prod.id}::${varDef.id}::${colDef.id}` : `${prod.id}::${varDef.id}`) : prod.id;
+                const defNombre = nombreSel;
+                const defPrecioTxt = colDef ? (colDef.precio || varDef.precio) : (varDef ? varDef.precio : prod.precio);
+                const defPrecioNum = precioNumDe(defPrecioTxt);
+                const swatchesDe = (v) => ((v && v.colores) || []).map(c => {
+                    const st = Number(c.stock) || 0;
+                    const sel = (colDef && varDef && v.id === varDef.id && c.id === colDef.id) ? ' seleccionado' : '';
+                    const cara = c.foto
+                        ? `<img src="${esc(c.foto)}" alt="${esc(c.nombre)}" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">`
+                        : esc(c.nombre);
+                    return `<button type="button" class="color-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-color-id="${esc(c.id)}" data-color-nombre="${esc(c.nombre)}" data-color-precio="${esc(c.precio || v.precio)}" data-color-stock="${st}" data-color-foto="${esc(c.foto || v.foto || '')}" title="${esc(c.nombre)}${st <= 0 ? ' (agotado)' : ''}" ${st <= 0 ? 'disabled' : ''}>${cara}</button>`;
+                }).join('');
                 const selectorVars = tieneVars ? `
                             <div class="var-selector">
-                                <h4>ELIGE COLOR / REFERENCIA</h4>
+                                <h4>${hayColores ? '1. ELIGE REFERENCIA' : 'ELIGE REFERENCIA'}</h4>
                                 <div class="var-opts">
                                     ${prod.variantes.map(v => {
-                                        const st = Number(v.stock) || 0;
+                                        const st = stockVar(v);
                                         const sel = varDef && v.id === varDef.id ? ' seleccionado' : '';
-                                        return `<button type="button" class="var-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-var-nombre="${esc(v.nombre)}" data-var-precio="${esc(v.precio)}" data-var-stock="${st}" ${st <= 0 ? 'disabled' : ''}>${esc(v.nombre)}${st <= 0 ? ' (agotado)' : ''}</button>`;
+                                        return `<button type="button" class="var-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-var-nombre="${esc(v.nombre)}" data-var-precio="${esc(v.precio)}" data-var-stock="${st}" data-var-foto="${esc(v.foto || '')}" ${st <= 0 ? 'disabled' : ''}>${esc(v.nombre)}${st <= 0 ? ' (agotado)' : ''}</button>`;
                                     }).join('')}
                                 </div>
-                                <p class="var-stock">${varDef ? `Disponibles: <strong>${Number(varDef.stock) || 0}</strong>` : ''}</p>
+                                <div class="var-colors" ${varDef && varDef.colores && varDef.colores.length ? '' : 'hidden'}>
+                                    ${varDef && varDef.colores && varDef.colores.length ? '<h4>2. ELIGE COLOR</h4>' : ''}
+                                    <div class="color-opts">${varDef ? swatchesDe(varDef) : ''}</div>
+                                </div>
+                                <p class="var-stock">${colDef ? `Color: <strong>${esc(colDef.nombre)}</strong> — Disponibles: <strong>${Number(colDef.stock) || 0}</strong>` : (varDef ? `Disponibles: <strong>${stockVar(varDef)}</strong>` : '')}</p>
                             </div>` : '';
                 modal.innerHTML = `
                     <div class="modal-product-container">
