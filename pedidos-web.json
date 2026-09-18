@@ -249,7 +249,7 @@
         "correo": "hannarojasbz@gmail.com"
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "CNPEWKUHSW33U",
       "metodo": "CARD_WEB",
       "fecha": "2026-09-18T19:18:07.903Z",
