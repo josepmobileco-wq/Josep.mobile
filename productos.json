@@ -291,6 +291,54 @@
     "stock": 0
   },
   {
+    "id": "tarjetero-celular",
+    "nombre": "Tarjetero para celular",
+    "precio": "$15.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "tarjeterocondiseño1.jpeg",
+      "tarjeterocondiseño2.jpeg",
+      "tarjeterocondiseño3.jpeg"
+    ],
+    "stock": 2,
+    "variantes": [
+      {
+        "id": "tarjetero-con-magsafe-mu73w8y3",
+        "nombre": "Tarjetero con Magsafe",
+        "precio": "$15.000 COP",
+        "stock": 2,
+        "colores": [
+          {
+            "id": "rosa-mu741gvt",
+            "nombre": "Rosa",
+            "precio": "$25.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "cafe-mu742g8g",
+            "nombre": "Cafe",
+            "precio": "$25.000 COP",
+            "stock": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tv-stick-magis",
+    "nombre": "TV Stick Android TV (Magis TV)",
+    "precio": "$100.000 COP",
+    "corta": "TV Stick Android TV, caja naranja y blanca.",
+    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
+    "fotos": [
+      "tvstick1.jpg",
+      "tvstick2.jpg",
+      "tvstick3.jpg"
+    ],
+    "stock": 1
+  },
+  {
     "id": "space-collection",
     "nombre": "Space Collection",
     "precio": "$20.000 COP",
