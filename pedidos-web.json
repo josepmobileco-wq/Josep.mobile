@@ -121,6 +121,28 @@
       "paymentId": null,
       "metodo": null,
       "fecha": "2026-09-17T04:19:37.096Z"
+    },
+    {
+      "orderId": "JM-1789748527934-8dit",
+      "items": [
+        {
+          "id": "airpodspro2",
+          "nombre": "Airpods Pro 2",
+          "cantidad": 1,
+          "precioNum": 70000
+        }
+      ],
+      "total": 70000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com"
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-18T16:22:08.772Z"
     }
   ]
 }
