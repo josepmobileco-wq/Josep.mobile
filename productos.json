@@ -345,6 +345,113 @@
     "stock": 1
   },
   {
+    "id": "estuche-espejo",
+    "nombre": "Estuche Espejo",
+    "precio": "$27.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "efectoespejo1.jpeg",
+      "efectoespejo2.jpeg",
+      "efectoespejo3.jpeg"
+    ],
+    "stock": 18,
+    "variantes": [
+      {
+        "id": "iphone-17",
+        "nombre": "iPhone 17",
+        "precio": "$27.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "iphone-15",
+        "nombre": "iPhone 15",
+        "precio": "$27.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "iphone-15-pro",
+        "nombre": "iPhone 15 Pro",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-17-pro-max",
+        "nombre": "iPhone 17 Pro Max",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-11-pro",
+        "nombre": "iPhone 11 Pro",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-16-pro-max",
+        "nombre": "iPhone 16 Pro Max",
+        "precio": "$27.000 COP",
+        "stock": 3
+      },
+      {
+        "id": "iphone-17-pro",
+        "nombre": "iPhone 17 Pro",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-11",
+        "nombre": "iPhone 11",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "ip-13-pro-max",
+        "nombre": "IP 13 Pro Max",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-12",
+        "nombre": "iPhone 12",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "ip-13",
+        "nombre": "IP 13",
+        "precio": "$27.000 COP",
+        "stock": 2,
+        "colores": [
+          {
+            "id": "rojo-mu6axwgl",
+            "nombre": "Rojo",
+            "precio": "$25.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "oro-rosa-mu6azxf9",
+            "nombre": "Oro Rosa",
+            "precio": "$28.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "ip-14",
+        "nombre": "IP 14",
+        "precio": "$27.000 COP",
+        "stock": 1
+      },
+      {
+        "id": "iphone-11-pro-max",
+        "nombre": "iPhone 11 Pro Max",
+        "precio": "$27.000 COP",
+        "stock": 1
+      }
+    ]
+  },
+  {
     "id": "space-collection",
     "nombre": "Space Collection",
     "precio": "$20.000 COP",
