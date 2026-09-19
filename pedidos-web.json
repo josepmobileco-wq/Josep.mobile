@@ -253,7 +253,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TAWPMGQIDG8",
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-19T04:33:48.618Z",
