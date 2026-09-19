@@ -190,7 +190,7 @@ async function abrirCheckoutBold(amount, description, boton, customerData, order
 }
 
 // ====== Checkout con datos del cliente + alerta de pedido ======
-const WHATSAPP_TIENDA = '573173482040';
+const WHATSAPP_TIENDA = '573155654422';
 let pedidoPendiente = null; // { items, total, origen }
 
 function formatoCOP(n) {
@@ -481,7 +481,7 @@ function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col,
         boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${precioTxt})`;
     }
     const waBtn = modal.querySelector('.btn-wa-link');
-    if (waBtn) waBtn.href = `https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
+    if (waBtn) waBtn.href = `https://wa.me/573155654422?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
 }
 
 // ====== Control de modales (clases .active + backdrop) ======
@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <button type="button" class="btn-card" disabled>
                                     <i class="fa-solid fa-ban"></i> Agotado
                                 </button>`}
-                                <a href="https://wa.me/573173482040?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
+                                <a href="https://wa.me/573155654422?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
                                     <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
                             </div>
@@ -915,7 +915,7 @@ function actualizarCarritoUI() {
     msjWhatsApp += `\n*Total a pagar:* ${totalFormateado}`;
 
     if (btnPayWA) {
-        btnPayWA.href = `https://wa.me/573173482040?text=${encodeURIComponent(msjWhatsApp)}`;
+        btnPayWA.href = `https://wa.me/573155654422?text=${encodeURIComponent(msjWhatsApp)}`;
     }
     // Total dinámico para el checkout Bold (firma generada por el Worker)
     if (btnPayMP) btnPayMP.setAttribute('data-total-num', String(totalAcumulado));
