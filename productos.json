@@ -298,6 +298,27 @@
     "stock": 2
   },
   {
+    "id": "silicon-moto",
+    "nombre": "Silicon Case MOTO (G04/G045/G24)",
+    "precio": "$20.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [
+      "siliconcase1.jpeg",
+      "siliconcase2.jpeg",
+      "siliconcase3.jpeg"
+    ],
+    "stock": 4,
+    "variantes": [
+      {
+        "id": "spark-40pro-mu6cu2lb",
+        "nombre": "SPARK 40PRO",
+        "precio": "$20.000 COP",
+        "stock": 4
+      }
+    ]
+  },
+  {
     "id": "tarjetero-celular",
     "nombre": "Tarjetero para celular",
     "precio": "$15.000 COP",
