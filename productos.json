@@ -88,7 +88,7 @@
       "airpodspro31t.jpg",
       "airpodspro32t.jpg"
     ],
-    "stock": 2
+    "stock": 1
   },
   {
     "id": "Audifonos-smarwach-mtf",
@@ -522,15 +522,6 @@
       "cargador3en13.jpeg"
     ],
     "stock": 2
-  },
-  {
-    "id": "productos-que-no-tenemos-mu4jzjra",
-    "nombre": "PRODUCTOS QUE NO TENEMOS",
-    "precio": "$2.000 COP",
-    "corta": "",
-    "detalles": "",
-    "fotos": [],
-    "stock": 998
   },
   {
     "id": "tarjetero-magsafe",
