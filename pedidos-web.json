@@ -253,7 +253,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TAN2PGIL2LE",
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-19T04:18:25.827Z",
