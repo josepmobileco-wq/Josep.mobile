@@ -1,7 +1,7 @@
 [
   {
     "id": "airmax",
-    "nombre": "Audífonos Air Max",
+    "nombre": "Audífonos Bluetooth Diadema Max",
     "precio": "$120.000 COP",
     "corta": "Audífonos Bluetooth premium con cancelación de ruido, sonido de alta fidelidad y Audio Espacial.",
     "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
@@ -14,7 +14,7 @@
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
-        "nombre": "Airpods Max Lila",
+        "nombre": "Lila",
         "precio": "$120.000 COP",
         "stock": 1,
         "foto": "airmax2.jpg",
@@ -29,7 +29,7 @@
       },
       {
         "id": "airpods-max-dorada-mu6addyk",
-        "nombre": "Airpods Max Dorada",
+        "nombre": "Dorada",
         "precio": "$120.000 COP",
         "stock": 1,
         "foto": "airmax3.jpg",
@@ -44,7 +44,7 @@
       },
       {
         "id": "airpods-max-negra-mu7a7pvh",
-        "nombre": "Airpods Max Negra",
+        "nombre": "Negra",
         "precio": "$120.000 COP",
         "stock": 2,
         "foto": "airmax.jpg"
@@ -53,7 +53,7 @@
   },
   {
     "id": "airpodspro2",
-    "nombre": "Airpods Pro 2",
+    "nombre": "Audífonos Bluetooth Pro 2",
     "precio": "$70.000 COP",
     "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
     "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
@@ -66,7 +66,7 @@
   },
   {
     "id": "airpods-pro-3",
-    "nombre": "Audífonos Airpods Pro 3",
+    "nombre": "Audífonos Bluetooth Pro 3",
     "precio": "$75.000 COP",
     "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
     "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
@@ -79,7 +79,7 @@
   },
   {
     "id": "airpods-pro-3-Traductores",
-    "nombre": "Audífonos Airpods Pro 3 Con Traducción",
+    "nombre": "Audífonos Bluetooth Pro 3 con Traducción",
     "precio": "$85.000 COP",
     "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
     "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
@@ -118,7 +118,7 @@
   },
   {
     "id": "Power-Bank-Magsafe-10000mAh",
-    "nombre": "Power Bank MagSafe MTF 10.000 mAh",
+    "nombre": "Power Bank Magnético MTF 10.000 mAh",
     "precio": "$120.000 COP",
     "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
     "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
@@ -146,7 +146,7 @@
     "id": "intercomunicador-q58max",
     "nombre": "Intercomunicador Q58MAX",
     "precio": "$90.000 COP",
-    "corta": "Intercomunicador Q58-Max para casco de moto.",
+    "corta": "Intercomunicador para casco: habla en ruta hasta 500 m con Bluetooth 5.3.",
     "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
     "fotos": [
       "intercomunicador1.jpg",
@@ -159,7 +159,7 @@
     "id": "case-con-anillo",
     "nombre": "Case con anillo Iphone",
     "precio": "$25.000 COP",
-    "corta": "Funda Glitter Mágica con Anillo Soporte y Espejo Integrado.",
+    "corta": "Funda con brillos, anillo soporte y espejo: brilla y protege.",
     "detalles": "Luce un estilo brillante y funcional con esta funda Glitter Mágica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protección total con máximo brillo. Disponible: IPHONE 17",
     "fotos": [
       "estucheconanillo1.jpg",
@@ -172,7 +172,7 @@
     "id": "estuche-kawaii-cinnamoroll-melody",
     "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
     "precio": "$27.000 COP",
-    "corta": "Funda 3D para Iphone.",
+    "corta": "Funda 3D Kawaii con relieve y dijes: tierna, resistente y única.",
     "detalles": "Estuche transparente reforzado con diseño kawaii en relieve de personajes tipo Cinnamoroll y My Melody, decorado con dijes 3D de silicona (lazo, cupcake, luna, corazones), cámara protegida con marco elevado, material suave y resistente a golpes, disponible en azul y lila, compatible con iPhone, el accesorio perfecto para darle un toque tierno y diferente a tu celular.",
     "fotos": [
       "forroscuteazulylila1.jpeg",
@@ -183,7 +183,7 @@
   },
   {
     "id": "borde-lujo-s25-ultra",
-    "nombre": "Estuche de Lujo Transparente con Borde Dorado — MagSafe para Samsung S25 Ultra",
+    "nombre": "Estuche de Lujo Transparente con Borde Dorado — Magnético para Samsung S25 Ultra",
     "precio": "$25.000 COP",
     "corta": "Estuche transparente con borde metálico dorado y anillo magnético integrado, compatible con carga MagSafe. Elegancia y funcionalidad en un solo accesorio para tu Samsung S25 Ultra. ¡Protección con estilo premium!",
     "detalles": "Estuche de Lujo Transparente con borde dorado y anillo magnético MagSafe: protege las cámaras con precisión, resalta el diseño original de tu Samsung S25 Ultra y combina elegancia con funcionalidad. ✨🧲📱",
@@ -265,7 +265,7 @@
     "id": "luz-led-w80",
     "nombre": "Luz LED W80 (aro de luz)",
     "precio": "$50.000 COP",
-    "corta": "Luz rectangular blanca plástica.",
+    "corta": "Aro de luz LED W80: ilumina tus fotos y videos como profesional.",
     "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
     "fotos": [
       "Luzled.jpeg",
@@ -277,7 +277,7 @@
     "id": "selfie-screen-blanco",
     "nombre": "Magnetic Selfie Screen blanco",
     "precio": "$140.000 COP",
-    "corta": "Pantalla selfie con carga.",
+    "corta": "Pantalla selfie magnética con luz y carga: tus fotos siempre perfectas.",
     "detalles": "Pantalla selfie con carga, color blanco.",
     "fotos": [
       "pantallaselfie1.jpeg",
@@ -290,7 +290,7 @@
     "id": "power-bank-10000",
     "nombre": "Power bank 10000mAh",
     "precio": "$70.000 COP",
-    "corta": "Power bank 10000mAh, carga tu celular.",
+    "corta": "Power Bank 10000 mAh compacta: carga rápida donde vayas.",
     "detalles": "Power bank de 10000mAh para cargar tu celular.",
     "fotos": [
       "powerbank1001.jpeg"
@@ -301,8 +301,8 @@
     "id": "silicon-moto",
     "nombre": "Silicon Case MOTO (G04/G045/G24)",
     "precio": "$20.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Funda de silicona suave y resistente para Motorola. Protección total con ajuste perfecto.",
+    "detalles": "Funda de silicona premium para Motorola G04, G045 y G24. Suave al tacto, antideslizante y con bordes elevados que protegen la cámara.",
     "fotos": [
       "siliconcase1.jpeg",
       "siliconcase2.jpeg",
@@ -322,8 +322,8 @@
     "id": "tarjetero-celular",
     "nombre": "Tarjetero para celular",
     "precio": "$15.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Tarjetero de silicona para tu celular: lleva tus tarjetas siempre contigo.",
+    "detalles": "Tarjetero de silicona color negro que se adhiere a tu celular. Guarda tus tarjetas, cédula y billetes con estilo y seguridad.",
     "fotos": [
       "tarjeterodiseño1.jpeg",
       "tarjeterodiseño2.jpeg",
@@ -333,9 +333,9 @@
   },
   {
     "id": "tv-stick-magis",
-    "nombre": "TV Stick Android TV (Magis TV)",
+    "nombre": "TV Stick Android TV 4K",
     "precio": "$100.000 COP",
-    "corta": "TV Stick Android TV, caja naranja y blanca.",
+    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
     "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
     "fotos": [
       "tvstck1.jpg",
@@ -348,8 +348,8 @@
     "id": "estuche-espejo",
     "nombre": "Estuche Espejo",
     "precio": "$27.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Estuche con acabado espejo que protege y te hace lucir increíble. Elige tu modelo.",
+    "detalles": "Estuche con efecto espejo de alta calidad: protege contra golpes y rayones mientras luce elegante. Disponible para varios modelos.",
     "fotos": [
       "efectoespejo1.jpeg",
       "efectoespejo2.jpeg",
@@ -455,8 +455,8 @@
     "id": "space-collection",
     "nombre": "Space Collection",
     "precio": "$20.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Colección Space: estuche transparente flexible con diseño espacial. Elige tu modelo.",
+    "detalles": "Colección Space con diseño espacial exclusivo sobre estuche transparente flexible. Liviano, resistente y con ajuste perfecto según tu modelo.",
     "fotos": [
       "space1.jpeg",
       "space2.jpeg",
@@ -602,8 +602,8 @@
     "id": "estuche-360",
     "nombre": "Estuche 360°",
     "precio": "$27.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Protección total 360°: cuida cámara, bordes y pantalla. Elige tu modelo.",
+    "detalles": "Estuche 360° que cubre por completo tu celular: pantalla, bordes y cámara. Máxima protección contra caídas sin perder estilo.",
     "fotos": [
       "estuche360.1.jpeg",
       "estuche360.2.jpeg",
@@ -629,8 +629,8 @@
     "id": "vidrio-5d",
     "nombre": "Vidrio 5D",
     "precio": "$10.000 COP",
-    "corta": "",
-    "detalles": "",
+    "corta": "Vidrio templado 5D de alta resistencia para tu pantalla. Elige tu modelo.",
+    "detalles": "Vidrio templado 5D con pegamento completo y bordes redondeados. Protege tu pantalla de golpes y rayones con claridad total.",
     "fotos": [
       "vidriotemplado1.jpg",
       "vidriotemplado2.jpg",
@@ -805,7 +805,7 @@
   },
   {
     "id": "cargador-inalambrico-3-en-1-magsafe-mu3k5kpb",
-    "nombre": "Cargador Inalámbrico 3 en 1 MagSafe",
+    "nombre": "Cargador Inalámbrico 3 en 1 Magnético",
     "precio": "$90.000 COP",
     "corta": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa,",
     "detalles": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
@@ -818,9 +818,9 @@
   },
   {
     "id": "tarjetero-magsafe",
-    "nombre": "Tarjetero con Magsafe",
+    "nombre": "Tarjetero Magnético",
     "precio": "$25.000 COP",
-    "corta": "Tarjetero con Magsafe para tu celular.",
+    "corta": "Tarjetero magnético: tus tarjetas pegadas al celular, siempre a mano.",
     "detalles": "Tarjetero con sujeción magnética tipo Magsafe para llevar tus tarjetas con tu celular.",
     "fotos": [
       "tarjeteromagsafe1.jpeg",
