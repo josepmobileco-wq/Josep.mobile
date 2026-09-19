@@ -252,11 +252,13 @@
         "depto": "Bogotá",
         "notas": ""
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-19T04:33:48.618Z"
+      "paymentId": "TAWPMGQIDG8",
+      "metodo": "BOTON_BANCOLOMBIA",
+      "fecha": "2026-09-19T04:33:48.618Z",
+      "email": "cris78912@gmail.com",
+      "fechaPago": "2026-09-19T04:37:42.728Z"
     },
     {
       "orderId": "JM-1789791503522-yagp",
