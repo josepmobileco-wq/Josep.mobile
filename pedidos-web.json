@@ -252,11 +252,13 @@
         "depto": "Bogotá",
         "notas": ""
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-19T04:18:25.827Z"
+      "paymentId": "TAN2PGIL2LE",
+      "metodo": "BOTON_BANCOLOMBIA",
+      "fecha": "2026-09-19T04:18:25.827Z",
+      "email": "cris78912@gmail.com",
+      "fechaPago": "2026-09-19T04:22:26.654Z"
     },
     {
       "orderId": "JM-1789759086859-qmt9",
