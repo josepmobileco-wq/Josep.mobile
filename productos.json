@@ -10,7 +10,7 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 4,
+    "stock": 16,
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
@@ -48,6 +48,42 @@
         "precio": "$120.000 COP",
         "stock": 2,
         "foto": "airmax.jpg"
+      },
+      {
+        "id": "blanca-8ylrz5",
+        "nombre": "Blanca",
+        "precio": "$120.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "azul-8ylrz6",
+        "nombre": "Azul",
+        "precio": "$120.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "rosa-8ylrz7",
+        "nombre": "Rosa",
+        "precio": "$120.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "roja-8ylrz8",
+        "nombre": "Roja",
+        "precio": "$120.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "verde-8ylrz9",
+        "nombre": "Verde",
+        "precio": "$120.000 COP",
+        "stock": 2
+      },
+      {
+        "id": "beige-8ylrza",
+        "nombre": "Beige",
+        "precio": "$120.000 COP",
+        "stock": 2
       }
     ]
   },
