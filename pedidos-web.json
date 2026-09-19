@@ -233,6 +233,32 @@
       "fecha": "2026-09-18T18:44:12.502Z"
     },
     {
+      "orderId": "JM-1789791503522-yagp",
+      "items": [
+        {
+          "id": "productos-que-no-tenemos-mu4jzjra",
+          "nombre": "PRODUCTOS QUE NO TENEMOS",
+          "cantidad": 1,
+          "precioNum": 2000
+        }
+      ],
+      "total": 2000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-19T04:18:25.827Z"
+    },
+    {
       "orderId": "JM-1789759086859-qmt9",
       "items": [
         {
