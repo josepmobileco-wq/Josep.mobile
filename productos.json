@@ -1016,157 +1016,637 @@
       "vidriotemplado2.jpg",
       "vidriotemplado3.jpg"
     ],
-    "stock": 192,
+    "stock": 552,
     "variantes": [
       {
         "id": "ip-16-pro",
         "nombre": "IP 16 Pro",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-16-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-16-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-14-pro",
         "nombre": "IP 14 Pro",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-14-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-14-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-16",
         "nombre": "IP 16",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-16",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-16",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-12-pro-max",
         "nombre": "IP 12 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-12-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-12-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-15-pro",
         "nombre": "IP 15 Pro",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-15-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-15-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-11",
         "nombre": "IP 11",
         "precio": "$10.000 COP",
-        "stock": 1
+        "stock": 11,
+        "colores": [
+          {
+            "id": "5d-ip-11",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "antiespia-ip-11",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-17-pro",
         "nombre": "IP 17 Pro",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-17-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-17-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-13",
         "nombre": "IP 13",
         "precio": "$10.000 COP",
-        "stock": 11
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-13",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 11
+          },
+          {
+            "id": "antiespia-ip-13",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 11,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-14-pro-max",
         "nombre": "IP 14 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-14-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-14-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-16-plus",
         "nombre": "IP 16 Plus",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-16-plus",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-16-plus",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-17-e",
         "nombre": "IP 17 E",
         "precio": "$10.000 COP",
-        "stock": 1
+        "stock": 11,
+        "colores": [
+          {
+            "id": "5d-ip-17-e",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "antiespia-ip-17-e",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-12-pro",
         "nombre": "IP 12 Pro",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-12-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-12-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-14",
         "nombre": "IP 14",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-14",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-14",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-12",
         "nombre": "IP 12",
         "precio": "$10.000 COP",
-        "stock": 11
+        "stock": 21,
+        "colores": [
+          {
+            "id": "5d-ip-12",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 11
+          },
+          {
+            "id": "antiespia-ip-12",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-13-pro",
         "nombre": "IP 13 Pro",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-13-pro",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-13-pro",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-17",
         "nombre": "IP 17",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-17",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-17",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-15-pro-max",
         "nombre": "IP 15 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-15-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-15-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-16-pro-max",
         "nombre": "IP 16 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 10
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-ip-16-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-ip-16-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-15",
         "nombre": "IP 15",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-15",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-15",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-15-plus",
         "nombre": "IP 15 Plus",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-15-plus",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-15-plus",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-13-pro-max",
         "nombre": "IP 13 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-13-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-13-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-16-e",
         "nombre": "IP 16 E",
         "precio": "$10.000 COP",
-        "stock": 1
+        "stock": 11,
+        "colores": [
+          {
+            "id": "5d-ip-16-e",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "antiespia-ip-16-e",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-12-mini",
         "nombre": "IP 12 Mini",
         "precio": "$10.000 COP",
-        "stock": 2
+        "stock": 12,
+        "colores": [
+          {
+            "id": "5d-ip-12-mini",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 2
+          },
+          {
+            "id": "antiespia-ip-12-mini",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
         "id": "ip-17-pro-max",
         "nombre": "IP 17 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 12
+        "stock": 22,
+        "colores": [
+          {
+            "id": "5d-ip-17-pro-max",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 12
+          },
+          {
+            "id": "antiespia-ip-17-pro-max",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       },
       {
-        "id": "antiespia-ip-13",
-        "nombre": "Antiespía IP 13",
-        "precio": "$15.000 COP",
-        "stock": 1
+        "id": "samsung-a12-mu93o6m40",
+        "nombre": "SAMSUNG A12",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-samsung-a12-mu93o6m40",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-samsung-a12-mu93o6m40",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "samsung-a35-mu93o6m41",
+        "nombre": "SAMSUNG A35",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-samsung-a35-mu93o6m41",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-samsung-a35-mu93o6m41",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "samsung-a16-mu93o6m42",
+        "nombre": "SAMSUNG A16",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-samsung-a16-mu93o6m42",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-samsung-a16-mu93o6m42",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "samsung-a05-mu93o6m43",
+        "nombre": "SAMSUNG A05",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-samsung-a05-mu93o6m43",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-samsung-a05-mu93o6m43",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "motorola-g24-mu93o6m44",
+        "nombre": "MOTOROLA G24",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-motorola-g24-mu93o6m44",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-motorola-g24-mu93o6m44",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "note-12-mu93o6m45",
+        "nombre": "NOTE 12",
+        "precio": "$10.000 COP",
+        "stock": 20,
+        "colores": [
+          {
+            "id": "5d-note-12-mu93o6m45",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 10
+          },
+          {
+            "id": "antiespia-note-12-mu93o6m45",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 10,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       }
     ]
   },
