@@ -72,7 +72,7 @@ const BOLD_API_KEY = 'DgZEEr-yQJ2PZWHB2D3wbplWjoBWmbRiMwyqLeqZAIs';
 const BOLD_WORKER_URL = 'https://wispy-shadow-8bccjosep-firma-bold.josep-mobile-co.workers.dev';
 
 // URL de tu tienda (debe ser https y coincidir con tu dominio en Bold).
-const TIENDA_URL = 'https://josepmobileco-wq.github.io/Josep.mobile/';
+const TIENDA_URL = 'https://josepmobile.com/';
 
 // ====== Meta Pixel: eventos de tienda (no rompe nada si el Píxel no cargó) ======
 function pixelTrack(nombre, datos) {
