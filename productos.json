@@ -202,7 +202,24 @@
       "estucheconanillo2.jpeg",
       "estucheconanillo3.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "variantes": [
+      {
+        "id": "iphone-14-mu93526u",
+        "nombre": "IPhone 14",
+        "precio": "$25.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "blanco-mu93526u",
+            "nombre": "Blanco",
+            "precio": "$25.000 COP",
+            "stock": 1,
+            "foto": "estucheconanilloip14.jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "estuche-kawaii-cinnamoroll-melody",
@@ -215,7 +232,31 @@
       "forroscuteazulylila2.jpeg",
       "forroscuteazulylila3.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "variantes": [
+      {
+        "id": "iphone-17-mu90g04m",
+        "nombre": "IPhone 17",
+        "precio": "$27.000 COP",
+        "stock": 2,
+        "colores": [
+          {
+            "id": "azul-mu90g04m",
+            "nombre": "Azul",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "forrocutyazul.jpeg"
+          },
+          {
+            "id": "lila-mu90g04m",
+            "nombre": "Lila",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "forrocutylila.jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "borde-lujo-s25-ultra",
@@ -244,18 +285,94 @@
     "stock": 6,
     "variantes": [
       {
-        "id": "beach-mu6byefm",
-        "nombre": "Beach",
+        "id": "iphone-16-pro-max-mu8zk6r60",
+        "nombre": "IPhone 16 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 2,
-        "foto": "estuchediseñobeach.jpeg"
+        "stock": 1,
+        "colores": [
+          {
+            "id": "rosa-mu8zk6r60",
+            "nombre": "Rosa",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuchecondiseño2.jpeg"
+          }
+        ]
       },
       {
-        "id": "estuche-diseno-rosa-mu6bzqn5",
-        "nombre": "Estuche Diseño Rosa",
+        "id": "iphone-15-pro-max-mu8zk6r61",
+        "nombre": "IPhone 15 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 4,
-        "foto": "estuchediseñorosa.jpeg"
+        "stock": 1,
+        "colores": [
+          {
+            "id": "rosa-mu8zk6r61",
+            "nombre": "Rosa",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuchecondiseño2.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "iphone-15-mu8zugud0",
+        "nombre": "IPhone 15",
+        "precio": "$27.000 COP",
+        "stock": 1,
+        "foto": "estuchecondiseño4.jpeg",
+        "colores": [
+          {
+            "id": "rojo-mu91yn270",
+            "nombre": "Rojo",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "iphone-13-pro-max-mu8zugud1",
+        "nombre": "IPhone 13 Pro Max",
+        "precio": "$27.000 COP",
+        "stock": 1,
+        "foto": "estuchecondiseño4.jpeg",
+        "colores": [
+          {
+            "id": "rojo-mu91yn271",
+            "nombre": "Rojo",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "iphone-16-mu90623f0",
+        "nombre": "IPhone 16",
+        "precio": "$27.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "beach-mu90623f0",
+            "nombre": "Beach",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuchediseñobeach.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "iphone-17-pro-mu90623f1",
+        "nombre": "IPhone 17 Pro",
+        "precio": "$27.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "beach-mu90623f1",
+            "nombre": "Beach",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuchediseñobeach.jpeg"
+          }
+        ]
       }
     ]
   },
@@ -335,7 +452,7 @@
   },
   {
     "id": "silicon-moto",
-    "nombre": "Silicon Case MOTO (G04/G045/G24)",
+    "nombre": "Silicon Case",
     "precio": "$20.000 COP",
     "corta": "Funda de silicona suave y resistente para Motorola. Protección total con ajuste perfecto.",
     "detalles": "Funda de silicona premium para Motorola G04, G045 y G24. Suave al tacto, antideslizante y con bordes elevados que protegen la cámara.",
@@ -347,10 +464,64 @@
     "stock": 4,
     "variantes": [
       {
-        "id": "spark-40pro-mu6cu2lb",
-        "nombre": "SPARK 40PRO",
+        "id": "spark-40-pro-mu917bkx0",
+        "nombre": "SPARK 40 Pro",
         "precio": "$20.000 COP",
-        "stock": 4
+        "stock": 1,
+        "colores": [
+          {
+            "id": "lila-mu917bkx0",
+            "nombre": "Lila",
+            "precio": "$20.000 COP",
+            "stock": 1,
+            "foto": "siliconcasespark40pro.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "spark-50-mu917bkx1",
+        "nombre": "SPARK 50",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "negro-mu917bkx1",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1,
+            "foto": "siliconcasespark50.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "spark-40-mu917bkx2",
+        "nombre": "SPARK 40",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "vinotinto-mu917bkx2",
+            "nombre": "Vinotinto",
+            "precio": "$20.000 COP",
+            "stock": 1,
+            "foto": "Siliconcasespark40.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "moto-g04-mu917bkx3",
+        "nombre": "MOTO G04/G04S/G24",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "azul-mu917bkx3",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1,
+            "foto": "siliconcasemoto.jpeg"
+          }
+        ]
       }
     ]
   },
@@ -381,6 +552,17 @@
     "stock": 1
   },
   {
+    "id": "vortex-ip17",
+    "nombre": "Vortex IP17",
+    "precio": "$30.000 COP",
+    "corta": "Estuche VORTEX para iPhone 17.",
+    "detalles": "Estuche VORTEX para iPhone 17.",
+    "fotos": [
+      "vortexip17.jpeg"
+    ],
+    "stock": 1
+  },
+  {
     "id": "estuche-espejo",
     "nombre": "Estuche Espejo",
     "precio": "$27.000 COP",
@@ -391,67 +573,174 @@
       "efectoespejo2.jpeg",
       "efectoespejo3.jpeg"
     ],
-    "stock": 18,
+    "stock": 21,
     "variantes": [
       {
         "id": "iphone-17",
         "nombre": "iPhone 17",
         "precio": "$27.000 COP",
-        "stock": 2
+        "stock": 2,
+        "colores": [
+          {
+            "id": "blanco-mu91mdbp",
+            "nombre": "Blanco",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "efectoespejoip17.jpeg"
+          },
+          {
+            "id": "oro-rosa-mu921e71",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-15",
         "nombre": "iPhone 15",
         "precio": "$27.000 COP",
-        "stock": 2
+        "stock": 2,
+        "colores": [
+          {
+            "id": "naranja-mu91mdbp",
+            "nombre": "Naranja",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "efectoespejoip15.jpeg"
+          },
+          {
+            "id": "oro-rosa-mu91qhm6",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-15-pro",
         "nombre": "iPhone 15 Pro",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "azul-mu91mdbp",
+            "nombre": "Azul",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "efectoespejoip15pro.jpeg"
+          }
+        ]
       },
       {
         "id": "iphone-17-pro-max",
         "nombre": "iPhone 17 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-11-pro",
         "nombre": "iPhone 11 Pro",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-16-pro-max",
         "nombre": "iPhone 16 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 3
+        "stock": 5,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 3
+          },
+          {
+            "id": "azul-oscuro-mu92c5ab",
+            "nombre": "Azul oscuro",
+            "precio": "$27.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "negro-mu92c5ab",
+            "nombre": "Negro",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-17-pro",
         "nombre": "iPhone 17 Pro",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-11",
         "nombre": "iPhone 11",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "ip-13-pro-max",
         "nombre": "IP 13 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-12",
         "nombre": "iPhone 12",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "ip-13",
@@ -477,13 +766,44 @@
         "id": "ip-14",
         "nombre": "IP 14",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
       },
       {
         "id": "iphone-11-pro-max",
         "nombre": "iPhone 11 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 1
+        "stock": 1,
+        "colores": [
+          {
+            "id": "ororosa-mu91mdbp",
+            "nombre": "Oro rosa",
+            "precio": "$27.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "iphone-16-mu92oynx",
+        "nombre": "IPhone 16",
+        "precio": "$27.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "blanco-mu92oynx",
+            "nombre": "Blanco",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "efectoespejoip17.jpeg"
+          }
+        ]
       }
     ]
   },
@@ -645,19 +965,43 @@
       "estuche360.2.jpeg",
       "estuche360.3.jpeg"
     ],
-    "stock": 4,
+    "stock": 3,
     "variantes": [
       {
-        "id": "iphone-16",
+        "id": "iphone-16-mu92x490",
         "nombre": "IPhone 16",
         "precio": "$27.000 COP",
-        "stock": 2
+        "stock": 1,
+        "colores": [
+          {
+            "id": "naranja-mu92x490",
+            "nombre": "Naranja",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuche360ip16.jpeg"
+          }
+        ]
       },
       {
-        "id": "iphone-15-pro-max",
+        "id": "iphone-15-pro-max-mu92x490",
         "nombre": "IPhone 15 Pro Max",
         "precio": "$27.000 COP",
-        "stock": 2
+        "stock": 2,
+        "colores": [
+          {
+            "id": "negro-mu92x490",
+            "nombre": "Negro",
+            "precio": "$27.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "blanco-mu92x490",
+            "nombre": "Blanco",
+            "precio": "$27.000 COP",
+            "stock": 1,
+            "foto": "estuche360ip15promax.jpeg"
+          }
+        ]
       }
     ]
   },
