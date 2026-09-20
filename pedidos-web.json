@@ -252,11 +252,13 @@
         "depto": "Bogotá",
         "notas": ""
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-20T01:39:33.569Z"
+      "paymentId": "TYFJHWGRTI1",
+      "metodo": "BOTON_BANCOLOMBIA",
+      "fecha": "2026-09-20T01:39:33.569Z",
+      "email": "cris78912@gmail.com",
+      "fechaPago": "2026-09-20T01:41:12.499Z"
     },
     {
       "orderId": "JM-1789792426258-rlu6",
