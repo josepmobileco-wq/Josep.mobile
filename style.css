@@ -565,6 +565,68 @@ body {
     cursor: not-allowed;
 }
 
+.relacionados {
+    margin: 4px 0 16px 0;
+}
+
+.relacionados h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #a1a1aa;
+    margin: 0 0 8px 0;
+}
+
+.rel-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.rel-item {
+    background: #14121a;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: var(--transition);
+    font-family: inherit;
+    min-width: 0;
+}
+
+.rel-item:hover {
+    border-color: var(--accent-light);
+    transform: translateY(-2px);
+}
+
+.rel-item img {
+    width: 100%;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.rel-nombre {
+    font-size: 0.68rem;
+    color: #ffffff;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+}
+
+.rel-precio {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: var(--accent-light);
+    text-align: left;
+}
+
 .btn-card:hover {
     background-color: var(--bg-purple-dark);
 }

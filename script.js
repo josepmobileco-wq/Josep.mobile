@@ -80,6 +80,21 @@ function pixelTrack(nombre, datos) {
 }
 const precioNumDe = (txt) => parseInt(String(txt || '').replace(/[^0-9]/g, ''), 10) || 0;
 
+// ====== Productos relacionados (misma categoría, con stock) ======
+function relacionadosWeb(prod) {
+    const rel = CATALOGO.filter(x => x.id !== prod.id && (x.categoria || '') === (prod.categoria || '') && stockDe(x.id) > 0).slice(0, 4);
+    if (!rel.length) return '';
+    return `<div class="relacionados">
+        <h4>TAMBIÉN TE PUEDE GUSTAR</h4>
+        <div class="rel-grid">${rel.map(r => `
+            <button type="button" class="rel-item" data-relacionado="${esc(r.id)}" title="${esc(r.nombre)}">
+                <img src="${fotoSegura(r, 0)}" alt="${esc(r.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">
+                <span class="rel-nombre">${esc(r.nombre)}</span>
+                <span class="rel-precio">${esc(r.precio)}</span>
+            </button>`).join('')}</div>
+    </div>`;
+}
+
 // ====== Utilidades ======
 function esc(texto) {
     return String(texto)
@@ -385,6 +400,20 @@ document.addEventListener('submit', (e) => {
     }
 });
 
+// Clic en recomendado → abre ese producto
+document.addEventListener('click', (e) => {
+    const rel = e.target.closest('[data-relacionado]');
+    if (!rel) return;
+    const target = document.getElementById('producto-' + rel.getAttribute('data-relacionado'));
+    if (!target) return;
+    cerrarModales();
+    abrirModal(target);
+    try {
+        const pv = buscarProdWeb(rel.getAttribute('data-relacionado'));
+        if (pv) pixelTrack('ViewContent', { content_ids: [pv.id], content_name: pv.nombre, value: precioNumDe(pv.precio), currency: 'COP' });
+    } catch (err) {}
+});
+
 // Clic a WhatsApp (botones y flotante) → evento Contact para Meta Ads
 document.addEventListener('click', (e) => {
     const wa = e.target.closest('a[href*="wa.me"]');
@@ -618,6 +647,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <h4>DETALLES DEL PRODUCTO</h4>
                                 <p>${esc(prod.detalles)}</p>
                             </div>
+                            ${relacionadosWeb(prod)}
 
                             <div class="modal-actions">
                                 ${stockDe(defId) > 0 ? `
