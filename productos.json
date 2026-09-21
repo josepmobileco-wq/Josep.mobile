@@ -111,7 +111,7 @@
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
     ],
-    "stock": 5
+    "stock": 3
   },
   {
     "id": "airpods-pro-3-Traductores",
@@ -1685,6 +1685,19 @@
     "fotos": [
       "tarjeteromagsafe1.jpeg",
       "tarjeteromagsafe2.jpeg"
+    ],
+    "stock": 2
+  },
+  {
+    "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
+    "nombre": "Gafas Inteligentes con Cámara IA 2026",
+    "precio": "$160.000 COP",
+    "corta": "Grabación de Video HD de 8MP, Audio, Traducción en Tiempo Real, Gafas Inteligentes para Hombre y Mujer",
+    "detalles": "Gafas inteligentes con cámara HD de 8MP, audio y reproducción de música, traducción con IA en tiempo real, micrófono para llamadas y carga magnética.",
+    "fotos": [
+      "gafasia.png",
+      "gafasia1.png",
+      "gafasia3.jpg"
     ],
     "stock": 2
   }
