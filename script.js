@@ -350,10 +350,44 @@ function mostrarConfirmacion(draft, estadoTx) {
 
     const urlWA = `https://wa.me/${WHATSAPP_TIENDA}?text=${encodeURIComponent(mensajePedidoWhatsApp(draft, estadoTx))}`;
     document.getElementById('btn-enviar-pedido').href = urlWA;
+    document.getElementById('btn-ver-detalle').href = '#pedido=' + encodeURIComponent(draft.orderId);
 
     const modal = document.getElementById('confirm-modal');
     if (modal) abrirModal(modal);
 }
+
+// ====== Detalle y seguimiento del pedido (estilo Alibaba) ======
+function pintarDetallePedido(orderId) {
+    let draft = null;
+    try { draft = JSON.parse(localStorage.getItem('pedido_bold_' + orderId) || 'null'); } catch (e) {}
+    const box = document.getElementById('pedido-resumen');
+    const tl = document.getElementById('pedido-timeline');
+    if (!box || !tl) return;
+    if (!draft) {
+        box.innerHTML = '<div class="checkout-linea"><span>Pedido no encontrado en este dispositivo (se guarda donde compraste).</span><span></span></div>';
+        tl.innerHTML = '';
+    } else {
+        const c = draft.cliente || {};
+        box.innerHTML = `
+            <div class="checkout-linea"><span>🧾 Pedido</span><span class="co-sub">${esc(draft.orderId)}</span></div>
+            ${draft.items.map(i => `<div class="checkout-linea"><span><span class="co-cant">x${i.cantidad}</span> ${esc(i.nombre)}</span><span class="co-sub">${formatoCOP(i.precioNum * i.cantidad)}</span></div>`).join('')}
+            <div class="checkout-linea"><span>👤 Cliente</span><span>${esc(c.nombre || '')} ${esc(c.telefono || '')}</span></div>
+            <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(c.direccion || '')}, ${esc(c.ciudad || '')}</span></div>
+            <div class="checkout-linea"><span><strong>TOTAL</strong></span><span class="co-sub">${formatoCOP(draft.total)}</span></div>`;
+        const pasos = ['Pedido recibido', 'En preparación', 'En camino', 'Entregado'];
+        const horas = draft.fecha ? (Date.now() - new Date(draft.fecha).getTime()) / 36e5 : 0;
+        const activos = horas < 1 ? 1 : horas < 24 ? 2 : 3;
+        tl.innerHTML = pasos.map((p, i) => `<li class="${i < activos ? 'hecho' : (i === activos ? 'actual' : '')}">${i < activos ? '✔' : (i === activos ? '●' : '○')} ${p}</li>`).join('');
+    }
+    const modal = document.getElementById('pedido-modal');
+    if (modal) abrirModal(modal);
+}
+
+function revisarHashPedido() {
+    const m = (window.location.hash || '').match(/^#pedido=(.+)$/);
+    if (m) pintarDetallePedido(decodeURIComponent(m[1]));
+}
+window.addEventListener('hashchange', revisarHashPedido);
 
 // Aviso tras volver de Bold (?bold-order-id=...&bold-tx-status=...)
 function manejarRetornoBold() {
@@ -534,6 +568,7 @@ function cerrarModales() {
 // ====== Carga de productos ======
 document.addEventListener('DOMContentLoaded', () => {
     manejarRetornoBold();
+    revisarHashPedido();
     fetch('./productos.json')
         .then(response => {
             if (!response.ok) throw new Error(`Error HTTP! estado: ${response.status}`);

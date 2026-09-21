@@ -369,6 +369,21 @@
             <a id="btn-enviar-pedido" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa btn-checkout-pay">
                 <i class="fa-brands fa-whatsapp"></i> Enviar pedido por WhatsApp
             </a>
+            <a id="btn-ver-detalle" href="#" class="btn-card btn-checkout-pay" style="margin-top:10px;background:#5c00a3">
+                <i class="fa-solid fa-box-open"></i> Ver detalle y seguimiento
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Detalle y seguimiento del pedido -->
+    <div id="pedido-modal" class="modal-policy" role="dialog" aria-labelledby="pedido-title" aria-modal="true">
+        <div class="modal-policy-content checkout-content">
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h2 id="pedido-title">Detalle del pedido</h2>
+            <div id="pedido-resumen" class="checkout-resumen"></div>
+            <h3 style="margin:12px 0 8px">Seguimiento del envío</h3>
+            <ol id="pedido-timeline" class="pedido-timeline"></ol>
+            <p class="confirm-ayuda">Te avisamos por WhatsApp cada avance. Guarda este enlace para volver a verlo.</p>
         </div>
     </div>
 
