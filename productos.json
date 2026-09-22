@@ -11,6 +11,7 @@
       "airmax3.jpg"
     ],
     "stock": 16,
+    "categoria": "Audífonos Bluetooth",
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
@@ -98,7 +99,8 @@
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "airpods-pro-3",
@@ -111,7 +113,8 @@
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
     ],
-    "stock": 3
+    "stock": 3,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "airpods-pro-3-Traductores",
@@ -124,7 +127,8 @@
       "airpodspro31t.jpg",
       "airpodspro32t.jpg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "Audifonos-smarwach-mtf",
@@ -137,7 +141,8 @@
       "audifonosmtf2.jpeg",
       "audifonosmtf3.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "Power-Bank-30000mAh",
@@ -150,7 +155,8 @@
       "powerband302.jpeg",
       "powerband303.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Power Banks"
   },
   {
     "id": "Power-Bank-Magsafe-10000mAh",
@@ -163,7 +169,8 @@
       "powerbandmagsafe2.jpeg",
       "powerbandmagsafe3.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Power Banks"
   },
   {
     "id": "Power-Bank-20000mAh",
@@ -176,7 +183,8 @@
       "powerband202.jpeg",
       "powerband203.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Power Banks"
   },
   {
     "id": "intercomunicador-q58max",
@@ -189,7 +197,8 @@
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
     ],
-    "stock": 7
+    "stock": 7,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "case-con-anillo",
@@ -203,6 +212,7 @@
       "estucheconanillo3.jpeg"
     ],
     "stock": 1,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-14-mu93526u",
@@ -233,6 +243,7 @@
       "forroscuteazulylila3.jpeg"
     ],
     "stock": 2,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-17-mu90g04m",
@@ -269,7 +280,8 @@
       "estuchebordedelujo2.jpeg",
       "estuchebordedelujo3.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "estuche-diseno",
@@ -283,6 +295,7 @@
       "estuchediseñobeach.jpeg"
     ],
     "stock": 6,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-16-pro-max-mu8zk6r60",
@@ -386,7 +399,8 @@
       "estucheflores1.jpeg",
       "estucheflores2.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "estuche-flores-note13",
@@ -399,7 +413,8 @@
       "estuchedefloresrmnote13.2.jpeg",
       "estuchedefloresrmnote13.3.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "estuche-gatitos-ip17",
@@ -412,7 +427,8 @@
       "estuchegaticos2.jpeg",
       "forrogaticos3.png"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "luz-led-w80",
@@ -424,7 +440,8 @@
       "Luzled.jpeg",
       "luzled2.jpeg"
     ],
-    "stock": 3
+    "stock": 3,
+    "categoria": "Aros de luz"
   },
   {
     "id": "selfie-screen-blanco",
@@ -437,7 +454,8 @@
       "pantallaselfie2.jpeg",
       "pantallaselfie3.jpeg"
     ],
-    "stock": 3
+    "stock": 3,
+    "categoria": "Cámaras Web"
   },
   {
     "id": "power-bank-10000",
@@ -448,7 +466,8 @@
     "fotos": [
       "powerbank1001.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Power Bands"
   },
   {
     "id": "silicon-moto",
@@ -462,6 +481,7 @@
       "siliconcase3.jpeg"
     ],
     "stock": 4,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "spark-40-pro-mu917bkx0",
@@ -536,7 +556,8 @@
       "tarjeterodiseño2.jpeg",
       "tarjeterodiseño3.jpeg"
     ],
-    "stock": 7
+    "stock": 7,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "tv-stick-magis",
@@ -549,7 +570,8 @@
       "tvstck2.jpg",
       "tvstick3.jpg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Smarts Tvs"
   },
   {
     "id": "vortex-ip17",
@@ -560,7 +582,8 @@
     "fotos": [
       "vortexip17.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "estuche-espejo",
@@ -574,6 +597,7 @@
       "efectoespejo3.jpeg"
     ],
     "stock": 21,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-17",
@@ -819,6 +843,7 @@
       "space3.jpg"
     ],
     "stock": 22,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-11-pro",
@@ -966,6 +991,7 @@
       "estuche360.3.jpeg"
     ],
     "stock": 3,
+    "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-16-mu92x490",
@@ -1017,6 +1043,7 @@
       "vidriotemplado3.jpg"
     ],
     "stock": 552,
+    "categoria": "Vidrios 5D",
     "variantes": [
       {
         "id": "ip-16-pro",
@@ -1661,7 +1688,8 @@
       "estuchecorazones2.jpeg",
       "estuchecorazones3.jpeg"
     ],
-    "stock": 1
+    "stock": 1,
+    "categoria": "Estuches Para celular"
   },
   {
     "id": "cargador-inalambrico-3-en-1-magsafe-mu3k5kpb",
@@ -1674,7 +1702,18 @@
       "cargador3en12.jpeg",
       "cargador3en13.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Power Band"
+  },
+  {
+    "id": "productos-que-no-tenemos-mu4jzjra",
+    "nombre": "PRODUCTOS QUE NO TENEMOS",
+    "precio": "$2.000 COP",
+    "corta": "",
+    "detalles": "",
+    "fotos": [],
+    "stock": 995,
+    "categoria": "General"
   },
   {
     "id": "tarjetero-magsafe",
@@ -1686,7 +1725,8 @@
       "tarjeteromagsafe1.jpeg",
       "tarjeteromagsafe2.jpeg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "Tarjetero"
   },
   {
     "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
@@ -1699,6 +1739,7 @@
       "gafasia1.png",
       "gafasia3.jpg"
     ],
-    "stock": 2
+    "stock": 2,
+    "categoria": "General"
   }
 ]
