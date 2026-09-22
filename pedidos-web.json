@@ -253,7 +253,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TFC8WQOOAIP",
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-22T03:34:36.163Z",
@@ -307,7 +307,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TYHXPCRDV0Z",
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-22T04:12:30.919Z",
