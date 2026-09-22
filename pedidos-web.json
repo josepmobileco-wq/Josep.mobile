@@ -340,7 +340,8 @@
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-20T01:39:33.569Z",
       "email": "cris78912@gmail.com",
-      "fechaPago": "2026-09-20T01:41:12.499Z"
+      "fechaPago": "2026-09-20T01:41:12.499Z",
+      "estadoEnvio": "entregado"
     },
     {
       "orderId": "JM-1789792426258-rlu6",
