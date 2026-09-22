@@ -261,6 +261,32 @@
       "fechaPago": "2026-09-22T03:36:06.047Z"
     },
     {
+      "orderId": "JM-1790050157774-hvam",
+      "items": [
+        {
+          "id": "productos-que-no-tenemos-mu4jzjra",
+          "nombre": "PRODUCTOS QUE NO TENEMOS",
+          "cantidad": 1,
+          "precioNum": 2000
+        }
+      ],
+      "total": 2000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-22T04:09:19.852Z"
+    },
+    {
       "orderId": "JM-1789868371062-s6nq",
       "items": [
         {
