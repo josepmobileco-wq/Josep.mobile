@@ -314,6 +314,32 @@
       "estadoEnvio": "preparacion"
     },
     {
+      "orderId": "JM-1790110501609-4olf",
+      "items": [
+        {
+          "id": "airmax::airpods-max-lila-mu52las5::lila-mu72xtkf",
+          "nombre": "Audífonos Bluetooth Diadema Max (Lila, Lila)",
+          "cantidad": 1,
+          "precioNum": 120000
+        }
+      ],
+      "total": 120000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-22T20:55:03.113Z"
+    },
+    {
       "orderId": "JM-1790048074014-qq51",
       "items": [
         {
