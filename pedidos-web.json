@@ -310,7 +310,8 @@
       "metodo": "NEQUI",
       "fecha": "2026-09-22T14:47:30.581Z",
       "email": "cris78912@gmail.com",
-      "fechaPago": "2026-09-22T14:50:09.318Z"
+      "fechaPago": "2026-09-22T14:50:09.318Z",
+      "estadoEnvio": "preparacion"
     },
     {
       "orderId": "JM-1790048074014-qq51",
