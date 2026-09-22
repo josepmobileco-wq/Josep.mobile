@@ -420,7 +420,8 @@
       "metodo": "CARD_WEB",
       "fecha": "2026-09-18T19:18:07.903Z",
       "email": "hannarojasbz@gmail.com",
-      "fechaPago": "2026-09-18T19:21:54.337Z"
+      "fechaPago": "2026-09-18T19:21:54.337Z",
+      "estadoEnvio": "entregado"
     }
   ]
 }
