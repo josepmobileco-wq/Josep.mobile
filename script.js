@@ -357,9 +357,20 @@ function mostrarConfirmacion(draft, estadoTx) {
 }
 
 // ====== Detalle y seguimiento del pedido (estilo Alibaba) ======
-function pintarDetallePedido(orderId) {
+async function pintarDetallePedido(orderId) {
     let draft = null;
     try { draft = JSON.parse(localStorage.getItem('pedido_bold_' + orderId) || 'null'); } catch (e) {}
+    if (!draft) {
+        // No se compró en este aparato: busca en la nube
+        try {
+            const rem = await fetch('https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/pedidos-web.json');
+            if (rem.ok) {
+                const data = await rem.json();
+                const ped = (data.pedidos || []).find(p => p.orderId === orderId);
+                if (ped) draft = { orderId: ped.orderId, items: ped.items, total: ped.total, cliente: ped.cliente || {}, fecha: ped.fecha, nube: true };
+            }
+        } catch (e) {}
+    }
     const box = document.getElementById('pedido-resumen');
     const tl = document.getElementById('pedido-timeline');
     if (!box || !tl) return;
@@ -375,8 +386,26 @@ function pintarDetallePedido(orderId) {
             <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(c.direccion || '')}, ${esc(c.ciudad || '')}</span></div>
             <div class="checkout-linea"><span><strong>TOTAL</strong></span><span class="co-sub">${formatoCOP(draft.total)}</span></div>`;
         const pasos = ['Pedido recibido', 'En preparación', 'En camino', 'Entregado'];
-        const horas = draft.fecha ? (Date.now() - new Date(draft.fecha).getTime()) / 36e5 : 0;
-        const activos = horas < 1 ? 1 : horas < 24 ? 2 : 3;
+        let activos = 1;
+        try {
+            const rem = await fetch('https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/pedidos-web.json');
+            if (rem.ok) {
+                const data = await rem.json();
+                const ped = (data.pedidos || []).find(p => p.orderId === orderId);
+                if (ped && ped.estadoEnvio === 'preparacion') activos = 2;
+                else if (ped && ped.estadoEnvio === 'en_camino') activos = 3;
+                else if (ped && ped.estadoEnvio === 'entregado') activos = 4;
+                else if (draft.fecha) {
+                    const horas = (Date.now() - new Date(draft.fecha).getTime()) / 36e5;
+                    activos = horas < 1 ? 1 : horas < 24 ? 2 : 3;
+                }
+            }
+        } catch (e) {
+            if (draft.fecha) {
+                const horas = (Date.now() - new Date(draft.fecha).getTime()) / 36e5;
+                activos = horas < 1 ? 1 : horas < 24 ? 2 : 3;
+            }
+        }
         tl.innerHTML = pasos.map((p, i) => `<li class="${i < activos ? 'hecho' : (i === activos ? 'actual' : '')}">${i < activos ? '✔' : (i === activos ? '●' : '○')} ${p}</li>`).join('');
     }
     const modal = document.getElementById('pedido-modal');
