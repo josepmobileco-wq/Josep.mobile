@@ -253,7 +253,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TYFJHWGRTI1",
       "metodo": "BOTON_BANCOLOMBIA",
       "fecha": "2026-09-20T01:39:33.569Z",
