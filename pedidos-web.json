@@ -340,6 +340,32 @@
       "fecha": "2026-09-22T20:55:03.113Z"
     },
     {
+      "orderId": "JM-1790125436467-2r17",
+      "items": [
+        {
+          "id": "Power-Bank-Magsafe-10000mAh",
+          "nombre": "Power Bank Magnético MTF 10.000 mAh",
+          "cantidad": 2,
+          "precioNum": 120000
+        }
+      ],
+      "total": 240000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-23T01:03:58.406Z"
+    },
+    {
       "orderId": "JM-1790048074014-qq51",
       "items": [
         {
