@@ -424,7 +424,8 @@
       "metodo": "NEQUI",
       "fecha": "2026-09-23T02:13:09.959Z",
       "email": "cris78912@gmail.com",
-      "fechaPago": "2026-09-23T02:14:14.357Z"
+      "fechaPago": "2026-09-23T02:14:14.357Z",
+      "estadoEnvio": "entregado"
     },
     {
       "orderId": "JM-1790088449909-jfa0",
