@@ -417,11 +417,13 @@
         "depto": "Bogotá",
         "notas": ""
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-23T02:13:09.959Z"
+      "paymentId": "TN1C1MK40HC",
+      "metodo": "NEQUI",
+      "fecha": "2026-09-23T02:13:09.959Z",
+      "email": "cris78912@gmail.com",
+      "fechaPago": "2026-09-23T02:14:14.357Z"
     },
     {
       "orderId": "JM-1790088449909-jfa0",
