@@ -887,8 +887,11 @@ body {
     padding: 35px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
+    overflow-y: auto;
+    max-height: 90vh;
+    min-width: 0;
 }
 
 .modal-product-details h2 {
