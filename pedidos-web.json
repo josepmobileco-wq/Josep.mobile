@@ -305,7 +305,7 @@
         "notas": ""
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "TA6SVB3DTOS",
       "metodo": "NEQUI",
       "fecha": "2026-09-22T14:47:30.581Z",
