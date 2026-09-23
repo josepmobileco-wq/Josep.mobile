@@ -260,6 +260,8 @@ function leerFormularioCheckout() {
     const malCiudad = datos.ciudad.length < 2;
     marcar('co-ciudad', malCiudad);
     if (malCiudad) errores.push('ciudad');
+    const acepta = document.getElementById('co-terminos');
+    if (!acepta || !acepta.checked) errores.push('aceptar los términos');
 
     return { datos, errores };
 }
@@ -781,8 +783,8 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 3. Apertura de modales de políticas (links del footer)
-    const policyLink = e.target.closest('.quick-links a');
+    // 3. Apertura de modales de políticas (links del footer y del checkout)
+    const policyLink = e.target.closest('.quick-links a, a[data-politica]');
     if (policyLink) {
         const modalId = policyLink.getAttribute('href');
         const targetModal = document.querySelector(modalId);
