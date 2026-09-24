@@ -205,7 +205,7 @@ async function abrirCheckoutBold(amount, description, boton, customerData, order
 }
 
 // ====== Checkout con datos del cliente + alerta de pedido ======
-const WHATSAPP_TIENDA = '573155654422';
+const WHATSAPP_TIENDA = '573227288064';
 let pedidoPendiente = null; // { items, total, origen }
 
 function formatoCOP(n) {
@@ -500,13 +500,15 @@ document.addEventListener('click', (e) => {
     if (!pv || !v) return;
     const varNombre = v.nombre;
     const varPrecio = opt.getAttribute('data-var-precio') || v.precio;
-    // Nivel 2: colores de esta referencia
+    // Nivel 2 solo si hay referencias con 2+ colores; con 1 color se elige directo
+    const colsV = Array.isArray(v.colores) ? v.colores : [];
+    const modoDoble = (pv.variantes || []).some(x => Array.isArray(x.colores) && x.colores.length >= 2);
     const wrapColores = modal.querySelector('.var-colors');
-    const tieneC = Array.isArray(v.colores) && v.colores.length > 0;
     let col = null;
+    let corto = false;
     if (wrapColores) {
-        if (tieneC) {
-            col = v.colores.find(c => (Number(c.stock) || 0) > 0) || v.colores[0];
+        if (modoDoble && colsV.length >= 2) {
+            col = colsV.find(c => (Number(c.stock) || 0) > 0) || colsV[0];
             wrapColores.hidden = false;
             wrapColores.querySelector('h4').textContent = '2. ELIGE COLOR';
             wrapColores.querySelector('.color-opts').innerHTML = v.colores.map(c => {
@@ -520,9 +522,10 @@ document.addEventListener('click', (e) => {
         } else {
             wrapColores.hidden = true;
             wrapColores.querySelector('.color-opts').innerHTML = '';
+            if (colsV.length === 1) { col = colsV[0]; corto = true; }
         }
     }
-    aplicarSeleccionWeb(modal, parent, pv.nombre, varId, varNombre, col, varPrecio);
+    aplicarSeleccionWeb(modal, parent, pv.nombre, varId, varNombre, col, varPrecio, corto);
 });
 
 // Elegir color → actualiza foto, precio, stock y botones
@@ -543,10 +546,10 @@ document.addEventListener('click', (e) => {
 });
 
 // Aplica una selección (referencia + color opcional) a todo el modal
-function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col, varPrecioBase) {
+function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col, varPrecioBase, nombreCorto) {
     const esColor = !!col;
     const fullId = esColor ? `${parentId}::${varId}::${col.id}` : `${parentId}::${varId}`;
-    const fullNombre = esColor ? `${nombreBase} (${varNombre}, ${col.nombre})` : `${nombreBase} (${varNombre})`;
+    const fullNombre = (esColor && !nombreCorto) ? `${nombreBase} (${varNombre}, ${col.nombre})` : `${nombreBase} (${varNombre})`;
     const precioTxt = esColor ? (col.precio || varPrecioBase) : varPrecioBase;
     const precioNum = precioNumDe(precioTxt);
     const stockN = esColor ? (Number(col.stock) || 0) : stockDe(fullId);
@@ -554,7 +557,7 @@ function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col,
     const priceEl = modal.querySelector('.modal-price');
     if (priceEl) priceEl.textContent = precioTxt;
     const stockEl = modal.querySelector('.var-stock');
-    if (stockEl) stockEl.innerHTML = esColor
+    if (stockEl) stockEl.innerHTML = (esColor && !nombreCorto)
         ? `Color: <strong>${esc(col.nombre)}</strong> — Disponibles: <strong>${stockN}</strong>`
         : `Disponibles: <strong>${stockN}</strong>`;
     if (foto) {
@@ -575,7 +578,7 @@ function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col,
         boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${precioTxt})`;
     }
     const waBtn = modal.querySelector('.btn-wa-link');
-    if (waBtn) waBtn.href = `https://wa.me/573155654422?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
+    if (waBtn) waBtn.href = `https://wa.me/573227288064?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
 }
 
 // ====== Control de modales (clases .active + backdrop) ======
@@ -659,16 +662,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 modal.setAttribute('role', 'dialog');
                 modal.setAttribute('aria-modal', 'true');
                 modal.setAttribute('aria-label', prod.nombre);
-                // Variante por defecto: primera con stock, si no la primera
+                // Variante por defecto: primera con stock, si no la primera.
+                // Si una referencia tiene un solo color, se elige directo (sin paso 2).
                 const stockVar = (v) => (Array.isArray(v.colores) && v.colores.length)
                     ? v.colores.reduce((s, c) => s + (Number(c.stock) || 0), 0)
                     : (Number(v.stock) || 0);
+                const colsDe = (v) => (v && Array.isArray(v.colores)) ? v.colores : [];
+                const modoDoble = tieneVars && prod.variantes.some(v => colsDe(v).length >= 2);
                 const varDef = tieneVars ? (prod.variantes.find(v => stockVar(v) > 0) || prod.variantes[0]) : null;
-                const colDef = (varDef && Array.isArray(varDef.colores) && varDef.colores.length)
-                    ? (varDef.colores.find(c => (Number(c.stock) || 0) > 0) || varDef.colores[0]) : null;
+                const colDef = (varDef && colsDe(varDef).length)
+                    ? (colsDe(varDef).find(c => (Number(c.stock) || 0) > 0) || colsDe(varDef)[0]) : null;
+                const verNivel2 = modoDoble && colsDe(varDef).length >= 2;
+                const nombreCortoDef = !!colDef && !verNivel2;
                 const fotoSel = (colDef && colDef.foto) || (varDef && varDef.foto) || null;
                 if (fotoSel && !fotos.includes(fotoSel)) fotos.unshift(fotoSel);
-                const nombreSel = varDef ? (colDef ? `${prod.nombre} (${varDef.nombre}, ${colDef.nombre})` : `${prod.nombre} (${varDef.nombre})`) : prod.nombre;
+                const nombreSel = varDef ? (colDef && !nombreCortoDef ? `${prod.nombre} (${varDef.nombre}, ${colDef.nombre})` : `${prod.nombre} (${varDef.nombre})`) : prod.nombre;
                 const defId = varDef ? (colDef ? `${prod.id}::${varDef.id}::${colDef.id}` : `${prod.id}::${varDef.id}`) : prod.id;
                 const defNombre = nombreSel;
                 const defPrecioTxt = colDef ? (colDef.precio || varDef.precio) : (varDef ? varDef.precio : prod.precio);
@@ -683,7 +691,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).join('');
                 const selectorVars = tieneVars ? `
                             <div class="var-selector">
-                                <h4>${hayColores ? '1. ELIGE REFERENCIA' : 'ELIGE REFERENCIA'}</h4>
+                                <h4>${modoDoble ? '1. ELIGE REFERENCIA' : 'ELIGE COLOR'}</h4>
                                 <div class="var-opts">
                                     ${prod.variantes.map(v => {
                                         const st = stockVar(v);
@@ -691,11 +699,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                         return `<button type="button" class="var-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-var-nombre="${esc(v.nombre)}" data-var-precio="${esc(v.precio)}" data-var-stock="${st}" data-var-foto="${esc(v.foto || '')}" ${st <= 0 ? 'disabled' : ''}>${esc(v.nombre)}${st <= 0 ? ' (agotado)' : ''}</button>`;
                                     }).join('')}
                                 </div>
-                                <div class="var-colors" ${varDef && varDef.colores && varDef.colores.length ? '' : 'hidden'}>
-                                    ${varDef && varDef.colores && varDef.colores.length ? '<h4>2. ELIGE COLOR</h4>' : ''}
-                                    <div class="color-opts">${varDef ? swatchesDe(varDef) : ''}</div>
+                                <div class="var-colors" ${verNivel2 ? '' : 'hidden'}>
+                                    ${verNivel2 ? '<h4>2. ELIGE COLOR</h4>' : ''}
+                                    <div class="color-opts">${verNivel2 ? swatchesDe(varDef) : ''}</div>
                                 </div>
-                                <p class="var-stock">${colDef ? `Color: <strong>${esc(colDef.nombre)}</strong> — Disponibles: <strong>${Number(colDef.stock) || 0}</strong>` : (varDef ? `Disponibles: <strong>${stockVar(varDef)}</strong>` : '')}</p>
+                                <p class="var-stock">${(colDef && verNivel2) ? `Color: <strong>${esc(colDef.nombre)}</strong> — Disponibles: <strong>${Number(colDef.stock) || 0}</strong>` : (varDef ? `Disponibles: <strong>${stockVar(varDef)}</strong>` : '')}</p>
                             </div>` : '';
                 modal.innerHTML = `
                     <div class="modal-product-container">
@@ -726,7 +734,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <button type="button" class="btn-card" disabled>
                                     <i class="fa-solid fa-ban"></i> Agotado
                                 </button>`}
-                                <a href="https://wa.me/573155654422?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
+                                <a href="https://wa.me/573227288064?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
                                     <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
                                 </a>
                             </div>
@@ -1011,7 +1019,7 @@ function actualizarCarritoUI() {
     msjWhatsApp += `\n*Total a pagar:* ${totalFormateado}`;
 
     if (btnPayWA) {
-        btnPayWA.href = `https://wa.me/573155654422?text=${encodeURIComponent(msjWhatsApp)}`;
+        btnPayWA.href = `https://wa.me/573227288064?text=${encodeURIComponent(msjWhatsApp)}`;
     }
     // Total dinámico para el checkout Bold (firma generada por el Worker)
     if (btnPayMP) btnPayMP.setAttribute('data-total-num', String(totalAcumulado));
