@@ -396,6 +396,45 @@
       "fecha": "2026-09-24T18:18:55.786Z"
     },
     {
+      "orderId": "JM-1790282411964-gvua",
+      "items": [
+        {
+          "id": "airmax::airpods-max-lila-mu52las5::lila-mu72xtkf",
+          "nombre": "Audífonos Bluetooth Diadema Max (Lila, Lila)",
+          "cantidad": 1,
+          "precioNum": 120000
+        },
+        {
+          "id": "airpodspro2",
+          "nombre": "Audífonos Bluetooth Pro 2",
+          "cantidad": 1,
+          "precioNum": 70000
+        },
+        {
+          "id": "estuche-kawaii-cinnamoroll-melody::iphone-17-mu90g04m::azul-mu90g04m",
+          "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos (IPhone 1",
+          "cantidad": 1,
+          "precioNum": 27000
+        }
+      ],
+      "total": 217000,
+      "gaClientId": "",
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-24T20:40:14.101Z"
+    },
+    {
       "orderId": "JM-1790128186863-7t6t",
       "items": [
         {
