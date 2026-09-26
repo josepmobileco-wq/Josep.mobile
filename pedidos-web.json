@@ -474,6 +474,33 @@
       "fecha": "2026-09-25T05:09:54.852Z"
     },
     {
+      "orderId": "JM-1790395175303-ya1j",
+      "items": [
+        {
+          "id": "airpodspro2",
+          "nombre": "Audífonos Bluetooth Pro 2",
+          "cantidad": 1,
+          "precioNum": 70000
+        }
+      ],
+      "total": 70000,
+      "gaClientId": "",
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-26T03:59:37.711Z"
+    },
+    {
       "orderId": "JM-1790128186863-7t6t",
       "items": [
         {
