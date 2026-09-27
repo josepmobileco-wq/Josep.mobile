@@ -313,9 +313,9 @@
                     <button type="button" id="btn-pay-mp" class="btn-card btn-mp" data-total-num="0">
                         <i class="fa-solid fa-credit-card"></i> Finalizar compra
                     </button>
-                    <a id="btn-pay-wa" href="#" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa">
-                        <i class="fa-brands fa-whatsapp"></i> Pedir Carrito por WhatsApp
-                    </a>
+                    <button type="button" id="btn-pay-wa" class="btn-card btn-wa">
+                        <i class="fa-solid fa-money-bill-wave"></i> Pago contra entrega
+                    </button>
                 </div>
             </div>
         </div>
@@ -370,6 +370,10 @@
                         <label for="co-notas">Notas del pedido</label>
                         <input type="text" id="co-notas" placeholder="Ej: Llamar antes de llegar (opcional)">
                     </div>
+                </div>
+                <div class="metodo-pago">
+                    <label class="metodo-opcion"><input type="radio" name="metodo-pago" value="contraentrega" checked> 💵 Pago contra entrega</label>
+                    <label class="metodo-opcion"><input type="radio" name="metodo-pago" value="bold"> 💳 Pagar en línea (Bold)</label>
                 </div>
                 <label class="acepta-terminos">
                     <input type="checkbox" id="co-terminos">

@@ -301,6 +301,11 @@ async function iniciarPagoBold(boton) {
     };
     // Registra el pedido en el Worker para que el POS descuente stock al aprobarse.
     // No bloquea el pago si falla (el POS lo sincroniza después).
+    const metodo = (document.querySelector('input[name="metodo-pago"]:checked') || {}).value || 'bold';
+    if (metodo === 'contraentrega') {
+        await finalizarContraentrega(draft, boton);
+        return;
+    }
     try {
         fetch(BOLD_WORKER_URL.replace(/\/$/, '') + '/registrar-pedido', {
             method: 'POST',
@@ -316,12 +321,41 @@ async function iniciarPagoBold(boton) {
     await abrirCheckoutBold(pedidoPendiente.total, descripcion, boton, customerData, orderId);
 }
 
+// Pago contra entrega: registra el pedido, abre WhatsApp con todo y confirma
+async function finalizarContraentrega(draft, boton) {
+    const textoOriginal = boton ? boton.innerHTML : '';
+    if (boton) { boton.disabled = true; boton.innerHTML = 'Enviando pedido…'; }
+    try {
+        fetch(BOLD_WORKER_URL.replace(/\/$/, '') + '/registrar-pedido', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                orderId: draft.orderId,
+                items: draft.items.map(i => ({ id: i.id || '', nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum })),
+                total: draft.total,
+                canal: 'contraentrega',
+                cliente: { nombre: draft.cliente.nombre, telefono: draft.cliente.telefono, correo: draft.cliente.correo, direccion: draft.cliente.direccion, ciudad: draft.cliente.ciudad, depto: draft.cliente.depto, notas: draft.cliente.notas }
+            })
+        }).catch(() => {});
+    } catch (e) { /* silencioso */ }
+    try { localStorage.setItem('pedido_bold_' + draft.orderId, JSON.stringify(draft)); } catch (e) {}
+    pixelTrack('Lead', { value: draft.total, currency: 'COP', order_id: draft.orderId });
+    const urlWA = `https://wa.me/${WHATSAPP_TIENDA}?text=${encodeURIComponent(mensajePedidoWhatsApp(draft, 'contraentrega'))}`;
+    pixelTrack('Contact');
+    if (draft.origen === 'carrito') { carrito = []; guardarYActualizar(); }
+    cerrarModales();
+    history.pushState('', document.title, window.location.pathname + window.location.search);
+    mostrarConfirmacion(draft, 'contraentrega');
+    window.open(urlWA, '_blank');
+    if (boton) { boton.disabled = false; boton.innerHTML = textoOriginal; }
+}
+
 function mensajePedidoWhatsApp(draft, estadoTx) {
     const c = draft.cliente;
     const lineas = draft.items.map(i =>
         `- ${i.nombre} (x${i.cantidad}): $${(i.precioNum * i.cantidad).toLocaleString('es-CO')} COP`
     ).join('\n');
-    const estadoTxt = estadoTx === 'approved' ? 'APROBADO (Bold)' : estadoTx.toUpperCase();
+    const estadoTxt = estadoTx === 'approved' ? 'APROBADO (Bold)' : (estadoTx === 'contraentrega' ? 'PAGO CONTRA ENTREGA' : String(estadoTx || '').toUpperCase());
     return `🛍️ *NUEVO PEDIDO - JOSEP.MOBILE*\n` +
         `🧾 Pedido: ${draft.orderId}\n` +
         `💳 Estado: ${estadoTxt}\n` +
@@ -577,8 +611,8 @@ function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col,
         boldBtn.setAttribute('data-precio-num', String(precioNum));
         boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${precioTxt})`;
     }
-    const waBtn = modal.querySelector('.btn-wa-link');
-    if (waBtn) waBtn.href = `https://wa.me/573227288064?text=${encodeURIComponent('Hola, quiero comprar el producto ' + fullNombre)}`;
+    const waBtn = modal.querySelector('.btn-wa-ce');
+    if (waBtn) { waBtn.setAttribute('data-id', fullId); waBtn.setAttribute('data-nombre', fullNombre); waBtn.setAttribute('data-precio', precioTxt); }
 }
 
 // ====== Control de modales (clases .active + backdrop) ======
@@ -734,9 +768,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <button type="button" class="btn-card" disabled>
                                     <i class="fa-solid fa-ban"></i> Agotado
                                 </button>`}
-                                <a href="https://wa.me/573227288064?text=${encodeURIComponent('Hola, quiero comprar el producto ' + defNombre)}" target="_blank" rel="noopener noreferrer" class="btn-card btn-wa-link">
-                                    <i class="fa-brands fa-whatsapp"></i> Comprar directo por WhatsApp
-                                </a>
+                                <button type="button" class="btn-card btn-wa-ce" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
+                                    <i class="fa-solid fa-money-bill-wave"></i> Pago contra entrega
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -764,6 +798,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Marca el método contra entrega al abrir el checkout desde esos botones
+function marcarMetodoContraentrega() {
+    const r = document.querySelector('input[name="metodo-pago"][value="contraentrega"]');
+    if (r) r.checked = true;
+}
 
 // ====== Eventos delegados globales ======
 document.addEventListener('click', (e) => {
@@ -877,7 +917,51 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 7c. Finalizar compra del CARRITO (formulario y luego Bold)
+    // 7b-2. Pago contra entrega de UN producto (abre formulario)
+    const btnWaCe = e.target.closest('.btn-wa-ce');
+    if (btnWaCe) {
+        const idProd = btnWaCe.getAttribute('data-id');
+        const nombre = btnWaCe.getAttribute('data-nombre') || 'Producto Josep.mobile';
+        const precioTxt = btnWaCe.getAttribute('data-precio') || '';
+        const monto = precioNumDe(precioTxt);
+        if (monto <= 0) {
+            toastBold('Precio no disponible para este producto.', true);
+            return;
+        }
+        if (stockDe(idProd) < 1) {
+            toastBold('Producto agotado.', true);
+            return;
+        }
+        cerrarModales();
+        abrirCheckout([{ id: idProd, nombre, cantidad: 1, precioNum: monto }], monto, 'producto');
+        marcarMetodoContraentrega();
+        return;
+    }
+
+    // 7b-3. Pago contra entrega del CARRITO (abre formulario)
+    if (e.target.closest('#btn-pay-wa')) {
+        e.preventDefault();
+        const total = carrito.reduce((s, i) => s + (i.precioNum * i.cantidad), 0);
+        if (carrito.length === 0 || total <= 0) {
+            toastBold('Tu carrito está vacío.', true);
+            return;
+        }
+        const sinStock = carrito.find(i => {
+            const enCarrito = carrito.filter(x => x.id === i.id).reduce((a, x) => a + x.cantidad, 0);
+            return enCarrito > stockDe(i.id);
+        });
+        if (sinStock) {
+            toastBold(`"${sinStock.nombre}" ya no tiene stock suficiente.`, true);
+            return;
+        }
+        const items = carrito.map(i => ({ id: i.id, nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum }));
+        cerrarModales();
+        const cartModal = document.getElementById('cart-modal');
+        if (cartModal) cartModal.classList.remove('active');
+        abrirCheckout(items, total, 'carrito');
+        marcarMetodoContraentrega();
+        return;
+    }
     if (e.target.closest('#btn-pay-mp')) {
         e.preventDefault();
         const btn = e.target.closest('#btn-pay-mp');
@@ -979,19 +1063,15 @@ function actualizarCarritoUI() {
     if (carrito.length === 0) {
         cartItemsContainer.innerHTML = '<p class="cart-empty">Tu carrito está vacío.</p>';
         cartTotalPrice.innerText = '$0 COP';
-        if (btnPayWA) btnPayWA.href = '#';
         if (btnPayMP) btnPayMP.setAttribute('data-total-num', '0');
         return;
     }
-
-    let msjWhatsApp = 'Hola! Quiero realizar el pedido de los siguientes productos:\n\n';
 
     carrito.forEach(item => {
         const subtotal = item.precioNum * item.cantidad;
         totalAcumulado += subtotal;
 
         const subtotalTexto = `$${subtotal.toLocaleString('es-CO')} COP`;
-        msjWhatsApp += `- ${item.nombre} ${item.cantidad > 1 ? `(x${item.cantidad})` : ''}: ${subtotalTexto}\n`;
 
         const div = document.createElement('div');
         div.className = 'cart-item-simple';
@@ -1016,11 +1096,6 @@ function actualizarCarritoUI() {
     const totalFormateado = `$${totalAcumulado.toLocaleString('es-CO')} COP`;
     cartTotalPrice.innerText = totalFormateado;
 
-    msjWhatsApp += `\n*Total a pagar:* ${totalFormateado}`;
-
-    if (btnPayWA) {
-        btnPayWA.href = `https://wa.me/573227288064?text=${encodeURIComponent(msjWhatsApp)}`;
-    }
     // Total dinámico para el checkout Bold (firma generada por el Worker)
     if (btnPayMP) btnPayMP.setAttribute('data-total-num', String(totalAcumulado));
 }
