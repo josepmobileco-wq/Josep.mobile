@@ -526,11 +526,13 @@
         "depto": "CUNDINAMARCA",
         "notas": "Conjunto molinos del milenio 2"
       },
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-09-27T15:32:59.791Z"
+      "paymentId": "CNP3HS8T5OU7K",
+      "metodo": "CARD_WEB",
+      "fecha": "2026-09-27T15:32:59.791Z",
+      "email": "arianethgamba0919@gmail.com",
+      "fechaPago": "2026-09-27T15:37:37.519Z"
     },
     {
       "orderId": "JM-1790128186863-7t6t",
