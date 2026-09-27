@@ -518,16 +518,10 @@
       ],
       "total": 207000,
       "cliente": {
-        "nombre": "Arianeth Gamba Torres",
-        "telefono": "3124302093",
-        "correo": "arianethgamba0919@gmail.com",
-        "direccion": "Torre 9 apto 301",
-        "ciudad": "BogotÁ",
-        "depto": "CUNDINAMARCA",
-        "notas": "Conjunto molinos del milenio 2"
+        "nombre": "Arianeth Gamba Torres"
       },
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "CNP3HS8T5OU7K",
       "metodo": "CARD_WEB",
       "fecha": "2026-09-27T15:32:59.791Z",
