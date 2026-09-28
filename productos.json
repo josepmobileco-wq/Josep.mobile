@@ -183,7 +183,7 @@
       "powerband202.jpeg",
       "powerband203.jpeg"
     ],
-    "stock": 2,
+    "stock": 0,
     "categoria": "Power Banks"
   },
   {
@@ -307,8 +307,7 @@
             "id": "rosa-mu8zk6r60",
             "nombre": "Rosa",
             "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuchecondiseño2.jpeg"
+            "stock": 1
           }
         ]
       },
@@ -322,8 +321,7 @@
             "id": "rosa-mu8zk6r61",
             "nombre": "Rosa",
             "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuchecondiseño2.jpeg"
+            "stock": 1
           }
         ]
       },
@@ -596,14 +594,14 @@
       "efectoespejo2.jpeg",
       "efectoespejo3.jpeg"
     ],
-    "stock": 21,
+    "stock": 20,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "iphone-17",
         "nombre": "iPhone 17",
         "precio": "$27.000 COP",
-        "stock": 2,
+        "stock": 1,
         "colores": [
           {
             "id": "blanco-mu91mdbp",
@@ -616,7 +614,7 @@
             "id": "oro-rosa-mu921e71",
             "nombre": "Oro rosa",
             "precio": "$27.000 COP",
-            "stock": 1
+            "stock": 0
           }
         ]
       },
@@ -1726,8 +1724,8 @@
     "detalles": "Gafas inteligentes con cámara HD de 8MP, audio y reproducción de música, traducción con IA en tiempo real, micrófono para llamadas y carga magnética.",
     "fotos": [
       "gafasia.jpg",
-      "gafasia1.jpg",
-      "gafasia3.jpg"
+      "gafasia3.jpg",
+      "gafasia2.jpg"
     ],
     "stock": 2,
     "categoria": "General"
