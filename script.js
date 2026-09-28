@@ -423,12 +423,14 @@ async function pintarDetallePedido(orderId) {
             <div class="checkout-linea"><span><strong>TOTAL</strong></span><span class="co-sub">${formatoCOP(draft.total)}</span></div>`;
         const pasos = ['Pedido recibido', 'En preparación', 'En camino', 'Entregado'];
         let activos = 1;
+        let fallido = false;
         try {
             const rem = await fetch('https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/pedidos-web.json');
             if (rem.ok) {
                 const data = await rem.json();
                 const ped = (data.pedidos || []).find(p => p.orderId === orderId);
-                if (ped && ped.estadoEnvio === 'preparacion') activos = 2;
+                if (ped && ped.estadoEnvio === 'fallido') fallido = true;
+                else if (ped && ped.estadoEnvio === 'preparacion') activos = 2;
                 else if (ped && ped.estadoEnvio === 'en_camino') activos = 3;
                 else if (ped && ped.estadoEnvio === 'entregado') activos = 4;
                 else if (draft.fecha) {
@@ -442,7 +444,9 @@ async function pintarDetallePedido(orderId) {
                 activos = horas < 1 ? 1 : horas < 24 ? 2 : 3;
             }
         }
-        tl.innerHTML = pasos.map((p, i) => `<li class="${i < activos ? 'hecho' : (i === activos ? 'actual' : '')}">${i < activos ? '✔' : (i === activos ? '●' : '○')} ${p}</li>`).join('');
+        tl.innerHTML = fallido
+            ? `<li class="actual">✖ Entrega fallida: contáctanos por WhatsApp para reprogramar</li>`
+            : pasos.map((p, i) => `<li class="${i < activos ? 'hecho' : (i === activos ? 'actual' : '')}">${i < activos ? '✔' : (i === activos ? '●' : '○')} ${p}</li>`).join('');
     }
     const modal = document.getElementById('pedido-modal');
     if (modal) abrirModal(modal);
@@ -831,10 +835,11 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 3. Apertura de modales de políticas (links del footer y del checkout)
-    const policyLink = e.target.closest('.quick-links a, a[data-politica]');
+    // 3. Apertura de modales de políticas (links internos del footer y del checkout)
+    const policyLink = e.target.closest('.quick-links a[href^="#"], a[data-politica]');
     if (policyLink) {
         const modalId = policyLink.getAttribute('href');
+        if (!modalId || !modalId.startsWith('#')) return;
         const targetModal = document.querySelector(modalId);
         if (targetModal && targetModal.classList.contains('modal-policy')) {
             e.preventDefault();
