@@ -527,6 +527,32 @@
       "fecha": "2026-09-27T21:25:01.562Z"
     },
     {
+      "orderId": "JM-1790564263881-ydws",
+      "items": [
+        {
+          "id": "airpods-pro-3",
+          "nombre": "Audífonos Bluetooth Pro 3",
+          "cantidad": 1,
+          "precioNum": 75000
+        }
+      ],
+      "total": 75000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "pendiente",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-28T02:57:44.756Z"
+    },
+    {
       "orderId": "JM-1790562004317-43f2",
       "items": [
         {
