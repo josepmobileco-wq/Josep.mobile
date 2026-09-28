@@ -527,6 +527,32 @@
       "fecha": "2026-09-27T21:25:01.562Z"
     },
     {
+      "orderId": "JM-1790562004317-43f2",
+      "items": [
+        {
+          "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
+          "nombre": "Gafas Inteligentes con Cámara IA 2026",
+          "cantidad": 1,
+          "precioNum": 160000
+        }
+      ],
+      "total": 160000,
+      "cliente": {
+        "nombre": "Cristian Mendoza",
+        "telefono": "3138199802",
+        "correo": "cris78912@gmail.com",
+        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
+        "ciudad": "Bogotá",
+        "depto": "Bogotá",
+        "notas": ""
+      },
+      "estado": "contraentrega",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-09-28T02:20:05.122Z"
+    },
+    {
       "orderId": "JM-1790523178841-8m5g",
       "items": [
         {
