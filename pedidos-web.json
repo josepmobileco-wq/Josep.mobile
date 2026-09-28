@@ -538,16 +538,10 @@
       ],
       "total": 160000,
       "cliente": {
-        "nombre": "Cristian Mendoza",
-        "telefono": "3138199802",
-        "correo": "cris78912@gmail.com",
-        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
-        "ciudad": "Bogotá",
-        "depto": "Bogotá",
-        "notas": ""
+        "nombre": "Cristian Mendoza"
       },
       "estado": "contraentrega",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": null,
       "metodo": null,
       "fecha": "2026-09-28T02:20:05.122Z"
