@@ -140,14 +140,17 @@ function sanitizarDescripcion(texto) {
         .slice(0, 100) || 'Compra Josep mobile';
 }
 
-async function pedirFirmaBold(orderId, amount) {
+async function pedirFirmaBold(orderId, amount, items) {
     if (!BOLD_WORKER_URL || BOLD_WORKER_URL.includes('TU-WORKER')) {
         throw new Error('Falta configurar la URL del Worker de firmas (BOLD_WORKER_URL en script.js).');
     }
     const res = await fetch(BOLD_WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ orderId, amount, currency: 'COP' })
+        body: JSON.stringify({
+            orderId, amount, currency: 'COP',
+            items: (items || []).map(i => ({ id: i.id || '', nombre: i.nombre, cantidad: i.cantidad, precioNum: i.precioNum }))
+        })
     });
     if (!res.ok) throw new Error('El servidor de firmas respondió con error.');
     const data = await res.json();
@@ -155,7 +158,7 @@ async function pedirFirmaBold(orderId, amount) {
     return data.integritySignature;
 }
 
-async function abrirCheckoutBold(amount, description, boton, customerData, orderIdPrevio) {
+async function abrirCheckoutBold(amount, description, boton, customerData, orderIdPrevio, items) {
     if (!BOLD_API_KEY || BOLD_API_KEY.includes('TU_LLAVE')) {
         toastBold('Falta configurar tu llave de identidad Bold en script.js.', true);
         return;
@@ -178,7 +181,7 @@ async function abrirCheckoutBold(amount, description, boton, customerData, order
 
     try {
         const orderId = orderIdPrevio || generarOrderId();
-        const integritySignature = await pedirFirmaBold(orderId, monto);
+        const integritySignature = await pedirFirmaBold(orderId, monto, items);
         const config = {
             orderId,
             currency: 'COP',
@@ -318,7 +321,7 @@ async function iniciarPagoBold(boton) {
             })
         }).catch(() => {});
     } catch (e) { /* silencioso */ }
-    await abrirCheckoutBold(pedidoPendiente.total, descripcion, boton, customerData, orderId);
+    await abrirCheckoutBold(pedidoPendiente.total, descripcion, boton, customerData, orderId, pedidoPendiente.items);
 }
 
 // Pago contra entrega: registra el pedido, abre WhatsApp con todo y confirma
@@ -415,11 +418,18 @@ async function pintarDetallePedido(orderId) {
         tl.innerHTML = '';
     } else {
         const c = draft.cliente || {};
+        // Privacidad: si el pedido viene de la nube pública, NO se muestran
+        // teléfono ni dirección (solo en el aparato donde se compró).
+        const lineaCliente = draft.nube
+            ? `<div class="checkout-linea"><span>👤 Cliente</span><span>${esc(c.nombre || '')}</span></div>
+               <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(c.ciudad || '')}</span></div>
+               <div class="checkout-linea"><span>🔒 Privacidad</span><span>Datos completos solo en tu dispositivo de compra.</span></div>`
+            : `<div class="checkout-linea"><span>👤 Cliente</span><span>${esc(c.nombre || '')} ${esc(c.telefono || '')}</span></div>
+               <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(c.direccion || '')}, ${esc(c.ciudad || '')}</span></div>`;
         box.innerHTML = `
             <div class="checkout-linea"><span>🧾 Pedido</span><span class="co-sub">${esc(draft.orderId)}</span></div>
             ${draft.items.map(i => `<div class="checkout-linea"><span><span class="co-cant">x${i.cantidad}</span> ${esc(i.nombre)}</span><span class="co-sub">${formatoCOP(i.precioNum * i.cantidad)}</span></div>`).join('')}
-            <div class="checkout-linea"><span>👤 Cliente</span><span>${esc(c.nombre || '')} ${esc(c.telefono || '')}</span></div>
-            <div class="checkout-linea"><span>📍 Entrega</span><span>${esc(c.direccion || '')}, ${esc(c.ciudad || '')}</span></div>
+            ${lineaCliente}
             <div class="checkout-linea"><span><strong>TOTAL</strong></span><span class="co-sub">${formatoCOP(draft.total)}</span></div>`;
         const pasos = ['Pedido recibido', 'En preparación', 'En camino', 'Entregado'];
         let activos = 1;
