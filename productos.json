@@ -1713,7 +1713,7 @@
       "gafasia3.jpg",
       "gafasia2.jpg"
     ],
-    "stock": 2,
+    "stock": 3,
     "categoria": "General"
   },
   {
@@ -1728,6 +1728,20 @@
       "cargador25w3.jpg"
     ],
     "stock": 3,
+    "categoria": "Cargador"
+  },
+  {
+    "id": "cargador-35w-iphone-tipo-c-a-c-murft69h",
+    "nombre": "Cargador 35W Iphone Tipo C a C",
+    "precio": "$50.000 COP",
+    "corta": "Carga dos dispositivos al mismo tiempo con la máxima eficiencia y velocidad. El adaptador de corriente de 35W de Apple e",
+    "detalles": "El cargador original Apple de 35W con doble puerto USB-C sirve para alimentar dos dispositivos de forma rápida y simultánea, eliminando la necesidad de llevar múltiples adaptadores. Cuenta con un sistema de carga inteligente que distribuye la energía de manera eficiente entre ambos puertos según las necesidades de la batería de cada equipo, y su diseño compacto con clavijas plegables lo hace sumamente portátil para llevar en cualquier bolsillo. Aunque está optimizado para el ecosistema Apple —como computadoras MacBook Air, teléfonos iPhone, tabletas iPad, Apple Watch y AirPods—, ofrece una compatibilidad universal que funciona a la perfección con cualquier otro dispositivo compatible con carga mediante cable USB-C.",
+    "fotos": [
+      "cargador35w1.jpg",
+      "cargador35w2.jpg",
+      "cargador35w3.jpg"
+    ],
+    "stock": 2,
     "categoria": "Cargador"
   }
 ]
