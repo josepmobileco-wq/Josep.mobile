@@ -10,21 +10,21 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 16,
+    "stock": 13,
     "categoria": "Audífonos Bluetooth",
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
         "nombre": "Lila",
         "precio": "$120.000 COP",
-        "stock": 1,
+        "stock": 0,
         "foto": "airmax2.jpg",
         "colores": [
           {
             "id": "lila-mu72xtkf",
             "nombre": "Lila",
             "precio": "$120.000 COP",
-            "stock": 1
+            "stock": 0
           }
         ]
       },
@@ -47,14 +47,14 @@
         "id": "airpods-max-negra-mu7a7pvh",
         "nombre": "Negra",
         "precio": "$120.000 COP",
-        "stock": 2,
+        "stock": 1,
         "foto": "airmax.jpg"
       },
       {
         "id": "blanca-8ylrz5",
         "nombre": "Blanca",
         "precio": "$120.000 COP",
-        "stock": 2
+        "stock": 1
       },
       {
         "id": "azul-8ylrz6",
@@ -99,7 +99,7 @@
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
     ],
-    "stock": 2,
+    "stock": 1,
     "categoria": "Audífonos Bluetooth"
   },
   {
@@ -112,20 +112,6 @@
       "airpods-pro-3.jpg",
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
-    ],
-    "stock": 3,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
-    "id": "airpods-pro-3-Traductores",
-    "nombre": "Audífonos Bluetooth Pro 3 con Traducción",
-    "precio": "$85.000 COP",
-    "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
-    "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
-    "fotos": [
-      "airpodspro3t.jpg",
-      "airpodspro31t.jpg",
-      "airpodspro32t.jpg"
     ],
     "stock": 1,
     "categoria": "Audífonos Bluetooth"
@@ -438,7 +424,7 @@
       "Luzled.jpeg",
       "luzled2.jpeg"
     ],
-    "stock": 3,
+    "stock": 2,
     "categoria": "Aros de luz"
   },
   {
@@ -1729,5 +1715,19 @@
     ],
     "stock": 2,
     "categoria": "General"
+  },
+  {
+    "id": "cargador-iphone-25w-lightning-murfmioq",
+    "nombre": "Cargador Iphone 25W lightning",
+    "precio": "$50.000 COP",
+    "corta": "¡No esperes horas para llenar tu batería! Lleva tu experiencia de carga al siguiente nivel con este combo de cubo de car",
+    "detalles": "Características Principales: Potencia pura de 24W para cargar tu iPhone del 0% al 50% en aproximadamente 30 minutos, combo completo que incluye el adaptador de pared de alta potencia y el cable de conexión Lightning, protección inteligente con chip integrado contra sobrecalentamientos, sobretensiones y cortocircuitos, y un diseño compacto y portátil ideal para llevar en tu mochila, cartera o de viaje sin ocupar espacio.",
+    "fotos": [
+      "cargador25w1.jpg",
+      "cargador25w2.jpg",
+      "cargador25w3.jpg"
+    ],
+    "stock": 3,
+    "categoria": "Cargador"
   }
 ]
