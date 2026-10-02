@@ -596,7 +596,8 @@
       "aplicado": true,
       "paymentId": null,
       "metodo": null,
-      "fecha": "2026-09-28T02:20:05.122Z"
+      "fecha": "2026-09-28T02:20:05.122Z",
+      "estadoEnvio": "fallido"
     },
     {
       "orderId": "JM-1790523178841-8m5g",
