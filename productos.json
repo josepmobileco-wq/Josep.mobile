@@ -1743,5 +1743,19 @@
     ],
     "stock": 2,
     "categoria": "Cargador"
+  },
+  {
+    "id": "relog-g-tide-r3-murg6f8j",
+    "nombre": "Relog G-TIDE R3",
+    "precio": "$180.000 COP",
+    "corta": "¡Lleva tu estilo y rendimiento al siguiente nivel con el Smartwatch G-Tide R3! ⌚✨ Este reloj inteligente",
+    "detalles": "Reloj Inteligente G-Tide R3 Nuevo con pantalla Full HD de 1.39\", llamadas Bluetooth con micrófono y altavoz integrados, resistencia al agua IP68, batería de 300 mAh de larga duración con carga magnética, más de 100 modos deportivos, monitoreo de salud 24/7 (ritmo cardíaco, oxígeno en sangre SpO2, presión arterial, sueño), notificaciones de apps (WhatsApp, redes sociales), asistente de voz, correa de silicona intercambiable de obsequio y compatibilidad total con Android e iOS mediante la app Da Fit.",
+    "fotos": [
+      "reloggtider31.jpg",
+      "reloggtider32.jpg",
+      "reloggtider33.jpg"
+    ],
+    "stock": 1,
+    "categoria": "Smart Wach"
   }
 ]
