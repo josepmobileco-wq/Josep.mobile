@@ -1757,5 +1757,19 @@
     ],
     "stock": 1,
     "categoria": "Smart Wach"
+  },
+  {
+    "id": "smart-wach-apple-serie-11-murvo2x6",
+    "nombre": "Smart Wach Apple serie 11",
+    "precio": "$140.000 COP",
+    "corta": "⌚ El smartwatch más delgado y avanzado de Apple. Pantalla súper resistente, batería para todo el día con carga rápida",
+    "detalles": "⌚ ¡Lleva tu día a otro nivel con el Apple Watch Series 11! El aliado perfecto para tu salud, entrenamientos y productividad. Cuenta con el diseño más delgado de Apple hasta la fecha y una pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y mantente conectado gracias a su conectividad fluida y batería de carga súper rápida (hasta 24 horas de autonomía). ¡Prácticamente nuevo y listo para vincular !",
+    "fotos": [
+      "smartwach1.jpg",
+      "smartwach2.jpg",
+      "smartwach3.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Smart Wach"
   }
 ]
