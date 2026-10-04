@@ -10,7 +10,7 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 13,
+    "stock": 14,
     "categoria": "Audífonos Bluetooth",
     "variantes": [
       {
@@ -47,7 +47,7 @@
         "id": "airpods-max-negra-mu7a7pvh",
         "nombre": "Negra",
         "precio": "$120.000 COP",
-        "stock": 1,
+        "stock": 2,
         "foto": "airmax.jpg"
       },
       {
@@ -1771,5 +1771,19 @@
     ],
     "stock": 2,
     "categoria": "Smart Wach"
+  },
+  {
+    "id": "airpods-serie-4-mut995rm",
+    "nombre": "Airpods Serie 4",
+    "precio": "$90.000 COP",
+    "corta": "🎧 ¡Apple AirPods 4 en perfecto estado! Disfruta de un sonido totalmente renovado con el potente chip H2",
+    "detalles": "🎧 ¡Apple AirPods 4 en excelente estado y listos para estrenar! Esta última generación de audífonos inalámbricos redefine por completo tu experiencia de audio gracias a la potencia del chip H2, que ofrece un sonido increíblemente nítido, graves profundos y la avanzada función de Aislamiento de Voz para que tus llamadas se escuchen perfectas incluso en entornos ruidosos. Su diseño acústico renovado proporciona un ajuste ultraóptimo y cómodo para usarlos todo el día sin fatiga, respaldado por la resistencia IP54 al polvo, agua y sudor, lo que los hace perfectos tanto para el uso diario como para entrenar. Además, incorporan Audio Espacial Personalizado con seguimiento dinámico de la cabeza para una inmersión total en tus películas y canciones, control por gestos para interactuar con Siri de forma intuitiva, y un nuevo estuche de carga USB-C mucho más compacto y fácil de llevar a cualquier parte. Se entregan impecables, completamente funcionales y listos para vincular a tu iPhone, convirtiéndose en la oportunidad perfecta para actualizar tus audífonos al mejor precio del mercado.",
+    "fotos": [
+      "serie41.jpg",
+      "serie42.jpg",
+      "serie43.jpg"
+    ],
+    "stock": 0,
+    "categoria": "Audífonos Bluetooth"
   }
 ]
