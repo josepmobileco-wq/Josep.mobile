@@ -1785,5 +1785,19 @@
     ],
     "stock": 2,
     "categoria": "Audífonos Bluetooth"
+  },
+  {
+    "id": "microfono-de-solapa-f11-muuol303",
+    "nombre": "Microfono de solapa F11",
+    "precio": "$85.000 COP",
+    "corta": "Micrófono de solapa F11 inalámbrico de alta fidelidad con reducción de ruido inteligente y conexión automática Plug & Pl",
+    "detalles": "El micrófono de solapa F11 destaca por su avanzada tecnología de reducción de ruido inteligente, la cual filtra de forma automática el sonido ambiental para garantizar una captura de voz nítida y con alta fidelidad. Su sistema inalámbrico omnidireccional cuenta con la función Plug & Play, permitiendo una conexión automática e instantánea sin necesidad de instalar aplicaciones o configuraciones complejas. Además, ofrece un diseño compacto y ligero, una batería de larga duración ideal para jornadas extensas de grabación y un amplio rango de transmisión de hasta 20 metros libres de obstáculos, lo que lo hace perfectamente compatible con smartphones, cámaras y computadoras.",
+    "fotos": [
+      "microfonof111.jpg",
+      "microfonof112.jpg",
+      "microfonof113.jpg"
+    ],
+    "stock": 0,
+    "categoria": "Microfono"
   }
 ]
