@@ -208,7 +208,7 @@ async function abrirCheckoutBold(amount, description, boton, customerData, order
 }
 
 // ====== Checkout con datos del cliente + alerta de pedido ======
-const WHATSAPP_TIENDA = '573227288064';
+const WHATSAPP_TIENDA = '573173482040';
 let pedidoPendiente = null; // { items, total, origen }
 
 function formatoCOP(n) {
