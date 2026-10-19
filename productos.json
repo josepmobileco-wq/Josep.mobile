@@ -1,111 +1,33 @@
 [
   {
     "id": "airmax",
-    "nombre": "Audífonos Bluetooth Diadema Max",
-    "precio": "$120.000 COP",
-    "corta": "Audífonos Bluetooth premium con cancelación de ruido, sonido de alta fidelidad y Audio Espacial.",
+    "nombre": "Audífonos Air Max",
+    "precio": "120.000 COP",
+    "corta": "Audífonos inalámbricos Bluetooth premium con cancelación de ruido...",
     "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
     "fotos": [
       "airmax.jpg",
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 14,
-    "categoria": "Audífonos Bluetooth",
-    "variantes": [
-      {
-        "id": "airpods-max-lila-mu52las5",
-        "nombre": "Lila",
-        "precio": "$120.000 COP",
-        "stock": 0,
-        "foto": "airmax2.jpg",
-        "colores": [
-          {
-            "id": "lila-mu72xtkf",
-            "nombre": "Lila",
-            "precio": "$120.000 COP",
-            "stock": 0
-          }
-        ]
-      },
-      {
-        "id": "airpods-max-dorada-mu6addyk",
-        "nombre": "Dorada",
-        "precio": "$120.000 COP",
-        "stock": 1,
-        "foto": "airmax3.jpg",
-        "colores": [
-          {
-            "id": "dorada-mu72yi32",
-            "nombre": "Dorada",
-            "precio": "$120.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "airpods-max-negra-mu7a7pvh",
-        "nombre": "Negra",
-        "precio": "$120.000 COP",
-        "stock": 2,
-        "foto": "airmax.jpg"
-      },
-      {
-        "id": "blanca-8ylrz5",
-        "nombre": "Blanca",
-        "precio": "$120.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "azul-8ylrz6",
-        "nombre": "Azul",
-        "precio": "$120.000 COP",
-        "stock": 2
-      },
-      {
-        "id": "rosa-8ylrz7",
-        "nombre": "Rosa",
-        "precio": "$120.000 COP",
-        "stock": 2
-      },
-      {
-        "id": "roja-8ylrz8",
-        "nombre": "Roja",
-        "precio": "$120.000 COP",
-        "stock": 2
-      },
-      {
-        "id": "verde-8ylrz9",
-        "nombre": "Verde",
-        "precio": "$120.000 COP",
-        "stock": 2
-      },
-      {
-        "id": "beige-8ylrza",
-        "nombre": "Beige",
-        "precio": "$120.000 COP",
-        "stock": 2
-      }
-    ]
+    "precioOriginal": "150000 COP"
   },
   {
     "id": "airpodspro2",
-    "nombre": "Audífonos Bluetooth Pro 2",
-    "precio": "$70.000 COP",
-    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
+    "nombre": "Airpods Pro 2",
+    "precio": "70.000 COP",
+    "corta": "Vive el sonido sin límites. Cancelación activa de ruido hasta 2x más potente...",
     "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
     "fotos": [
       "airpodspro2.jpg",
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Audífonos Bluetooth"
+    ]
   },
   {
     "id": "airpods-pro-3",
-    "nombre": "Audífonos Bluetooth Pro 3",
-    "precio": "$75.000 COP",
+    "nombre": "Audífonos Airpods Pro 3",
+    "precio": "75.000 COP",
     "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
     "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
     "fotos": [
@@ -113,13 +35,24 @@
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
     ],
-    "stock": 1,
-    "categoria": "Audífonos Bluetooth"
+    "precioOriginal": "94000 COP"
+  },
+  {
+    "id": "airpods-pro-3-Traductores",
+    "nombre": "Audífonos Airpods Pro 3 Con Traducción",
+    "precio": "85.000 COP",
+    "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
+    "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
+    "fotos": [
+      "airpodspro3t.jpg",
+      "airpodspro31t.jpg",
+      "airpodspro32t.jpg"
+    ]
   },
   {
     "id": "Audifonos-smarwach-mtf",
     "nombre": "Audífonos Smartwatch MTF M-65",
-    "precio": "$130.000 COP",
+    "precio": "130.000 COP",
     "corta": "MTF M-65 – Auriculares Inalámbricos Open Ear con Pantalla LCD.",
     "detalles": "Diseño Open Ear: se ajustan por fuera del oído con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control táctil para reproducir/pausar música y gestionar llamadas. Batería con hasta 6 horas de uso continuo y 100 horas en modo standby. Conexión Bluetooth 6.0 con alcance de 10 metros. Batería de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentación en caja individual.",
     "fotos": [
@@ -127,27 +60,24 @@
       "audifonosmtf2.jpeg",
       "audifonosmtf3.jpeg"
     ],
-    "stock": 2,
-    "categoria": "Audífonos Bluetooth"
+    "precioOriginal": "163000 COP"
   },
   {
     "id": "Power-Bank-30000mAh",
     "nombre": "Power Bank MTF 30.000 mAh",
-    "precio": "$130.000 COP",
+    "precio": "130.000 COP",
     "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
     "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
     "fotos": [
       "powerband301.jpeg",
       "powerband302.jpeg",
       "powerband303.jpeg"
-    ],
-    "stock": 1,
-    "categoria": "Power Banks"
+    ]
   },
   {
     "id": "Power-Bank-Magsafe-10000mAh",
-    "nombre": "Power Bank Magnético MTF 10.000 mAh",
-    "precio": "$120.000 COP",
+    "nombre": "Power Bank MagSafe MTF 10.000 mAh",
+    "precio": "120.000 COP",
     "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
     "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
     "fotos": [
@@ -155,110 +85,99 @@
       "powerbandmagsafe2.jpeg",
       "powerbandmagsafe3.jpeg"
     ],
-    "stock": 2,
-    "categoria": "Power Banks"
+    "precioOriginal": "150000 COP"
   },
   {
     "id": "Power-Bank-20000mAh",
     "nombre": "Power Bank Harvic 20.000 mAh",
-    "precio": "$90.000 COP",
+    "precio": "90.000 COP",
     "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalámbrica de 15W.",
     "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalámbrica por inducción magnética de 15W y carga rápida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de batería y correa de mano para transporte fácil. Construido con batería de polímero de litio de alta seguridad.",
     "fotos": [
       "powerband201.jpeg",
       "powerband202.jpeg",
       "powerband203.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Power Banks"
+    ]
   },
   {
-    "id": "intercomunicador-q58max",
+    "id": "Intercomunicadores Q58MAX",
     "nombre": "Intercomunicador Q58MAX",
-    "precio": "$90.000 COP",
-    "corta": "Intercomunicador para casco: habla en ruta hasta 500 m con Bluetooth 5.3.",
+    "precio": "90.000 COP",
+    "corta": "Intercomunicador Q58-Max para casco de moto.",
     "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
     "fotos": [
       "intercomunicador1.jpg",
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
     ],
-    "stock": 7,
-    "categoria": "Audífonos Bluetooth"
+    "precioOriginal": "113000 COP"
   },
   {
-    "id": "case-con-anillo",
+    "id": "Case Space",
+    "nombre": "Case Space Iphone",
+    "precio": "25.000 COP",
+    "corta": "Funda Space Collection Transparente Anti-Caídas Premium — iPhone & Samsung.",
+    "detalles": "Protege tu dispositivo con la elegancia y resistencia de la Space Collection, diseñada con tecnología de amortiguación en bordes, acrílico transparente anti-amarilleo y botones independientes de excelente respuesta táctil. Disponible para iPhone 11, 11 | 11 Pro | 11 Pro Max, iPhone 12, 12 mini | 12 | 12 Pro Max, iPhone 13, 13 | 13 Pro | 13 Pro Max, iPhone 14, 14 | 14 Pro Max, iPhone 15, 15 | 15 Pro | 15 Pro Max, iPhone 16 | 16 Pro | 16 Pro Max, iPhone 17 | 17 Pro | 17 Pro Max,Samsung Galaxy A35 | Galaxy S26 Ultra",
+    "fotos": [
+      "space1.jpeg",
+      "space2.jpeg",
+      "space3.jpg"
+    ]
+  },
+  {
+    "id": "Case con anillo",
     "nombre": "Case con anillo Iphone",
-    "precio": "$25.000 COP",
-    "corta": "Funda con brillos, anillo soporte y espejo: brilla y protege.",
+    "precio": "25.000 COP",
+    "corta": "Funda Glitter Mágica con Anillo Soporte y Espejo Integrado.",
     "detalles": "Luce un estilo brillante y funcional con esta funda Glitter Mágica que incluye un anillo soporte giratorio con espejo integrado y bordes reforzados para una protección total con máximo brillo. Disponible: IPHONE 17",
     "fotos": [
       "estucheconanillo1.jpg",
       "estucheconanillo2.jpeg",
       "estucheconanillo3.jpeg"
     ],
-    "stock": 1,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-14-mu93526u",
-        "nombre": "IPhone 14",
-        "precio": "$25.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "blanco-mu93526u",
-            "nombre": "Blanco",
-            "precio": "$25.000 COP",
-            "stock": 1,
-            "foto": "estucheconanilloip14.jpeg"
-          }
-        ]
-      }
-    ]
+    "precioOriginal": "31000 COP"
   },
   {
-    "id": "estuche-kawaii-cinnamoroll-melody",
+    "id": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
     "nombre": "Estuche Kawaii 3D Cinnamoroll & Melody con Relieve y Dijes Decorativos",
-    "precio": "$27.000 COP",
-    "corta": "Funda 3D Kawaii con relieve y dijes: tierna, resistente y única.",
+    "precio": "27.000 COP",
+    "corta": "Funda 3D para Iphone.",
     "detalles": "Estuche transparente reforzado con diseño kawaii en relieve de personajes tipo Cinnamoroll y My Melody, decorado con dijes 3D de silicona (lazo, cupcake, luna, corazones), cámara protegida con marco elevado, material suave y resistente a golpes, disponible en azul y lila, compatible con iPhone, el accesorio perfecto para darle un toque tierno y diferente a tu celular.",
     "fotos": [
       "forroscuteazulylila1.jpeg",
       "forroscuteazulylila2.jpeg",
       "forroscuteazulylila3.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-17-mu90g04m",
-        "nombre": "IPhone 17",
-        "precio": "$27.000 COP",
-        "stock": 2,
-        "colores": [
-          {
-            "id": "azul-mu90g04m",
-            "nombre": "Azul",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "forrocutyazul.jpeg"
-          },
-          {
-            "id": "lila-mu90g04m",
-            "nombre": "Lila",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "forrocutylila.jpeg"
-          }
-        ]
-      }
     ]
   },
   {
-    "id": "borde-lujo-s25-ultra",
-    "nombre": "Estuche de Lujo Transparente con Borde Dorado — Magnético para Samsung S25 Ultra",
-    "precio": "$25.000 COP",
+    "id": "Cargador Inalámbrico 3 en 1 MagSafe — Carga Rápida para Celular, Reloj y Audífonos",
+    "nombre": "Cargador Inalámbrico 3 en 1 MagSafe — Carga Rápida para Celular, Reloj y Audífonos",
+    "precio": "100.000 COP",
+    "corta": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
+    "detalles": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa, carga rápida de hasta 15W, diseño vertical ahorra-espacio y carga segura sin sobrecalentar — ideal para el hogar, la oficina o como regalo tecnológico. 📦⚡🧲",
+    "fotos": [
+      "caragador3en11.jpeg",
+      "cargador3en12.jpeg",
+      "cargador3en13.jpeg"
+    ],
+    "precioOriginal": "125000 COP"
+  },
+  {
+    "id": "Estuche 360",
+    "nombre": "Estuche 360° Protección Total para iPhone — Cubre Cámara y Pantalla",
+    "precio": "35.000 COP",
+    "corta": "Protección completa para tu celular con estuche 360° que cuida cámara, bordes y pantalla. Disponible en varios colores, ajuste perfecto y máxima resistencia a caídas. ¡El accesorio que todo iPhone necesita!",
+    "detalles": "Estuche 360° Protección Total: cubre cámara, bordes y pantalla con material resistente a golpes, ajuste perfecto a botones y puertos, y disponible en varios colores — la armadura perfecta para tu iPhone. 📸🛡️🌈",
+    "fotos": [
+      "estuche360.1.jpeg",
+      "estuche360.2.jpeg",
+      "estuche360.3.jpeg"
+    ]
+  },
+  {
+    "id": "Estuche Borde de lujo",
+    "nombre": "Estuche de Lujo Transparente con Borde Dorado — MagSafe para Samsung S25 Ultra",
+    "precio": "25.000 COP",
     "corta": "Estuche transparente con borde metálico dorado y anillo magnético integrado, compatible con carga MagSafe. Elegancia y funcionalidad en un solo accesorio para tu Samsung S25 Ultra. ¡Protección con estilo premium!",
     "detalles": "Estuche de Lujo Transparente con borde dorado y anillo magnético MagSafe: protege las cámaras con precisión, resalta el diseño original de tu Samsung S25 Ultra y combina elegancia con funcionalidad. ✨🧲📱",
     "fotos": [
@@ -266,1538 +185,18 @@
       "estuchebordedelujo2.jpeg",
       "estuchebordedelujo3.jpeg"
     ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
+    "precioOriginal": "31000 COP"
   },
   {
-    "id": "estuche-diseno",
-    "nombre": "Estuche de diseño",
-    "precio": "$25.000 COP",
-    "corta": "Estuche fiesta, osos, gatos y más diseños.",
-    "detalles": "Estuche con diseños variados: fiesta, osos, gatos y más.",
-    "fotos": [
-      "estuchediseño.jpeg",
-      "estuchediseñorosa.jpeg",
-      "estuchediseñobeach.jpeg"
-    ],
-    "stock": 6,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-16-pro-max-mu8zk6r60",
-        "nombre": "IPhone 16 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "rosa-mu8zk6r60",
-            "nombre": "Rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-15-pro-max-mu8zk6r61",
-        "nombre": "IPhone 15 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "rosa-mu8zk6r61",
-            "nombre": "Rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-15-mu8zugud0",
-        "nombre": "IPhone 15",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "foto": "estuchecondiseño4.jpeg",
-        "colores": [
-          {
-            "id": "rojo-mu91yn270",
-            "nombre": "Rojo",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-13-pro-max-mu8zugud1",
-        "nombre": "IPhone 13 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "foto": "estuchecondiseño4.jpeg",
-        "colores": [
-          {
-            "id": "rojo-mu91yn271",
-            "nombre": "Rojo",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-16-mu90623f0",
-        "nombre": "IPhone 16",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "beach-mu90623f0",
-            "nombre": "Beach",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuchediseñobeach.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "iphone-17-pro-mu90623f1",
-        "nombre": "IPhone 17 Pro",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "beach-mu90623f1",
-            "nombre": "Beach",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuchediseñobeach.jpeg"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "estuche-flores-ip13",
-    "nombre": "Estuche de flores (IP 13)",
-    "precio": "$20.000 COP",
-    "corta": "Estuche de flores para iPhone 13.",
-    "detalles": "Estuche con diseño de flores para iPhone 13.",
-    "fotos": [
-      "estucheflores1.jpeg",
-      "estucheflores2.jpeg"
-    ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "estuche-flores-note13",
-    "nombre": "Estuche de flores RM NOTE 13",
-    "precio": "$25.000 COP",
-    "corta": "Estuche de flores para Redmi Note 13.",
-    "detalles": "Estuche con diseño de flores para Redmi Note 13.",
-    "fotos": [
-      "estuchedefloresrmnote13.1.jpeg",
-      "estuchedefloresrmnote13.2.jpeg",
-      "estuchedefloresrmnote13.3.jpeg"
-    ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "estuche-gatitos-ip17",
-    "nombre": "Estuche de gatitos (iPhone 17)",
-    "precio": "$30.000 COP",
-    "corta": "Estuche de gatitos disponible para iPhone 17.",
-    "detalles": "Estuche con diseño de gatitos, disponible para iPhone 17.",
-    "fotos": [
-      "estuchegaticos1.jpeg",
-      "estuchegaticos2.jpeg",
-      "forrogaticos3.png"
-    ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "luz-led-w80",
-    "nombre": "Luz LED W80 (aro de luz)",
-    "precio": "$50.000 COP",
-    "corta": "Aro de luz LED W80: ilumina tus fotos y videos como profesional.",
-    "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
-    "fotos": [
-      "Luzled.jpeg",
-      "luzled2.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Aros de luz"
-  },
-  {
-    "id": "selfie-screen-blanco",
-    "nombre": "Magnetic Selfie Screen blanco",
-    "precio": "$140.000 COP",
-    "corta": "Pantalla selfie magnética con luz y carga: tus fotos siempre perfectas.",
-    "detalles": "Pantalla selfie con carga, color blanco.",
-    "fotos": [
-      "pantallaselfie1.jpeg",
-      "pantallaselfie2.jpeg",
-      "pantallaselfie3.jpeg"
-    ],
-    "stock": 3,
-    "categoria": "Cámaras Web"
-  },
-  {
-    "id": "power-bank-10000",
-    "nombre": "Power bank 10000mAh",
-    "precio": "$70.000 COP",
-    "corta": "Power Bank 10000 mAh compacta: carga rápida donde vayas.",
-    "detalles": "Power bank de 10000mAh para cargar tu celular.",
-    "fotos": [
-      "powerbank1001.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Power Bands"
-  },
-  {
-    "id": "silicon-moto",
-    "nombre": "Silicon Case",
-    "precio": "$20.000 COP",
-    "corta": "Funda de silicona suave y resistente para Motorola. Protección total con ajuste perfecto.",
-    "detalles": "Funda de silicona premium para Motorola G04, G045 y G24. Suave al tacto, antideslizante y con bordes elevados que protegen la cámara.",
-    "fotos": [
-      "siliconcase1.jpeg",
-      "siliconcase2.jpeg",
-      "siliconcase3.jpeg"
-    ],
-    "stock": 4,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "spark-40-pro-mu917bkx0",
-        "nombre": "SPARK 40 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "lila-mu917bkx0",
-            "nombre": "Lila",
-            "precio": "$20.000 COP",
-            "stock": 1,
-            "foto": "siliconcasespark40pro.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "spark-50-mu917bkx1",
-        "nombre": "SPARK 50",
-        "precio": "$20.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "negro-mu917bkx1",
-            "nombre": "Negro",
-            "precio": "$20.000 COP",
-            "stock": 1,
-            "foto": "siliconcasespark50.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "spark-40-mu917bkx2",
-        "nombre": "SPARK 40",
-        "precio": "$20.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "vinotinto-mu917bkx2",
-            "nombre": "Vinotinto",
-            "precio": "$20.000 COP",
-            "stock": 1,
-            "foto": "Siliconcasespark40.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "moto-g04-mu917bkx3",
-        "nombre": "MOTO G04/G04S/G24",
-        "precio": "$20.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "azul-mu917bkx3",
-            "nombre": "Azul",
-            "precio": "$20.000 COP",
-            "stock": 1,
-            "foto": "siliconcasemoto.jpeg"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "tarjetero-celular",
-    "nombre": "Tarjetero para celular",
-    "precio": "$15.000 COP",
-    "corta": "Tarjetero de silicona para tu celular: lleva tus tarjetas siempre contigo.",
-    "detalles": "Tarjetero de silicona color negro que se adhiere a tu celular. Guarda tus tarjetas, cédula y billetes con estilo y seguridad.",
-    "fotos": [
-      "tarjeterodiseño1.jpeg",
-      "tarjeterodiseño2.jpeg",
-      "tarjeterodiseño3.jpeg"
-    ],
-    "stock": 7,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "tv-stick-magis",
-    "nombre": "TV Stick Android TV 4K",
-    "precio": "$100.000 COP",
-    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
-    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
-    "fotos": [
-      "tvstck1.jpg",
-      "tvstck2.jpg",
-      "tvstick3.jpg"
-    ],
-    "stock": 1,
-    "categoria": "Smarts Tvs"
-  },
-  {
-    "id": "vortex-ip17",
-    "nombre": "Vortex IP17",
-    "precio": "$30.000 COP",
-    "corta": "Estuche VORTEX para iPhone 17.",
-    "detalles": "Estuche VORTEX para iPhone 17.",
-    "fotos": [
-      "vortexip17.jpeg"
-    ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "estuche-espejo",
-    "nombre": "Estuche Espejo",
-    "precio": "$27.000 COP",
-    "corta": "Estuche con acabado espejo que protege y te hace lucir increíble. Elige tu modelo.",
-    "detalles": "Estuche con efecto espejo de alta calidad: protege contra golpes y rayones mientras luce elegante. Disponible para varios modelos.",
-    "fotos": [
-      "efectoespejo1.jpeg",
-      "efectoespejo2.jpeg",
-      "efectoespejo3.jpeg"
-    ],
-    "stock": 20,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-17",
-        "nombre": "iPhone 17",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "blanco-mu91mdbp",
-            "nombre": "Blanco",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "efectoespejoip17.jpeg"
-          },
-          {
-            "id": "oro-rosa-mu921e71",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 0
-          }
-        ]
-      },
-      {
-        "id": "iphone-15",
-        "nombre": "iPhone 15",
-        "precio": "$27.000 COP",
-        "stock": 2,
-        "colores": [
-          {
-            "id": "naranja-mu91mdbp",
-            "nombre": "Naranja",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "efectoespejoip15.jpeg"
-          },
-          {
-            "id": "oro-rosa-mu91qhm6",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-15-pro",
-        "nombre": "iPhone 15 Pro",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "azul-mu91mdbp",
-            "nombre": "Azul",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "efectoespejoip15pro.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "iphone-17-pro-max",
-        "nombre": "iPhone 17 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-11-pro",
-        "nombre": "iPhone 11 Pro",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-16-pro-max",
-        "nombre": "iPhone 16 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 5,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 3
-          },
-          {
-            "id": "azul-oscuro-mu92c5ab",
-            "nombre": "Azul oscuro",
-            "precio": "$27.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "negro-mu92c5ab",
-            "nombre": "Negro",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-17-pro",
-        "nombre": "iPhone 17 Pro",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-11",
-        "nombre": "iPhone 11",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "ip-13-pro-max",
-        "nombre": "IP 13 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-12",
-        "nombre": "iPhone 12",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "ip-13",
-        "nombre": "IP 13",
-        "precio": "$27.000 COP",
-        "stock": 2,
-        "colores": [
-          {
-            "id": "rojo-mu6axwgl",
-            "nombre": "Rojo",
-            "precio": "$25.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "oro-rosa-mu6azxf9",
-            "nombre": "Oro Rosa",
-            "precio": "$28.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "ip-14",
-        "nombre": "IP 14",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-11-pro-max",
-        "nombre": "iPhone 11 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "ororosa-mu91mdbp",
-            "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "id": "iphone-16-mu92oynx",
-        "nombre": "IPhone 16",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "blanco-mu92oynx",
-            "nombre": "Blanco",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "efectoespejoip17.jpeg"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "space-collection",
-    "nombre": "Space Collection",
-    "precio": "$20.000 COP",
-    "corta": "Colección Space: estuche transparente flexible con diseño espacial. Elige tu modelo.",
-    "detalles": "Colección Space con diseño espacial exclusivo sobre estuche transparente flexible. Liviano, resistente y con ajuste perfecto según tu modelo.",
-    "fotos": [
-      "space1.jpeg",
-      "space2.jpeg",
-      "space3.jpg"
-    ],
-    "stock": 22,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-11-pro",
-        "nombre": "iPhone 11 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17-pro",
-        "nombre": "iPhone 17 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12-mini",
-        "nombre": "iPhone 12 mini",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-14-pro-max",
-        "nombre": "iPhone 14 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13-pro-max",
-        "nombre": "IP 13 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15-pro-max",
-        "nombre": "iPhone 15 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17-pro-max",
-        "nombre": "iPhone 17 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16-pro",
-        "nombre": "iPhone 16 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-11-pro-max",
-        "nombre": "iPhone 11 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13-pro",
-        "nombre": "IP 13 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12",
-        "nombre": "iPhone 12",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-13",
-        "nombre": "IP 13",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-17",
-        "nombre": "iPhone 17",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15",
-        "nombre": "iPhone 15",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16-pro-max",
-        "nombre": "iPhone 16 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-16",
-        "nombre": "iPhone 16",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-11",
-        "nombre": "iPhone 11",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-15-pro",
-        "nombre": "iPhone 15 Pro",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "samsung-a35",
-        "nombre": "Samsung A35",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "samsung-s26-ultra",
-        "nombre": "Samsung S26 Ultra",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "ip-14",
-        "nombre": "IP 14",
-        "precio": "$20.000 COP",
-        "stock": 1
-      },
-      {
-        "id": "iphone-12-pro-max",
-        "nombre": "iPhone 12 Pro Max",
-        "precio": "$20.000 COP",
-        "stock": 1
-      }
-    ]
-  },
-  {
-    "id": "estuche-360",
-    "nombre": "Estuche 360°",
-    "precio": "$27.000 COP",
-    "corta": "Protección total 360°: cuida cámara, bordes y pantalla. Elige tu modelo.",
-    "detalles": "Estuche 360° que cubre por completo tu celular: pantalla, bordes y cámara. Máxima protección contra caídas sin perder estilo.",
-    "fotos": [
-      "estuche360.1.jpeg",
-      "estuche360.2.jpeg",
-      "estuche360.3.jpeg"
-    ],
-    "stock": 3,
-    "categoria": "Estuches Para celular",
-    "variantes": [
-      {
-        "id": "iphone-16-mu92x490",
-        "nombre": "IPhone 16",
-        "precio": "$27.000 COP",
-        "stock": 1,
-        "colores": [
-          {
-            "id": "naranja-mu92x490",
-            "nombre": "Naranja",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuche360ip16.jpeg"
-          }
-        ]
-      },
-      {
-        "id": "iphone-15-pro-max-mu92x490",
-        "nombre": "IPhone 15 Pro Max",
-        "precio": "$27.000 COP",
-        "stock": 2,
-        "colores": [
-          {
-            "id": "negro-mu92x490",
-            "nombre": "Negro",
-            "precio": "$27.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "blanco-mu92x490",
-            "nombre": "Blanco",
-            "precio": "$27.000 COP",
-            "stock": 1,
-            "foto": "estuche360ip15promax.jpeg"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "vidrio-5d",
-    "nombre": "Vidrio 5D",
-    "precio": "$10.000 COP",
-    "corta": "Vidrio templado 5D de alta resistencia para tu pantalla. Elige tu modelo.",
-    "detalles": "Vidrio templado 5D con pegamento completo y bordes redondeados. Protege tu pantalla de golpes y rayones con claridad total.",
-    "fotos": [
-      "vidriotemplado1.jpg",
-      "vidriotemplado2.jpg",
-      "vidriotemplado3.jpg"
-    ],
-    "stock": 552,
-    "categoria": "Vidrios 5D",
-    "variantes": [
-      {
-        "id": "ip-16-pro",
-        "nombre": "IP 16 Pro",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-16-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-16-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-14-pro",
-        "nombre": "IP 14 Pro",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-14-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-14-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-16",
-        "nombre": "IP 16",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-16",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-16",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-12-pro-max",
-        "nombre": "IP 12 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-12-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-12-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-15-pro",
-        "nombre": "IP 15 Pro",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-15-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-15-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-11",
-        "nombre": "IP 11",
-        "precio": "$10.000 COP",
-        "stock": 11,
-        "colores": [
-          {
-            "id": "5d-ip-11",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "antiespia-ip-11",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-17-pro",
-        "nombre": "IP 17 Pro",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-17-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-17-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-13",
-        "nombre": "IP 13",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-13",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 11
-          },
-          {
-            "id": "antiespia-ip-13",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 11,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-14-pro-max",
-        "nombre": "IP 14 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-14-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-14-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-16-plus",
-        "nombre": "IP 16 Plus",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-16-plus",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-16-plus",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-17-e",
-        "nombre": "IP 17 E",
-        "precio": "$10.000 COP",
-        "stock": 11,
-        "colores": [
-          {
-            "id": "5d-ip-17-e",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "antiespia-ip-17-e",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-12-pro",
-        "nombre": "IP 12 Pro",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-12-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-12-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-14",
-        "nombre": "IP 14",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-14",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-14",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-12",
-        "nombre": "IP 12",
-        "precio": "$10.000 COP",
-        "stock": 21,
-        "colores": [
-          {
-            "id": "5d-ip-12",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 11
-          },
-          {
-            "id": "antiespia-ip-12",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-13-pro",
-        "nombre": "IP 13 Pro",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-13-pro",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-13-pro",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-17",
-        "nombre": "IP 17",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-17",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-17",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-15-pro-max",
-        "nombre": "IP 15 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-15-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-15-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-16-pro-max",
-        "nombre": "IP 16 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-ip-16-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-ip-16-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-15",
-        "nombre": "IP 15",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-15",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-15",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-15-plus",
-        "nombre": "IP 15 Plus",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-15-plus",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-15-plus",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-13-pro-max",
-        "nombre": "IP 13 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-13-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-13-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-16-e",
-        "nombre": "IP 16 E",
-        "precio": "$10.000 COP",
-        "stock": 11,
-        "colores": [
-          {
-            "id": "5d-ip-16-e",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 1
-          },
-          {
-            "id": "antiespia-ip-16-e",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-12-mini",
-        "nombre": "IP 12 Mini",
-        "precio": "$10.000 COP",
-        "stock": 12,
-        "colores": [
-          {
-            "id": "5d-ip-12-mini",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 2
-          },
-          {
-            "id": "antiespia-ip-12-mini",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "ip-17-pro-max",
-        "nombre": "IP 17 Pro Max",
-        "precio": "$10.000 COP",
-        "stock": 22,
-        "colores": [
-          {
-            "id": "5d-ip-17-pro-max",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 12
-          },
-          {
-            "id": "antiespia-ip-17-pro-max",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "samsung-a12-mu93o6m40",
-        "nombre": "SAMSUNG A12",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-samsung-a12-mu93o6m40",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-samsung-a12-mu93o6m40",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "samsung-a35-mu93o6m41",
-        "nombre": "SAMSUNG A35",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-samsung-a35-mu93o6m41",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-samsung-a35-mu93o6m41",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "samsung-a16-mu93o6m42",
-        "nombre": "SAMSUNG A16",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-samsung-a16-mu93o6m42",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-samsung-a16-mu93o6m42",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "samsung-a05-mu93o6m43",
-        "nombre": "SAMSUNG A05",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-samsung-a05-mu93o6m43",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-samsung-a05-mu93o6m43",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "motorola-g24-mu93o6m44",
-        "nombre": "MOTOROLA G24",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-motorola-g24-mu93o6m44",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-motorola-g24-mu93o6m44",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      },
-      {
-        "id": "note-12-mu93o6m45",
-        "nombre": "NOTE 12",
-        "precio": "$10.000 COP",
-        "stock": 20,
-        "colores": [
-          {
-            "id": "5d-note-12-mu93o6m45",
-            "nombre": "5D",
-            "precio": "$10.000 COP",
-            "stock": 10
-          },
-          {
-            "id": "antiespia-note-12-mu93o6m45",
-            "nombre": "Antiespía",
-            "precio": "$15.000 COP",
-            "stock": 10,
-            "foto": "antiespia1.jpg"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "estuche-corazones",
+    "id": "Estuche corazones",
     "nombre": "Estuche Espejo con Corazones 3D — Diseño Tierno y Reflejante",
-    "precio": "$25.000 COP",
-    "corta": "Estuche Espejo con corazones 3D en relieve metálico: diseño tierno, brillante y protector, perfecto para destacar con estilo.",
+    "precio": "25.000 COP",
+    "corta": "Estuche Espejo con corazones 3D en relieve metálico: diseño tierno, brillante y protector, perfecto para destacar con estilo. 💖🪩✨",
     "detalles": "Estuche con acabado espejo y corazones 3D en relieve metálico. Un diseño tierno, brillante y diferente para destacar con estilo. ¡El accesorio ideal para las amantes de lo dulce y lo llamativo!",
     "fotos": [
       "estuchecorazones1.jpeg",
       "estuchecorazones2.jpeg",
       "estuchecorazones3.jpeg"
-    ],
-    "stock": 1,
-    "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "cargador-inalambrico-3-en-1-magsafe-mu3k5kpb",
-    "nombre": "Cargador Inalámbrico 3 en 1 Magnético",
-    "precio": "$90.000 COP",
-    "corta": "Cargador Inalámbrico Magnético 3 en 1: carga tu celular, smartwatch y audífonos a la vez con sujeción magnética precisa,",
-    "detalles": "Carga tu celular, smartwatch y audífonos al mismo tiempo con un solo cargador. Tecnología magnética, carga rápida de hasta 15W y diseño compacto tipo estación. ¡El accesorio que no puede faltar en tu escritorio o mesa de noche!",
-    "fotos": [
-      "caragador3en11.jpeg",
-      "cargador3en12.jpeg",
-      "cargador3en13.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Power Band"
-  },
-  {
-    "id": "tarjetero-magsafe",
-    "nombre": "Tarjetero Magnético",
-    "precio": "$25.000 COP",
-    "corta": "Tarjetero magnético: tus tarjetas pegadas al celular, siempre a mano.",
-    "detalles": "Tarjetero con sujeción magnética tipo Magsafe para llevar tus tarjetas con tu celular.",
-    "fotos": [
-      "tarjeteromagsafe1.jpeg",
-      "tarjeteromagsafe2.jpeg"
-    ],
-    "stock": 2,
-    "categoria": "Tarjetero"
-  },
-  {
-    "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
-    "nombre": "Gafas Inteligentes con Cámara IA 2026",
-    "precio": "$160.000 COP",
-    "corta": "Grabación de Video HD de 8MP, Audio, Traducción en Tiempo Real, Gafas Inteligentes para Hombre y Mujer",
-    "detalles": "Gafas inteligentes con cámara HD de 8MP, audio y reproducción de música, traducción con IA en tiempo real, micrófono para llamadas y carga magnética.",
-    "fotos": [
-      "gafasia.jpg",
-      "gafasia3.jpg",
-      "gafasia2.jpg"
-    ],
-    "stock": 3,
-    "categoria": "General"
-  },
-  {
-    "id": "cargador-iphone-25w-lightning-murfmioq",
-    "nombre": "Cargador Iphone 25W lightning",
-    "precio": "$50.000 COP",
-    "corta": "¡No esperes horas para llenar tu batería! Lleva tu experiencia de carga al siguiente nivel con este combo de cubo de car",
-    "detalles": "Características Principales: Potencia pura de 24W para cargar tu iPhone del 0% al 50% en aproximadamente 30 minutos, combo completo que incluye el adaptador de pared de alta potencia y el cable de conexión Lightning, protección inteligente con chip integrado contra sobrecalentamientos, sobretensiones y cortocircuitos, y un diseño compacto y portátil ideal para llevar en tu mochila, cartera o de viaje sin ocupar espacio.",
-    "fotos": [
-      "cargador25w1.jpg",
-      "cargador25w2.jpg",
-      "cargador25w3.jpg"
-    ],
-    "stock": 2,
-    "categoria": "Cargador"
-  },
-  {
-    "id": "cargador-35w-iphone-tipo-c-a-c-murft69h",
-    "nombre": "Cargador 35W Iphone Tipo C a C",
-    "precio": "$50.000 COP",
-    "corta": "Carga dos dispositivos al mismo tiempo con la máxima eficiencia y velocidad. El adaptador de corriente de 35W de Apple e",
-    "detalles": "El cargador original Apple de 35W con doble puerto USB-C sirve para alimentar dos dispositivos de forma rápida y simultánea, eliminando la necesidad de llevar múltiples adaptadores. Cuenta con un sistema de carga inteligente que distribuye la energía de manera eficiente entre ambos puertos según las necesidades de la batería de cada equipo, y su diseño compacto con clavijas plegables lo hace sumamente portátil para llevar en cualquier bolsillo. Aunque está optimizado para el ecosistema Apple —como computadoras MacBook Air, teléfonos iPhone, tabletas iPad, Apple Watch y AirPods—, ofrece una compatibilidad universal que funciona a la perfección con cualquier otro dispositivo compatible con carga mediante cable USB-C.",
-    "fotos": [
-      "cargador35w1.jpg",
-      "cargador35w2.jpg",
-      "cargador35w3.jpg"
-    ],
-    "stock": 2,
-    "categoria": "Cargador"
-  },
-  {
-    "id": "relog-g-tide-r3-murg6f8j",
-    "nombre": "Relog G-TIDE R3",
-    "precio": "$180.000 COP",
-    "corta": "¡Lleva tu estilo y rendimiento al siguiente nivel con el Smartwatch G-Tide R3! ⌚✨ Este reloj inteligente",
-    "detalles": "Reloj Inteligente G-Tide R3 Nuevo con pantalla Full HD de 1.39\", llamadas Bluetooth con micrófono y altavoz integrados, resistencia al agua IP68, batería de 300 mAh de larga duración con carga magnética, más de 100 modos deportivos, monitoreo de salud 24/7 (ritmo cardíaco, oxígeno en sangre SpO2, presión arterial, sueño), notificaciones de apps (WhatsApp, redes sociales), asistente de voz, correa de silicona intercambiable de obsequio y compatibilidad total con Android e iOS mediante la app Da Fit.",
-    "fotos": [
-      "reloggtider31.jpg",
-      "reloggtider32.jpg",
-      "reloggtider33.jpg"
-    ],
-    "stock": 1,
-    "categoria": "Smart Wach"
-  },
-  {
-    "id": "smart-wach-apple-serie-11-murvo2x6",
-    "nombre": "Smart Wach Apple serie 11",
-    "precio": "$140.000 COP",
-    "corta": "⌚ El smartwatch más delgado y avanzado de Apple. Pantalla súper resistente, batería para todo el día con carga rápida",
-    "detalles": "⌚ ¡Lleva tu día a otro nivel con el Apple Watch Series 11! El aliado perfecto para tu salud, entrenamientos y productividad. Cuenta con el diseño más delgado de Apple hasta la fecha y una pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y mantente conectado gracias a su conectividad fluida y batería de carga súper rápida (hasta 24 horas de autonomía). ¡Prácticamente nuevo y listo para vincular !",
-    "fotos": [
-      "Smartwach1.jpg",
-      "smartwach2.jpg",
-      "smartwach3.jpg"
-    ],
-    "stock": 2,
-    "categoria": "Smart Wach"
-  },
-  {
-    "id": "airpods-serie-4-mut995rm",
-    "nombre": "Airpods Serie 4",
-    "precio": "$90.000 COP",
-    "corta": "🎧 ¡Apple AirPods 4 en perfecto estado! Disfruta de un sonido totalmente renovado con el potente chip H2",
-    "detalles": "🎧 ¡Apple AirPods 4 en excelente estado y listos para estrenar! Esta última generación de audífonos inalámbricos redefine por completo tu experiencia de audio gracias a la potencia del chip H2, que ofrece un sonido increíblemente nítido, graves profundos y la avanzada función de Aislamiento de Voz para que tus llamadas se escuchen perfectas incluso en entornos ruidosos. Su diseño acústico renovado proporciona un ajuste ultraóptimo y cómodo para usarlos todo el día sin fatiga, respaldado por la resistencia IP54 al polvo, agua y sudor, lo que los hace perfectos tanto para el uso diario como para entrenar. Además, incorporan Audio Espacial Personalizado con seguimiento dinámico de la cabeza para una inmersión total en tus películas y canciones, control por gestos para interactuar con Siri de forma intuitiva, y un nuevo estuche de carga USB-C mucho más compacto y fácil de llevar a cualquier parte. Se entregan impecables, completamente funcionales y listos para vincular a tu iPhone, convirtiéndose en la oportunidad perfecta para actualizar tus audífonos al mejor precio del mercado.",
-    "fotos": [
-      "serie41.jpg",
-      "serie42.jpg",
-      "serie43.jpg"
-    ],
-    "stock": 2,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
-    "id": "microfono-de-solapa-f11-muuol303",
-    "nombre": "Microfono de solapa F11",
-    "precio": "$85.000 COP",
-    "corta": "Micrófono de solapa F11 inalámbrico de alta fidelidad con reducción de ruido inteligente y conexión automática Plug & Pl",
-    "detalles": "El micrófono de solapa F11 destaca por su avanzada tecnología de reducción de ruido inteligente, la cual filtra de forma automática el sonido ambiental para garantizar una captura de voz nítida y con alta fidelidad. Su sistema inalámbrico omnidireccional cuenta con la función Plug & Play, permitiendo una conexión automática e instantánea sin necesidad de instalar aplicaciones o configuraciones complejas. Además, ofrece un diseño compacto y ligero, una batería de larga duración ideal para jornadas extensas de grabación y un amplio rango de transmisión de hasta 20 metros libres de obstáculos, lo que lo hace perfectamente compatible con smartphones, cámaras y computadoras.",
-    "fotos": [
-      "microfonof111.jpg",
-      "microfonof112.jpg",
-      "microfonof113.jpg"
-    ],
-    "stock": 1,
-    "categoria": "Microfono"
+    ]
   }
 ]

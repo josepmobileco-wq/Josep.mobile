@@ -683,8 +683,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
                             ${tieneVars ? `<p class="var-hint">🎨 ${hayColores ? totalOpciones + ' colores' : prod.variantes.length + ' referencias'} para elegir</p>` : ''}
-                            <p class="short-desc">${esc(prod.corta)}</p>
-                            <span class="price">${esc(prod.precio)}</span>
+                            <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
+                            ${prod.precioOriginal ? `<span class="price-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(prod.precio)}</span></span> <span class="badge-oferta">OFERTA</span>` : `<span class="price">${esc(prod.precio)}</span>`}
                             <span class="btn-card">${hayStock ? (tieneVars ? (hayColores ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
                         </div>
                     </a>
@@ -763,11 +763,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="modal-product-details">
                             <h2>${esc(prod.nombre)}</h2>
-                            <p class="modal-price">${esc(defPrecioTxt)}</p>
+                            ${prod.precioOriginal ? `<div class="modal-precio-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(defPrecioTxt)}</span></div> <span class="badge-oferta modal-badge">OFERTA</span>` : `<p class="modal-price">${esc(defPrecioTxt)}</p>`}
                             ${selectorVars}
                             <div class="modal-description">
                                 <h4>DETALLES DEL PRODUCTO</h4>
-                                <p>${esc(prod.detalles)}</p>
+                                <p style="text-align:justify;">${esc(prod.detalles)}</p>
                             </div>
                             ${relacionadosWeb(prod)}
 
