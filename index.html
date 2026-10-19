@@ -235,20 +235,39 @@
         <section id="reseñas" class="reviews">
             <div class="reviews-container">
                 <h2 class="section-title">Reseñas de nuestros clientes</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-stars">★★★★★</div>
-                            <span class="review-name">Cristian Mendoza</span>
-                            <span class="review-date">Bogotá · hace 1 mes</span>
-                        </div>
-                        <p class="review-text">Tienen Excelentes forros</p>
-                        <div class="review-product">Forros</div>
-                    </div>
-                </div>
+                <div class="reviews-grid" id="reseñas-lista"></div>
             </div>
         </section>
     </main>
+
+    <!-- Formulario de reseñas -->
+    <section id="reseñas-form" class="reviews-form">
+        <div class="reviews-container">
+            <h2 class="section-title">Déjanos tu reseña</h2>
+            <form id="form-reseña" novalidate>
+                <div class="form-field">
+                    <label for="reseña-nombre">Tu nombre *</label>
+                    <input type="text" id="reseña-nombre" maxlength="60" placeholder="Ej: María Pérez" required>
+                </div>
+                <div class="form-field">
+                    <label>Calificación *</label>
+                    <div class="estrellas">
+                        <input type="radio" name="estrellas" value="5" id="e5"><label for="e5">★</label>
+                        <input type="radio" name="estrellas" value="4" id="e4"><label for="e4">★</label>
+                        <input type="radio" name="estrellas" value="3" id="e3"><label for="e3">★</label>
+                        <input type="radio" name="estrellas" value="2" id="e2"><label for="e2">★</label>
+                        <input type="radio" name="estrellas" value="1" id="e1"><label for="e1">★</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="reseña-comentario">Tu opinión *</label>
+                    <textarea id="reseña-comentario" maxlength="500" placeholder="Cuenta tu experiencia…" required></textarea>
+                </div>
+                <button type="submit" id="btn-enviar-reseña">Enviar reseña</button>
+                <p id="msg-reseña" class="estado-msg"></p>
+            </form>
+        </div>
+    </section>
 
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/573173482040" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">

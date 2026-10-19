@@ -105,6 +105,16 @@ function esc(texto) {
         .replace(/'/g, '&#039;');
 }
 
+// ID seguro para elementos HTML (sin espacios ni caracteres raros)
+function idSeguro(texto) {
+    return String(texto || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
 // ====== Pagos con Bold (checkout embebido) ======
 function generarOrderId() {
     const rand = Math.random().toString(36).slice(2, 6);
@@ -675,7 +685,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('div');
                 card.className = 'product-card' + (hayStock ? '' : ' sin-stock');
                 card.innerHTML = `
-                    <a href="#producto-${esc(prod.id)}" class="card-modal-trigger">
+                    <a href="#producto-${idSeguro(prod.id)}" class="card-modal-trigger">
                         <div class="product-image">
                             <img src="${fotoSegura(prod, 0)}" alt="${esc(prod.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">
                             ${hayStock ? '' : '<span class="agotado-badge">Agotado</span>'}
@@ -705,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ).join('');
 
                 const modal = document.createElement('div');
-                modal.id = `producto-${esc(prod.id)}`;
+                modal.id = `producto-${idSeguro(prod.id)}`;
                 modal.className = 'modal-policy';
                 modal.setAttribute('role', 'dialog');
                 modal.setAttribute('aria-modal', 'true');
@@ -1125,3 +1135,90 @@ function filtrarProductos() {
         tarjeta.classList.toggle('producto-oculto', !nombre.includes(texto));
     });
 }
+
+// ====== Reseñas de clientes (seguras: sin SQL, solo JSON + escape HTML) ======
+const RESEÑAS_JSON_URL = 'https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/reseñas.json';
+const RESEÑAS_RESPALDO = [
+    { nombre: 'Cristian Mendoza', estrellas: 5, comentario: 'Tienen Excelentes forros', producto: 'Forros', fecha: 'hace 1 mes' }
+];
+
+async function cargarReseñas() {
+    const lista = document.getElementById('reseñas-lista');
+    if (!lista) return;
+    try {
+        const res = await fetch(RESEÑAS_JSON_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('Sin reseñas aún');
+        const datos = await res.json();
+        const arr = Array.isArray(datos) ? datos : (datos.reseñas || []);
+        if (!arr.length) throw new Error('Vacío');
+        renderResenas(arr, lista);
+        return;
+    } catch (e) {
+        renderResenas(RESEÑAS_RESPALDO, lista);
+    }
+}
+
+function renderResenas(arr, lista) {
+    lista.innerHTML = arr.slice().reverse().map(r => `
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-stars">${'★'.repeat(Number(r.estrellas || 5))}</div>
+                <span class="review-name">${esc(r.nombre || '')}</span>
+                <span class="review-date">${esc(r.fecha || '')}</span>
+            </div>
+            <p class="review-text">${esc(r.comentario || '')}</p>
+            ${r.producto ? `<div class="review-product">${esc(r.producto || '')}</div>` : ''}
+        </div>
+    `).join('');
+}
+
+async function enviarReseña(e) {
+    e.preventDefault();
+    const btn = document.getElementById('btn-enviar-reseña');
+    const msg = document.getElementById('msg-reseña');
+    const nombre = document.getElementById('reseña-nombre').value.trim();
+    const estrellas = document.querySelector('input[name="estrellas"]:checked');
+    const comentario = document.getElementById('reseña-comentario').value.trim();
+    if (!nombre || !estrellas || !comentario) {
+        msg.textContent = 'Completa todos los campos.';
+        msg.style.color = '#d32f2f';
+        return;
+    }
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+    try {
+        const res = await fetch(BOLD_WORKER_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                ruta: 'reseña',
+                nombre: nombre.slice(0, 60),
+                estrellas: parseInt(estrellas.value, 10),
+                comentario: comentario.slice(0, 500),
+                fecha: new Date().toISOString()
+            })
+        });
+        const datos = await res.json();
+        if (datos.ok) {
+            msg.textContent = '¡Gracias! Tu reseña se envió y aparecerá pronto.';
+            msg.style.color = '#2e7d32';
+            document.getElementById('form-reseña').reset();
+            if (estrellas) estrellas.checked = false;
+            await cargarReseñas();
+        } else {
+            throw new Error(datos.error || 'Error al enviar');
+        }
+    } catch (err) {
+        msg.textContent = 'No se pudo enviar. Intenta de nuevo.';
+        msg.style.color = '#d32f2f';
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Enviar reseña';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await cargarReseñas();
+    const form = document.getElementById('form-reseña');
+    if (form) form.addEventListener('submit', enviarReseña);
+});

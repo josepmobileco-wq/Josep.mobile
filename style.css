@@ -1742,3 +1742,55 @@ button.btn-card:disabled {
         grid-template-columns: 1fr;
     }
 }
+
+/* Formulario de reseñas */
+.reviews-form {
+    padding: 3rem 1.5rem 2rem 1.5rem;
+    background: var(--bg-secondary);
+}
+.reviews-form .reviews-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-field {
+    margin-bottom: 1.2rem;
+}
+.form-field label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.estrellas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 0.4rem;
+}
+.estrellas > input {
+    display: none;
+}
+.estrellas > label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.estrellas > label:hover,
+.estrellas > label:hover ~ label,
+.estrellas > input:checked ~ label {
+    color: #f39c12;
+}
+#msg-reseña {
+    margin-top: 1rem;
+    font-weight: 700;
+    min-height: 1.4rem;
+}
