@@ -1695,6 +1695,8 @@ button.btn-card:disabled {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    max-width: 360px;
+    margin: 0 auto;
 }
 .review-header {
     display: flex;
