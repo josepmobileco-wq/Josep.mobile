@@ -1,45 +1,23 @@
 {
   "pedidos": [
     {
-      "orderId": "JM-1792369499716-owxj",
+      "orderId": "JM-1793386224541-ai2x",
       "items": [
         {
-          "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
-          "nombre": "Gafas Inteligentes con Cámara IA 2026",
+          "id": "airmax::blanca-8ylrz5",
+          "nombre": "Audífonos Bluetooth Diadema Max (Blanca)",
           "cantidad": 1,
-          "precioNum": 160000
+          "precioNum": 120000
         }
       ],
-      "total": 160000,
+      "total": 120000,
       "cliente": {
-        "nombre": "Cristian Mendoza",
-        "ciudad": "Bogotá"
-      },
-      "validacion": "ok",
-      "estado": "pendiente",
-      "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-10-19T00:25:03.925Z"
-    },
-    {
-      "orderId": "JM-1792704235308-twba",
-      "items": [
-        {
-          "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
-          "nombre": "Gafas Inteligentes con Cámara IA 2026",
-          "cantidad": 1,
-          "precioNum": 160000
-        }
-      ],
-      "total": 160000,
-      "cliente": {
-        "nombre": "pilj Cristian Mendoza",
-        "telefono": "3138199802",
-        "correo": "cris78912@gmail.com",
-        "direccion": "Calle 49 B SUR #09-89 BL 7 AP 101",
-        "ciudad": "Bogotá",
-        "depto": "Bogotá",
+        "nombre": "Juan Camilo Parra Fajardo",
+        "telefono": "3125194402",
+        "correo": "xaonclaud@icloud.com",
+        "direccion": "Calle33#38-101",
+        "ciudad": "Bogota",
+        "depto": "Cundinamarca",
         "notas": ""
       },
       "validacion": "ok",
@@ -47,7 +25,7 @@
       "aplicado": false,
       "paymentId": null,
       "metodo": null,
-      "fecha": "2026-10-22T21:23:58.164Z"
+      "fecha": "2026-10-30T18:50:25.536Z"
     },
     {
       "orderId": "JM-1790562004317-43f2",
