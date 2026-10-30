@@ -13,19 +13,15 @@
       "total": 120000,
       "cliente": {
         "nombre": "Juan Camilo Parra Fajardo",
-        "telefono": "3125194402",
-        "correo": "xaonclaud@icloud.com",
-        "direccion": "Calle33#38-101",
-        "ciudad": "Bogota",
-        "depto": "Cundinamarca",
-        "notas": ""
+        "ciudad": "Bogota"
       },
       "validacion": "ok",
-      "estado": "pendiente",
+      "estado": "pagado",
       "aplicado": false,
-      "paymentId": null,
-      "metodo": null,
-      "fecha": "2026-10-30T18:50:25.536Z"
+      "paymentId": "CNP3GAWUY3NM4",
+      "metodo": "CARD_WEB",
+      "fecha": "2026-10-30T18:50:25.536Z",
+      "fechaPago": "2026-10-30T18:52:25.938Z"
     },
     {
       "orderId": "JM-1790562004317-43f2",
