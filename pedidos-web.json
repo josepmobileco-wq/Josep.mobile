@@ -12,12 +12,11 @@
       ],
       "total": 120000,
       "cliente": {
-        "nombre": "Juan Camilo Parra Fajardo",
-        "ciudad": "Bogota"
+        "nombre": "Juan Camilo Parra Fajardo"
       },
       "validacion": "ok",
       "estado": "pagado",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": "CNP3GAWUY3NM4",
       "metodo": "CARD_WEB",
       "fecha": "2026-10-30T18:50:25.536Z",
