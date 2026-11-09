@@ -10,7 +10,7 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 14,
+    "stock": 13,
     "categoria": "Audífonos Bluetooth",
     "variantes": [
       {
@@ -54,7 +54,7 @@
         "id": "blanca-8ylrz5",
         "nombre": "Blanca",
         "precio": "$120.000 COP",
-        "stock": 1
+        "stock": 0
       },
       {
         "id": "azul-8ylrz6",
@@ -113,7 +113,7 @@
       "airpods-pro-31.jpg",
       "airpods-pro-32.jpg"
     ],
-    "stock": 1,
+    "stock": 0,
     "categoria": "Audífonos Bluetooth"
   },
   {
@@ -169,7 +169,7 @@
       "powerbandmagsafe2.jpeg",
       "powerbandmagsafe3.jpeg"
     ],
-    "stock": 2,
+    "stock": 1,
     "categoria": "Power Banks"
   },
   {
@@ -197,7 +197,7 @@
       "intercomunicador2.jpg",
       "intercomunicador3.jpg"
     ],
-    "stock": 7,
+    "stock": 2,
     "categoria": "Audífonos Bluetooth"
   },
   {
@@ -840,7 +840,7 @@
       "space2.jpeg",
       "space3.jpg"
     ],
-    "stock": 22,
+    "stock": 23,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
@@ -974,6 +974,12 @@
         "nombre": "iPhone 12 Pro Max",
         "precio": "$20.000 COP",
         "stock": 1
+      },
+      {
+        "id": "iphone-xs",
+        "nombre": "iPhone XS",
+        "precio": "$20.000 COP",
+        "stock": 1
       }
     ]
   },
@@ -1040,7 +1046,7 @@
       "vidriotemplado2.jpg",
       "vidriotemplado3.jpg"
     ],
-    "stock": 550,
+    "stock": 548,
     "categoria": "Vidrios 5D",
     "variantes": [
       {
@@ -1194,13 +1200,13 @@
         "id": "ip-13",
         "nombre": "IP 13",
         "precio": "$10.000 COP",
-        "stock": 22,
+        "stock": 20,
         "colores": [
           {
             "id": "5d-ip-13",
             "nombre": "5D",
             "precio": "$10.000 COP",
-            "stock": 11
+            "stock": 9
           },
           {
             "id": "antiespia-ip-13",
@@ -1593,13 +1599,13 @@
         "id": "samsung-a16-mu93o6m42",
         "nombre": "SAMSUNG A16",
         "precio": "$10.000 COP",
-        "stock": 20,
+        "stock": 19,
         "colores": [
           {
             "id": "5d-samsung-a16-mu93o6m42",
             "nombre": "5D",
             "precio": "$10.000 COP",
-            "stock": 10
+            "stock": 9
           },
           {
             "id": "antiespia-samsung-a16-mu93o6m42",
@@ -1672,6 +1678,27 @@
             "foto": "antiespia1.jpg"
           }
         ]
+      },
+      {
+        "id": "iphone-xs-mvzl98bn",
+        "nombre": "iPhone XS",
+        "precio": "$10.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "5d-iphone-xs-mvzl98bn",
+            "nombre": "5D",
+            "precio": "$10.000 COP",
+            "stock": 1
+          },
+          {
+            "id": "antiespia-iphone-xs-mvzl98bn",
+            "nombre": "Antiespía",
+            "precio": "$15.000 COP",
+            "stock": 0,
+            "foto": "antiespia1.jpg"
+          }
+        ]
       }
     ]
   },
@@ -1727,7 +1754,7 @@
       "gafasia3.jpg",
       "gafasia2.jpg"
     ],
-    "stock": 3,
+    "stock": 2,
     "categoria": "General"
   },
   {
@@ -1741,7 +1768,7 @@
       "cargador25w2.jpg",
       "cargador25w3.jpg"
     ],
-    "stock": 4,
+    "stock": 3,
     "categoria": "Cargador"
   },
   {
@@ -1783,7 +1810,7 @@
       "smartwach2.jpg",
       "smartwach3.jpg"
     ],
-    "stock": 2,
+    "stock": 1,
     "categoria": "Smart Wach"
   },
   {
@@ -1813,5 +1840,29 @@
     ],
     "stock": 1,
     "categoria": "Microfono"
+  },
+  {
+    "id": "marrana-20w-original",
+    "nombre": "Marrana 20W Original",
+    "precio": "$80.000 COP",
+    "corta": "Marrana para Iphone Origianl",
+    "detalles": "Marrana para IPhone original",
+    "fotos": [
+      "marrana20w.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": "marrana-40w-original",
+    "nombre": "Marrana 40W Original",
+    "precio": "$130.000 COP",
+    "corta": "Marrana para IPhone original",
+    "detalles": "Marrana para IPhone original",
+    "fotos": [
+      "marrana40w.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Accesorios"
   }
 ]
