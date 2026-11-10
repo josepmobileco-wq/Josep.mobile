@@ -431,7 +431,7 @@
   {
     "id": "luz-led-w80",
     "nombre": "Luz LED W80 (aro de luz)",
-    "precio": "$50.000 COP",
+    "precio": "$56.000 COP",
     "corta": "Aro de luz LED W80: ilumina tus fotos y videos como profesional.",
     "detalles": "Luz rectangular blanca plástica, aro de luz W80.",
     "fotos": [
@@ -574,7 +574,7 @@
   {
     "id": "vortex-ip17",
     "nombre": "Vortex IP17",
-    "precio": "$30.000 COP",
+    "precio": "$35.000 COP",
     "corta": "Estuche VORTEX para iPhone 17.",
     "detalles": "Estuche VORTEX para iPhone 17.",
     "fotos": [
@@ -586,7 +586,7 @@
   {
     "id": "estuche-espejo",
     "nombre": "Estuche Espejo",
-    "precio": "$27.000 COP",
+    "precio": "$30.000 COP",
     "corta": "Estuche con acabado espejo que protege y te hace lucir increíble. Elige tu modelo.",
     "detalles": "Estuche con efecto espejo de alta calidad: protege contra golpes y rayones mientras luce elegante. Disponible para varios modelos.",
     "fotos": [
@@ -600,20 +600,20 @@
       {
         "id": "iphone-17",
         "nombre": "iPhone 17",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "blanco-mu91mdbp",
             "nombre": "Blanco",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1,
             "foto": "efectoespejoip17.jpeg"
           },
           {
             "id": "oro-rosa-mu921e71",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 0
           }
         ]
@@ -621,20 +621,20 @@
       {
         "id": "iphone-15",
         "nombre": "iPhone 15",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 2,
         "colores": [
           {
             "id": "naranja-mu91mdbp",
             "nombre": "Naranja",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1,
             "foto": "efectoespejoip15.jpeg"
           },
           {
             "id": "oro-rosa-mu91qhm6",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -642,13 +642,13 @@
       {
         "id": "iphone-15-pro",
         "nombre": "iPhone 15 Pro",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "azul-mu91mdbp",
             "nombre": "Azul",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1,
             "foto": "efectoespejoip15pro.jpeg"
           }
@@ -657,13 +657,13 @@
       {
         "id": "iphone-17-pro-max",
         "nombre": "iPhone 17 Pro Max",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -671,13 +671,13 @@
       {
         "id": "iphone-11-pro",
         "nombre": "iPhone 11 Pro",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -685,25 +685,25 @@
       {
         "id": "iphone-16-pro-max",
         "nombre": "iPhone 16 Pro Max",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 4,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 2
           },
           {
             "id": "azul-oscuro-mu92c5ab",
             "nombre": "Azul oscuro",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           },
           {
             "id": "negro-mu92c5ab",
             "nombre": "Negro",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -711,13 +711,13 @@
       {
         "id": "iphone-17-pro",
         "nombre": "iPhone 17 Pro",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -725,13 +725,13 @@
       {
         "id": "iphone-11",
         "nombre": "iPhone 11",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -739,13 +739,13 @@
       {
         "id": "ip-13-pro-max",
         "nombre": "IP 13 Pro Max",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -753,13 +753,13 @@
       {
         "id": "iphone-12",
         "nombre": "iPhone 12",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -767,19 +767,19 @@
       {
         "id": "ip-13",
         "nombre": "IP 13",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 2,
         "colores": [
           {
             "id": "rojo-mu6axwgl",
             "nombre": "Rojo",
-            "precio": "$25.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           },
           {
             "id": "oro-rosa-mu6azxf9",
             "nombre": "Oro Rosa",
-            "precio": "$28.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -787,13 +787,13 @@
       {
         "id": "ip-14",
         "nombre": "IP 14",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -801,13 +801,13 @@
       {
         "id": "iphone-11-pro-max",
         "nombre": "iPhone 11 Pro Max",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1
           }
         ]
@@ -815,13 +815,13 @@
       {
         "id": "iphone-16-mu92oynx",
         "nombre": "IPhone 16",
-        "precio": "$27.000 COP",
+        "precio": "$30.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "blanco-mu92oynx",
             "nombre": "Blanco",
-            "precio": "$27.000 COP",
+            "precio": "$30.000 COP",
             "stock": 1,
             "foto": "efectoespejoip17.jpeg"
           }
@@ -1746,7 +1746,7 @@
   {
     "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
     "nombre": "Gafas Inteligentes con Cámara IA 2026",
-    "precio": "$160.000 COP",
+    "precio": "$199.000 COP",
     "corta": "Grabación de Video HD de 8MP, Audio, Traducción en Tiempo Real, Gafas Inteligentes para Hombre y Mujer",
     "detalles": "Gafas inteligentes con cámara HD de 8MP, audio y reproducción de música, traducción con IA en tiempo real, micrófono para llamadas y carga magnética.",
     "fotos": [
@@ -1802,7 +1802,7 @@
   {
     "id": "smart-wach-apple-serie-11-murvo2x6",
     "nombre": "Smart Wach Apple serie 11",
-    "precio": "$140.000 COP",
+    "precio": "$155.000 COP",
     "corta": "⌚ El smartwatch más delgado y avanzado de Apple. Pantalla súper resistente, batería para todo el día con carga rápida",
     "detalles": "⌚ ¡Lleva tu día a otro nivel con el Apple Watch Series 11! El aliado perfecto para tu salud, entrenamientos y productividad. Cuenta con el diseño más delgado de Apple hasta la fecha y una pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y mantente conectado gracias a su conectividad fluida y batería de carga súper rápida (hasta 24 horas de autonomía). ¡Prácticamente nuevo y listo para vincular !",
     "fotos": [
@@ -1830,7 +1830,7 @@
   {
     "id": "microfono-de-solapa-f11-muuol303",
     "nombre": "Microfono de solapa F11",
-    "precio": "$85.000 COP",
+    "precio": "$100.000 COP",
     "corta": "Micrófono de solapa F11 inalámbrico de alta fidelidad con reducción de ruido inteligente y conexión automática Plug & Pl",
     "detalles": "El micrófono de solapa F11 destaca por su avanzada tecnología de reducción de ruido inteligente, la cual filtra de forma automática el sonido ambiental para garantizar una captura de voz nítida y con alta fidelidad. Su sistema inalámbrico omnidireccional cuenta con la función Plug & Play, permitiendo una conexión automática e instantánea sin necesidad de instalar aplicaciones o configuraciones complejas. Además, ofrece un diseño compacto y ligero, una batería de larga duración ideal para jornadas extensas de grabación y un amplio rango de transmisión de hasta 20 metros libres de obstáculos, lo que lo hace perfectamente compatible con smartphones, cámaras y computadoras.",
     "fotos": [
@@ -1844,7 +1844,7 @@
   {
     "id": "marrana-20w-original",
     "nombre": "Marrana 20W Original",
-    "precio": "$80.000 COP",
+    "precio": "$99.000 COP",
     "corta": "Marrana para Iphone Origianl",
     "detalles": "Marrana para IPhone original",
     "fotos": [
@@ -1856,7 +1856,7 @@
   {
     "id": "marrana-40w-original",
     "nombre": "Marrana 40W Original",
-    "precio": "$130.000 COP",
+    "precio": "$150.000 COP",
     "corta": "Marrana para IPhone original",
     "detalles": "Marrana para IPhone original",
     "fotos": [
