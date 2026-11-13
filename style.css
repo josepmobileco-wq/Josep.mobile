@@ -75,10 +75,11 @@ body {
 }
 
 .logo-img {
-    height: 36px;
-    width: 36px;
+    height: 48px;
+    width: 48px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12);
 }
 
 .logo span.highlight {
@@ -1653,6 +1654,11 @@ button.btn-card:disabled {
 
     .logo {
         font-size: 1.2rem;
+    }
+
+    .logo-img {
+        height: 40px;
+        width: 40px;
     }
 
     .cart-icon-container {
