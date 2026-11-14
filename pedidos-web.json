@@ -1,6 +1,34 @@
 {
   "pedidos": [
     {
+      "orderId": "JM-1794628659426-3f7q",
+      "items": [
+        {
+          "id": "estuche-espejo::iphone-17-pro-max::ororosa-mu91mdbp",
+          "nombre": "Estuche Espejo (iPhone 17 Pro Max)",
+          "cantidad": 1,
+          "precioNum": 30000
+        },
+        {
+          "id": "vidrio-5d::ip-17-pro-max::antiespia-ip-17-pro-max",
+          "nombre": "Vidrio 5D (IP 17 Pro Max, Antiespía)",
+          "cantidad": 1,
+          "precioNum": 15000
+        }
+      ],
+      "total": 45000,
+      "cliente": {
+        "nombre": "Laura Milena Paez Brochero",
+        "ciudad": "Barranquilla"
+      },
+      "validacion": "ok",
+      "estado": "contraentrega",
+      "aplicado": false,
+      "paymentId": null,
+      "metodo": null,
+      "fecha": "2026-11-14T03:57:40.289Z"
+    },
+    {
       "orderId": "JM-1793386224541-ai2x",
       "items": [
         {
