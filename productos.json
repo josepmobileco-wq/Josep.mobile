@@ -472,11 +472,11 @@
     "nombre": "Silicon Case",
     "precio": "$20.000 COP",
     "corta": "Funda de silicona suave y resistente para Motorola. Protección total con ajuste perfecto.",
-    "detalles": "Funda de silicona premium para Motorola G04, G045 y G24. Suave al tacto, antideslizante y con bordes elevados que protegen la cámara.",
+    "detalles": "Funda de silicona premium para Motorola G04, G045 y G24. Suave al tacto, antideslizante y con bordes elevados que protegen la cámara. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
     "fotos": [
-      "siliconcase1.jpeg",
-      "siliconcase2.jpeg",
-      "siliconcase3.jpeg"
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
     ],
     "stock": 4,
     "categoria": "Estuches Para celular",
@@ -568,7 +568,7 @@
       "tvstck2.jpg",
       "tvstick3.jpg"
     ],
-    "stock": 1,
+    "stock": 0,
     "categoria": "Smarts Tvs"
   },
   {
@@ -1046,7 +1046,7 @@
       "vidriotemplado2.jpg",
       "vidriotemplado3.jpg"
     ],
-    "stock": 548,
+    "stock": 547,
     "categoria": "Vidrios 5D",
     "variantes": [
       {
@@ -1389,13 +1389,13 @@
         "id": "ip-15-pro-max",
         "nombre": "IP 15 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 22,
+        "stock": 21,
         "colores": [
           {
             "id": "5d-ip-15-pro-max",
             "nombre": "5D",
             "precio": "$10.000 COP",
-            "stock": 12
+            "stock": 11
           },
           {
             "id": "antiespia-ip-15-pro-max",
@@ -1842,6 +1842,3066 @@
     "categoria": "Microfono"
   },
   {
+    "id": "holder-para-celular",
+    "nombre": "Holder para celular",
+    "precio": "$20.000 COP",
+    "corta": "Soporte multiuso para celular: en mesa, escritorio o auto, y liberas las manos.",
+    "detalles": "Ideal para ver recetas, hacer videollamadas o consultar el celular mientras haces otra cosa. Se adapta a distintos tamaños de teléfono, sostiene firme y es fácil de guardar. Un accesorio práctico que te salva las manos todo el día.",
+    "fotos": [
+      "Holder_para_celular-1.webp",
+      "Holder_para_celular-2.webp",
+      "Holder_para_celular-3.webp"
+    ],
+    "stock": 2,
+    "categoria": "General"
+  },
+  {
+    "id": "audifonos-cable-plug",
+    "nombre": "Audífonos de cable tipo plug",
+    "precio": "$15.000 COP",
+    "corta": "Audífonos con cable tipo plug: conectas y escuchas, sin batería ni emparejamiento.",
+    "detalles": "Audio nítido para llamadas, música y videos, con cable reforzado que no se daña con el uso diario. Ideales como repuesto, para el trabajo o para esos días en que el Bluetooth decide fallar. Sinhin complicarte nada.",
+    "fotos": [
+      "Audifonos_de_cable_tipo_plug-1.webp",
+      "Audifonos_de_cable_tipo_plug-2.webp"
+    ],
+    "stock": 2,
+    "categoria": "General"
+  },
+  {
+    "id": "audifonos-cable-lightning",
+    "nombre": "Audífonos de cable tipo Lightning",
+    "precio": "$20.000 COP",
+    "corta": "Audífonos con cable tipo Lightning para iPhone y iPad: enchufas y listo.",
+    "detalles": "Conexión directa a tu equipo, sin sincronización ni batería que se gaste. Sonido claro y graves bien definidos para música, llamadas y videos, con cable cómodo para sesiones largas. Un par de repuesto que siempre funciona.",
+    "fotos": [
+      "Audifonos_de_cable_tipo_Lightning-1.webp",
+      "Audifonos_de_cable_tipo_Lightning-2.webp",
+      "Audifonos_de_cable_tipo_Lightning-3.webp"
+    ],
+    "stock": 2,
+    "categoria": "General"
+  },
+  {
+    "id": "cargador-samsung-25w-original",
+    "nombre": "Cargador Samsung 25W Original",
+    "precio": "$90.000 COP",
+    "corta": "Cargador original de 25W con carga rápida Adaptive y protección de batería.",
+    "detalles": "Carga mucho más rápido que un cargador común y ajusta la potencia según el dispositivo para cuidar la batería. Incluye cable y es 100% original. El cargador que tus clientes ya piden por ser auténtico y no arriesgar su equipo.",
+    "fotos": [
+      "Cargador_Samsung_25W_Original-1.webp",
+      "Cargador_Samsung_25W_Original-2.webp",
+      "Cargador_Samsung_25W_Original-3.webp"
+    ],
+    "stock": 1,
+    "categoria": "General"
+  },
+  {
+    "id": "cargador-samsung-25w",
+    "nombre": "Cargador Samsung 25W",
+    "precio": "$50.000 COP",
+    "corta": "Cargador de 25W con carga rápida para Galaxy y celulares compatibles.",
+    "detalles": "Carga tu Samsung a toda velocidad con un cargador compacto y ligero que cabe en cualquier bolso. Cuenta con protección contra sobrecarga y sobrecalentamiento, y su tamaño pequeño lo hace perfecto para viajar. Carga rápida sin complicarte.",
+    "fotos": [
+      "Cargador_Samsung_25W-1.webp",
+      "Cargador_Samsung_25W-2.webp",
+      "Cargador_Samsung_25W-3.webp"
+    ],
+    "stock": 1,
+    "categoria": "General"
+  },
+  {
+    "id": "cargador-tipo-c-45w",
+    "nombre": "Cargador Tipo C 45W",
+    "precio": "$60.000 COP",
+    "corta": "Cargador ultrarrápido de 45W con salida USB-C para celulares y tablets.",
+    "detalles": "Ideal para quienes pasan muchas horas afuera: recupera buena parte de tu batería en muy poco tiempo. Detecta el dispositivo y ajusta la potencia para no dañar la celda. Compatible con celulares, tablets y audífonos con carga USB-C.",
+    "fotos": [
+      "Cargador_Tipo_C_45W-1.webp",
+      "Cargador_Tipo_C_45W-2.webp"
+    ],
+    "stock": 1,
+    "categoria": "General"
+  },
+  {
+    "id": "protectores-camaras",
+    "nombre": "Protectores de cámaras",
+    "precio": "$15.000 COP",
+    "corta": "Protectores de cámara para celular: tus lentes a salvo de rayones y golpes.",
+    "detalles": "Cada protector viene con su kit de instalación para que quede firme y sin burbujas en segundos. Cubre los lentes sin tapar el flash ni los sensores, así que tus fotos siguen saliendo nítidas. La mejor inversión para no terminar pagando una cámara nueva.",
+    "fotos": [
+      "Protectores_de_camaras-1.webp",
+      "Protectores_de_camaras-2.webp",
+      "Protectores_de_camaras-3.webp"
+    ],
+    "stock": 134,
+    "categoria": "General"
+  },
+  {
+    "id": "silicon-case-iphone-11",
+    "nombre": "Silicon Case iPhone 11",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 11, suave al tacto y con colores que no se van.",
+    "detalles": "El silicon es flexible y se adapta a cada curva de tu teléfono sin quedar flojo. Protege de golpes y rayones, se limpia con un trapo húmedo y no levanta las burbujas. Elige tu color favorito entre varios disponibles. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 4,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-11-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-11-pro-plus",
+    "nombre": "Silicon Case iPhone 11 Pro +",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 11 Pro Plus, flexible y con ajuste exacto.",
+    "detalles": "Ajuste perfecto a las curvas y los botones del equipo, con silicon suave que no se resbala de la mano. Protege de caídas y rayones, y el material no se deforma con el tiempo. Una funda cómoda para llevarla todos los días. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 4,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-11-pro-plus-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-plus-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-plus-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-11-pro",
+    "nombre": "Silicon Case iPhone 11 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 11 Pro con textura antideslizante.",
+    "detalles": "Textura suave que da buen agarre y deja ver el diseño original del teléfono. El silicon absorbe los golpes y protege la cámara y las esquinas. Se instala y se retira en segundos, sin herramientas. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 4,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-11-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-11-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-11-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-12",
+    "nombre": "Silicon Case iPhone 12",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 12, con colores vibrantes y acabado mate.",
+    "detalles": "Silicon de calidad que protege sin abultar el teléfono y mantiene la pantalla libre de rayones. Se limpia con un solo trapo y su color no se descascara con el uso. Disponible en varios tonos para que elijas el tuyo. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 4,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-12-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-12-pro-max",
+    "nombre": "Silicon Case iPhone 12 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 12 Pro Max, resistente y cómoda.",
+    "detalles": "Cubre las curvas y la zona de cámaras sin tapar los botones. El silicon flexible absorbe el impacto de las caídas y no resbala en el bolsillo. Disponible en distintos colores y muy fácil de poner.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 4,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-12-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-12-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-12-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-13",
+    "nombre": "Silicon Case iPhone 13",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 13 con interior de microfibra que no rayá la pantalla.",
+    "detalles": "Suave por dentro y firme por fuera: protege el teléfono sin dejar marcas en la pantalla. Agarre seguro para la mano y el bolsillo, con colores intensos que aguantan el uso diario. Lavable y sin desgaste rápido.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-13-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-13-pro",
+    "nombre": "Silicon Case iPhone 13 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 13 Pro, fina y con gran protección.",
+    "detalles": "Perfil delgado que mantiene la elegancia del teléfono y silicon que absorbe los golpes. Cubre la cámara con borde elevado para que no toque la mesa. Protege sin volverse voluminosa y sin tapar los botones. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 3,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-13-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-13-pro-max",
+    "nombre": "Silicon Case iPhone 13 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 13 Pro Max, suave y con ajuste perfecto.",
+    "detalles": "Ajustada a las curvas del Pro Max, con material flexible que protege sin verse abultada. Resiste rayones, no resbala y se lava fácil si se ensucia. Ideal para el uso diario más exigente. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 5,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-13-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-13-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-13-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-14-pro-max",
+    "nombre": "Silicon Case iPhone 14 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 14 Pro Max, suave y con protección extra.",
+    "detalles": "Silicon de tacto agradable que se adapta al equipo sin dejar holguras. Protege cámaras y esquinas, y su interior suave evita marcas en la pantalla. Una funda bonita que aguanta el ritmo del día a día. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-14-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-15",
+    "nombre": "Silicon Case iPhone 15",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 15, flexible y con colores que duran.",
+    "detalles": "Se adapta a cada curva y protege de caídas y rayones sin abultar nada. El material no se descascara ni se deforma con el uso, y se limpia pasando un trapo. Disponible en varios colores.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-15-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-15-pro",
+    "nombre": "Silicon Case iPhone 15 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 15 Pro, antideslizante y resistente.",
+    "detalles": "Textura firme que se siente segura en la mano y los bordes elevados cuidan la cámara. Protege de golpes y rayones manteniendo el diseño del teléfono a la vista. Ligera, lavable y muy cómoda. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-15-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-15-pro-max",
+    "nombre": "Silicon Case iPhone 15 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 15 Pro Max, con ajuste perfecto.",
+    "detalles": "Silicon que abraza el teléfono sin apretar y con bordes que protegen la pantalla al tocarlo. No resbala, no se descascara y aguanta el uso diario sin perder forma. Disponible en varios colores.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-15-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-15-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-15-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-16",
+    "nombre": "Silicon Case iPhone 16",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 16, ligera y con acabado que no se marca.",
+    "detalles": "Protege de rayones y golpes sin tapar el diseño original del equipo. El silicon es flexible, no amarillea con el tiempo y se retira en segundos. Una funda práctica para todos los días. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-16-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-16-pro",
+    "nombre": "Silicon Case iPhone 16 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 16 Pro, delgada y muy resistente.",
+    "detalles": "Ajuste al milímetro en botones, cámaras y bordes. Absorbe el impacto de las caídas, no se resbala y su color se mantiene intacto por mucho tiempo. Una funda bonita que además cuida el teléfono. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 5,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-16-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-16-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-16-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-14-pro",
+    "nombre": "Silicon Case iPhone 14 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 14 Pro, con interior suave que no rayá.",
+    "detalles": "Flexible y fácil de poner, protege esquinas y cámara con un borde ligeramente elevado. No deja marcas en la pantalla y el agarre es cómodo incluso con el teléfono mojado. Disponible en varios colores.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-14-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-14-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-14-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-17-pro",
+    "nombre": "Silicon Case iPhone 17 Pro",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 17 Pro, nueva generación y ajuste perfecto.",
+    "detalles": "Diseñada para el modelo más reciente, con cortes exactos en botones y cámara. El silicon absorbe los golpes y mantiene una forma firme por mucho tiempo. Acabado suave al tacto y muy fácil de instalar. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 3,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-17-pro-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-17-pro-max",
+    "nombre": "Silicon Case iPhone 17 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 17 Pro Max, protección total y sin abultar.",
+    "detalles": "Cubre por completo las curvas del equipo con un material que no cede con el uso. Protege la pantalla, las esquinas y la cámara de golpes y rayones. Disponible en varios colores y se lava con un trapo.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-17-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-17-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-17-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-iphone-18-pro-max",
+    "nombre": "Silicon Case iPhone 18 Pro Max",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 18 Pro Max, ajuste exacto y muy resistente.",
+    "detalles": "Pensada para el modelo más nuevo, con apertura exacta para todos los botones. El silicon flexible protege sin deformarse y mantiene el color intacto. Antideslizante, cómoda y con borde elevado para cuidar la cámara. Elige tu color favorito entre los disponibles y te lo entregamos en el color que elijas.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Accesorios",
+    "variantes": [
+      {
+        "id": "silicon-case-iphone-18-pro-max-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-iphone-18-pro-max-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-iphone-18-pro-max-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "silicon-case-16-pro-max-mvpil4hd",
+    "nombre": "Silicon Case 16 PRO MAX",
+    "precio": "$20.000 COP",
+    "corta": "Funda de silicon para iPhone 16 Pro Max, suave, firme y sin abultar.",
+    "detalles": "Silicon de alta calidad que protege de golpes sin hacer grande el teléfono. Textura antideslizante, fácil de limpiar y con colores que no se descascaran. Perfecta para el uso diario.",
+    "fotos": [
+      "Silicon_Case-1.webp",
+      "Silicon_Case-2.webp",
+      "Silicon_Case-3.webp"
+    ],
+    "stock": 6,
+    "categoria": "Estuches Para celular",
+    "variantes": [
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-negro",
+        "nombre": "Negro",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-negro-c",
+            "nombre": "Negro",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-blanco",
+        "nombre": "Blanco",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-blanco-c",
+            "nombre": "Blanco",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-rosa",
+        "nombre": "Rosa",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-rosa-c",
+            "nombre": "Rosa",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-azul",
+        "nombre": "Azul",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-azul-c",
+            "nombre": "Azul",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-verde",
+        "nombre": "Verde",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-verde-c",
+            "nombre": "Verde",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-morado",
+        "nombre": "Morado",
+        "precio": "$20.000 COP",
+        "stock": 1,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-morado-c",
+            "nombre": "Morado",
+            "precio": "$20.000 COP",
+            "stock": 1
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-fucsia",
+        "nombre": "Fucsia",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-fucsia-c",
+            "nombre": "Fucsia",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-naranja",
+        "nombre": "Naranja",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-naranja-c",
+            "nombre": "Naranja",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-menta",
+        "nombre": "Menta",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-menta-c",
+            "nombre": "Menta",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      },
+      {
+        "id": "silicon-case-16-pro-max-mvpil4hd-beige",
+        "nombre": "Beige",
+        "precio": "$20.000 COP",
+        "stock": 0,
+        "colores": [
+          {
+            "id": "silicon-case-16-pro-max-mvpil4hd-beige-c",
+            "nombre": "Beige",
+            "precio": "$20.000 COP",
+            "stock": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "marrana-20w-original",
     "nombre": "Marrana 20W Original",
     "precio": "$99.000 COP",
@@ -1863,6 +4923,18 @@
       "Marrana40w.jpg"
     ],
     "stock": 2,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": "power-band-10mah-iphone",
+    "nombre": "Power Band 10Mah Iphone",
+    "precio": "$90.000 COP",
+    "corta": "Batería portátil tipo banda para iPhone: carga extra sin cargar cables.",
+    "detalles": "Se conecta directo al equipo y le da horas de batería extra, ideal para días largos o viajes. La carga es rápida y la conexión es firme, sin cables que se enreden. Una solución práctica para no quedarte sin batería en la calle.",
+    "fotos": [
+      "Power_Band_10Mah_Iphone.webp"
+    ],
+    "stock": 1,
     "categoria": "Accesorios"
   }
 ]
