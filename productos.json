@@ -478,20 +478,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 8,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "spark-40-pro-mu917bkx0",
         "nombre": "SPARK 40 Pro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "lila-mu917bkx0",
             "nombre": "Lila",
             "precio": "$20.000 COP",
-            "stock": 1,
+            "stock": 2,
             "foto": "siliconcasespark40pro.jpeg"
           }
         ]
@@ -500,13 +500,13 @@
         "id": "spark-50-mu917bkx1",
         "nombre": "SPARK 50",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "negro-mu917bkx1",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1,
+            "stock": 2,
             "foto": "siliconcasespark50.jpeg"
           }
         ]
@@ -515,13 +515,13 @@
         "id": "spark-40-mu917bkx2",
         "nombre": "SPARK 40",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "vinotinto-mu917bkx2",
             "nombre": "Vinotinto",
             "precio": "$20.000 COP",
-            "stock": 1,
+            "stock": 2,
             "foto": "Siliconcasespark40.jpeg"
           }
         ]
@@ -530,13 +530,13 @@
         "id": "moto-g04-mu917bkx3",
         "nombre": "MOTO G04/G04S/G24",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "azul-mu917bkx3",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1,
+            "stock": 2,
             "foto": "siliconcasemoto.jpeg"
           }
         ]
@@ -1948,20 +1948,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-11-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -1969,13 +1969,13 @@
         "id": "silicon-case-iphone-11-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -1983,13 +1983,13 @@
         "id": "silicon-case-iphone-11-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -1997,13 +1997,13 @@
         "id": "silicon-case-iphone-11-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2011,13 +2011,13 @@
         "id": "silicon-case-iphone-11-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2025,13 +2025,13 @@
         "id": "silicon-case-iphone-11-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2039,13 +2039,13 @@
         "id": "silicon-case-iphone-11-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2053,13 +2053,13 @@
         "id": "silicon-case-iphone-11-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2067,13 +2067,13 @@
         "id": "silicon-case-iphone-11-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2081,13 +2081,13 @@
         "id": "silicon-case-iphone-11-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2104,20 +2104,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-11-pro-plus-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2125,13 +2125,13 @@
         "id": "silicon-case-iphone-11-pro-plus-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2139,13 +2139,13 @@
         "id": "silicon-case-iphone-11-pro-plus-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2153,13 +2153,13 @@
         "id": "silicon-case-iphone-11-pro-plus-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2167,13 +2167,13 @@
         "id": "silicon-case-iphone-11-pro-plus-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2181,13 +2181,13 @@
         "id": "silicon-case-iphone-11-pro-plus-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2195,13 +2195,13 @@
         "id": "silicon-case-iphone-11-pro-plus-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2209,13 +2209,13 @@
         "id": "silicon-case-iphone-11-pro-plus-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2223,13 +2223,13 @@
         "id": "silicon-case-iphone-11-pro-plus-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2237,13 +2237,13 @@
         "id": "silicon-case-iphone-11-pro-plus-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-plus-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2260,20 +2260,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-11-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2281,13 +2281,13 @@
         "id": "silicon-case-iphone-11-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2295,13 +2295,13 @@
         "id": "silicon-case-iphone-11-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2309,13 +2309,13 @@
         "id": "silicon-case-iphone-11-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2323,13 +2323,13 @@
         "id": "silicon-case-iphone-11-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2337,13 +2337,13 @@
         "id": "silicon-case-iphone-11-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2351,13 +2351,13 @@
         "id": "silicon-case-iphone-11-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2365,13 +2365,13 @@
         "id": "silicon-case-iphone-11-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2379,13 +2379,13 @@
         "id": "silicon-case-iphone-11-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2393,13 +2393,13 @@
         "id": "silicon-case-iphone-11-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-11-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2416,20 +2416,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-12-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2437,13 +2437,13 @@
         "id": "silicon-case-iphone-12-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2451,13 +2451,13 @@
         "id": "silicon-case-iphone-12-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2465,13 +2465,13 @@
         "id": "silicon-case-iphone-12-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2479,13 +2479,13 @@
         "id": "silicon-case-iphone-12-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2493,13 +2493,13 @@
         "id": "silicon-case-iphone-12-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2507,13 +2507,13 @@
         "id": "silicon-case-iphone-12-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2521,13 +2521,13 @@
         "id": "silicon-case-iphone-12-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2535,13 +2535,13 @@
         "id": "silicon-case-iphone-12-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2549,13 +2549,13 @@
         "id": "silicon-case-iphone-12-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2572,20 +2572,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 4,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-12-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2593,13 +2593,13 @@
         "id": "silicon-case-iphone-12-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2607,13 +2607,13 @@
         "id": "silicon-case-iphone-12-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2621,13 +2621,13 @@
         "id": "silicon-case-iphone-12-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2635,13 +2635,13 @@
         "id": "silicon-case-iphone-12-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2649,13 +2649,13 @@
         "id": "silicon-case-iphone-12-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2663,13 +2663,13 @@
         "id": "silicon-case-iphone-12-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2677,13 +2677,13 @@
         "id": "silicon-case-iphone-12-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2691,13 +2691,13 @@
         "id": "silicon-case-iphone-12-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2705,13 +2705,13 @@
         "id": "silicon-case-iphone-12-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-12-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2728,20 +2728,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-13-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2749,13 +2749,13 @@
         "id": "silicon-case-iphone-13-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2763,13 +2763,13 @@
         "id": "silicon-case-iphone-13-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2777,13 +2777,13 @@
         "id": "silicon-case-iphone-13-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2791,13 +2791,13 @@
         "id": "silicon-case-iphone-13-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2805,13 +2805,13 @@
         "id": "silicon-case-iphone-13-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2819,13 +2819,13 @@
         "id": "silicon-case-iphone-13-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2833,13 +2833,13 @@
         "id": "silicon-case-iphone-13-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2847,13 +2847,13 @@
         "id": "silicon-case-iphone-13-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2861,13 +2861,13 @@
         "id": "silicon-case-iphone-13-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -2884,20 +2884,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 3,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-13-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2905,13 +2905,13 @@
         "id": "silicon-case-iphone-13-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2919,13 +2919,13 @@
         "id": "silicon-case-iphone-13-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -2933,13 +2933,13 @@
         "id": "silicon-case-iphone-13-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2947,13 +2947,13 @@
         "id": "silicon-case-iphone-13-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2961,13 +2961,13 @@
         "id": "silicon-case-iphone-13-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2975,13 +2975,13 @@
         "id": "silicon-case-iphone-13-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -2989,13 +2989,13 @@
         "id": "silicon-case-iphone-13-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3003,13 +3003,13 @@
         "id": "silicon-case-iphone-13-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3017,13 +3017,13 @@
         "id": "silicon-case-iphone-13-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3040,20 +3040,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 5,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-13-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3061,13 +3061,13 @@
         "id": "silicon-case-iphone-13-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3075,13 +3075,13 @@
         "id": "silicon-case-iphone-13-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3089,13 +3089,13 @@
         "id": "silicon-case-iphone-13-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3103,13 +3103,13 @@
         "id": "silicon-case-iphone-13-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3117,13 +3117,13 @@
         "id": "silicon-case-iphone-13-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3131,13 +3131,13 @@
         "id": "silicon-case-iphone-13-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3145,13 +3145,13 @@
         "id": "silicon-case-iphone-13-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3159,13 +3159,13 @@
         "id": "silicon-case-iphone-13-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3173,13 +3173,13 @@
         "id": "silicon-case-iphone-13-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-13-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3196,20 +3196,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-14-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3217,13 +3217,13 @@
         "id": "silicon-case-iphone-14-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3231,13 +3231,13 @@
         "id": "silicon-case-iphone-14-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3245,13 +3245,13 @@
         "id": "silicon-case-iphone-14-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3259,13 +3259,13 @@
         "id": "silicon-case-iphone-14-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3273,13 +3273,13 @@
         "id": "silicon-case-iphone-14-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3287,13 +3287,13 @@
         "id": "silicon-case-iphone-14-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3301,13 +3301,13 @@
         "id": "silicon-case-iphone-14-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3315,13 +3315,13 @@
         "id": "silicon-case-iphone-14-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3329,13 +3329,13 @@
         "id": "silicon-case-iphone-14-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3352,20 +3352,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-15-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3373,13 +3373,13 @@
         "id": "silicon-case-iphone-15-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3387,13 +3387,13 @@
         "id": "silicon-case-iphone-15-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3401,13 +3401,13 @@
         "id": "silicon-case-iphone-15-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3415,13 +3415,13 @@
         "id": "silicon-case-iphone-15-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3429,13 +3429,13 @@
         "id": "silicon-case-iphone-15-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3443,13 +3443,13 @@
         "id": "silicon-case-iphone-15-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3457,13 +3457,13 @@
         "id": "silicon-case-iphone-15-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3471,13 +3471,13 @@
         "id": "silicon-case-iphone-15-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3485,13 +3485,13 @@
         "id": "silicon-case-iphone-15-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3508,20 +3508,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-15-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3529,13 +3529,13 @@
         "id": "silicon-case-iphone-15-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3543,13 +3543,13 @@
         "id": "silicon-case-iphone-15-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3557,13 +3557,13 @@
         "id": "silicon-case-iphone-15-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3571,13 +3571,13 @@
         "id": "silicon-case-iphone-15-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3585,13 +3585,13 @@
         "id": "silicon-case-iphone-15-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3599,13 +3599,13 @@
         "id": "silicon-case-iphone-15-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3613,13 +3613,13 @@
         "id": "silicon-case-iphone-15-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3627,13 +3627,13 @@
         "id": "silicon-case-iphone-15-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3641,13 +3641,13 @@
         "id": "silicon-case-iphone-15-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3664,20 +3664,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-15-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3685,13 +3685,13 @@
         "id": "silicon-case-iphone-15-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3699,13 +3699,13 @@
         "id": "silicon-case-iphone-15-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3713,13 +3713,13 @@
         "id": "silicon-case-iphone-15-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3727,13 +3727,13 @@
         "id": "silicon-case-iphone-15-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3741,13 +3741,13 @@
         "id": "silicon-case-iphone-15-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3755,13 +3755,13 @@
         "id": "silicon-case-iphone-15-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3769,13 +3769,13 @@
         "id": "silicon-case-iphone-15-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3783,13 +3783,13 @@
         "id": "silicon-case-iphone-15-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3797,13 +3797,13 @@
         "id": "silicon-case-iphone-15-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-15-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3820,20 +3820,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-16-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3841,13 +3841,13 @@
         "id": "silicon-case-iphone-16-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3855,13 +3855,13 @@
         "id": "silicon-case-iphone-16-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3869,13 +3869,13 @@
         "id": "silicon-case-iphone-16-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3883,13 +3883,13 @@
         "id": "silicon-case-iphone-16-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3897,13 +3897,13 @@
         "id": "silicon-case-iphone-16-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3911,13 +3911,13 @@
         "id": "silicon-case-iphone-16-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3925,13 +3925,13 @@
         "id": "silicon-case-iphone-16-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3939,13 +3939,13 @@
         "id": "silicon-case-iphone-16-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -3953,13 +3953,13 @@
         "id": "silicon-case-iphone-16-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -3976,20 +3976,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 5,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-16-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -3997,13 +3997,13 @@
         "id": "silicon-case-iphone-16-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4011,13 +4011,13 @@
         "id": "silicon-case-iphone-16-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4025,13 +4025,13 @@
         "id": "silicon-case-iphone-16-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4039,13 +4039,13 @@
         "id": "silicon-case-iphone-16-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4053,13 +4053,13 @@
         "id": "silicon-case-iphone-16-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4067,13 +4067,13 @@
         "id": "silicon-case-iphone-16-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4081,13 +4081,13 @@
         "id": "silicon-case-iphone-16-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4095,13 +4095,13 @@
         "id": "silicon-case-iphone-16-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4109,13 +4109,13 @@
         "id": "silicon-case-iphone-16-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-16-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -4132,20 +4132,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-14-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4153,13 +4153,13 @@
         "id": "silicon-case-iphone-14-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4167,13 +4167,13 @@
         "id": "silicon-case-iphone-14-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4181,13 +4181,13 @@
         "id": "silicon-case-iphone-14-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4195,13 +4195,13 @@
         "id": "silicon-case-iphone-14-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4209,13 +4209,13 @@
         "id": "silicon-case-iphone-14-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4223,13 +4223,13 @@
         "id": "silicon-case-iphone-14-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4237,13 +4237,13 @@
         "id": "silicon-case-iphone-14-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4251,13 +4251,13 @@
         "id": "silicon-case-iphone-14-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4265,13 +4265,13 @@
         "id": "silicon-case-iphone-14-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-14-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -4288,20 +4288,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 3,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-17-pro-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4309,13 +4309,13 @@
         "id": "silicon-case-iphone-17-pro-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4323,13 +4323,13 @@
         "id": "silicon-case-iphone-17-pro-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4337,13 +4337,13 @@
         "id": "silicon-case-iphone-17-pro-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4351,13 +4351,13 @@
         "id": "silicon-case-iphone-17-pro-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4365,13 +4365,13 @@
         "id": "silicon-case-iphone-17-pro-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4379,13 +4379,13 @@
         "id": "silicon-case-iphone-17-pro-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4393,13 +4393,13 @@
         "id": "silicon-case-iphone-17-pro-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4407,13 +4407,13 @@
         "id": "silicon-case-iphone-17-pro-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4421,13 +4421,13 @@
         "id": "silicon-case-iphone-17-pro-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -4444,20 +4444,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-17-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4465,13 +4465,13 @@
         "id": "silicon-case-iphone-17-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4479,13 +4479,13 @@
         "id": "silicon-case-iphone-17-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4493,13 +4493,13 @@
         "id": "silicon-case-iphone-17-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4507,13 +4507,13 @@
         "id": "silicon-case-iphone-17-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4521,13 +4521,13 @@
         "id": "silicon-case-iphone-17-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4535,13 +4535,13 @@
         "id": "silicon-case-iphone-17-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4549,13 +4549,13 @@
         "id": "silicon-case-iphone-17-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4563,13 +4563,13 @@
         "id": "silicon-case-iphone-17-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4577,13 +4577,13 @@
         "id": "silicon-case-iphone-17-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-17-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -4600,20 +4600,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Accesorios",
     "variantes": [
       {
         "id": "silicon-case-iphone-18-pro-max-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4621,13 +4621,13 @@
         "id": "silicon-case-iphone-18-pro-max-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4635,13 +4635,13 @@
         "id": "silicon-case-iphone-18-pro-max-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4649,13 +4649,13 @@
         "id": "silicon-case-iphone-18-pro-max-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4663,13 +4663,13 @@
         "id": "silicon-case-iphone-18-pro-max-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4677,13 +4677,13 @@
         "id": "silicon-case-iphone-18-pro-max-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4691,13 +4691,13 @@
         "id": "silicon-case-iphone-18-pro-max-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4705,13 +4705,13 @@
         "id": "silicon-case-iphone-18-pro-max-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4719,13 +4719,13 @@
         "id": "silicon-case-iphone-18-pro-max-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4733,13 +4733,13 @@
         "id": "silicon-case-iphone-18-pro-max-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-iphone-18-pro-max-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
@@ -4756,20 +4756,20 @@
       "Silicon_Case-2.webp",
       "Silicon_Case-3.webp"
     ],
-    "stock": 6,
+    "stock": 20,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
         "id": "silicon-case-16-pro-max-mvpil4hd-negro",
         "nombre": "Negro",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-negro-c",
             "nombre": "Negro",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4777,13 +4777,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-blanco",
         "nombre": "Blanco",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-blanco-c",
             "nombre": "Blanco",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4791,13 +4791,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-rosa",
         "nombre": "Rosa",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-rosa-c",
             "nombre": "Rosa",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4805,13 +4805,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-azul",
         "nombre": "Azul",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-azul-c",
             "nombre": "Azul",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4819,13 +4819,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-verde",
         "nombre": "Verde",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-verde-c",
             "nombre": "Verde",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4833,13 +4833,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-morado",
         "nombre": "Morado",
         "precio": "$20.000 COP",
-        "stock": 1,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-morado-c",
             "nombre": "Morado",
             "precio": "$20.000 COP",
-            "stock": 1
+            "stock": 2
           }
         ]
       },
@@ -4847,13 +4847,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-fucsia",
         "nombre": "Fucsia",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-fucsia-c",
             "nombre": "Fucsia",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4861,13 +4861,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-naranja",
         "nombre": "Naranja",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-naranja-c",
             "nombre": "Naranja",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4875,13 +4875,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-menta",
         "nombre": "Menta",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-menta-c",
             "nombre": "Menta",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -4889,13 +4889,13 @@
         "id": "silicon-case-16-pro-max-mvpil4hd-beige",
         "nombre": "Beige",
         "precio": "$20.000 COP",
-        "stock": 0,
+        "stock": 2,
         "colores": [
           {
             "id": "silicon-case-16-pro-max-mvpil4hd-beige-c",
             "nombre": "Beige",
             "precio": "$20.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       }
