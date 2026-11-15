@@ -110,7 +110,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
-<body>
+<body class="con-topbar">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KWPH4C7"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -118,6 +118,15 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1745334873241709&ev=PageView&noscript=1"
     /></noscript>
+
+    <!-- Barra superior de anuncios (fija): empuja el ticket promedio -->
+    <div class="topbar" role="complementary" aria-label="Beneficios de compra">
+        <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>Envio GRATIS en Bogota por compras superiores a $35.000
+        <span class="topbar-sep">|</span>
+        <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>Pago contra entrega
+        <span class="topbar-sep">|</span>
+        <a href="#contacto">WhatsApp</a>
+    </div>
 
     <!-- Encabezado y Navegación -->
     <header class="header">
@@ -166,7 +175,7 @@
                 <span class="badge">Tienda Oficial</span>
                 <h1>Josep.mobile</h1>
                 <p>
-                    Cases y Fundas para celular mas Tecnología<br>
+                    Cases y Fundas para celular más Tecnología<br>
                     "El toque final para lucir con mucho estilo"<br>
                     * Pagos contra entrega en Bogotá<br>
                     * Envíos nacionales
@@ -178,6 +187,30 @@
         <!-- Sección de Productos -->
         <section id="productos" class="products">
             <h2 class="section-title">Nuestros Productos</h2>
+
+            <!-- Filtros rápidos -->
+            <div class="filtros">
+                <div class="filtros-grupo" role="group" aria-label="Filtrar por categoría">
+                    <button type="button" class="filtro-btn activo" data-filtro-tipo="categoria" data-filtro-valor="todos"><i class="fa-solid fa-grip" aria-hidden="true"></i>Todos</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="estuches"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>Estuches y Cases</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="audifonos"><i class="fa-solid fa-headphones" aria-hidden="true"></i>Audifonos</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="powerbanks"><i class="fa-solid fa-battery-full" aria-hidden="true"></i>Power Banks</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="cargadores"><i class="fa-solid fa-plug" aria-hidden="true"></i>Cargadores</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="smartwatches"><i class="fa-solid fa-clock" aria-hidden="true"></i>Smartwatches</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="vidrios"><i class="fa-solid fa-shield" aria-hidden="true"></i>Vidrios y Protectores</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="categoria" data-filtro-valor="otros"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i>Otros</button>
+                </div>
+                <div class="filtros-grupo filtros-secundario" role="group" aria-label="Filtrar por marca de celular">
+                    <button type="button" class="filtro-btn activo" data-filtro-tipo="marca" data-filtro-valor="todos">Todas las marcas</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="marca" data-filtro-valor="iphone">iPhone</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="marca" data-filtro-valor="samsung">Samsung</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="marca" data-filtro-valor="xiaomi">Xiaomi / Redmi</button>
+                    <button type="button" class="filtro-btn" data-filtro-tipo="marca" data-filtro-valor="motorola">Motorola</button>
+                </div>
+                <p class="filtro-contador" id="filtro-contador"></p>
+                <p class="filtro-contador" id="filtro-vacio" style="display:none;">No hay productos con esos filtros. Prueba con otra categoria o marca.</p>
+            </div>
+
             <div id="product-grid" class="product-grid"></div>
             <div id="modals-container"></div>
         </section>
