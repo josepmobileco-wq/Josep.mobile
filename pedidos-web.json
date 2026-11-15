@@ -47,7 +47,8 @@
       "paymentId": "CNP3GAWUY3NM4",
       "metodo": "CARD_WEB",
       "fecha": "2026-10-30T18:50:25.536Z",
-      "fechaPago": "2026-10-30T18:52:25.938Z"
+      "fechaPago": "2026-10-30T18:52:25.938Z",
+      "estadoEnvio": "entregado"
     },
     {
       "orderId": "JM-1790562004317-43f2",
