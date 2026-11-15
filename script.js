@@ -715,7 +715,9 @@ function cerrarModales() {
 document.addEventListener('DOMContentLoaded', () => {
     manejarRetornoBold();
     revisarHashPedido();
-    fetch('./productos.json')
+    // Cache-buster: el stock y los precios cambian seguido y el navegador
+    // cachea productos.json hasta 10 minutos. Asi el cliente siempre ve lo real.
+    fetch('./productos.json?v=' + Date.now(), { cache: 'no-store' })
         .then(response => {
             if (!response.ok) throw new Error(`Error HTTP! estado: ${response.status}`);
             return response.json();
