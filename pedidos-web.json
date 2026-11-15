@@ -25,7 +25,8 @@
       "aplicado": true,
       "paymentId": null,
       "metodo": null,
-      "fecha": "2026-11-14T03:57:40.289Z"
+      "fecha": "2026-11-14T03:57:40.289Z",
+      "estadoEnvio": "en_camino"
     },
     {
       "orderId": "JM-1793386224541-ai2x",
