@@ -68,6 +68,8 @@ body {
     width: 100%;
     z-index: 1100;
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .topbar i {
@@ -85,17 +87,47 @@ body {
     font-weight: 800;
 }
 
-/* Con la barra superior el encabezado baja */
+/* Version corta: solo se muestra en pantallas pequenas */
+.topbar-short {
+    display: none;
+}
+
+/* Con la barra superior el encabezado baja (la altura se mide con JS:
+   --topbar-h evita que se superpongan en cualquier pantalla) */
 body.con-topbar .header {
-    top: 31px;
+    top: var(--topbar-h, 31px);
 }
 
 body.con-topbar .hero {
-    padding-top: 9rem;
+    padding-top: calc(8rem + var(--topbar-h, 31px));
 }
 
 body.con-topbar .modal-policy {
-    top: 31px;
+    top: var(--topbar-h, 31px);
+}
+
+body.con-topbar .modal-backdrop {
+    top: var(--topbar-h, 31px);
+    height: calc(100% - var(--topbar-h, 31px));
+}
+
+@media (max-width: 640px) {
+    .topbar {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .topbar-full {
+        display: none;
+    }
+    .topbar-short {
+        display: inline;
+    }
+    .topbar .topbar-sep {
+        margin: 0 6px;
+    }
+    body.con-topbar .hero {
+        padding-top: calc(6rem + var(--topbar-h, 31px));
+    }
 }
 
 /* ====== Barra de filtros ====== */
