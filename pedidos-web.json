@@ -18,12 +18,11 @@
       ],
       "total": 45000,
       "cliente": {
-        "nombre": "Laura Milena Paez Brochero",
-        "ciudad": "Barranquilla"
+        "nombre": "Laura Milena Paez Brochero"
       },
       "validacion": "ok",
       "estado": "contraentrega",
-      "aplicado": false,
+      "aplicado": true,
       "paymentId": null,
       "metodo": null,
       "fecha": "2026-11-14T03:57:40.289Z"
