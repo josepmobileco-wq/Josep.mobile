@@ -1761,8 +1761,8 @@
     "id": "cargador-iphone-25w-lightning-murfmioq",
     "nombre": "Cargador Iphone 25W lightning",
     "precio": "$50.000 COP",
-    "corta": "¡No esperes horas para llenar tu batería! Lleva tu experiencia de carga al siguiente nivel con este combo de cubo de car",
-    "detalles": "Características Principales: Potencia pura de 24W para cargar tu iPhone del 0% al 50% en aproximadamente 30 minutos, combo completo que incluye el adaptador de pared de alta potencia y el cable de conexión Lightning, protección inteligente con chip integrado contra sobrecalentamientos, sobretensiones y cortocircuitos, y un diseño compacto y portátil ideal para llevar en tu mochila, cartera o de viaje sin ocupar espacio.",
+    "corta": "Combo de carga rápida para iPhone: adaptador de 25W + cable Lightning. Carga en minutos.",
+    "detalles": "Combo completo que incluye el adaptador de pared de 25W y el cable de conexión Lightning. Con el adaptador puedes cargar tu iPhone del 0% al 50% en aproximadamente 30 minutos. Incorpora un chip de protección inteligente contra sobrecalentamientos, sobretensiones y cortocircuitos, y su diseño compacto y portátil lo hace ideal para llevar en la mochila, la cartera o de viaje sin ocupar espacio.",
     "fotos": [
       "cargador25w1.jpg",
       "cargador25w2.jpg",
@@ -1775,8 +1775,8 @@
     "id": "cargador-35w-iphone-tipo-c-a-c-murft69h",
     "nombre": "Cargador 35W Iphone Tipo C a C",
     "precio": "$50.000 COP",
-    "corta": "Carga dos dispositivos al mismo tiempo con la máxima eficiencia y velocidad. El adaptador de corriente de 35W de Apple e",
-    "detalles": "El cargador original Apple de 35W con doble puerto USB-C sirve para alimentar dos dispositivos de forma rápida y simultánea, eliminando la necesidad de llevar múltiples adaptadores. Cuenta con un sistema de carga inteligente que distribuye la energía de manera eficiente entre ambos puertos según las necesidades de la batería de cada equipo, y su diseño compacto con clavijas plegables lo hace sumamente portátil para llevar en cualquier bolsillo. Aunque está optimizado para el ecosistema Apple —como computadoras MacBook Air, teléfonos iPhone, tabletas iPad, Apple Watch y AirPods—, ofrece una compatibilidad universal que funciona a la perfección con cualquier otro dispositivo compatible con carga mediante cable USB-C.",
+    "corta": "Carga dos dispositivos al mismo tiempo con 35W y doble puerto USB-C. Ideal para viajes.",
+    "detalles": "Adaptador de corriente de 35W con doble puerto USB-C que alimenta dos dispositivos de forma rápida y simultánea, para que no tengas que llevar varios cargadores. Cuenta con un sistema de carga inteligente que distribuye la energía de manera eficiente entre ambos puertos según lo que necesite cada equipo. Su diseño compacto y las clavijas plegables lo hacenmuy fácil de llevar en cualquier bolsillo. Compatible con iPhone, iPad, MacBook, relojes y audífonos con carga USB-C, y también con cualquier otro dispositivo que use ese cable.",
     "fotos": [
       "cargador35w1.jpg",
       "cargador35w2.jpg",
@@ -1787,10 +1787,10 @@
   },
   {
     "id": "relog-g-tide-r3-murg6f8j",
-    "nombre": "Relog G-TIDE R3",
+    "nombre": "Reloj G-TIDE R3",
     "precio": "$180.000 COP",
-    "corta": "¡Lleva tu estilo y rendimiento al siguiente nivel con el Smartwatch G-Tide R3! ⌚✨ Este reloj inteligente",
-    "detalles": "Reloj Inteligente G-Tide R3 Nuevo con pantalla Full HD de 1.39\", llamadas Bluetooth con micrófono y altavoz integrados, resistencia al agua IP68, batería de 300 mAh de larga duración con carga magnética, más de 100 modos deportivos, monitoreo de salud 24/7 (ritmo cardíaco, oxígeno en sangre SpO2, presión arterial, sueño), notificaciones de apps (WhatsApp, redes sociales), asistente de voz, correa de silicona intercambiable de obsequio y compatibilidad total con Android e iOS mediante la app Da Fit.",
+    "corta": "Reloj inteligente G-TIDE R3 con pantalla Full HD, llamadas Bluetooth e IP68.",
+    "detalles": "Reloj inteligente G-TIDE R3 con pantalla Full HD de 1.39 pulgadas, llamadas Bluetooth con micrófono y altavoz integrados, resistencia al agua IP68 y batería de 300 mAh de larga duración con carga magnética. Incluye más de 100 modos deportivos, monitoreo de salud 24/7 (ritmo cardíaco, oxígeno en sangre SpO2, presión arterial y sueño), notificaciones de apps (WhatsApp y redes sociales), asistente de voz y correa de silicona intercambiable de obsequio. Compatible con Android e iOS mediante la app Da Fit.",
     "fotos": [
       "reloggtider31.jpg",
       "reloggtider32.jpg",
@@ -1801,10 +1801,10 @@
   },
   {
     "id": "smart-wach-apple-serie-11-murvo2x6",
-    "nombre": "Smart Wach Apple serie 11",
+    "nombre": "Smartwatch Serie 11 Ultra",
     "precio": "$155.000 COP",
-    "corta": "⌚ El smartwatch más delgado y avanzado de Apple. Pantalla súper resistente, batería para todo el día con carga rápida",
-    "detalles": "⌚ ¡Lleva tu día a otro nivel con el Apple Watch Series 11! El aliado perfecto para tu salud, entrenamientos y productividad. Cuenta con el diseño más delgado de Apple hasta la fecha y una pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y mantente conectado gracias a su conectividad fluida y batería de carga súper rápida (hasta 24 horas de autonomía). ¡Prácticamente nuevo y listo para vincular !",
+    "corta": "Smartwatch Serie 11 Ultra: pantalla resistente, batería de todo el día y monitoreo de salud.",
+    "detalles": "Smartwatch Serie 11 Ultra con diseño delgado y pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y te mantiene conectado con conectividad fluida y carga súper rápida (hasta 24 horas de autonomía). Su diseño ligero y cómodo lo hace perfecto para llevarlo todo el día, tanto en la oficina como en el gimnasio. Prácticamente nuevo y listo para vincular con tu celular.",
     "fotos": [
       "Smartwach1.jpg",
       "smartwach2.jpg",
@@ -1815,10 +1815,10 @@
   },
   {
     "id": "airpods-serie-4-mut995rm",
-    "nombre": "Airpods Serie 4",
+    "nombre": "Audífonos Inalámbricos Serie 4",
     "precio": "$90.000 COP",
-    "corta": "🎧 ¡Apple AirPods 4 en perfecto estado! Disfruta de un sonido totalmente renovado con el potente chip H2",
-    "detalles": "🎧 ¡Apple AirPods 4 en excelente estado y listos para estrenar! Esta última generación de audífonos inalámbricos redefine por completo tu experiencia de audio gracias a la potencia del chip H2, que ofrece un sonido increíblemente nítido, graves profundos y la avanzada función de Aislamiento de Voz para que tus llamadas se escuchen perfectas incluso en entornos ruidosos. Su diseño acústico renovado proporciona un ajuste ultraóptimo y cómodo para usarlos todo el día sin fatiga, respaldado por la resistencia IP54 al polvo, agua y sudor, lo que los hace perfectos tanto para el uso diario como para entrenar. Además, incorporan Audio Espacial Personalizado con seguimiento dinámico de la cabeza para una inmersión total en tus películas y canciones, control por gestos para interactuar con Siri de forma intuitiva, y un nuevo estuche de carga USB-C mucho más compacto y fácil de llevar a cualquier parte. Se entregan impecables, completamente funcionales y listos para vincular a tu iPhone, convirtiéndose en la oportunidad perfecta para actualizar tus audífonos al mejor precio del mercado.",
+    "corta": "Audífonos inalámbricos Serie 4: sonido nítido, cancelación de voz y estuche USB-C.",
+    "detalles": "Audífonos inalámbricos Serie 4 de última generación con sonido muy nítido y graves profundos. Incluyen la función de Aislamiento de Voz para que tus llamadas se escuchen perfectas incluso en entornos ruidosos. Su diseño acústico renovado proporciona un ajuste cómodo para usarlos todo el día sin fatiga, con resistencia IP54 al polvo, el agua y el sudor, ideal tanto para el uso diario como para entrenar. Cuentan con audio espacial personalizado con seguimiento dinámico de la cabeza, control por gestos y un estuche de carga USB-C compacto. Se entregan impecables, completamente funcionales y listos para vincular con tu celular.",
     "fotos": [
       "serie41.jpg",
       "serie42.jpg",
@@ -1831,8 +1831,8 @@
     "id": "microfono-de-solapa-f11-muuol303",
     "nombre": "Microfono de solapa F11",
     "precio": "$100.000 COP",
-    "corta": "Micrófono de solapa F11 inalámbrico de alta fidelidad con reducción de ruido inteligente y conexión automática Plug & Pl",
-    "detalles": "El micrófono de solapa F11 destaca por su avanzada tecnología de reducción de ruido inteligente, la cual filtra de forma automática el sonido ambiental para garantizar una captura de voz nítida y con alta fidelidad. Su sistema inalámbrico omnidireccional cuenta con la función Plug & Play, permitiendo una conexión automática e instantánea sin necesidad de instalar aplicaciones o configuraciones complejas. Además, ofrece un diseño compacto y ligero, una batería de larga duración ideal para jornadas extensas de grabación y un amplio rango de transmisión de hasta 20 metros libres de obstáculos, lo que lo hace perfectamente compatible con smartphones, cámaras y computadoras.",
+    "corta": "Micrófono de solapa F11 inalámbrico con reducción de ruido y conexión Plug & Play.",
+    "detalles": "El micrófono de solapa F11 destaca por su tecnología de reducción de ruido inteligente, que filtra el sonido ambiental para garantizar una voz nítida. Su sistema inalámbrico omnidireccional cuenta con la función Plug & Play: se conecta de forma automática e instantánea, sin instalar aplicaciones ni configurar nada. Además, su diseño compacto y ligero, la batería de larga duración y el alcance de hasta 20 metros libres de obstáculos lo hacen perfecto para grabar, hacer podcasts o participar en reuniones y видеollamadas con el celular, la cámara o el computador.",
     "fotos": [
       "microfonof111.jpg",
       "microfonof112.jpg",
@@ -4903,10 +4903,10 @@
   },
   {
     "id": "marrana-20w-original",
-    "nombre": "Marrana 20W Original",
+    "nombre": "Cubo de Carga Rápida 20W Tipo C (Marrana)",
     "precio": "$99.000 COP",
-    "corta": "Marrana para Iphone Origianl",
-    "detalles": "Marrana para IPhone original",
+    "corta": "Carga rápida para tu iPhone a 20W con cable incluido. Compatible con iPhone y iPad.",
+    "detalles": "Cargador de pared con salida USB-C y potencia de 20W, acompañado del cable de conexión para que lo uses de inmediato. Recarga tu iPhone o iPad de forma rápida y segura gracias al chip de protección contra sobrecalentamientos, sobretensiones y cortocircuitos. Su tamaño compacto lo hace fácil de llevar en el bolso, la cartera o de viaje.",
     "fotos": [
       "marrana20w.jpg"
     ],
@@ -4915,10 +4915,10 @@
   },
   {
     "id": "marrana-40w-original",
-    "nombre": "Marrana 40W Original",
+    "nombre": "Cubo de Carga Rápida 40W Tipo C (Marrana)",
     "precio": "$150.000 COP",
-    "corta": "Marrana para IPhone original",
-    "detalles": "Marrana para IPhone original",
+    "corta": "Carga ultrarrápida de 40W con cable incluido. Tu celular listo en mucho menos tiempo.",
+    "detalles": "Cargador de pared de 40W con salida USB-C y cable de conexión incluido. La carga rápida recupera un alto porcentaje de batería de tu iPhone o iPad en muy pocos minutos, y el chip inteligente protege el equipo de sobrecalentamientos, sobretensiones y cortocircuitos. Compacto y fácil de llevar para usarlo en casa, la oficina o de viaje.",
     "fotos": [
       "Marrana40w.jpg"
     ],
