@@ -149,6 +149,18 @@ function etiquetaOpciones(prod) {
     return '🎨 ' + n + ' ' + palabra;
 }
 
+// ====== Barra superior: medir su alto real para no tapar el encabezado ======
+function ajustarAltoTopbar() {
+    const tb = document.querySelector('.topbar');
+    if (!tb) return;
+    const h = Math.round(tb.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--topbar-h', h + 'px');
+    document.body.style.setProperty('--topbar-h', h + 'px');
+}
+
+window.addEventListener('resize', ajustarAltoTopbar);
+window.addEventListener('orientationchange', () => setTimeout(ajustarAltoTopbar, 200));
+
 // ====== Utilidades ======
 function esc(texto) {
     return String(texto)
@@ -715,6 +727,7 @@ function cerrarModales() {
 document.addEventListener('DOMContentLoaded', () => {
     manejarRetornoBold();
     revisarHashPedido();
+    ajustarAltoTopbar();
     // Cache-buster: el stock y los precios cambian seguido y el navegador
     // cachea productos.json hasta 10 minutos. Asi el cliente siempre ve lo real.
     fetch('./productos.json?v=' + Date.now(), { cache: 'no-store' })
