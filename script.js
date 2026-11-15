@@ -100,6 +100,55 @@ function relacionadosWeb(prod) {
     </div>`;
 }
 
+// ====== Clasificación de variantes: COLOR o REFERENCIA ======
+// Un producto con variantes de COLOR  -> "Elige tu color"   (Negro, Blanco, Rosa...)
+// Un producto con variantes de MODELO -> "Elige tu referencia" (iPhone 13, Redmi Note 13...)
+// Se decide por el nombre de la variante: si parece un modelo de celular,
+// es referencia; si es un color, es color.
+const PALETA_COLORES = /^(negro|blanca?|blanco|rosa|fucsia|azul|verde|morado|lila|violeta|naranja|menta|beige|crema|gris|roja?|rojo|amarillo|amarilla|celeste|turquesa|café|cocoa|vinotinto|borgoña|dorado|dorada|plateado|lima|champagne|dorado|black|white|pink|blue|green|purple|orange|red|yellow|silver|gold)$/i;
+
+function nombreEsColor(nombre) {
+    return PALETA_COLORES.test(String(nombre || '').trim());
+}
+
+// Tipo de selector para un producto: 'color' | 'referencia' | null
+function tipoDeVariantes(prod) {
+    const vars = (prod && Array.isArray(prod.variantes)) ? prod.variantes : [];
+    if (!vars.length) return null;
+    // Si tiene sub-colores dentro de las variantes -> es un selector de COLOR
+    const tieneSub = vars.some(v => Array.isArray(v.colores) && v.colores.length > 0);
+    const todasColor = vars.every(v => nombreEsColor(v.nombre));
+    if (todasColor) return 'color';
+    if (tieneSub && vars.every(v => (v.colores || []).every(c => nombreEsColor(c.nombre)))) return 'color';
+    return 'referencia';
+}
+
+// Texto del boton segun el tipo: "Elige tu color" / "Elige tu referencia"
+function textoSelector(prod) {
+    const t = tipoDeVariantes(prod);
+    return t === 'color' ? 'Elige tu color' : 'Elige tu referencia';
+}
+
+// Cantidad total de opciones (colores o referencias segun corresponda)
+function totalOpcionesDe(prod) {
+    const vars = (prod && Array.isArray(prod.variantes)) ? prod.variantes : [];
+    if (!vars.length) return 0;
+    const t = tipoDeVariantes(prod);
+    if (t === 'color') {
+        return vars.reduce((s, v) => s + (Array.isArray(v.colores) && v.colores.length ? v.colores.length : 1), 0);
+    }
+    return vars.length;
+}
+
+// Etiqueta corta para la tarjeta: "🎨 10 colores" / "🎨 12 referencias"
+function etiquetaOpciones(prod) {
+    const vars = (prod && Array.isArray(prod.variantes)) ? prod.variantes : [];
+    if (!vars.length) return '';
+    const n = totalOpcionesDe(prod);
+    const palabra = tipoDeVariantes(prod) === 'color' ? (n === 1 ? 'color' : 'colores') : (n === 1 ? 'referencia' : 'referencias');
+    return '🎨 ' + n + ' ' + palabra;
+}
+
 // ====== Utilidades ======
 function esc(texto) {
     return String(texto)
@@ -689,6 +738,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
                 card.className = 'product-card' + (hayStock ? '' : ' sin-stock');
+                card.setAttribute('data-prod-id', prod.id);
                 card.innerHTML = `
                     <a href="#producto-${idSeguro(prod.id)}" class="card-modal-trigger">
                         <div class="product-image">
@@ -697,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
-                            ${tieneVars ? `<p class="var-hint">🎨 ${hayColores ? totalOpciones + ' colores' : prod.variantes.length + ' referencias'} para elegir</p>` : ''}
+                            ${tieneVars ? `<p class="var-hint">${esc(etiquetaOpciones(prod))} para elegir</p>` : ''}
                             <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
                             ${prod.precioOriginal ? `<span class="price-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(prod.precio)}</span></span> <span class="badge-oferta">OFERTA</span>` : `<span class="price">${esc(prod.precio)}</span>`}
                             <span class="btn-card">${hayStock ? (tieneVars ? (hayColores ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
@@ -752,9 +802,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         : esc(c.nombre);
                     return `<button type="button" class="color-opt${sel}" data-parent="${esc(prod.id)}" data-var-id="${esc(v.id)}" data-color-id="${esc(c.id)}" data-color-nombre="${esc(c.nombre)}" data-color-precio="${esc(c.precio || v.precio)}" data-color-stock="${st}" data-color-foto="${esc(c.foto || v.foto || '')}" title="${esc(c.nombre)}${st <= 0 ? ' (agotado)' : ''}" ${st <= 0 ? 'disabled' : ''}>${cara}</button>`;
                 }).join('');
-                const selectorVars = tieneVars ? `
+                // Si el producto tiene una sola variante no tiene sentido mostrar el
+                // selector: se elige directo y se muestra el boton de comprar.
+                const unaSolaVariante = tieneVars && prod.variantes.length === 1;
+                const tipoVar = tipoDeVariantes(prod);
+                const encabezadoSelector = tipoVar === 'color' ? 'ELIGE COLOR' : 'ELIGE REFERENCIA';
+                const selectorVars = (tieneVars && !unaSolaVariante) ? `
                             <div class="var-selector">
-                                <h4>${modoDoble ? '1. ELIGE REFERENCIA' : 'ELIGE COLOR'}</h4>
+                                <h4>${modoDoble ? '1. ELIGE REFERENCIA' : encabezadoSelector}</h4>
                                 <div class="var-opts">
                                     ${prod.variantes.map(v => {
                                         const st = stockVar(v);
@@ -800,6 +855,21 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-solid fa-money-bill-wave"></i> Pago contra entrega
                                 </button>
                             </div>
+
+                            <div class="confianza">
+                                <div class="confianza-item">
+                                    <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>
+                                    <span>Pago contra entrega en Bogotá</span>
+                                </div>
+                                <div class="confianza-item">
+                                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                    <span>Garantia por defectos de fabrica</span>
+                                </div>
+                                <div class="confianza-item">
+                                    <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+                                    <span>Despacho rapido desde Bogotá a todo Colombia</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -807,6 +877,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             actualizarCarritoUI();
+            aplicarFiltros();
         })
         .catch(error => console.error('Error cargando los productos:', error));
 
@@ -835,6 +906,14 @@ function marcarMetodoContraentrega() {
 
 // ====== Eventos delegados globales ======
 document.addEventListener('click', (e) => {
+    // 0. Botones de filtro del catálogo
+    const filtroBtn = e.target.closest('[data-filtro-tipo]');
+    if (filtroBtn) {
+        e.preventDefault();
+        activarFiltro(filtroBtn.getAttribute('data-filtro-tipo'), filtroBtn.getAttribute('data-filtro-valor'));
+        return;
+    }
+
     // 1. Cierre de cualquier modal (botón ×)
     const closeBtn = e.target.closest('.close-modal');
     if (closeBtn) {
@@ -1129,15 +1208,86 @@ function actualizarCarritoUI() {
     if (btnPayMP) btnPayMP.setAttribute('data-total-num', String(totalAcumulado));
 }
 
-// ====== Búsqueda de productos ======
-function filtrarProductos() {
-    const texto = document.getElementById('buscador-productos').value.toLowerCase();
-    const tarjetas = document.querySelectorAll('.product-card');
+// ====== Filtros del catálogo ======
+// Filtro 1: categoría (Todos, Estuches y Cases, Audífonos, Power Banks, Cargadores, Smartwatches, Vidrios)
+// Filtro 2: marca de celular (Todos, iPhone, Samsung, Xiaomi/Redmi, Motorola)
+let filtroCategoria = 'todos';
+let filtroMarca = 'todos';
 
-    tarjetas.forEach(tarjeta => {
+// Clasifica un producto en su categoría de filtro
+function categoriaDeFiltro(prod) {
+    const n = String(prod.nombre || '').toLowerCase();
+    const cat = String(prod.categoria || '').toLowerCase();
+    if (/vidrio|protector de camara|hidrogel/.test(n)) return 'vidrios';
+    if (/reloj|smartwatch|smart watch/.test(n)) return 'smartwatches';
+    if (/power ?bank|power band|bateria portatil/.test(n)) return 'powerbanks';
+    if (/cargador|adaptador|cubo de carga|marra/.test(n)) return 'cargadores';
+    if (/audifono|audífono|auricular|intercomunicador|microfono|airpod/.test(n)) return 'audifonos';
+    if (/case|funda|estuche|protector/.test(n) || cat.includes('estuche')) return 'estuches';
+    return 'otros';
+}
+
+// Detecta la marca de celular a la que aplica el producto
+function marcaDeFiltro(prod) {
+    const n = String(prod.nombre || '').toLowerCase();
+    const vars = (prod.variantes || []).map(v => String(v.nombre || '').toLowerCase()).join(' ');
+    const todo = n + ' ' + vars;
+    if (/iphone|\bip\b|ip \d|apple watch|airpod/.test(todo)) return 'iphone';
+    if (/samsung|galaxy|\bs25\b/.test(todo)) return 'samsung';
+    if (/xiaomi|redmi|\bmi\b|note 13|poco/.test(todo)) return 'xiaomi';
+    if (/moto|motorola|spark/.test(todo)) return 'motorola';
+    return '';
+}
+
+// ¿El producto pasa el filtro de marca? (si no tiene marca, solo pasa con "Todos")
+function pasaFiltroMarca(prod) {
+    if (filtroMarca === 'todos') return true;
+    return marcaDeFiltro(prod) === filtroMarca;
+}
+
+// Aplica categoria + marca + busqueda de texto
+function aplicarFiltros() {
+    const texto = (document.getElementById('buscador-productos')?.value || '').toLowerCase().trim();
+    let visibles = 0;
+    document.querySelectorAll('.product-card').forEach(tarjeta => {
+        const pid = tarjeta.getAttribute('data-prod-id');
+        const prod = buscarProdWeb(pid);
+        if (!prod) return;
         const nombre = tarjeta.querySelector('.product-info h3').textContent.toLowerCase();
-        tarjeta.classList.toggle('producto-oculto', !nombre.includes(texto));
+
+        const okCat = filtroCategoria === 'todos' || categoriaDeFiltro(prod) === filtroCategoria;
+        const okMarca = pasaFiltroMarca(prod);
+        const okTexto = !texto || nombre.includes(texto) ||
+            String(prod.categoria || '').toLowerCase().includes(texto);
+
+        const visible = okCat && okMarca && okTexto;
+        tarjeta.classList.toggle('producto-oculto', !visible);
+        if (visible) visibles++;
     });
+
+    // Contador de resultados
+    const cont = document.getElementById('filtro-contador');
+    if (cont) {
+        cont.textContent = visibles === 1 ? 'Mostrando 1 producto' : 'Mostrando ' + visibles + ' productos';
+    }
+    // Aviso si no hay resultados
+    const vacio = document.getElementById('filtro-vacio');
+    if (vacio) vacio.style.display = visibles === 0 ? 'block' : 'none';
+}
+
+// Búsqueda de productos (usa el mismo sistema de filtros)
+function filtrarProductos() {
+    aplicarFiltros();
+}
+
+// Marca un filtro como activo y re-aplica
+function activarFiltro(tipo, valor) {
+    if (tipo === 'categoria') filtroCategoria = valor;
+    else filtroMarca = valor;
+    document.querySelectorAll('[data-filtro-tipo="' + tipo + '"]').forEach(b => {
+        b.classList.toggle('activo', b.getAttribute('data-filtro-valor') === valor);
+    });
+    aplicarFiltros();
 }
 
 // ====== Reseñas de clientes (seguras: sin SQL, solo JSON + escape HTML) ======
