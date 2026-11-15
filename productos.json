@@ -89,34 +89,6 @@
     ]
   },
   {
-    "id": "airpodspro2",
-    "nombre": "Audífonos Bluetooth Pro 2",
-    "precio": "$70.000 COP",
-    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
-    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
-    "fotos": [
-      "airpodspro2.jpg",
-      "airpodspro22.jpeg",
-      "airpodspro23.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
-    "id": "airpods-pro-3",
-    "nombre": "Audífonos Bluetooth Pro 3",
-    "precio": "$75.000 COP",
-    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
-    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
-    "fotos": [
-      "airpods-pro-3.jpg",
-      "airpods-pro-31.jpg",
-      "airpods-pro-32.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
     "id": "airpods-pro-3-Traductores",
     "nombre": "Audífonos Bluetooth Pro 3 con Traducción",
     "precio": "$85.000 COP",
@@ -556,20 +528,6 @@
     ],
     "stock": 7,
     "categoria": "Estuches Para celular"
-  },
-  {
-    "id": "tv-stick-magis",
-    "nombre": "TV Stick Android TV 4K",
-    "precio": "$100.000 COP",
-    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
-    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
-    "fotos": [
-      "tvstck1.jpg",
-      "tvstck2.jpg",
-      "tvstick3.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Smarts Tvs"
   },
   {
     "id": "vortex-ip17",
@@ -4936,5 +4894,47 @@
     ],
     "stock": 1,
     "categoria": "Accesorios"
+  },
+  {
+    "id": "airpodspro2",
+    "nombre": "Audífonos Bluetooth Pro 2",
+    "precio": "$70.000 COP",
+    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
+    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
+    "fotos": [
+      "airpodspro2.jpg",
+      "airpodspro22.jpeg",
+      "airpodspro23.jpg"
+    ],
+    "stock": 0,
+    "categoria": "Audífonos Bluetooth"
+  },
+  {
+    "id": "airpods-pro-3",
+    "nombre": "Audífonos Bluetooth Pro 3",
+    "precio": "$75.000 COP",
+    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
+    "fotos": [
+      "airpods-pro-3.jpg",
+      "airpods-pro-31.jpg",
+      "airpods-pro-32.jpg"
+    ],
+    "stock": 0,
+    "categoria": "Audífonos Bluetooth"
+  },
+  {
+    "id": "tv-stick-magis",
+    "nombre": "TV Stick Android TV 4K",
+    "precio": "$100.000 COP",
+    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
+    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
+    "fotos": [
+      "tvstck1.jpg",
+      "tvstck2.jpg",
+      "tvstick3.jpg"
+    ],
+    "stock": 0,
+    "categoria": "Smarts Tvs"
   }
 ]
