@@ -81,7 +81,12 @@ function pixelTrack(nombre, datos) {
 const precioNumDe = (txt) => parseInt(String(txt || '').replace(/[^0-9]/g, ''), 10) || 0;
 
 // ====== Productos relacionados (misma categoría, con stock) ======
+// DESACTIVADO a petición del dueño (2026-11-15): el bloque "TAMBIÉN TE PUEDE GUSTAR"
+// ya no se muestra en el modal. Para volverlo a activar, quita el "return ''" de abajo
+// y vuelve a poner ${relacionadosWeb(prod)} en el modal (script.js, seccion modal-details).
 function relacionadosWeb(prod) {
+    return ''; // <- desactivado
+    /* eslint-disable no-unreachable */
     const rel = CATALOGO.filter(x => x.id !== prod.id && (x.categoria || '') === (prod.categoria || '') && stockDe(x.id) > 0).slice(0, 4);
     if (!rel.length) return '';
     return `<div class="relacionados">
@@ -779,7 +784,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <h4>DETALLES DEL PRODUCTO</h4>
                                 <p style="text-align:justify;">${esc(prod.detalles)}</p>
                             </div>
-                            ${relacionadosWeb(prod)}
 
                             <div class="modal-actions">
                                 ${stockDe(defId) > 0 ? `
