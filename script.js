@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${tieneVars ? `<p class="var-hint">${esc(etiquetaOpciones(prod))} para elegir</p>` : ''}
                             <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
                             ${prod.precioOriginal ? `<span class="price-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(prod.precio)}</span></span> <span class="badge-oferta">OFERTA</span>` : `<span class="price">${esc(prod.precio)}</span>`}
-                            <span class="btn-card">${hayStock ? (tieneVars ? (hayColores ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
+                            <span class="btn-card">${hayStock ? (tieneVars ? (tipoDeVariantes(prod) === 'color' ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
                         </div>
                     </a>
                 `;
@@ -806,11 +806,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 // selector: se elige directo y se muestra el boton de comprar.
                 const unaSolaVariante = tieneVars && prod.variantes.length === 1;
                 const tipoVar = tipoDeVariantes(prod);
-                const encabezadoSelector = tipoVar === 'color' ? 'ELIGE COLOR' : 'ELIGE REFERENCIA';
+                // Si hay 2 niveles (referencia + color) se numeran los pasos.
+                // Si hay un solo nivel, el encabezado depende del tipo real del selector.
+                const encabezadoSelector = modoDoble
+                    ? '1. ELIGE REFERENCIA'
+                    : (tipoVar === 'color' ? 'ELIGE COLOR' : 'ELIGE REFERENCIA');
                 const selectorVars = (tieneVars && !unaSolaVariante) ? `
                             <div class="var-selector">
-                                <h4>${modoDoble ? '1. ELIGE REFERENCIA' : encabezadoSelector}</h4>
-                                <div class="var-opts">
+                                <h4>${encabezadoSelector}</h4>                                <div class="var-opts">
                                     ${prod.variantes.map(v => {
                                         const st = stockVar(v);
                                         const sel = varDef && v.id === varDef.id ? ' seleccionado' : '';
