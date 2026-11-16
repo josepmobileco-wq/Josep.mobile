@@ -530,7 +530,7 @@ body.con-topbar .modal-backdrop {
 .card-ahora {
     font-size: 1.55rem;
     font-weight: 900;
-    color: var(--bg-purple-dark);
+    color: var(--accent-light);
     line-height: 1.1;
     letter-spacing: -0.5px;
 }
@@ -597,7 +597,7 @@ body.con-topbar .modal-backdrop {
 .modal-ahora {
     font-size: 2rem;
     font-weight: 900;
-    color: var(--bg-purple-dark);
+    color: var(--accent-light);
     line-height: 1.05;
     letter-spacing: -0.5px;
 }
