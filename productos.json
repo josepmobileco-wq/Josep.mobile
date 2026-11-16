@@ -3,6 +3,7 @@
     "id": "airmax",
     "nombre": "Audífonos Bluetooth Diadema Max",
     "precio": "$120.000 COP",
+    "precioOriginal": "$160.000 COP",
     "corta": "Audífonos Bluetooth premium con cancelación de ruido, sonido de alta fidelidad y Audio Espacial.",
     "detalles": "Audio de otro nivel. Sonido computacional de alta fidelidad, cancelación activa de ruido y Audio Espacial con seguimiento dinámico de la cabeza.",
     "fotos": [
@@ -92,6 +93,7 @@
     "id": "airpods-pro-3-Traductores",
     "nombre": "Audífonos Bluetooth Pro 3 con Traducción",
     "precio": "$85.000 COP",
+    "precioOriginal": "$113.500 COP",
     "corta": "Traducción en vivo en tiempo real, cancelación de ruido y sonido de alta fidelidad.",
     "detalles": "Lleva la tecnología al siguiente nivel con función de Traducción en Vivo en tiempo real para llamadas y conversaciones en diferentes idiomas. Incluye la máxima cancelación activa de ruido, sensores de entrenamiento, resistencia al agua IP57 y hasta 8 horas de autonomía.",
     "fotos": [
@@ -106,6 +108,7 @@
     "id": "Audifonos-smarwach-mtf",
     "nombre": "Audífonos Smartwatch MTF M-65",
     "precio": "$130.000 COP",
+    "precioOriginal": "$173.500 COP",
     "corta": "MTF M-65 – Auriculares Inalámbricos Open Ear con Pantalla LCD.",
     "detalles": "Diseño Open Ear: se ajustan por fuera del oído con gancho auricular, ideales para hacer ejercicio o trabajar sin la incomodidad de los auriculares intraurales. Cuenta con pantalla LCD integrada con control táctil para reproducir/pausar música y gestionar llamadas. Batería con hasta 6 horas de uso continuo y 100 horas en modo standby. Conexión Bluetooth 6.0 con alcance de 10 metros. Batería de 320 mAh en estuche y 30 mAh por auricular. Protocolos compatibles: A2DP, AVRCP, HSP, HFP. Incluye estuche de carga compacto y presentación en caja individual.",
     "fotos": [
@@ -120,6 +123,7 @@
     "id": "Power-Bank-30000mAh",
     "nombre": "Power Bank MTF 30.000 mAh",
     "precio": "$130.000 COP",
+    "precioOriginal": "$153.000 COP",
     "corta": "MTF MG-52 Power Bank 30.000 mAh con carga rápida de 22.5W.",
     "detalles": "Batería portátil de alta capacidad MTF MG-52 (30.000 mAh / 111Wh / 3.7V) con carga rápida de 22.5W. Cuenta con entrada y salida Tipo-C, doble salida USB tradicional y pantalla digital indicadora de porcentaje de batería. Construida en materiales resistentes de PC y aleación de aluminio. Apta para llevar en viajes en avión (Airplane-Friendly).",
     "fotos": [
@@ -134,6 +138,7 @@
     "id": "Power-Bank-Magsafe-10000mAh",
     "nombre": "Power Bank Magnético MTF 10.000 mAh",
     "precio": "$120.000 COP",
+    "precioOriginal": "$141.000 COP",
     "corta": "MTF MG-39 Power Bank MagSafe 10.000 mAh con carga inalámbrica.",
     "detalles": "Power Bank inalámbrico MTF MG-39 de 10.000 mAh con sujeción magnética tipo MagSafe y carga rápida de 22.5W. Cuenta con sistemas de protección contra sobrecarga, sobrecorriente y cortocircuitos. Su tamaño compacto y liviano lo hace ideal para llevar en el bolsillo y es apto para viajes en avión (Airplane-Friendly). Permite cargar tu celular de forma rápida y cómoda sin necesidad de cables.",
     "fotos": [
@@ -148,6 +153,7 @@
     "id": "Power-Bank-20000mAh",
     "nombre": "Power Bank Harvic 20.000 mAh",
     "precio": "$90.000 COP",
+    "precioOriginal": "$106.000 COP",
     "corta": "Harvic PB-615 Power Bank 20.000 mAh con carga inalámbrica de 15W.",
     "detalles": "Power Bank Harvic PB-615 de 20.000 mAh con carga inalámbrica por inducción magnética de 15W y carga rápida PD por cable. Incluye cables integrados (Type-C, Lightning y Micro USB) para mayor comodidad, indicador LED de nivel de batería y correa de mano para transporte fácil. Construido con batería de polímero de litio de alta seguridad.",
     "fotos": [
@@ -162,6 +168,7 @@
     "id": "intercomunicador-q58max",
     "nombre": "Intercomunicador Q58MAX",
     "precio": "$90.000 COP",
+    "precioOriginal": "$120.000 COP",
     "corta": "Intercomunicador para casco: habla en ruta hasta 500 m con Bluetooth 5.3.",
     "detalles": "Intercomunicador Q58-Max para casco de motocicleta con Bluetooth 5.3, alcance de comunicación de hasta 500m entre 2 pilotos, pantalla LCD que muestra batería y modo de conexión, radio FM, ranura para tarjeta Micro SD, control de un solo botón, reducción de ruido, resistente al agua y polvo (IP65), batería de 1000 mAh con hasta 25 horas de conversación y 300 horas en espera, carga por puerto Tipo-C, incluye micrófono, cables, base clip-on y adhesiva.",
     "fotos": [
@@ -431,6 +438,7 @@
     "id": "power-bank-10000",
     "nombre": "Power bank 10000mAh",
     "precio": "$70.000 COP",
+    "precioOriginal": "$82.000 COP",
     "corta": "Power Bank 10000 mAh compacta: carga rápida donde vayas.",
     "detalles": "Power bank de 10000mAh para cargar tu celular.",
     "fotos": [
@@ -552,7 +560,7 @@
       "efectoespejo2.jpeg",
       "efectoespejo3.jpeg"
     ],
-    "stock": 19,
+    "stock": 17,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
@@ -616,13 +624,13 @@
         "id": "iphone-17-pro-max",
         "nombre": "iPhone 17 Pro Max",
         "precio": "$30.000 COP",
-        "stock": 1,
+        "stock": 0,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
             "precio": "$30.000 COP",
-            "stock": 1
+            "stock": 0
           }
         ]
       },
@@ -698,13 +706,13 @@
         "id": "ip-13-pro-max",
         "nombre": "IP 13 Pro Max",
         "precio": "$30.000 COP",
-        "stock": 1,
+        "stock": 0,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
             "nombre": "Oro rosa",
             "precio": "$30.000 COP",
-            "stock": 1
+            "stock": 0
           }
         ]
       },
@@ -1004,7 +1012,7 @@
       "vidriotemplado2.jpg",
       "vidriotemplado3.jpg"
     ],
-    "stock": 547,
+    "stock": 546,
     "categoria": "Vidrios 5D",
     "variantes": [
       {
@@ -1494,7 +1502,7 @@
         "id": "ip-17-pro-max",
         "nombre": "IP 17 Pro Max",
         "precio": "$10.000 COP",
-        "stock": 21,
+        "stock": 20,
         "colores": [
           {
             "id": "5d-ip-17-pro-max",
@@ -1506,7 +1514,7 @@
             "id": "antiespia-ip-17-pro-max",
             "nombre": "Antiespía",
             "precio": "$15.000 COP",
-            "stock": 9,
+            "stock": 8,
             "foto": "antiespia1.jpg"
           }
         ]
@@ -1705,6 +1713,7 @@
     "id": "gafas-inteligentes-con-camara-ia-2026-muboo4t7",
     "nombre": "Gafas Inteligentes con Cámara IA 2026",
     "precio": "$199.000 COP",
+    "precioOriginal": "$284.500 COP",
     "corta": "Grabación de Video HD de 8MP, Audio, Traducción en Tiempo Real, Gafas Inteligentes para Hombre y Mujer",
     "detalles": "Gafas inteligentes con cámara HD de 8MP, audio y reproducción de música, traducción con IA en tiempo real, micrófono para llamadas y carga magnética.",
     "fotos": [
@@ -1747,6 +1756,7 @@
     "id": "relog-g-tide-r3-murg6f8j",
     "nombre": "Reloj G-TIDE R3",
     "precio": "$180.000 COP",
+    "precioOriginal": "$225.000 COP",
     "corta": "Reloj inteligente G-TIDE R3 con pantalla Full HD, llamadas Bluetooth e IP68.",
     "detalles": "Reloj inteligente G-TIDE R3 con pantalla Full HD de 1.39 pulgadas, llamadas Bluetooth con micrófono y altavoz integrados, resistencia al agua IP68 y batería de 300 mAh de larga duración con carga magnética. Incluye más de 100 modos deportivos, monitoreo de salud 24/7 (ritmo cardíaco, oxígeno en sangre SpO2, presión arterial y sueño), notificaciones de apps (WhatsApp y redes sociales), asistente de voz y correa de silicona intercambiable de obsequio. Compatible con Android e iOS mediante la app Da Fit.",
     "fotos": [
@@ -1761,6 +1771,7 @@
     "id": "smart-wach-apple-serie-11-murvo2x6",
     "nombre": "Smartwatch Serie 11 Ultra",
     "precio": "$155.000 COP",
+    "precioOriginal": "$194.000 COP",
     "corta": "Smartwatch Serie 11 Ultra: pantalla resistente, batería de todo el día y monitoreo de salud.",
     "detalles": "Smartwatch Serie 11 Ultra con diseño delgado y pantalla ultra resistente a rayones. Monitorea tu calidad de sueño, ritmo cardíaco y te mantiene conectado con conectividad fluida y carga súper rápida (hasta 24 horas de autonomía). Su diseño ligero y cómodo lo hace perfecto para llevarlo todo el día, tanto en la oficina como en el gimnasio. Prácticamente nuevo y listo para vincular con tu celular.",
     "fotos": [
@@ -1775,6 +1786,7 @@
     "id": "airpods-serie-4-mut995rm",
     "nombre": "Audífonos Inalámbricos Serie 4",
     "precio": "$90.000 COP",
+    "precioOriginal": "$120.000 COP",
     "corta": "Audífonos inalámbricos Serie 4: sonido nítido, cancelación de voz y estuche USB-C.",
     "detalles": "Audífonos inalámbricos Serie 4 de última generación con sonido muy nítido y graves profundos. Incluyen la función de Aislamiento de Voz para que tus llamadas se escuchen perfectas incluso en entornos ruidosos. Su diseño acústico renovado proporciona un ajuste cómodo para usarlos todo el día sin fatiga, con resistencia IP54 al polvo, el agua y el sudor, ideal tanto para el uso diario como para entrenar. Cuentan con audio espacial personalizado con seguimiento dinámico de la cabeza, control por gestos y un estuche de carga USB-C compacto. Se entregan impecables, completamente funcionales y listos para vincular con tu celular.",
     "fotos": [
@@ -1830,6 +1842,7 @@
     "id": "audifonos-cable-lightning",
     "nombre": "Audífonos de cable tipo Lightning",
     "precio": "$20.000 COP",
+    "precioOriginal": "$26.500 COP",
     "corta": "Audífonos con cable tipo Lightning para iPhone y iPad: enchufas y listo.",
     "detalles": "Conexión directa a tu equipo, sin sincronización ni batería que se gaste. Sonido claro y graves bien definidos para música, llamadas y videos, con cable cómodo para sesiones largas. Un par de repuesto que siempre funciona.",
     "fotos": [
@@ -4887,6 +4900,7 @@
     "id": "power-band-10mah-iphone",
     "nombre": "Power Band 10Mah Iphone",
     "precio": "$90.000 COP",
+    "precioOriginal": "$106.000 COP",
     "corta": "Batería portátil tipo banda para iPhone: carga extra sin cargar cables.",
     "detalles": "Se conecta directo al equipo y le da horas de batería extra, ideal para días largos o viajes. La carga es rápida y la conexión es firme, sin cables que se enreden. Una solución práctica para no quedarte sin batería en la calle.",
     "fotos": [
@@ -4899,6 +4913,7 @@
     "id": "airpodspro2",
     "nombre": "Audífonos Bluetooth Pro 2",
     "precio": "$70.000 COP",
+    "precioOriginal": "$93.500 COP",
     "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
     "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
     "fotos": [
@@ -4913,6 +4928,7 @@
     "id": "airpods-pro-3",
     "nombre": "Audífonos Bluetooth Pro 3",
     "precio": "$75.000 COP",
+    "precioOriginal": "$100.000 COP",
     "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
     "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
     "fotos": [
