@@ -1,14 +1,33 @@
-/* Paleta de colores Morado Neón */
+/* ==========================================================================
+   PALETA 60-30-10 — Identidad Feed Instagram
+   60% superficies limpias: fondo #F8FAFC + tarjetas #FFFFFF
+   30% estructura y textos: azul marino #15254B + gris pizarra #475569
+   10% conversión (CTA): azul cobalto #2558D4 (hover #1D4ED8)
+   ========================================================================== */
 :root {
-    --bg-purple-neon: #8a2be2;
-    --bg-purple-dark: #5c00a3;
-    --bg-card: #ffffff;
-    --text-dark: #111111;
-    --text-muted: #555555;
-    --whatsapp-color: #25d366;
-    --instagram-color: #e1306c;
-    --accent-light: #cb80ff;
-    --gold: #ffd166;
+    /* --- 60% Fondo y superficies limpias --- */
+    --bg-purple-neon: #F8FAFC;   /* fondo general de la pagina */
+    --bg-card: #FFFFFF;          /* tarjetas de producto */
+
+    /* --- 30% Estructura, encabezados y textos --- */
+    --bg-purple-dark: #15254B;    /* header, titulos, footer, nombres de producto */
+    --text-dark: #15254B;         /* texto principal */
+    --text-muted: #475569;        /* textos secundarios y descripciones */
+
+    /* --- 10% Acentos de conversion (CTA) --- */
+    --accent-light: #2558D4;      /* botones principales, badges, precios, filtros activos */
+    --accent-hover: #1D4ED8;      /* hover de botones cobalto */
+    --gold: #2558D4;              /* alias historico -> ahora cobalto */
+
+    /* --- Neutros de apoyo --- */
+    --gris-claro: #CBD5E1;        /* bordes y estados deshabilitados */
+    --gris-medio: #64748B;        /* texto de estados inactivos */
+    --blanco: #FFFFFF;
+
+    /* --- Colores de marca (redes sociales, se mantienen) --- */
+    --whatsapp-color: #25D366;
+    --instagram-color: #E1306C;
+
     --transition: all 0.3s ease;
 }
 
@@ -25,7 +44,7 @@ html {
 
 body {
     background-color: var(--bg-purple-neon);
-    color: #ffffff;
+    color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -45,7 +64,7 @@ body {
 
 /* Encabezado */
 .header {
-    background-color: rgba(15, 5, 29, 0.95);
+    background-color: rgba(21, 37, 75, 0.97);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -56,7 +75,7 @@ body {
 
 /* ====== Barra superior de anuncios (fija) ====== */
 .topbar {
-    background: linear-gradient(90deg, #5c00a3 0%, #8a2be2 50%, #5c00a3 100%);
+    background: linear-gradient(90deg, #15254B 0%, #2558D4 100%);
     color: #ffffff;
     font-size: 0.82rem;
     font-weight: 700;
@@ -82,7 +101,7 @@ body {
 }
 
 .topbar a {
-    color: #ffd166;
+    color: #2558D4;
     text-decoration: underline;
     font-weight: 800;
 }
@@ -152,15 +171,15 @@ body.con-topbar .modal-backdrop {
 }
 
 .filtros-grupo::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
+    background: #CBD5E1;
     border-radius: 4px;
 }
 
 .filtro-btn {
     flex: 0 0 auto;
-    border: 2px solid rgba(255, 255, 255, 0.35);
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    border: 2px solid #CBD5E1;
+    background: #FFFFFF;
+    color: var(--text-dark);
     border-radius: 20px;
     padding: 0.4rem 0.9rem;
     font-size: 0.85rem;
@@ -172,17 +191,19 @@ body.con-topbar .modal-backdrop {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    min-height: 40px;
 }
 
 .filtro-btn:hover {
-    border-color: #ffffff;
-    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-light);
+    background: #EFF4FE;
+    color: var(--accent-light);
 }
 
 .filtro-btn.activo {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: var(--bg-purple-dark);
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: #FFFFFF;
 }
 
 .filtros-secundario .filtro-btn {
@@ -195,13 +216,13 @@ body.con-topbar .modal-backdrop {
 .filtros-secundario .filtro-btn.activo {
     background: var(--accent-light);
     border-color: var(--accent-light);
-    color: #ffffff;
+    color: #FFFFFF;
     opacity: 1;
 }
 
 .filtro-contador {
     text-align: center;
-    color: #e9d5ff;
+    color: var(--text-muted);
     font-size: 0.85rem;
     margin-bottom: 0.9rem;
 }
@@ -215,8 +236,8 @@ body.con-topbar .modal-backdrop {
 }
 
 .confianza-item {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
     border-radius: 10px;
     padding: 10px 8px;
     text-align: center;
@@ -233,7 +254,7 @@ body.con-topbar .modal-backdrop {
     display: block;
     font-size: 0.7rem;
     line-height: 1.35;
-    color: #e9d5ff;
+    color: var(--text-muted);
     font-weight: 600;
 }
 
@@ -325,7 +346,7 @@ body.con-topbar .modal-backdrop {
 }
 
 #buscador-productos:focus::placeholder {
-    color: #999;
+    color: #64748B;
 }
 
 .nav-search .search-icon {
@@ -337,7 +358,7 @@ body.con-topbar .modal-backdrop {
 }
 
 #buscador-productos:focus + .search-icon {
-    color: #999;
+    color: #64748B;
 }
 
 .producto-oculto {
@@ -370,7 +391,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .btn-instagram:hover {
-    background-color: #b32554;
+    background-color: #2558D4;
     transform: translateY(-2px);
 }
 
@@ -379,14 +400,14 @@ body.con-topbar .modal-backdrop {
 }
 
 .btn-whatsapp-header:hover {
-    background-color: #1eb956;
+    background-color: #2558D4;
     transform: translateY(-2px);
 }
 
 /* Botón del Carrito */
 .cart-icon-container {
-    background-color: #ff9900;
-    color: #111111;
+    background-color: #F59E0B;
+    color: #15254B;
     padding: 10px 16px;
     border: none;
     border-radius: 30px;
@@ -403,12 +424,12 @@ body.con-topbar .modal-backdrop {
 }
 
 .cart-icon-container:hover {
-    background-color: #e68a00;
+    background-color: #D97706;
     transform: translateY(-2px);
 }
 
 #cart-count {
-    background: #d32f2f;
+    background: #2558D4;
     color: #ffffff;
     border-radius: 50%;
     padding: 2px 7px;
@@ -436,14 +457,14 @@ body.con-topbar .modal-backdrop {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(180deg, rgba(15, 5, 29, 0.5) 0%, rgba(138, 43, 226, 0) 100%);
+    background: linear-gradient(180deg, rgba(21, 37, 75, 0.06) 0%, rgba(248, 250, 252, 0) 100%);
     padding: 8rem 1rem 3rem 1rem;
 }
 
 .badge {
     display: inline-block;
-    background-color: #ffffff;
-    color: var(--bg-purple-dark);
+    background-color: #15254B;
+    color: #FFFFFF;
     padding: 0.3rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -455,36 +476,36 @@ body.con-topbar .modal-backdrop {
 .hero-content h1 {
     font-size: 3.2rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--text-dark);
     font-weight: 900;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    text-shadow: none;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: var(--text-muted);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    text-shadow: none;
 }
 
 .btn-primary {
     display: inline-block;
     padding: 0.8rem 2.2rem;
-    background-color: #ffffff;
-    color: var(--bg-purple-dark);
+    background-color: var(--accent-light);
+    color: #FFFFFF;
     font-weight: 800;
     border-radius: 30px;
     text-decoration: none;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(21, 37, 75, 0.18);
 }
 
 .btn-primary:hover {
-    background-color: var(--text-dark);
-    color: #ffffff;
+    background-color: var(--accent-hover);
+    color: #FFFFFF;
     transform: translateY(-3px);
 }
 
@@ -499,7 +520,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .card-antes {
-    color: #999;
+    color: #64748B;
     font-size: 0.92rem;
     font-weight: 600;
     text-decoration: line-through;
@@ -515,7 +536,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .card-pct {
-    background: #d32f2f;
+    background: #2558D4;
     color: #ffffff;
     font-size: 0.78rem;
     font-weight: 900;
@@ -534,11 +555,11 @@ body.con-topbar .modal-backdrop {
     background: var(--bg-card);
     font-size: 0.78rem;
     font-weight: 700;
-    color: #1a7f4b;
+    color: #2558D4;
 }
 
 .card-cuotas i {
-    color: #1a7f4b;
+    color: #2558D4;
 }
 
 /* Descuento flotante sobre la foto */
@@ -546,7 +567,7 @@ body.con-topbar .modal-backdrop {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: #d32f2f;
+    background: #2558D4;
     color: #ffffff;
     font-size: 0.82rem;
     font-weight: 900;
@@ -566,7 +587,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .modal-antes {
-    color: #999;
+    color: #64748B;
     font-size: 1.05rem;
     font-weight: 600;
     text-decoration: line-through;
@@ -582,7 +603,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .modal-pct {
-    background: #2563eb;
+    background: #2558D4;
     color: #ffffff;
     font-size: 0.85rem;
     font-weight: 900;
@@ -597,11 +618,11 @@ body.con-topbar .modal-backdrop {
     margin: 0 0 14px 0;
     font-size: 0.88rem;
     font-weight: 700;
-    color: #1a7f4b;
+    color: #2558D4;
 }
 
 .modal-cuotas i {
-    color: #1a7f4b;
+    color: #2558D4;
 }
 
 /* Grilla de Productos */
@@ -625,7 +646,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .prod-breadcrumb a {
-    color: #cb80ff;
+    color: #2558D4;
     text-decoration: none;
 }
 
@@ -672,13 +693,13 @@ body.con-topbar .modal-backdrop {
     font-size: 1.9rem;
     line-height: 1.25;
     margin-bottom: 0.6rem;
-    color: #ffffff;
+    color: var(--text-dark);
 }
 
 .prod-precio {
     font-size: 2rem;
     font-weight: 900;
-    color: #ffd166;
+    color: #2558D4;
     margin-bottom: 0.5rem;
 }
 
@@ -703,7 +724,7 @@ body.con-topbar .modal-backdrop {
 .prod-refs h2 {
     font-size: 0.95rem;
     margin-bottom: 0.6rem;
-    color: #cb80ff;
+    color: #2558D4;
 }
 
 .prod-refs-lista {
@@ -713,9 +734,9 @@ body.con-topbar .modal-backdrop {
 }
 
 .prod-refs-lista button {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
+    border: 2px solid #CBD5E1;
+    background: #FFFFFF;
+    color: var(--text-dark);
     border-radius: 18px;
     padding: 0.35rem 0.8rem;
     font-size: 0.82rem;
@@ -723,16 +744,18 @@ body.con-topbar .modal-backdrop {
     cursor: pointer;
     font-family: inherit;
     transition: var(--transition);
+    min-height: 40px;
 }
 
 .prod-refs-lista button:hover {
-    border-color: #ffffff;
+    border-color: var(--accent-light);
+    color: var(--accent-light);
 }
 
 .prod-refs-lista button.activo {
-    background: #ffffff;
-    color: var(--bg-purple-dark);
-    border-color: #ffffff;
+    background: var(--accent-light);
+    color: #FFFFFF;
+    border-color: var(--accent-light);
 }
 
 .prod-refs-lista button:disabled {
@@ -742,8 +765,8 @@ body.con-topbar .modal-backdrop {
 }
 
 .prod-detalle {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.13);
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
     border-radius: 14px;
     padding: 1.1rem 1.2rem;
     margin-bottom: 1.4rem;
@@ -752,12 +775,12 @@ body.con-topbar .modal-backdrop {
 .prod-detalle h2 {
     font-size: 0.8rem;
     letter-spacing: 1px;
-    color: #cb80ff;
+    color: #2558D4;
     margin-bottom: 0.6rem;
 }
 
 .prod-detalle p {
-    color: #f0e9fa;
+    color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
     text-align: justify;
@@ -779,13 +802,13 @@ body.con-topbar .modal-backdrop {
 .prod-otros {
     margin-top: 2.5rem;
     padding-top: 1.6rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid #E2E8F0;
 }
 
 .prod-otros h2 {
     font-size: 1.1rem;
     margin-bottom: 0.9rem;
-    color: #ffffff;
+    color: var(--text-dark);
 }
 
 .prod-otros-lista {
@@ -798,12 +821,12 @@ body.con-topbar .modal-backdrop {
     display: flex;
     gap: 10px;
     align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
     padding: 9px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-dark);
     transition: var(--transition);
 }
 
@@ -829,7 +852,7 @@ body.con-topbar .modal-backdrop {
 
 .prod-otros-lista span {
     font-size: 0.78rem;
-    color: #cb80ff;
+    color: #2558D4;
     font-weight: 700;
 }
 
@@ -850,8 +873,8 @@ body.con-topbar .modal-backdrop {
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 2.5rem;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--bg-purple-dark);
+    text-shadow: none;
 }
 
 .product-grid {
@@ -907,18 +930,19 @@ body.con-topbar .modal-backdrop {
     transform: none;
 }
 
+/* Badge de producto agotado: tono neutro (no es un acento de conversion) */
 .agotado-badge {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: #d32f2f;
-    color: #fff;
+    background: #CBD5E1;
+    color: #64748B;
     font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     padding: 5px 12px;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 8px rgba(21, 37, 75, 0.18);
 }
 
 .product-image img {
@@ -969,7 +993,7 @@ body.con-topbar .modal-backdrop {
 .price {
     font-size: 1.3rem;
     font-weight: 800;
-    color: var(--bg-purple-dark);
+    color: var(--accent-light);
     margin-top: auto;
     margin-bottom: 0.8rem;
     text-align: left;
@@ -1006,13 +1030,13 @@ body.con-topbar .modal-backdrop {
 .price-old {
     font-size: 1rem;
     font-weight: 700;
-    color: #888;
+    color: #64748B;
     text-decoration: line-through;
 }
 .price-new {
     font-size: 1.3rem;
     font-weight: 900;
-    color: var(--bg-purple-dark);
+    color: var(--accent-light);
 }
 
 .modal-precio-oferta {
@@ -1027,7 +1051,7 @@ body.con-topbar .modal-backdrop {
 }
 .modal-precio-oferta .price-old {
     font-size: 1rem;
-    color: #888;
+    color: #64748B;
     text-decoration: line-through;
 }
 
@@ -1035,13 +1059,95 @@ body.con-topbar .modal-backdrop {
     display: block;
     text-align: center;
     padding: 0.7rem;
-    background-color: var(--bg-purple-neon);
-    color: #ffffff;
+    background-color: var(--accent-light);
+    color: #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.95rem;
     transition: var(--transition);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-card:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Jerarquia deConversion en el modal:
+   .btn-principal  -> cobalto (accion principal de compra)
+   .btn-secundario -> contorno navy (acciones alternativas) */
+.btn-card.btn-principal {
+    background-color: var(--accent-light);
+    color: #FFFFFF;
+}
+
+.btn-card.btn-principal:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-card.btn-secundario {
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+    border: 2px solid var(--bg-purple-dark);
+}
+
+.btn-card.btn-secundario:hover {
+    background-color: #EFF4FE;
+    color: var(--accent-light);
+    border-color: var(--accent-light);
+}
+
+.btn-card.btn-wa-ce {
+    background-color: #FFFFFF;
+    color: #128C7E;
+    border: 2px solid #128C7E;
+}
+
+.btn-card.btn-wa-ce:hover {
+    background-color: #128C7E;
+    color: #FFFFFF;
+}
+
+/* Boton de producto agotado: neutro, deshabilitado */
+.btn-card:disabled,
+.btn-card.btn-agotado {
+    background-color: #CBD5E1;
+    color: #64748B;
+    cursor: not-allowed;
+    opacity: 1;
+    box-shadow: none;
+}
+
+.btn-card:disabled:hover,
+.btn-card.btn-agotado:hover {
+    background-color: #CBD5E1;
+    transform: none;
+}
+
+/* Target tactil: minimo 44px de alto en movil */
+@media (max-width: 768px) {
+    .btn-card {
+        min-height: 48px;
+        font-size: 1rem;
+    }
+    .filtro-btn {
+        min-height: 44px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .btn-primary {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .var-hint {
@@ -1053,8 +1159,8 @@ body.con-topbar .modal-backdrop {
 }
 
 .var-selector {
-    background: #f7f4fc;
-    border: 1px solid #e3d9f5;
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
     padding: 12px 14px;
     margin-bottom: 14px;
@@ -1074,7 +1180,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .var-opt {
-    border: 2px solid #d9cdf0;
+    border: 2px solid #CBD5E1;
     background: #ffffff;
     color: var(--text-dark);
     border-radius: 20px;
@@ -1087,13 +1193,14 @@ body.con-topbar .modal-backdrop {
 }
 
 .var-opt:hover:not(:disabled) {
-    border-color: var(--bg-purple-neon);
+    border-color: var(--accent-light);
+    color: var(--accent-light);
 }
 
 .var-opt.seleccionado {
-    background: var(--bg-purple-neon);
-    border-color: var(--bg-purple-neon);
-    color: #ffffff;
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: #FFFFFF;
 }
 
 .var-opt:disabled {
@@ -1126,7 +1233,7 @@ body.con-topbar .modal-backdrop {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    border: 3px solid #d9cdf0;
+    border: 3px solid #CBD5E1;
     background: #ffffff;
     cursor: pointer;
     overflow: hidden;
@@ -1148,13 +1255,13 @@ body.con-topbar .modal-backdrop {
 }
 
 .color-opt:hover:not(:disabled) {
-    border-color: var(--bg-purple-neon);
+    border-color: var(--accent-light);
     transform: scale(1.08);
 }
 
 .color-opt.seleccionado {
-    border-color: var(--bg-purple-neon);
-    box-shadow: 0 0 0 2px var(--bg-purple-neon);
+    border-color: var(--accent-light);
+    box-shadow: 0 0 0 2px var(--accent-light);
 }
 
 .color-opt:disabled {
@@ -1169,7 +1276,7 @@ body.con-topbar .modal-backdrop {
 .relacionados h4 {
     font-size: 0.75rem;
     letter-spacing: 1px;
-    color: #a1a1aa;
+    color: #64748B;
     margin: 0 0 8px 0;
 }
 
@@ -1180,7 +1287,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .rel-item {
-    background: #14121a;
+    background: #15254B;
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 10px;
     padding: 6px;
@@ -1207,7 +1314,7 @@ body.con-topbar .modal-backdrop {
 
 .rel-nombre {
     font-size: 0.68rem;
-    color: #ffffff;
+    color: var(--text-dark);
     line-height: 1.25;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -1236,14 +1343,14 @@ body.con-topbar .modal-backdrop {
 .pedido-timeline li {
     font-size: 0.9rem;
     color: var(--text-muted);
-    background: #f7f4fc;
-    border: 1px solid #e3d9f5;
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
     border-radius: 10px;
     padding: 8px 12px;
 }
 
 .pedido-timeline li.hecho {
-    color: #1eb956;
+    color: #2558D4;
     font-weight: 700;
 }
 
@@ -1264,7 +1371,7 @@ body.con-topbar .modal-backdrop {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1.5px solid #d9cdf0;
+    border: 1.5px solid #CBD5E1;
     border-radius: 10px;
     padding: 10px 12px;
     font-size: 0.88rem;
@@ -1394,7 +1501,7 @@ body.con-topbar .modal-backdrop {
     right: 16px;
     background: none;
     border: none;
-    color: #999999;
+    color: #64748B999;
     font-size: 30px;
     line-height: 1;
     cursor: pointer;
@@ -1411,8 +1518,8 @@ body.con-topbar .modal-backdrop {
 
 /* Modal de Producto */
 .modal-product-container {
-    background-color: #1e1b26;
-    color: #ffffff;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
     width: 100%;
     max-width: 950px;
     border-radius: 16px;
@@ -1420,8 +1527,8 @@ body.con-topbar .modal-backdrop {
     flex-direction: row;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(21, 37, 75, 0.28);
+    border: 1px solid #E2E8F0;
     max-height: 90vh;
 }
 
@@ -1432,7 +1539,7 @@ body.con-topbar .modal-backdrop {
 
 .modal-product-media {
     flex: 1;
-    background-color: #14121a;
+    background-color: #15254B;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1520,7 +1627,7 @@ body.con-topbar .modal-backdrop {
 .modal-product-details h2 {
     font-size: 1.6rem;
     margin-bottom: 8px;
-    color: #ffffff;
+    color: var(--text-dark);
 }
 
 .modal-price {
@@ -1532,7 +1639,7 @@ body.con-topbar .modal-backdrop {
 
 .modal-description h4 {
     font-size: 0.8rem;
-    color: #a1a1aa;
+    color: #64748B;
     letter-spacing: 1px;
     margin-bottom: 6px;
     text-transform: uppercase;
@@ -1564,14 +1671,14 @@ body.con-topbar .modal-backdrop {
 }
 
 .btn-add-cart {
-    background-color: #ff9900;
-    color: #111111;
+    background-color: #F59E0B;
+    color: #15254B;
     font-weight: 800;
 }
 
 .btn-add-cart:hover {
-    background-color: #e68a00;
-    color: #111111;
+    background-color: #D97706;
+    color: #15254B;
 }
 
 .btn-mp-link {
@@ -1587,7 +1694,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .btn-wa-link:hover {
-    background-color: #1eb956;
+    background-color: #2558D4;
 }
 
 .modal-btn-buy {
@@ -1719,10 +1826,10 @@ body.con-topbar .modal-backdrop {
 
 /* Pie de Página */
 .footer {
-    background-color: rgba(15, 5, 29, 0.95);
+    background-color: #15254B;
     text-align: center;
     padding: 2.5rem 1rem;
-    border-top: 2px solid var(--bg-purple-neon);
+    border-top: 2px solid var(--accent-light);
 }
 
 .slogan {
@@ -1759,7 +1866,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .copyright {
-    color: #aaaaaa;
+    color: #64748B;
     font-size: 0.85rem;
 }
 
@@ -1781,7 +1888,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .cart-content {
-    background: rgba(15, 5, 29, 0.98);
+    background: #15254B;
     color: #ffffff;
     width: 100%;
     max-width: 380px;
@@ -1909,7 +2016,7 @@ body.con-topbar .modal-backdrop {
 }
 
 .cart-empty {
-    color: #aaaaaa;
+    color: #64748B;
     text-align: center;
     margin-top: 2rem;
     font-size: 0.95rem;
@@ -1982,19 +2089,19 @@ button.btn-card:disabled {
     font-size: 0.75rem;
     font-weight: 700;
     color: var(--text-muted);
-    background: #f1eef7;
+    background: #F1F5F9;
     border-radius: 20px;
     padding: 6px 4px;
 }
 
 .checkout-steps li.active {
-    color: #fff;
-    background: var(--bg-purple-neon);
+    color: #FFFFFF;
+    background: var(--accent-light);
 }
 
 .checkout-resumen {
-    background: #f7f4fc;
-    border: 1px solid #e3d9f5;
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
     padding: 12px 14px;
     margin-bottom: 10px;
@@ -2064,7 +2171,7 @@ button.btn-card:disabled {
 
 .form-field input {
     padding: 10px 12px;
-    border: 1.5px solid #d9cdf0;
+    border: 1.5px solid #CBD5E1;
     border-radius: 10px;
     font-size: 0.92rem;
     font-family: inherit;
@@ -2079,7 +2186,7 @@ button.btn-card:disabled {
 }
 
 .form-field input.input-error {
-    border-color: #d32f2f;
+    border-color: #2558D4;
     background: #fff5f5;
 }
 
@@ -2134,7 +2241,7 @@ button.btn-card:disabled {
 }
 
 .btn-wa:hover {
-    background-color: #1eb956;
+    background-color: #2558D4;
 }
 
 /* Adaptación Móvil */
@@ -2146,7 +2253,7 @@ button.btn-card:disabled {
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: rgba(15, 5, 29, 0.98);
+        background-color: rgba(21, 37, 75, 0.98);
         padding: 1.5rem;
         gap: 1rem;
         border-bottom: 2px solid var(--bg-purple-neon);
@@ -2328,12 +2435,12 @@ button.btn-card:disabled {
 .estrellas > label {
     cursor: pointer;
     font-size: 1.5rem;
-    color: #ccc;
+    color: #CBD5E1;
 }
 .estrellas > label:hover,
 .estrellas > label:hover ~ label,
 .estrellas > input:checked ~ label {
-    color: #f39c12;
+    color: #F59E0B;
 }
 #msg-reseña {
     margin-top: 1rem;
