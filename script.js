@@ -161,6 +161,51 @@ function ajustarAltoTopbar() {
 window.addEventListener('resize', ajustarAltoTopbar);
 window.addEventListener('orientationchange', () => setTimeout(ajustarAltoTopbar, 200));
 
+// ====== Cuotas de pago (estandar Bold Colombia) ======
+// Bold ofrece 3, 6 y 12 cuotas SIN INTERES con tarjetas de credito participantes
+// y con transferencia, a partir de un monto minimo.
+// Cuando el cliente pulsa "Comprar ahora", el checkout embebido de Bold le
+// muestra las cuotas REALES disponibles para ese monto: esta es una vista
+// previa para que decida antes de entrar al checkout.
+const CUOTAS_MINIMAS = { 3: 50000, 6: 150000, 12: 300000 };
+
+function cuotasSugeridas(monto) {
+    const n = Number(monto) || 0;
+    if (n < CUOTAS_MINIMAS[3]) return [];
+    const salida = [];
+    [3, 6, 12].forEach(c => {
+        if (n >= CUOTAS_MINIMAS[c]) {
+            salida.push({ n: c, cuota: Math.ceil(n / c), total: n });
+        }
+    });
+    return salida;
+}
+
+function fmtCOP(n) {
+    return '$' + Number(n || 0).toLocaleString('es-CO');
+}
+
+// Linea lista para la tarjeta: "6 cuotas sin interés de $14.983"
+function textoCuotas(monto) {
+    const cs = cuotasSugeridas(monto);
+    if (!cs.length) return '';
+    const mejor = cs[cs.length - 1];
+    return mejor.n + ' cuotas sin interés de ' + fmtCOP(mejor.cuota);
+}
+
+// ====== Descuento con precio anterior tachado ======
+// Se usa el campo precioOriginal del POS (precio antes del descuento).
+// El porcentaje se calcula siempre sobre el precio original: es matematicamente
+// correcto (precioOriginal - precio) / precioOriginal.
+function datosDescuento(prod) {
+    const orig = precioNumDe(prod.precioOriginal);
+    const act = precioNumDe(prod.precio);
+    if (!orig || !act || orig <= act) return null;
+    const pct = Math.round(((orig - act) / orig) * 100);
+    if (pct <= 0) return null;
+    return { original: orig, actual: act, pct: pct };
+}
+
 // ====== Utilidades ======
 function esc(texto) {
     return String(texto)
@@ -749,6 +794,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tieneVars = Array.isArray(prod.variantes) && prod.variantes.length > 0;
                 const hayColores = tieneVars && prod.variantes.some(v => Array.isArray(v.colores) && v.colores.length > 0);
                 const totalOpciones = tieneVars ? prod.variantes.reduce((s, v) => s + ((Array.isArray(v.colores) && v.colores.length) ? v.colores.length : 1), 0) : 0;
+                const desc = datosDescuento(prod);
+                const cuotas = textoCuotas(precioNumProd);
 
                 // Tarjeta del catálogo
                 const card = document.createElement('div');
@@ -759,12 +806,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="product-image">
                             <img src="${fotoSegura(prod, 0)}" alt="${esc(prod.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">
                             ${hayStock ? '' : '<span class="agotado-badge">Agotado</span>'}
+                            ${desc ? `<span class="card-descuento">-${desc.pct}%</span>` : ''}
                         </div>
+                        <div class="card-precio-bloque">
+                            ${desc ? `
+                                <span class="card-antes">${esc(prod.precioOriginal)}</span>
+                                <span class="card-ahora">${esc(prod.precio)}</span>
+                                <span class="card-pct">-${desc.pct}%</span>
+                            ` : `<span class="card-ahora">${esc(prod.precio)}</span>`}
+                        </div>
+                        ${cuotas ? `<p class="card-cuotas"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>${esc(cuotas)}</p>` : ''}
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
                             ${tieneVars ? `<p class="var-hint">${esc(etiquetaOpciones(prod))} para elegir</p>` : ''}
                             <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
-                            ${prod.precioOriginal ? `<span class="price-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(prod.precio)}</span></span> <span class="badge-oferta">OFERTA</span>` : `<span class="price">${esc(prod.precio)}</span>`}
                             <span class="btn-card">${hayStock ? (tieneVars ? (tipoDeVariantes(prod) === 'color' ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
                         </div>
                     </a>
@@ -828,7 +883,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     : (tipoVar === 'color' ? 'ELIGE COLOR' : 'ELIGE REFERENCIA');
                 const selectorVars = (tieneVars && !unaSolaVariante) ? `
                             <div class="var-selector">
-                                <h4>${encabezadoSelector}</h4>                                <div class="var-opts">
+                                <h4>${encabezadoSelector}</h4>
+                                <div class="var-opts">
                                     ${prod.variantes.map(v => {
                                         const st = stockVar(v);
                                         const sel = varDef && v.id === varDef.id ? ' seleccionado' : '';
@@ -851,7 +907,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="modal-product-details">
                             <h2>${esc(prod.nombre)}</h2>
-                            ${prod.precioOriginal ? `<div class="modal-precio-oferta"><span class="price-old">${esc(prod.precioOriginal)}</span> <span class="price-new">${esc(defPrecioTxt)}</span></div> <span class="badge-oferta modal-badge">OFERTA</span>` : `<p class="modal-price">${esc(defPrecioTxt)}</p>`}
+                            ${(() => {
+                                const d = datosDescuento({ precioOriginal: prod.precioOriginal, precio: defPrecioTxt });
+                                const c = textoCuotas(defPrecioNum);
+                                if (d) {
+                                    return `<div class="modal-fila-precio">
+                                        <span class="modal-antes">${esc(prod.precioOriginal)}</span>
+                                        <span class="modal-ahora">${esc(defPrecioTxt)}</span>
+                                        <span class="modal-pct">-${d.pct}%</span>
+                                    </div>` + (c ? `<p class="modal-cuotas"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>${esc(c)}</p>` : '');
+                                }
+                                return `<p class="modal-price">${esc(defPrecioTxt)}</p>` + (c ? `<p class="modal-cuotas"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>${esc(c)}</p>` : '');
+                            })()}
                             ${selectorVars}
                             <div class="modal-description">
                                 <h4>DETALLES DEL PRODUCTO</h4>
