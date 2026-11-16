@@ -488,6 +488,122 @@ body.con-topbar .modal-backdrop {
     transform: translateY(-3px);
 }
 
+/* ====== Precio grande pegado a la foto (se ve sin hacer scroll) ====== */
+.card-precio-bloque {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 10px 1.1rem 0;
+    background: var(--bg-card);
+}
+
+.card-antes {
+    color: #999;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+}
+
+.card-ahora {
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--bg-purple-dark);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.card-pct {
+    background: #d32f2f;
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 900;
+    padding: 3px 9px;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+}
+
+/* Cuotas en la tarjeta */
+.card-cuotas {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 6px 1.1rem 0;
+    background: var(--bg-card);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #1a7f4b;
+}
+
+.card-cuotas i {
+    color: #1a7f4b;
+}
+
+/* Descuento flotante sobre la foto */
+.card-descuento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #d32f2f;
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* ====== Fila de precio en el modal (estilo Stride) ====== */
+.modal-fila-precio {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.modal-antes {
+    color: #999;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.modal-ahora {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--bg-purple-dark);
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+}
+
+.modal-pct {
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 900;
+    padding: 5px 11px;
+    border-radius: 8px;
+}
+
+.modal-cuotas {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 14px 0;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1a7f4b;
+}
+
+.modal-cuotas i {
+    color: #1a7f4b;
+}
+
 /* Grilla de Productos */
 .products {
     max-width: 1200px;
