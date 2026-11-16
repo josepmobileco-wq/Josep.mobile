@@ -74,9 +74,19 @@ const BOLD_WORKER_URL = 'https://wispy-shadow-8bccjosep-firma-bold.josep-mobile-
 // URL de tu tienda (debe ser https y coincidir con tu dominio en Bold).
 const TIENDA_URL = 'https://josepmobile.com/';
 
-// ====== Meta Pixel: eventos de tienda (no rompe nada si el Píxel no cargó) ======
+// ====== Analitica: Meta Pixel (fbq) + Google Analytics 4 (gtag) ======
+// pixelTrack dispara el evento en las dos plataformas. GA4 se verifica con
+// typeof gtag === 'function' porque un bloqueador de anuncios puede impedir
+// que el script de gtag/GA4 cargue: en ese caso se omite sin romper la web.
 function pixelTrack(nombre, datos) {
+    // Meta Pixel
     try { if (typeof fbq === 'function') fbq('track', nombre, datos || {}); } catch (e) {}
+    // Google Analytics 4
+    try {
+        if (typeof gtag === 'function') {
+            gtag('event', nombre, datos || {});
+        }
+    } catch (e) {}
 }
 const precioNumDe = (txt) => parseInt(String(txt || '').replace(/[^0-9]/g, ''), 10) || 0;
 
@@ -744,7 +754,7 @@ function aplicarSeleccionWeb(modal, parentId, nombreBase, varId, varNombre, col,
         boldBtn.setAttribute('data-id', fullId);
         boldBtn.setAttribute('data-nombre', fullNombre);
         boldBtn.setAttribute('data-precio-num', String(precioNum));
-        boldBtn.innerHTML = `<i class="fa-solid fa-credit-card"></i> Comprar ahora (${precioTxt})`;
+        boldBtn.innerHTML = `<i class="fa-solid fa-bolt" aria-hidden="true"></i> Comprar ahora (${precioTxt})`;
     }
     const waBtn = modal.querySelector('.btn-wa-ce');
     if (waBtn) { waBtn.setAttribute('data-id', fullId); waBtn.setAttribute('data-nombre', fullNombre); waBtn.setAttribute('data-precio', precioTxt); }
@@ -820,7 +830,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3>${esc(prod.nombre)}</h3>
                             ${tieneVars ? `<p class="var-hint">${esc(etiquetaOpciones(prod))} para elegir</p>` : ''}
                             <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
-                            <span class="btn-card">${hayStock ? (tieneVars ? (tipoDeVariantes(prod) === 'color' ? '🎨 Elige tu color' : 'Elige tu referencia') : 'Ver opciones de compra') : 'Agotado'}</span>
+                            <span class="btn-card${hayStock ? '' : ' btn-agotado'}">${hayStock
+                                ? (tieneVars
+                                    ? (tipoDeVariantes(prod) === 'color'
+                                        ? '<i class="fa-solid fa-bolt" aria-hidden="true"></i> Pedir ahora'
+                                        : '<i class="fa-solid fa-bolt" aria-hidden="true"></i> Pedir ahora')
+                                    : '<i class="fa-solid fa-cart-plus" aria-hidden="true"></i> Comprar ahora')
+                                : 'Agotado'}</span>
                         </div>
                     </a>
                 `;
@@ -927,17 +943,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
                             <div class="modal-actions">
                                 ${stockDe(defId) > 0 ? `
-                                <button type="button" class="btn-card btn-add-cart" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
-                                    <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
+                                <button type="button" class="btn-card btn-mp-link btn-bold-producto btn-principal" data-id="${esc(defId)}" data-precio-num="${defPrecioNum}" data-nombre="${esc(defNombre)}">
+                                    <i class="fa-solid fa-bolt" aria-hidden="true"></i> Comprar ahora (${esc(defPrecioTxt)})
                                 </button>
-                                <button type="button" class="btn-card btn-mp-link btn-bold-producto" data-id="${esc(defId)}" data-precio-num="${defPrecioNum}" data-nombre="${esc(defNombre)}">
-                                    <i class="fa-solid fa-credit-card"></i> Comprar ahora (${esc(defPrecioTxt)})
+                                <button type="button" class="btn-card btn-add-cart btn-secundario" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
+                                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i> Agregar al carrito
                                 </button>` : `
-                                <button type="button" class="btn-card" disabled>
-                                    <i class="fa-solid fa-ban"></i> Agotado
+                                <button type="button" class="btn-card btn-agotado" disabled>
+                                    <i class="fa-solid fa-ban" aria-hidden="true"></i> Agotado
                                 </button>`}
-                                <button type="button" class="btn-card btn-wa-ce" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
-                                    <i class="fa-solid fa-money-bill-wave"></i> Pago contra entrega
+                                <button type="button" class="btn-card btn-wa-ce btn-secundario" data-id="${esc(defId)}" data-nombre="${esc(defNombre)}" data-precio="${esc(defPrecioTxt)}">
+                                    <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i> Pago contra entrega
                                 </button>
                             </div>
 
