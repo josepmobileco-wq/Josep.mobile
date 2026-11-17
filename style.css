@@ -2057,10 +2057,6 @@ body.con-topbar .modal-backdrop {
     color: #000000;
 }
 
-.cart-total strong {
-    color: var(--gold);
-}
-
 .cart-actions {
     display: flex;
     flex-direction: column;
