@@ -1647,7 +1647,7 @@ body.con-topbar .modal-backdrop {
 
 .modal-description p {
     font-size: 0.92rem;
-    color: #d4d4d8;
+    color: #000000;
     line-height: 1.5;
     margin-bottom: 25px;
 }
@@ -1777,10 +1777,26 @@ body.con-topbar .modal-backdrop {
     width: 100%;
 }
 
+/* Iconos de contacto visibles (antes usaban el color de fondo y se veian blancos) */
 .contact-item i {
     font-size: 2.2rem;
-    color: var(--bg-purple-neon);
+    color: var(--accent-light);
     margin-bottom: 0.8rem;
+}
+
+/* Colores de marca para los iconos que tienen red social */
+.contact-item i.fa-envelope,
+.contact-item i.fa-location-dot,
+.contact-item i.fa-truck {
+    color: var(--accent-light);
+}
+
+.contact-item i.fa-whatsapp {
+    color: var(--whatsapp-color);
+}
+
+.contact-item i.fa-instagram {
+    color: var(--instagram-color);
 }
 
 .contact-item h3 {
@@ -2022,9 +2038,10 @@ body.con-topbar .modal-backdrop {
     font-size: 0.95rem;
 }
 
+/* Pie del carrito en blanco para que el total en negro se lea con claridad */
 .cart-footer {
-    border-top: 2px solid var(--gold);
-    background-color: var(--bg-purple-dark);
+    border-top: 2px solid var(--accent-light);
+    background-color: #FFFFFF;
     padding: 18px 20px;
 }
 
@@ -2033,7 +2050,11 @@ body.con-topbar .modal-backdrop {
     justify-content: space-between;
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #000000;
+}
+
+.cart-total strong {
+    color: #000000;
 }
 
 .cart-total strong {
