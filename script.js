@@ -1393,7 +1393,8 @@ function activarFiltro(tipo, valor) {
 
 // ====== Reseñas: Google Maps (reales) + respaldo local ======
 const RESEÑAS_JSON_URL = 'https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/reseñas.json';
-const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=0x8e3f997dd19de311%3A0xaccdf9cacd492be6';
+// Enlace oficial de Google para dejar reseña (verificado, reemplaza al viejo search.google.com/local/writereview que daba 404)
+const GOOGLE_REVIEW_URL = 'https://g.page/r/CeYrSc3K-c2sEAE/review';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/?q=place_id:0x8e3f997dd19de311:0xaccdf9cacd492be6';
 const RESEÑAS_RESPALDO = [
     { nombre: 'Cristian Mendoza', estrellas: 5, comentario: 'Tienen Excelentes forros', producto: 'Forros', fecha: 'hace 1 mes' }
