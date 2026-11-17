@@ -1391,40 +1391,95 @@ function activarFiltro(tipo, valor) {
     aplicarFiltros();
 }
 
-// ====== Reseñas de clientes (seguras: sin SQL, solo JSON + escape HTML) ======
+// ====== Reseñas: Google Maps (reales) + respaldo local ======
 const RESEÑAS_JSON_URL = 'https://raw.githubusercontent.com/josepmobileco-wq/Josep.mobile/main/reseñas.json';
+const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=0x8e3f997dd19de311%3A0xaccdf9cacd492be6';
+const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/?q=place_id:0x8e3f997dd19de311:0xaccdf9cacd492be6';
 const RESEÑAS_RESPALDO = [
     { nombre: 'Cristian Mendoza', estrellas: 5, comentario: 'Tienen Excelentes forros', producto: 'Forros', fecha: 'hace 1 mes' }
 ];
 
+let reseñasEsGoogle = false;
+
 async function cargarReseñas() {
     const lista = document.getElementById('reseñas-lista');
     if (!lista) return;
+
+    // 1) Intentar reseñas REALES de Google Maps (via Worker, key segura)
+    try {
+        const rg = await fetch(BOLD_WORKER_URL + '/google-resenas?t=' + Date.now(), { cache: 'no-store' });
+        if (rg.ok) {
+            const g = await rg.json();
+            if (g.ok && Array.isArray(g.reseñas) && g.reseñas.length) {
+                reseñasEsGoogle = true;
+                renderResenas(g.reseñas, lista, g);
+                return;
+            }
+        }
+    } catch (e) {}
+
+    // 2) Respaldo: reseñas.json (las enviadas desde el formulario de la web)
     try {
         const res = await fetch(RESEÑAS_JSON_URL, { cache: 'no-store' });
         if (!res.ok) throw new Error('Sin reseñas aún');
         const datos = await res.json();
         const arr = Array.isArray(datos) ? datos : (datos.reseñas || []);
         if (!arr.length) throw new Error('Vacío');
+        reseñasEsGoogle = false;
         renderResenas(arr, lista);
         return;
     } catch (e) {
+        reseñasEsGoogle = false;
         renderResenas(RESEÑAS_RESPALDO, lista);
     }
 }
 
-function renderResenas(arr, lista) {
-    lista.innerHTML = arr.slice().reverse().map(r => `
-        <div class="review-card">
+function renderResenas(arr, lista, infoGoogle) {
+    // Titulo de la seccion segun origen
+    const titulo = document.querySelector('#reseñas .section-title');
+    if (titulo) {
+        titulo.textContent = (infoGoogle && infoGoogle.rating)
+            ? 'Reseñas reales de Google Maps'
+            : 'Reseñas de nuestros clientes';
+    }
+
+    // Insignia de Google + resumen cuando vienen de Google Maps
+    let cabecera = '';
+    if (infoGoogle && infoGoogle.rating) {
+        cabecera = `
+            <div class="google-resumen">
+                <div class="google-logo"><i class="fa-brands fa-google" aria-hidden="true"></i></div>
+                <div class="google-datos">
+                    <strong>${Number(infoGoogle.rating).toFixed(1)}</strong>
+                    <span class="google-strellas">${'★'.repeat(Math.round(infoGoogle.rating))}</span>
+                    <span class="google-count">${Number(infoGoogle.total || arr.length)} reseñas en Google Maps</span>
+                </div>
+                <a href="${GOOGLE_MAPS_URL}" target="_blank" rel="noopener noreferrer" class="google-ver">Ver en Google <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>`;
+    }
+    lista.innerHTML = cabecera + '<div class="reviews-cards">' + arr.slice().reverse().map(r => `
+        <div class="review-card${r.google ? ' es-google' : ''}">
             <div class="review-header">
                 <div class="review-stars">${'★'.repeat(Number(r.estrellas || 5))}</div>
+                ${r.google ? '<span class="review-google-badge"><i class="fa-brands fa-google" aria-hidden="true"></i> Google</span>' : ''}
                 <span class="review-name">${esc(r.nombre || '')}</span>
                 <span class="review-date">${esc(r.fecha || '')}</span>
             </div>
             <p class="review-text">${esc(r.comentario || '')}</p>
             ${r.producto ? `<div class="review-product">${esc(r.producto || '')}</div>` : ''}
+            ${(r.google && r.url) ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="review-link">Ver original en Google <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>` : ''}
         </div>
-    `).join('');
+    `).join('') + '</div>';
+
+    // Boton para dejar reseña en Google (siempre visible, abajo de las tarjetas)
+    const btn = document.createElement('div');
+    btn.className = 'reviews-google-cta';
+    btn.innerHTML = `
+        <p>¿Ya compraste con nosotros? Ayúdanos creciendo con tu opinión.</p>
+        <a href="${GOOGLE_REVIEW_URL}" target="_blank" rel="noopener noreferrer" class="btn-google-review">
+            <i class="fa-brands fa-google" aria-hidden="true"></i> Dejar mi reseña en Google Maps
+        </a>`;
+    lista.appendChild(btn);
 }
 
 async function enviarReseña(e) {
@@ -1442,11 +1497,10 @@ async function enviarReseña(e) {
     btn.disabled = true;
     btn.textContent = 'Enviando…';
     try {
-        const res = await fetch(BOLD_WORKER_URL, {
+        const res = await fetch(BOLD_WORKER_URL + '/registrar-reseña', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                ruta: 'reseña',
                 nombre: nombre.slice(0, 60),
                 estrellas: parseInt(estrellas.value, 10),
                 comentario: comentario.slice(0, 500),
