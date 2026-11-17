@@ -1419,7 +1419,7 @@ async function cargarReseñas() {
         }
     } catch (e) {}
 
-    // 2) Respaldo: reseñas.json (las enviadas desde el formulario de la web)
+    // 2) Respaldo: reseñas.json local, SOLO si la API de Google falla o no hay key
     try {
         const res = await fetch(RESEÑAS_JSON_URL, { cache: 'no-store' });
         if (!res.ok) throw new Error('Sin reseñas aún');
@@ -1463,6 +1463,7 @@ function renderResenas(arr, lista, infoGoogle) {
             <div class="review-header">
                 <div class="review-stars">${'★'.repeat(Number(r.estrellas || 5))}</div>
                 ${r.google ? '<span class="review-google-badge"><i class="fa-brands fa-google" aria-hidden="true"></i> Google</span>' : ''}
+                ${(r.google && r.foto) ? `<img src="${esc(r.foto)}" alt="" class="review-avatar" loading="lazy" onerror="this.style.display='none'">` : ''}
                 <span class="review-name">${esc(r.nombre || '')}</span>
                 <span class="review-date">${esc(r.fecha || '')}</span>
             </div>
@@ -1483,52 +1484,6 @@ function renderResenas(arr, lista, infoGoogle) {
     lista.appendChild(btn);
 }
 
-async function enviarReseña(e) {
-    e.preventDefault();
-    const btn = document.getElementById('btn-enviar-reseña');
-    const msg = document.getElementById('msg-reseña');
-    const nombre = document.getElementById('reseña-nombre').value.trim();
-    const estrellas = document.querySelector('input[name="estrellas"]:checked');
-    const comentario = document.getElementById('reseña-comentario').value.trim();
-    if (!nombre || !estrellas || !comentario) {
-        msg.textContent = 'Completa todos los campos.';
-        msg.style.color = '#d32f2f';
-        return;
-    }
-    btn.disabled = true;
-    btn.textContent = 'Enviando…';
-    try {
-        const res = await fetch(BOLD_WORKER_URL + '/registrar-reseña', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                nombre: nombre.slice(0, 60),
-                estrellas: parseInt(estrellas.value, 10),
-                comentario: comentario.slice(0, 500),
-                fecha: new Date().toISOString()
-            })
-        });
-        const datos = await res.json();
-        if (datos.ok) {
-            msg.textContent = '¡Gracias! Tu reseña se envió y aparecerá pronto.';
-            msg.style.color = '#2e7d32';
-            document.getElementById('form-reseña').reset();
-            if (estrellas) estrellas.checked = false;
-            await cargarReseñas();
-        } else {
-            throw new Error(datos.error || 'Error al enviar');
-        }
-    } catch (err) {
-        msg.textContent = 'No se pudo enviar. Intenta de nuevo.';
-        msg.style.color = '#d32f2f';
-    } finally {
-        btn.disabled = false;
-        btn.textContent = 'Enviar reseña';
-    }
-}
-
 document.addEventListener('DOMContentLoaded', async () => {
     await cargarReseñas();
-    const form = document.getElementById('form-reseña');
-    if (form) form.addEventListener('submit', enviarReseña);
 });
