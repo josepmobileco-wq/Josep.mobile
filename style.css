@@ -910,9 +910,11 @@ body.con-topbar .modal-backdrop {
 }
 
 .product-image {
-    height: 210px;
-    min-height: 210px;
-    background-color: #ffffff;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    min-height: 0;
+    background-color: #f8fafc;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -948,8 +950,11 @@ body.con-topbar .modal-backdrop {
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    box-sizing: border-box;
+    padding: 12px 12px 16px;
+    object-fit: contain;
+    object-position: center 45%;
+    background-color: #f8fafc;
     transition: var(--transition);
 }
 
@@ -1080,6 +1085,11 @@ body.con-topbar .modal-backdrop {
     background-color: var(--accent-hover);
 }
 
+/* Boton de la tarjeta siempre abajo, alineado con las demas */
+.card-modal-trigger .btn-card {
+    margin-top: auto;
+}
+
 /* Jerarquia deConversion en el modal:
    .btn-principal  -> cobalto (accion principal de compra)
    .btn-secundario -> contorno navy (acciones alternativas) */
@@ -1150,12 +1160,23 @@ body.con-topbar .modal-backdrop {
     }
 }
 
+/* Badge flotante de colores/referencias sobre la foto */
 .var-hint {
-    color: var(--bg-purple-dark);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin: 0 0 0.3rem 0;
-    min-height: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--accent-light);
+    border: 1px solid #CBD5E1;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(21, 37, 75, 0.12);
+    white-space: nowrap;
 }
 
 .var-selector {
