@@ -566,7 +566,7 @@
       "efectoespejo2.jpeg",
       "efectoespejo3.jpeg"
     ],
-    "stock": 17,
+    "stock": 16,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
@@ -658,7 +658,7 @@
         "id": "iphone-16-pro-max",
         "nombre": "iPhone 16 Pro Max",
         "precio": "$30.000 COP",
-        "stock": 4,
+        "stock": 3,
         "colores": [
           {
             "id": "ororosa-mu91mdbp",
@@ -670,7 +670,7 @@
             "id": "azul-oscuro-mu92c5ab",
             "nombre": "Azul oscuro",
             "precio": "$30.000 COP",
-            "stock": 1
+            "stock": 0
           },
           {
             "id": "negro-mu92c5ab",
