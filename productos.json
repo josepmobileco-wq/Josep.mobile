@@ -89,6 +89,20 @@
     ]
   },
   {
+    "id": "airpods-pro-3",
+    "nombre": "Audífonos Bluetooth Pro 3",
+    "precio": "$75.000 COP",
+    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
+    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
+    "fotos": [
+      "airpods-pro-3.jpg",
+      "airpods-pro-31.jpg",
+      "airpods-pro-32.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Audífonos Bluetooth"
+  },
+  {
     "id": "airpods-pro-3-Traductores",
     "nombre": "Audífonos Bluetooth Pro 3 con Traducción",
     "precio": "$85.000 COP",
@@ -1004,7 +1018,7 @@
       "vidriotemplado2.jpg",
       "vidriotemplado3.jpg"
     ],
-    "stock": 546,
+    "stock": 545,
     "categoria": "Vidrios 5D",
     "variantes": [
       {
@@ -1326,7 +1340,7 @@
         "id": "ip-17",
         "nombre": "IP 17",
         "precio": "$10.000 COP",
-        "stock": 21,
+        "stock": 20,
         "colores": [
           {
             "id": "5d-ip-17",
@@ -1338,7 +1352,7 @@
             "id": "antiespia-ip-17",
             "nombre": "Antiespía",
             "precio": "$15.000 COP",
-            "stock": 9,
+            "stock": 8,
             "foto": "antiespia1.jpg"
           }
         ]
@@ -4896,6 +4910,67 @@
     "categoria": "Accesorios"
   },
   {
+    "id": "estuche-ip17promax-escarcha-magsafe",
+    "nombre": "Estuche Escarcha & MagSafe para iPhone 17 Pro Max",
+    "precio": "$35.000 COP",
+    "corta": "Brillo escarcha y anillo MagSafe para tu iPhone 17 Pro Max: protección elegante con el toque final que buscabas.",
+    "detalles": "Dale a tu iPhone 17 Pro Max el acabado que merece. Este estuche combina el efecto escarcha con destellos que capturan la luz y el anillo magnético MagSafe para cargar sin complicaciones y enganchar tus accesorios favoritos.\n\nElige entre cuatro presentaciones: Escarcha Rosa, Escarcha Gris, MagSafe Morado y MagSafe Rosa. Todas con un ajuste preciso que respeta botones, puertos y el módulo de cámara, más un marco elevado que protege pantalla y lentes.\n\n• Acabado escarcha con brillo holográfico en Rosa y Gris\n• Anillo magnético integrado compatible con carga y accesorios MagSafe en Morado y Rosa\n• Diseño delgado, cómodo al tacto y antideslizante\n• Protección perimetral con marco elevado para cámara y pantalla\n• Ajuste exacto para iPhone 17 Pro Max\n\nDisponible en tienda física C.C. Shangai, Local 1223, Bogotá. Envío el mismo día en Bogotá y pago contra entrega. Josep Mobile · El toque final.",
+    "fotos": [
+      "ip17promaxescarcha.jpeg",
+      "ip17promaxescarcha2.jpeg",
+      "ip17promaxmagsafe.jpeg",
+      "ip17promaxmagsafe2.jpeg"
+    ],
+    "stock": 4,
+    "categoria": "Estuches Para celular",
+    "variantes": [
+      {
+        "id": "ip17promax-escarcha",
+        "nombre": "Escarcha",
+        "precio": "$35.000 COP",
+        "stock": 2,
+        "colores": [
+          {
+            "id": "escarcha-rosa",
+            "nombre": "Rosa",
+            "precio": "$35.000 COP",
+            "stock": 1,
+            "foto": "ip17promaxescarcha.jpeg"
+          },
+          {
+            "id": "escarcha-gris",
+            "nombre": "Gris",
+            "precio": "$35.000 COP",
+            "stock": 1,
+            "foto": "ip17promaxescarcha2.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "ip17promax-magsafe",
+        "nombre": "MagSafe",
+        "precio": "$35.000 COP",
+        "stock": 2,
+        "colores": [
+          {
+            "id": "magsafe-morado",
+            "nombre": "Morado",
+            "precio": "$35.000 COP",
+            "stock": 1,
+            "foto": "ip17promaxmagsafe.jpeg"
+          },
+          {
+            "id": "magsafe-rosa",
+            "nombre": "Rosa",
+            "precio": "$35.000 COP",
+            "stock": 1,
+            "foto": "ip17promaxmagsafe2.jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "airpodspro2",
     "nombre": "Audífonos Bluetooth Pro 2",
     "precio": "$70.000 COP",
@@ -4905,20 +4980,6 @@
       "airpodspro2.jpg",
       "airpodspro22.jpeg",
       "airpodspro23.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
-    "id": "airpods-pro-3",
-    "nombre": "Audífonos Bluetooth Pro 3",
-    "precio": "$75.000 COP",
-    "corta": "Cancelación de ruido potente, excelente autonomía y máxima comodidad.",
-    "detalles": "Escucha el mundo como nunca antes. Cancelación activa de ruido mejorada, ajuste ergonómico con múltiples tallas de almohadillas, resistencia al agua IP57 y hasta 8 horas de batería continua. El equilibrio perfecto entre calidad de audio y comodidad para el día a día.",
-    "fotos": [
-      "airpods-pro-3.jpg",
-      "airpods-pro-31.jpg",
-      "airpods-pro-32.jpg"
     ],
     "stock": 0,
     "categoria": "Audífonos Bluetooth"
