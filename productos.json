@@ -4910,22 +4910,20 @@
     "categoria": "Accesorios"
   },
   {
-    "id": "estuche-ip17promax-escarcha-magsafe",
-    "nombre": "Estuche Escarcha & MagSafe para iPhone 17 Pro Max",
+    "id": "estuche-escarcha-iphone-17-pro-max",
+    "nombre": "Estuche Escarcha para iPhone 17 Pro Max",
     "precio": "$35.000 COP",
-    "corta": "Brillo escarcha y anillo MagSafe para tu iPhone 17 Pro Max: protección elegante con el toque final que buscabas.",
-    "detalles": "Dale a tu iPhone 17 Pro Max el acabado que merece. Este estuche combina el efecto escarcha con destellos que capturan la luz y el anillo magnético MagSafe para cargar sin complicaciones y enganchar tus accesorios favoritos.\n\nElige entre cuatro presentaciones: Escarcha Rosa, Escarcha Gris, MagSafe Morado y MagSafe Rosa. Todas con un ajuste preciso que respeta botones, puertos y el módulo de cámara, más un marco elevado que protege pantalla y lentes.\n\n• Acabado escarcha con brillo holográfico en Rosa y Gris\n• Anillo magnético integrado compatible con carga y accesorios MagSafe en Morado y Rosa\n• Diseño delgado, cómodo al tacto y antideslizante\n• Protección perimetral con marco elevado para cámara y pantalla\n• Ajuste exacto para iPhone 17 Pro Max\n\nDisponible en tienda física C.C. Shangai, Local 1223, Bogotá. Envío el mismo día en Bogotá y pago contra entrega. Josep Mobile · El toque final.",
+    "corta": "Brillo escarcha que captura la luz: protección elegante con anillo magnético para tu iPhone 17 Pro Max.",
+    "detalles": "Un estuche con acabado escarcha y destellos holográficos que cambian con la luz. Disponible en Rosa y Gris, con anillo magnético integrado para cargar sin complicaciones y usar tus accesorios favoritos.\n\nAjuste exacto para iPhone 17 Pro Max: respeta botones, puertos y el módulo de cámara, con marco elevado que protege pantalla y lentes. Diseño delgado, cómodo al tacto y antideslizante.\n\n• Acabado escarcha con brillo holográfico\n• Anillo magnético compatible con carga y accesorios MagSafe\n• Colores Rosa y Gris\n• Protección perimetral con marco elevado para cámara y pantalla\n\nJosep Mobile · El toque final. Envío el mismo día en Bogotá y pago contra entrega.",
     "fotos": [
       "ip17promaxescarcha.jpeg",
-      "ip17promaxescarcha2.jpeg",
-      "ip17promaxmagsafe.jpeg",
-      "ip17promaxmagsafe2.jpeg"
+      "ip17promaxescarcha2.jpeg"
     ],
-    "stock": 4,
+    "stock": 2,
     "categoria": "Estuches Para celular",
     "variantes": [
       {
-        "id": "ip17promax-escarcha",
+        "id": "escarcha-ip17pm",
         "nombre": "Escarcha",
         "precio": "$35.000 COP",
         "stock": 2,
@@ -4945,9 +4943,24 @@
             "foto": "ip17promaxescarcha2.jpeg"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "estuche-magsafe-iphone-17-pro-max",
+    "nombre": "Estuche MagSafe para iPhone 17 Pro Max",
+    "precio": "$35.000 COP",
+    "corta": "Anillo magnético y acabado mate: carga rápida y protección para tu iPhone 17 Pro Max.",
+    "detalles": "Estuche con anillo magnético integrado para carga inalámbrica y accesorios MagSafe, con acabado mate suave al tacto que no resbala. Disponible en Morado y Rosa.\n\nDiseño con marco elevado alrededor de la cámara y la pantalla, ajuste preciso para iPhone 17 Pro Max y acceso libre a botones y puertos.\n\n• Anillo magnético compatible con cargadores y accesorios MagSafe\n• Acabado mate antideslizante\n• Colores Morado y Rosa\n• Marco elevado que protege cámara y pantalla\n\nJosep Mobile · El toque final. Envío el mismo día en Bogotá y pago contra entrega.",
+    "fotos": [
+      "ip17promaxmagsafe.jpeg",
+      "ip17promaxmagsafe2.jpeg"
+    ],
+    "stock": 2,
+    "categoria": "Estuches Para celular",
+    "variantes": [
       {
-        "id": "ip17promax-magsafe",
+        "id": "magsafe-ip17pm",
         "nombre": "MagSafe",
         "precio": "$35.000 COP",
         "stock": 2,
