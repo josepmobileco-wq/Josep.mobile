@@ -10,21 +10,21 @@
       "airmax2.jpg",
       "airmax3.jpg"
     ],
-    "stock": 13,
+    "stock": 17,
     "categoria": "Audífonos Bluetooth",
     "variantes": [
       {
         "id": "airpods-max-lila-mu52las5",
         "nombre": "Lila",
         "precio": "$120.000 COP",
-        "stock": 0,
+        "stock": 2,
         "foto": "airmax2.jpg",
         "colores": [
           {
             "id": "lila-mu72xtkf",
             "nombre": "Lila",
             "precio": "$120.000 COP",
-            "stock": 0
+            "stock": 2
           }
         ]
       },
@@ -54,7 +54,7 @@
         "id": "blanca-8ylrz5",
         "nombre": "Blanca",
         "precio": "$120.000 COP",
-        "stock": 0
+        "stock": 2
       },
       {
         "id": "azul-8ylrz6",
@@ -87,6 +87,20 @@
         "stock": 2
       }
     ]
+  },
+  {
+    "id": "airpodspro2",
+    "nombre": "Audífonos Bluetooth Pro 2",
+    "precio": "$70.000 COP",
+    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
+    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
+    "fotos": [
+      "airpodspro2.jpg",
+      "airpodspro22.jpeg",
+      "airpodspro23.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Audífonos Bluetooth"
   },
   {
     "id": "airpods-pro-3",
@@ -542,6 +556,20 @@
     ],
     "stock": 7,
     "categoria": "Estuches Para celular"
+  },
+  {
+    "id": "tv-stick-magis",
+    "nombre": "TV Stick Android TV 4K",
+    "precio": "$100.000 COP",
+    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
+    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
+    "fotos": [
+      "tvstck1.jpg",
+      "tvstck2.jpg",
+      "tvstick3.jpg"
+    ],
+    "stock": 2,
+    "categoria": "Smarts Tvs"
   },
   {
     "id": "vortex-ip17",
@@ -1010,7 +1038,7 @@
   {
     "id": "vidrio-5d",
     "nombre": "Vidrio 5D",
-    "precio": "$10.000 COP",
+    "precio": "$15.000 COP",
     "corta": "Vidrio templado 5D de alta resistencia para tu pantalla. Elige tu modelo.",
     "detalles": "Vidrio templado 5D con pegamento completo y bordes redondeados. Protege tu pantalla de golpes y rayones con claridad total.",
     "fotos": [
@@ -1024,13 +1052,13 @@
       {
         "id": "ip-16-pro",
         "nombre": "IP 16 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-16-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1045,13 +1073,13 @@
       {
         "id": "ip-14-pro",
         "nombre": "IP 14 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-14-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1066,13 +1094,13 @@
       {
         "id": "ip-16",
         "nombre": "IP 16",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-16",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1087,13 +1115,13 @@
       {
         "id": "ip-12-pro-max",
         "nombre": "IP 12 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-12-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1108,13 +1136,13 @@
       {
         "id": "ip-15-pro",
         "nombre": "IP 15 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-15-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1129,13 +1157,13 @@
       {
         "id": "ip-11",
         "nombre": "IP 11",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 11,
         "colores": [
           {
             "id": "5d-ip-11",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 1
           },
           {
@@ -1150,13 +1178,13 @@
       {
         "id": "ip-17-pro",
         "nombre": "IP 17 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-17-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1171,13 +1199,13 @@
       {
         "id": "ip-13",
         "nombre": "IP 13",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-ip-13",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 9
           },
           {
@@ -1192,13 +1220,13 @@
       {
         "id": "ip-14-pro-max",
         "nombre": "IP 14 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-14-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1213,13 +1241,13 @@
       {
         "id": "ip-16-plus",
         "nombre": "IP 16 Plus",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-16-plus",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1234,13 +1262,13 @@
       {
         "id": "ip-17-e",
         "nombre": "IP 17 E",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 11,
         "colores": [
           {
             "id": "5d-ip-17-e",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 1
           },
           {
@@ -1255,13 +1283,13 @@
       {
         "id": "ip-12-pro",
         "nombre": "IP 12 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-12-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1276,13 +1304,13 @@
       {
         "id": "ip-14",
         "nombre": "IP 14",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-14",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1297,13 +1325,13 @@
       {
         "id": "ip-12",
         "nombre": "IP 12",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 21,
         "colores": [
           {
             "id": "5d-ip-12",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 11
           },
           {
@@ -1318,13 +1346,13 @@
       {
         "id": "ip-13-pro",
         "nombre": "IP 13 Pro",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-13-pro",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1339,13 +1367,13 @@
       {
         "id": "ip-17",
         "nombre": "IP 17",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-ip-17",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1360,13 +1388,13 @@
       {
         "id": "ip-15-pro-max",
         "nombre": "IP 15 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 21,
         "colores": [
           {
             "id": "5d-ip-15-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 11
           },
           {
@@ -1381,13 +1409,13 @@
       {
         "id": "ip-16-pro-max",
         "nombre": "IP 16 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-ip-16-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1402,13 +1430,13 @@
       {
         "id": "ip-15",
         "nombre": "IP 15",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-15",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1423,13 +1451,13 @@
       {
         "id": "ip-15-plus",
         "nombre": "IP 15 Plus",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-15-plus",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1444,13 +1472,13 @@
       {
         "id": "ip-13-pro-max",
         "nombre": "IP 13 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 22,
         "colores": [
           {
             "id": "5d-ip-13-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1465,13 +1493,13 @@
       {
         "id": "ip-16-e",
         "nombre": "IP 16 E",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 11,
         "colores": [
           {
             "id": "5d-ip-16-e",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 1
           },
           {
@@ -1486,13 +1514,13 @@
       {
         "id": "ip-12-mini",
         "nombre": "IP 12 Mini",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 12,
         "colores": [
           {
             "id": "5d-ip-12-mini",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 2
           },
           {
@@ -1507,13 +1535,13 @@
       {
         "id": "ip-17-pro-max",
         "nombre": "IP 17 Pro Max",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-ip-17-pro-max",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 12
           },
           {
@@ -1528,13 +1556,13 @@
       {
         "id": "samsung-a12-mu93o6m40",
         "nombre": "SAMSUNG A12",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-samsung-a12-mu93o6m40",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1549,13 +1577,13 @@
       {
         "id": "samsung-a35-mu93o6m41",
         "nombre": "SAMSUNG A35",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-samsung-a35-mu93o6m41",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1570,13 +1598,13 @@
       {
         "id": "samsung-a16-mu93o6m42",
         "nombre": "SAMSUNG A16",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 19,
         "colores": [
           {
             "id": "5d-samsung-a16-mu93o6m42",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 9
           },
           {
@@ -1591,13 +1619,13 @@
       {
         "id": "samsung-a05-mu93o6m43",
         "nombre": "SAMSUNG A05",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-samsung-a05-mu93o6m43",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1612,13 +1640,13 @@
       {
         "id": "motorola-g24-mu93o6m44",
         "nombre": "MOTOROLA G24",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-motorola-g24-mu93o6m44",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1633,13 +1661,13 @@
       {
         "id": "note-12-mu93o6m45",
         "nombre": "NOTE 12",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 20,
         "colores": [
           {
             "id": "5d-note-12-mu93o6m45",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 10
           },
           {
@@ -1654,13 +1682,13 @@
       {
         "id": "iphone-xs-mvzl98bn",
         "nombre": "iPhone XS",
-        "precio": "$10.000 COP",
+        "precio": "$15.000 COP",
         "stock": 1,
         "colores": [
           {
             "id": "5d-iphone-xs-mvzl98bn",
             "nombre": "5D",
-            "precio": "$10.000 COP",
+            "precio": "$15.000 COP",
             "stock": 1
           },
           {
@@ -4982,33 +5010,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "airpodspro2",
-    "nombre": "Audífonos Bluetooth Pro 2",
-    "precio": "$70.000 COP",
-    "corta": "Vive el sonido sin límites: cancelación de ruido 2x más potente, modo ambiente y audio espacial.",
-    "detalles": "Cancelación activa de ruido hasta 2x más potente, modo ambiente adaptable y audio espacial personalizado.",
-    "fotos": [
-      "airpodspro2.jpg",
-      "airpodspro22.jpeg",
-      "airpodspro23.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Audífonos Bluetooth"
-  },
-  {
-    "id": "tv-stick-magis",
-    "nombre": "TV Stick Android TV 4K",
-    "precio": "$100.000 COP",
-    "corta": "Convierte tu TV en Smart TV: apps, películas y más en alta definición.",
-    "detalles": "TV Stick Android TV (Magis TV), caja naranja y blanca.",
-    "fotos": [
-      "tvstck1.jpg",
-      "tvstck2.jpg",
-      "tvstick3.jpg"
-    ],
-    "stock": 0,
-    "categoria": "Smarts Tvs"
   }
 ]
