@@ -817,6 +817,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="${fotoSegura(prod, 0)}" alt="${esc(prod.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">
                             ${hayStock ? '' : '<span class="agotado-badge">Agotado</span>'}
                             ${desc ? `<span class="card-descuento">-${desc.pct}%</span>` : ''}
+                            ${tieneVars ? `<span class="var-hint">${esc(etiquetaOpciones(prod))}</span>` : ''}
                         </div>
                         <div class="card-precio-bloque">
                             ${desc ? `
@@ -828,7 +829,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${cuotas ? `<p class="card-cuotas"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>${esc(cuotas)}</p>` : ''}
                         <div class="product-info">
                             <h3>${esc(prod.nombre)}</h3>
-                            ${tieneVars ? `<p class="var-hint">${esc(etiquetaOpciones(prod))} para elegir</p>` : ''}
                             <p class="short-desc" style="text-align:justify;">${esc(prod.corta)}</p>
                             <span class="btn-card${hayStock ? '' : ' btn-agotado'}">${hayStock
                                 ? (tieneVars
