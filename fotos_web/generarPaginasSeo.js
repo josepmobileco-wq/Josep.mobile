@@ -231,7 +231,7 @@ function paginaProducto(p) {
 <meta name="keywords" content="${esc(p.nombre.toLowerCase())}, ${esc((p.categoria || 'accesorios celular').toLowerCase())}, Bogota, pago contra entrega, envio Colombia">
 <link rel="icon" type="image/jpeg" href="/logojosepmobile.jpeg">
 <link rel="canonical" href="${url}">
-<link rel="stylesheet" href="/style.css?v=202611171510">
+<link rel="stylesheet" href="/style.css?v=202611181200">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <meta property="og:type" content="product">
 <meta property="og:site_name" content="Josep.mobile">
@@ -408,7 +408,7 @@ for (const cp of CAT_PAGINAS) {
 <meta name="keywords" content="${esc(cp.titulo.toLowerCase())}, Bogota, Colombia, pago contra entrega">
 <link rel="icon" type="image/jpeg" href="/logojosepmobile.jpeg">
 <link rel="canonical" href="${url}">
-<link rel="stylesheet" href="/style.css?v=202611171510">
+<link rel="stylesheet" href="/style.css?v=202611181200">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Josep.mobile">
