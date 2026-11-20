@@ -787,6 +787,67 @@ body.con-topbar .modal-backdrop {
     margin: 0;
 }
 
+/* Contenido unico de la ficha SEO (texto real indexable) */
+.prod-contenido {
+    margin-top: 2.5rem;
+    padding: 1.8rem 2rem;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    color: var(--text-dark);
+}
+.prod-contenido h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--bg-purple-dark);
+    margin: 1.8rem 0 0.8rem;
+    line-height: 1.3;
+}
+.prod-contenido h2:first-child { margin-top: 0; }
+.prod-contenido p {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    text-align: justify;
+    margin: 0 0 1rem;
+}
+.prod-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0.6rem 1.5rem;
+}
+.prod-specs li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    padding: 0.55rem 0.8rem;
+    background: #F8FAFC;
+    border-left: 3px solid var(--accent-light);
+    border-radius: 6px;
+}
+.prod-specs strong { color: var(--text-dark); }
+.prod-faq { display: flex; flex-direction: column; gap: 0.6rem; }
+.prod-faq-item {
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    background: #F8FAFC;
+    padding: 0.85rem 1rem;
+}
+.prod-faq-item summary {
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--bg-purple-dark);
+    cursor: pointer;
+    list-style-position: inside;
+}
+.prod-faq-item p {
+    margin: 0.7rem 0 0;
+    font-size: 0.93rem;
+}
+
 .prod-acciones {
     display: flex;
     flex-direction: column;
@@ -1875,6 +1936,33 @@ body.con-topbar .modal-backdrop {
     color: var(--accent-light);
     margin-bottom: 0.5rem;
     font-weight: 700;
+}
+
+.footer-seo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+    margin: 1.2rem auto 0.4rem;
+    max-width: 900px;
+}
+.footer-seo-titulo {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin: 0 0 0.2rem;
+}
+.footer-seo a {
+    color: #CBD5E1;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: var(--transition);
+}
+.footer-seo a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .quick-links {
