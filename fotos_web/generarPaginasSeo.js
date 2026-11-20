@@ -97,6 +97,73 @@ function bloqueJsonLd(obj) {
     return JSON.stringify(obj, null, 2);
 }
 
+// ---- Contenido HTML real y unico por producto (evita Thin Content) ----
+function contenidoUnico(p, vars, precioActTexto, hayStock) {
+    const nombre = p.nombre;
+    const categoria = p.categoria || 'Accesorios para celular';
+    const corta = (p.corta || '').trim();
+    const detalles = (p.detalles || '').trim();
+
+    // Referencias y colores reales del producto (sin inventar datos)
+    const modelos = [...new Set(vars.map(v => String(v.nombre || '').trim()).filter(Boolean))];
+    const colores = [...new Set(vars.flatMap(v => (v.colores || []).map(c => String(c.nombre || '').trim())).filter(Boolean))];
+    const modelosTxt = modelos.length ? modelos.join(', ') : 'una presentación única';
+    const coloresTxt = colores.length ? colores.join(', ') : 'el color mostrado en las fotos';
+
+    const specs = [
+        ['Categoría', categoria],
+        ['Referencias disponibles', modelosTxt],
+        ['Colores disponibles', coloresTxt],
+        ['Precio', precioActTexto + ' COP'],
+        ['Disponibilidad', hayStock ? 'Disponible para entrega inmediata' : 'Agotado temporalmente — avisanos cuando llegue'],
+        ['Punto de venta', 'Tienda física C.C. Shangai, Local 1223, Bogotá'],
+        ['Entrega', 'Envío el mismo día en Bogotá y envíos a toda Colombia'],
+        ['Pago', 'Contra entrega en Bogotá y pagos seguros en línea con Bold']
+    ].map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('');
+
+    const preguntas = [
+        {
+            q: `¿El ${nombre} es compatible con mi celular?`,
+            a: `Este producto está disponible para las siguientes referencias: ${modelosTxt}. Si tu modelo no aparece en la lista, escríbenos por WhatsApp al +57 317 348 2040 y te confirmamos la compatibilidad antes de comprar.`
+        },
+        {
+            q: `¿Dónde puedo ver el ${nombre} en Bogotá?`,
+            a: `Puedes verlo y comprarlo en persona en nuestra tienda física del Centro Comercial Shangai, Local 1223, San Andresito de la 38, Bogotá. Estamos abiertos todos los días y nuestro equipo te ayuda a elegir la referencia y el color correctos.`
+        },
+        {
+            q: `¿Hacen envíos del ${nombre} a toda Colombia?`,
+            a: `Sí. Hacemos envío el mismo día dentro de Bogotá, gratis en compras superiores a $35.000 COP, y envíos a todo el país. En Bogotá además puedes elegir pago contra entrega.`
+        },
+        {
+            q: `¿Qué garantía tiene el ${nombre}?`,
+            a: `Ofrecemos garantía de 60 días por defectos de fabricación en compras superiores a $30.000 COP. Si el producto llega con algún problema, contáctanos por WhatsApp y lo resolvemos sin complicaciones.`
+        }
+    ];
+    const faqHtml = preguntas.map(x => `
+        <details class="prod-faq-item">
+            <summary>${esc(x.q)}</summary>
+            <p>${esc(x.a)}</p>
+        </details>`).join('');
+
+    const garantiaTxt = `En Josep.mobile respaldamos cada compra: garantía de 60 días por defectos de fabricación en compras mayores a $30.000 COP. Atendemos en tienda física, Centro Comercial Shangai, Local 1223, Bogotá, y enviamos a todo Colombia con pago contra entrega en la ciudad.`;
+
+    return `
+        <section class="prod-contenido">
+            <h2>Sobre el ${esc(nombre)}</h2>
+            <p>${esc(corta)}</p>
+            <p>Este ${esc(categoria.toLowerCase())} hace parte del catálogo de Josep.mobile, una tienda física y en línea de accesorios para celular en Bogotá. Lo encontrarás en el Centro Comercial Shangai, Local 1223, con atención personalizada todos los días. Si buscas ${esc(nombre)} en Bogotá, aquí puedes comprarlo con envío el mismo día o pago contra entrega.</p>
+
+            <h2>Especificaciones y compatibilidad</h2>
+            <ul class="prod-specs">${specs}</ul>
+
+            <h2>Preguntas frecuentes sobre el ${esc(nombre)}</h2>
+            <div class="prod-faq">${faqHtml}</div>
+
+            <h2>Garantía, entrega y compra segura</h2>
+            <p>${esc(garantiaTxt)}</p>
+        </section>`;
+}
+
 function paginaProducto(p) {
     const slug = slugify(p.nombre);
     const url = `${BASE_URL}/seo/${slug}/`;
@@ -158,9 +225,16 @@ function paginaProducto(p) {
             </div>`;
     }
 
-    const relacionados = publicados
+    let relacionados = publicados
         .filter(x => x.id !== p.id && categoriaDe(x) === categoriaDe(p))
-        .slice(0, 6);
+        .slice(0, 4);
+    // Si la categoria tiene pocos productos, completar con otros del catalogo
+    // para que ninguna ficha quede con menos de 3 enlaces internos.
+    if (relacionados.length < 3) {
+        const ids = new Set(relacionados.map(x => x.id));
+        const extra = publicados.filter(x => x.id !== p.id && !ids.has(x.id)).slice(0, 4 - relacionados.length);
+        relacionados = relacionados.concat(extra);
+    }
 
     const otrosHtml = relacionados.length ? `
         <div class="prod-otros">
@@ -226,12 +300,13 @@ function paginaProducto(p) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <title>${esc(p.nombre)} | Josep.mobile Bogota</title>
 <meta name="description" content="${esc((p.corta || '').slice(0, 155))}">
 <meta name="keywords" content="${esc(p.nombre.toLowerCase())}, ${esc((p.categoria || 'accesorios celular').toLowerCase())}, Bogota, pago contra entrega, envio Colombia">
 <link rel="icon" type="image/jpeg" href="/logojosepmobile.jpeg">
 <link rel="canonical" href="${url}">
-<link rel="stylesheet" href="/style.css?v=202611181200">
+<link rel="stylesheet" href="/style.css?v=202611201000">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <meta property="og:type" content="product">
 <meta property="og:site_name" content="Josep.mobile">
@@ -318,6 +393,7 @@ ${bloqueJsonLd(breadcrumb)}
             </div>
         </div>
     </div>
+    ${contenidoUnico(p, vars, fmtPrecio(precioAct), hayStock)}
     ${otrosHtml}
 </main>
 <footer class="footer">
@@ -403,12 +479,13 @@ for (const cp of CAT_PAGINAS) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <title>${esc(cp.titulo)} | Josep.mobile</title>
 <meta name="description" content="${esc(cp.desc)}">
 <meta name="keywords" content="${esc(cp.titulo.toLowerCase())}, Bogota, Colombia, pago contra entrega">
 <link rel="icon" type="image/jpeg" href="/logojosepmobile.jpeg">
 <link rel="canonical" href="${url}">
-<link rel="stylesheet" href="/style.css?v=202611181200">
+<link rel="stylesheet" href="/style.css?v=202611201000">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Josep.mobile">
